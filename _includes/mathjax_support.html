@@ -1,16 +1,11 @@
 <script>
 MathJax = {
   tex: {
-    equationNumbers: {
-      autoNumber: "none"
-    },
+    packages: {'[+]': ['ams', 'amsthm']},
     inlineMath: [['$', '$']],
-    displayMath: [['$$', '$$'], ['\\[', '\\]']],
-    processEscapes: true
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
   },
-  svg: {
-    scale: 1.0
-  }
+  svg: { scale: 1.0 }
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
