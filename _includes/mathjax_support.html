@@ -1,20 +1,16 @@
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    TeX: {
-      equationNumbers: {
-        autoNumber: "AMS"
-      }
+<script>
+MathJax = {
+  tex: {
+    equationNumbers: {
+      autoNumber: "AMS"  // 保留自动编号功能
     },
-    SVG: {
-      scale: 90
-    },
-    tex2jax: {
-      inlineMath: [ ['$','$'] ],
-      displayMath: [ ['$$','$$'] ],
-      processEscapes: true,
-    }
-  });
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],  // 支持$$和\[分隔符
+    processEscapes: true
+  },
+  svg: {
+    scale: 0.9  // 3.x中scale用小数（0.9对应90%）
+  }
+};
 </script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG">
-</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
