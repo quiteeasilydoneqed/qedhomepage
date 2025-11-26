@@ -4,10 +4,10 @@
 
 [数学](https://quiteeasilydoneqed.github.io/qedhomepage/math)
 
-[动漫]({{ site.baseurl }}/blob/master/_posts/chengfen/anime.md)
+[动漫]({https://quiteeasilydoneqed.github.io/qedhomepage/anime)
 
-[推活]({{ site.baseurl }}/blob/master/_posts/chengfen/oshi.md)
+[推活](https://quiteeasilydoneqed.github.io/qedhomepage/oshi)
 
-[音乐]({{ site.baseurl }}/blob/master/_posts/chengfen/music.md)
+[音乐](https://quiteeasilydoneqed.github.io/qedhomepage/music)
 
-[设计]({{ site.baseurl }}/blob/master/_posts/chengfen/design.md)
+[设计](https://quiteeasilydoneqed.github.io/qedhomepage/design)
