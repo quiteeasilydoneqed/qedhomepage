@@ -11,7 +11,7 @@ baseurl: "/qedhomepage"
 # Publish posts or collection documents with a future date.
 future: true
 
-# SNS settings
+# SNS settings 
 RSS: false
 bilibili_username: 1850638679
 bilibili2_username: 3546976641615898
