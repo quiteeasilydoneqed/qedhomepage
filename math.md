@@ -15,12 +15,12 @@ tags:
 
 # 参加讲座
 
-2024年6月22日 西北大学, 张益唐教授讲座.
+2024年06月22日 西北大学 张益唐教授讲座.
 
 ![张益唐讲座]({{ site.baseurl }}/img/zhangyitang.jpg "张益唐讲座")
 ![张益唐签名]({{ site.baseurl }}/img/zhang.jpg "张益唐签名")
 
-2024年12月17日, 西北大学, 菲尔兹奖得主Efim Zelmanov教授讲座.
+2024年12月17日 西北大学 菲尔兹奖得主Efim Zelmanov教授讲座.
 
 ![Efim Zelmanov讲座]({{ site.baseurl }}/img/zelmanov.jpg "Efim Zelmanov讲座")
 
