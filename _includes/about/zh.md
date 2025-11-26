@@ -4,7 +4,7 @@
 
 [数学](https://quiteeasilydoneqed.github.io/qedhomepage/math)
 
-[动漫]({https://quiteeasilydoneqed.github.io/qedhomepage/anime)
+[动漫](https://quiteeasilydoneqed.github.io/qedhomepage/anime)
 
 [推活](https://quiteeasilydoneqed.github.io/qedhomepage/oshi)
 
