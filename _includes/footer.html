@@ -261,3 +261,8 @@
     _render();
 </script>
 {% endif %}
+
+{% if page.math %}  
+    {% include replace.html %}
+    {% include math.html %} 
+{% endif %}
