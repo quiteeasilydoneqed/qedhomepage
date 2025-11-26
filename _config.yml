@@ -73,8 +73,8 @@ ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: ""
-sidebar-avatar: https://github.com/quiteeasilydoneqed.png # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "中文圈ID: 证毕QED, 外文圈ID: QED"
+sidebar-avatar: https://github.com/quiteeasilydoneqed.png
 
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags
