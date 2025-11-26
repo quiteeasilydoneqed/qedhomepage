@@ -2,12 +2,12 @@
 
 以下是我的一些成分
 
-[数学]({{site.baseurl}}/_posts/chengfen/math.md)
+[数学]({{site.baseurl}}/blob/master/_posts/chengfen/math.md)
 
-[动漫]({{site.baseurl}}/_posts/chengfen/anime.md)
+[动漫]({{site.baseurl}}/blob/master/_posts/chengfen/anime.md)
 
-[推活]({{site.baseurl}}/_posts/chengfen/oshi.md)
+[推活]({{site.baseurl}}/blob/master/_posts/chengfen/oshi.md)
 
-[音乐]({{site.baseurl}}/_posts/chengfen/music.md)
+[音乐]({{site.baseurl}}/blob/master/_posts/chengfen/music.md)
 
-[设计]({{site.baseurl}}/_posts/chengfen/design.md)
+[设计]({{site.baseurl}}/blob/master/_posts/chengfen/design.md)
