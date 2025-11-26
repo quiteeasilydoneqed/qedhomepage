@@ -2,7 +2,7 @@
 
 以下是我的一些成分:
 
-[数学](https://quiteeasilydoneqed.github.io/qedhomepage/math.md)
+[数学](https://quiteeasilydoneqed.github.io/qedhomepage/math)
 
 [动漫]({{ site.baseurl }}/blob/master/_posts/chengfen/anime.md)
 
