@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "音乐"
 header-img: "img/post-bg-infinity.jpg"
 header-mask: 0.3
