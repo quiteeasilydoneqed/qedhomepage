@@ -18,16 +18,16 @@ tags:
 
 参加活动名:
 
-- 2023/7/22 BilibiliWorld2023 day2
-- 2023/7/22 BILIBILI MACRO LINK 2023
-- 2023/7/23 BilibiliWorld2023 day3
-- 2024/3/30 TRUE（唐沢美帆）上海动漫交响音乐会
-- 2024/3/31 RAISE A SUILEN ASIA TOUR 2024 IN SHANGHAI
-- 2024/10/2 第47届IDO动漫游戏嘉年华
-- 2024/10/4 TIF ASIA TOUR 2024 in Shanghai
-- 2024/10/6 LoveLive! Series Asia Tour 2024 ～伴你圆梦～
-- 2025/3/8 土屋李央 2025上海粉丝见面会
-- 2025/3/9 米津玄师2025 TOUR/JUNK 上海
+- 2023/07/22 BilibiliWorld2023 day2
+- 2023/07/22 BILIBILI MACRO LINK 2023
+- 2023/07/23 BilibiliWorld2023 day3
+- 2024/03/30 TRUE（唐沢美帆）上海动漫交响音乐会
+- 2024/03/31 RAISE A SUILEN ASIA TOUR 2024 IN SHANGHAI
+- 2024/10/02 第47届IDO动漫游戏嘉年华
+- 2024/10/04 TIF ASIA TOUR 2024 in Shanghai
+- 2024/10/06 LoveLive! Series Asia Tour 2024 ～伴你圆梦～
+- 2025/03/08 土屋李央 2025上海粉丝见面会
+- 2025/03/09 米津玄师2025 TOUR/JUNK 上海
 - 2025/11/19 魚住英里奈&先锋器乐女子乐队花園distance中国联合巡演
 
 艺术家名(时间顺):
