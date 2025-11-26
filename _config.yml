@@ -57,25 +57,14 @@ kramdown:
       line_numbers: true
       start_line: 1
 
-# Netease settings
-netease_comment: false
-
-# Analytics settings
-# Baidu Analytics
-# ba_track_id: [your track id]
-
-# Google Analytics
-ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
-
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
 sidebar-about-description: "中文互联网ID: 证毕QED <br> 外文互联网ID: QED"
 sidebar-avatar: https://github.com/quiteeasilydoneqed.png
 
 # Featured Tags
-featured-tags: true # whether or not using Feature-Tags
-featured-condition-size: 1 # A tag will be featured if the size of it is more than this condition value
+featured-tags: true
+featured-condition-size: 0
 
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
