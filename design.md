@@ -21,6 +21,5 @@ tags:
 # meme制图
 
 ![该学数学了]({{ site.baseurl }}/img/该学数学了.jpg)
-![卓里奇(唐可可)]({{ site.baseurl }}/img/卓里奇(唐可可).jpg)
 ![gtm52(锦木千束)]({{ site.baseurl }}/img/gtm52(锦木千束).jpg)
 ![什么是数学]({{ site.baseurl }}/img/什么是数学.jpg)
