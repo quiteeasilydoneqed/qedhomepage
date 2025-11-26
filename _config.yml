@@ -73,7 +73,7 @@ ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "中文圈ID: 证毕QED <br> 外文圈ID: QED"
+sidebar-about-description: "中文互联网ID: 证毕QED <br> 外文互联网ID: QED"
 sidebar-avatar: https://github.com/quiteeasilydoneqed.png
 
 # Featured Tags
