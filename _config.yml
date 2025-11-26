@@ -1,9 +1,9 @@
 # Site settings
-title: QED
-SEOTitle: QED的博客
+title: 证毕QED
+SEOTitle: QED的个人主页
 header-img: img/home-bg.jpg
 email: 3214207a@163.com
-description: "1"
+description: ""
 keyword: ""
 url: "https://quiteeasilydoneqed.github.io/qedhomepage/"
 baseurl: "/qedhomepage"
@@ -15,8 +15,8 @@ future: true
 RSS: false
 weibo_username: huxpro
 zhihu_username: huxpro
-github_username: huxpro
-twitter_username: huxpro
+github_username: quiteeasilydoneqed
+twitter_username: QED
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
 
@@ -74,7 +74,7 @@ ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "要做一个有 swag 的程序员 <br> React Team @ Meta"
+sidebar-about-description: ""
 sidebar-avatar: https://github.com/Huxpro.png # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
@@ -91,12 +91,5 @@ page-mathjax: false
 # Friends
 friends:
   [
-    { title: "乱序（Midare）", href: "http://mida.re/" },
-    { title: "Ebn Zhang", href: "https://ebnbin.dev/" },
-    { title: "Kun Qian", href: "http://kunq.me" },
-    { title: "Sherry Woo", href: "https://sherrywoo.me/" },
-    { title: "SmdCn", href: "http://blog.smdcn.net" },
-    { title: "JiyinYiyong", href: "http://tiye.me/" },
-    { title: "DHong Say", href: "http://dhong.co" },
-    { title: "尹峰以为", href: "http://ingf.github.io/" },
+    { title: "fran", href: "https://zmx0142857.github.io/note/#math/example/editor" },
   ]
