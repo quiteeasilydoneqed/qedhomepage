@@ -18,7 +18,7 @@
     </a>
   </li>
   {% endif %}
-{% if site.twitter_username %}
+  {% if site.twitter_username %}
   <li>
     <a href="https://x.com/{{ site.twitter_username }}">
       <span class="fa-stack fa-lg">
@@ -27,7 +27,7 @@
       </span>
     </a>
   </li>
-{% endif %}
+  {% endif %}
   {% if site.soundcloud_username %}
   <li>
     <a target="_blank" href="https://soundcloud.com/{{ site.soundcloud_username }}">
@@ -50,7 +50,7 @@
   {% endif %}
   {% if site.bilibili2_username %}
   <li>
-    <a target="_blank" href="http://space.bilibili.com/{{ site.bilibili_username }}">
+    <a target="_blank" href="http://space.bilibili.com/{{ site.bilibili2_username }}">
       <span class="fa-stack fa-lg">
         <i class="fa-solid fa-circle fa-stack-2x"></i>
         <i class="fa-brands fa-bilibili fa-stack-1x fa-inverse"></i>
