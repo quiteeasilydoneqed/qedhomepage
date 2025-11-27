@@ -769,31 +769,31 @@ $$
 
 [1] Thøger Bang, A function representing all prime numbers., Norsk Mat. Tidsskr 34 (1952), 117–118.
 [2] Joaquín Ortega Costa, La formulación explícita de la función pi(x) de los números primos., Revista Matemática Hispano-Americana (1950), 72–76.
-[3] Underwood Dudley, Formulas for primes, Mathematics Magazine 56 (1983), no. 1, 17–22.
-[4] Dylan Fridman, Juli Garbulsky, Bruno Glecer, James Grime, and Massi Tron Florentin, A prime-representing constant, The American Mathematical Monthly 126 (2019), no. 1, 70–73.
-[5] J. M. Gandhi, Formulae for the nth prime., Proc. Washington State University Conferences on Number Theory (1971), 96–107.
-[6] R. L. Goodstein and C. P. Wormell, Formulae for primes, The Mathematical Gazette 51 (1967), no. 375, 35–38.
-[7] G.H. Hardy and E.M. Wright, An introduction to the theory of numbers, 6th edition, Contemporary Physics 51 (2010), no. 3, 283–283.
-[8] V. C. Harris, A test for primality., Nordisk Matematisk Tidskrift (1969), 82.
-[9] James P. Jones, Formula for the nth prime number, Canadian Mathematical Bulletin 18 (1975), no. 3, 433–434.
+[3] Underwood Dudley, Formulas for Primes, Mathematics Magazine 56 (1983), no. 1, 17–22.
+[4] Dylan Fridman, Juli Garbulsky, Bruno Glecer, James Grime, and Massi Tron Florentin, A Prime-Representing Constant, The American Mathematical Monthly 126 (2019), no. 1, 70–73.
+[5] J. M. Gandhi, Formulae for the Nth Prime., Proc. Washington State University Conferences on Number Theory (1971), 96–107.
+[6] R. L. Goodstein and C. P. Wormell, Formulae For Primes, The Mathematical Gazette 51 (1967), no. 375, 35–38.
+[7] G.H. Hardy and E.M. Wright, An Introduction to the Theory of Numbers, 6th edition, Contemporary Physics 51 (2010), no. 3, 283–283.
+[8] V. C. Harris, A test for primality., Nordisk Matematisk Tidsskrift (1969), 82.
+[9] James P. Jones, Formula for the Nth Prime Number, Canadian Mathematical Bulletin 18 (1975), no. 3, 433–434.
 [10] James P. Jones, Daihachiro Sato, Hideo Wada, and Douglas Wiens, Diophantine representation of the set of prime numbers, The American Mathematical Monthly 83 (1976), no. 6, 449–464.
-[11] Issam Kaddoura and Samih Abdul-Nabi, On formula to compute primes and the n th prime, arXiv: Number Theory (2012).
+[11] Issam Kaddoura and Samih Abdul-Nabi, On Formula to Compute Primes and the n th Prime, arXiv: Number Theory (2012).
 [12] Joseph B. Keller, A recursion equation for prime numbers, 2008.
 [13] John Knopfmacher, Recursive formulae for prime numbers, Archiv der Mathematik (Basel) 33 (1979/80), no. 2, 144–149.
-[14] J. H. Lambert, Anlage zur architectonik, 2 (1771).
-[15] Makis Papadimitriou, A recursion formula for the sequence of odd primes, The American Mathematical Monthly 82 (1975), no. 3, 289–289.
-[16] Stephen Regimbal, An explicit formula for the kth prime number, Mathematics Magazine 48 (1975), no. 4, 230–232.
-[17] Paulo Ribenboim, The little book of bigger primes, second edition, Springer, 2004.
-[18] Sebastián Martín Ruiz and Avda De Regla, The general term of the prime number sequence and the smarandache prime function, Smarandache Notions (2000).
-[19] Daihachiro Sato and Ernst G. Straus, P‐adic proof of non‐existence of proper prime representing algebraic functions and related problems, Journal of The London Mathematical Society-second Series (1970), 45–48.
+[14] J. H. Lambert, Anlage zur Architectonik, 2 (1771).
+[15] Makis Papadimitriou, A Recursion Formula for the Sequence of Odd Primes, The American Mathematical Monthly 82 (1975), no. 3, 289–289.
+[16] Stephen Regimbal, An Explicit Formula For The kth Prime Number, Mathematics Magazine 48 (1975), no. 4, 230–232.
+[17] Paulo Ribenboim, The Little Book of Bigger Primes, Second Edition, Springer, 2004.
+[18] Sebastián Martín Ruiz and Avda De Regla, The general term of the prime number sequence and the Smarandache prime function, Smarandache Notions (2000).
+[19] Daihachiro Sato and Ernst G. Straus, P‐Adic Proof of Non‐Existence of Proper Prime Representing Algebraic Functions and Related Problems, Journal of The London Mathematical Society-second Series (1970), 45–48.
 [20] Wacław Sierpiński, Sur une formule donnant tous les nombres premiers, Comptes Rendus Acad. Sci. Paris 235 (1952), 1078–1079.
 [21] Juan Fernández Sánchez, Rocío Sánchez Alcalde, and Manuel Úbeda Flores, Fórmulas que generan números primos., Epsilon (2022), no. 110, 77–101.
 [22] Garry J. Tee, Simple analytic expressions for primes, and for prime pairs., The New Zealand Mathematics Magazine 9 (1972), 32–44.
-[23] E. Teuffel, Eine rekursionsformel für primzahlen., Jahresbericht der Deutschen Mathematiker-Vereinigung 57 (1955), 34–36.
+[23] E. Teuffel, Eine Rekursionsformel für Primzahlen., Jahresbericht der Deutschen Mathematiker-Vereinigung 57 (1955), 34–36.
 [24] P. G. Tsangaris and J. P. Jones, An old theorem on the gcd and its application to primes., Fibonacci Quarterly 30:3 (1992), 194–198.
 [25] Panayiotis G. Tsangaris, Formulae for the kth prime number., Bulletin of the Greek Mathematical Society 53 (2007), 147–149.
 [26] Mladen Vassilev-Missana, Three formulae for n-th prime and six for n-th term of twin primes., Notes Number Theory Discrete Math (2001), no. 1, 15–20.
-[27] Solomon W. Golomb, A direct interpretation of gandhi’s formula, The American Mathematical Monthly 81 (1974), no. 7, 752–754.
+[27] Solomon W. Golomb, A Direct Interpretation of Gandhi's Formula, The American Mathematical Monthly 81 (1974), no. 7, 752–754.
 [28] Solomon W. Golomb, Probability, information theory, and prime number theory, Discrete Mathematics 106-107 (1992), 219–229.
 [29] Solomon W. Golomb, Formulas for the next prime, Pacific Journal of Mathematics 63 (1976), 401–404.
-[30] C. P. Willans, On formulae for the nth prime number, The Mathematical Gazette 48 (1964), no. 366, 413–415.
+[30] C. P. Willans, On Formulae for the Nth Prime Number, The Mathematical Gazette 48 (1964), no. 366, 413–415.
