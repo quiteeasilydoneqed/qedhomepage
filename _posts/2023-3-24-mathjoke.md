@@ -22,10 +22,15 @@ tags:
 由于《Notices》的读者主要是专业数学家，我们觉得没有必要对我们所呈现的所有资料进行解释。可以预料的是，大多数读者已经熟悉了这里给出的许多例子，但也可能不是全部。所有的民俗都以多种形式存在，并存在一些变化。一个经典的笑话或传言通常有许多个版本。比如，同一个心不在焉的教授笑话，可能与好几个历史人物有关，比如 Norbert Wiener 或 John von Neumann。因此，每个读者都有可能认出某个特定的条目，即使他或她可能以略微不同的形式（口头地）听到过它。
 
 > 注：下列的大部分内容都来自于口头传述，但我们也从各种互联网网站上自由引用，这些网站包括：
+> 
 > [http://www.xs4all.nl/~jcdverha/scijokes](http://www.xs4all.nl/~jcdverha/scijokes)；
+> 
 > [http://www.math.utah.edu/~cherk/mathjokes.html](http://www.math.utah.edu/~cherk/mathjokes.html)；
+> 
 > [http://www.workjoke.com/projoke22.htm](http://www.workjoke.com/projoke22.htm)；
+> 
 > [http://users.ox.ac.uk/~invar/links/jokes.html](http://users.ox.ac.uk/~invar/links/jokes.html)；
+> 
 > [http://outreach.math.wisc.edu/local/miscellany/MathJokes.htm](http://outreach.math.wisc.edu/local/miscellany/MathJokes.htm)。
 >
 > 我们在这里也认为读者对相关数学知识有一定的了解，只提供在英语语言理解方面的解释，而不提供数学知识上的解释。
