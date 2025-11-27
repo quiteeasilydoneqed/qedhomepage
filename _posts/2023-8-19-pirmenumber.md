@@ -200,7 +200,7 @@ $$
 $$
 </div>
 
-Hardy和Wright提出
+Hardy和Wright提出,
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理(Hardy-Wright公式)</b>
@@ -266,8 +266,10 @@ $$
 <b>引理(Wilson定理)</b>
 $n$ 是素数当且仅当
 $$(n-1)!\equiv -1\mod n.$$
-</div><br>
+</div>
+
 我们先推导著名的 Willans 公式.
+
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理(Willans公式)</b>
 $$
@@ -278,20 +280,20 @@ $$
 由 Wilson 定理知 $n$ 是素数当且仅当 $\dfrac{(n-1)!+1}{n}$ 是整数, 于是 $\cos\pi\dfrac{(n-1)!+1}{n}$ 当且仅当 $n$ 是素数时值为 $\pm1$, 否则其值属于 $(-1,1)$, 平方再取整后, 即可得到
 
 $$
-\left[\cos^2\pi\dfrac{(n-1)!+1}{n}\right]=\chi(n),n>1.
+\left[\cos^2\pi\dfrac{(n-1)!+1}{n}\right]=\chi(n),n>1,
 $$
 
 但是 $n=1$ 时, 上式左边值为 $1$, 右边为 $0$, 我们需要稍作调整,
 
 $$
-\pi(n)=-1+\sum_{k=1}^n\left[\cos^2\pi\frac{(k-1)!+1}{k}\right].
+\pi(n)=-1+\sum_{k=1}^n\left[\cos^2\pi\frac{(k-1)!+1}{k}\right],
 $$
 
 接着, Willans 给出一个函数 $A_n(a)=\left[\sqrt[n]{\dfrac{n}{1+a}}\right], n\in \mathbb Z_{>0},a\in \mathbb Z_{\ge0}$, 当 $a<n$ 时, $1\le\dfrac{n}{1+a}\le n$, $1\le\sqrt[n]{\dfrac{n}{1+a}}\le\sqrt[n]{n}<2$, 故 $A_n(a)=1$. 当 $a\ge n$ 时, $0<\sqrt[n]{\dfrac{n}{1+a}}<1$, 故 $A_n(a)=0$. 即
 
 $$
 A_n(a)=\begin{cases}
-1, & a<n\\
+1, & a<n;\\
 0, &a\ge n
 \end{cases}
 $$
@@ -299,7 +301,7 @@ $$
 因为给定自然数 $n$， 满足 $\pi(m)<n$ 的 $m$ 的个数就是 $p_n-1$， 将 $A_n(a)$ 与 $\pi(n)$ 复合即可得到素数通项公式
 
 $$
-p_n=1+\sum_{m=1}^N A_n(\pi(m)).
+p_n=1+\sum_{m=1}^N A_n(\pi(m)),
 $$
 
 这里 $N$ 是足够大的正整数, 由 Bertrand–Chebyshev 定理可得 $p_n<2^n$ 对所有正整数 $n$ 都成立, 故可取 $N=2^n$， 整理即得,
@@ -317,7 +319,7 @@ James P.Jones 给出了一个类似的公式.
 $$
 p_n=\sum_{m=0}^{2^n}(1\ominus ((1+\pi(m))\ominus n)),
 $$
-其中 $a\ominus b=\dfrac{|a-b|+a-b}{2}$.
+其中 $a\ominus b=\dfrac{\lvert a-b\rvert+a-b}{2}$.
 </div>
 
 Jones 使用模除运算给出 $\chi(n)$, 记 $a \mod b$ 为 $a$ 除以 $b$ 所得的余数, 显然由 Wilson 定理可得 $\chi(n)=((n-1)!^2\mod n)$, 此时就不需要排除 $n=1$ 处的干扰, 但该式本质上与 Willans 的式子没多大区别. 故有
@@ -344,7 +346,7 @@ a-b, &a\ge b
 \end{cases},
 $$
 
-即 $a\ominus b=\dfrac{|a-b|+a-b}{2}$, 则
+即 $a\ominus b=\dfrac{\lvert a-b\rvert+a-b}{2}$, 则
 
 $$
 A_n(a)=1\ominus ((1+a)\ominus n).
@@ -360,19 +362,20 @@ $$
 $$
 \chi(n)=1\ominus\sum_{0<i<k\le [\sqrt{n}]}\left(2\left[\dfrac{in}{k}\right]-n+1\right).
 $$
-</div><br>
+</div>
+
 Willans 在自己的文章中还给出了几条素数通项公式.
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理(Willans公式2)</b>
 $$
-p_n=\sum_{m=1}^{2^n}\left(m\left[\cos^2\pi\dfrac{(n-1)!+1}{n}\right]\left[2^{-|\pi(m)-n|}\right]\right).
+p_n=\sum_{m=1}^{2^n}\left(m\left[\cos^2\pi\dfrac{(n-1)!+1}{n}\right]\left[2^{-\lvert \pi(m)-n\rvert}\right]\right).
 $$
 </div>
 
 只需注意到
 $$
-B_n(a)=\left[2^{-|a-n|}\right]=\begin{cases}
+B_n(a)=\left[2^{-\lvert a-n\rvert}\right]=\begin{cases}
 1, & a=n\\
 0, &a\neq n
 \end{cases}
@@ -390,22 +393,22 @@ $$
 对于函数 $\dfrac{(n-1)!^2}{n}$， 当 $n$ 为素数时,
 
 $$
-\dfrac{(n-1)!^2}{n}=\dfrac{((n-1)!-1)((n-1)!+1)}{n}+\dfrac{1}{n}=\text{整数}+\dfrac{1}{n}.
+\dfrac{(n-1)!^2}{n}=\dfrac{((n-1)!-1)((n-1)!+1)}{n}+\dfrac{1}{n}=\text{整数}+\dfrac{1}{n},
 $$
 
 当 $n$ 不为素数时, $\dfrac{(n-1)!^2}{n}$ 为整数, 由正弦函数的性质可得
 
 $$
-\chi(n)=\dfrac{\sin^2\pi\dfrac{(k-1)!^2}{k}}{\sin^2\dfrac{\pi}{k}}, n>1.
+\chi(n)=\dfrac{\sin^2\pi\dfrac{(k-1)!^2}{k}}{\sin^2\dfrac{\pi}{k}}, n>1,
 $$
 
 对于函数 $C_n(a)$, 由正弦函数的性质知
 
 $$
 C_n(a)=\begin{cases}
-1, & a<n\\
+1, & a<n;\\
 0, &a\ge n
-\end{cases}.
+\end{cases}
 $$
 
 将二者其组合起来即可.
@@ -415,67 +418,78 @@ Hardy 和 Wright 给出了另一种基于 Wilson 公式的素数通项公式.
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理(Hardy-Wright公式)</b>
 $$
-p_n=1+\sum_{j=1}^{2^n}f\left(n,2+\sum_{k=5}^j\left((k-2)!-k\left[\dfrac{(k-2)!}{k}\right]\right)\right),n>4
+p_n=1+\sum_{j=1}^{2^n}f\left(n,2+\sum_{k=5}^j\left((k-2)!-k\left[\dfrac{(k-2)!}{k}\right]\right)\right),n>4,
 $$
-这里
+其中
 $$
 f(x,y)=\begin{cases}
-0, & x=y\\
-\dfrac{1}{2}\left(1+\dfrac{x-y}{|x-y|}\right), & x\neq y
+0, & x=y;\\
+\dfrac{1}{2}\left(1+\dfrac{x-y}{\lvert  x-y\rvert}\right), & x\neq y.
 \end{cases}
 $$
 </div>
 
 由 Wilson 定理可得
+
 $$
+
 \pi(n)=2+\sum_{k=5}^n\left((k-2)!-k\left[\dfrac{(k-2)!}{k}\right]\right),k>4.
+
 $$
+
 显然
+
 $$
+
 f(x,y)=\begin{cases}
 1, & x>y\\
 0, & x\le y
 \end{cases},
+
 $$
+
 将二者组合起来即可.
 
 还有其它的构造方法, 仅罗列如下:
 
 <div style="border: 3px solid #000; padding: 10px;">
 
-Willans公式4:
+<b>Willans公式4:</b>
+
 $$
-\chi(n)=1-\left[\cos^2\pi\dfrac{(n-1)!^2}{n}\right].
+\chi(n)=1-\left[\cos^2\pi\dfrac{(n-1)!^2}{n}\right],
 $$
 
 $$
 \chi(n)=\dfrac{\sin^2\pi\dfrac{(n-1)!}{n}}{\sin^2\dfrac{\pi}{n}}, n>1.
 $$
 
-Tee公式:
+<b>Tee公式:</b>
 $$
 \pi(n)=1+\sum_{k=1}^{\frac{n-1}{2}}\dfrac{1-\cos\pi\dfrac{((2k+1)-1)!}{2k+1}}{1+\cos\dfrac{\pi}{2k+1}}, n>1.
 $$
 
-Papadimitriou公式:
+<b>Papadimitriou公式:</b>
+
 $$
-\chi(n)=\mathrm{sgn}\left(\dfrac{2(n-1)!}{n}-\left[\dfrac{2(n-1)!}{n}\right]\right), n>2.
-$$
-$$
-\chi(n)=\mathrm{sgn}\left(\dfrac{(n-1)!}{n}-\left[\dfrac{(n-1)!}{n}\right]\right), n>1.
-$$
-其中 $\mathrm{sgn}$ 为符号函数,
-$$
-\mathrm{sgn}(x)=\begin{cases}
-1, & x>0\\
-0, & x=0\\
--1,&x<0
-\end{cases}.
+\chi(n)=\mathrm{sgn}\left(\dfrac{2(n-1)!}{n}-\left[\dfrac{2(n-1)!}{n}\right]\right), n>2,
 $$
 
-Mináč公式:
 $$
-\pi(n)=\sum_{j=2}^n\left[\dfrac{(j-1)!+1}{j}-\left[\dfrac{(j-1)!}{j}\right]\right]
+\chi(n)=\mathrm{sgn}\left(\dfrac{(n-1)!}{n}-\left[\dfrac{(n-1)!}{n}\right]\right), n>1,
+$$
+其中 $\mathrm{sgn}$ 为符号函数
+$$
+\mathrm{sgn}(x)=\begin{cases}
+1, & x>0;\\
+0, & x=0;\\
+-1,&x<0.
+\end{cases}
+$$
+
+<b>Mináč公式:</b>
+$$
+\pi(n)=\sum_{j=2}^n\left[\dfrac{(j-1)!+1}{j}-\left[\dfrac{(j-1)!}{j}\right]\right].
 $$
 
 如果可以使用复数的话,
@@ -521,7 +535,7 @@ $$
 考虑函数
 
 $$
-g(n)=\sum\limits_{i=1}^{n-1}\left[\dfrac{\left[\dfrac{n}{i}\right]}{\dfrac{n}{i}}\right]
+g(n)=\sum\limits_{i=1}^{n-1}\left[\dfrac{\left[\dfrac{n}{i}\right]}{\dfrac{n}{i}}\right],
 $$
 
 对于任意大于 $0$ 的 $x$， 当 $x$ 为整数时， $\left[\dfrac{[x]}{x}\right]=1$， 当 $x$ 不是整数时 $\left[\dfrac{[x]}{x}\right]=0$. 设 $i=1,2,\cdots, n-1$， 如果 $n$ 是素数， $\dfrac{n}{i}$ 是整数当且仅当 $i=1$， 所以
@@ -554,8 +568,8 @@ $$
 令 $k$ 是一个正整数， 则有
 
 $$
-n\left[\dfrac{1}{1+|k-\chi(n)\pi(n)|}\right]=\begin{cases}
-n, & n\text{是第}k\text{个素数}\\
+n\left[\dfrac{1}{1+\lvert k-\chi(n)\pi(n)\rvert}\right]=\begin{cases}
+n, & n\text{是第}k\text{个素数};\\
 0, & \text{其它}
 \end{cases}
 $$
@@ -593,9 +607,9 @@ $$
 
 $$
 \left[\dfrac{i}{j}\right]-\left[\dfrac{i-1}{j}\right]=\begin{cases}
-1, & j\ |\ i\\
+1, & j\ |\ i;\\
 0, & j\not|\ i
-\end{cases},
+\end{cases}
 $$
 
 故
@@ -613,7 +627,7 @@ $$
 当 $i$ 是素数时， 因为它只有 $1$ 和其自身两个因子， $d(i)=2$， $-\left[-\dfrac{d(i)-2}{i}\right]=0$， $i$ 不是素数时， $d(i)>2$， 从而 $0<\dfrac{d(i)-2}{i}<1$， $-\left[-\dfrac{d(i)-2}{i}\right]=1$. 故
 
 $$
-\chi(i)=1-\left(-\left[-\dfrac{d(i)-2}{i}\right]\right)=1+\left[-\dfrac{d(i)-2}{i}\right], i>1.
+\chi(i)=1-\left(-\left[-\dfrac{d(i)-2}{i}\right]\right)=1+\left[-\dfrac{d(i)-2}{i}\right], i>1,
 $$
 
 与之前相同的,
@@ -625,7 +639,7 @@ $$
 因为 $1\le k\le p_n-1$ 时， 一定有 $\left[\dfrac{\pi(k)}{n}\right]=0$， Ruiz 希望找出一个仅与 $n$ 有关的上界 $C_n$， 使得 $p_n\le k\le C_n$ 时， 有 $1\le \dfrac{\pi(k)}{n}<2$， 即 $\left[\dfrac{\pi(k)}{n}\right]=1$， 从而
 
 $$
-p_n=1+\sum_{k=1}^{C_n}\left(1-\left[\dfrac{\pi(k)}{n}\right]\right).
+p_n=1+\sum_{k=1}^{C_n}\left(1-\left[\dfrac{\pi(k)}{n}\right]\right),
 $$
 
 Ruiz 选定的 $C_n$ 等于 $2([n\ln n]+1)$， 有以下两个不等式成立，
@@ -638,9 +652,7 @@ $$
 \pi\left(2([n\ln n]+1)\right)<2n.
 $$
 
-我们省略其证明， 由这两个不等式可以推出 $p_n\le k\le C_n$ 时， $\left[\dfrac{\pi(k)}{n}\right]=1$.
-
-将 $C_n$ 代入并整理即得 Ruiz 的公式.
+我们省略其证明， 由这两个不等式可以推出 $p_n\le k\le C_n$ 时， $\left[\dfrac{\pi(k)}{n}\right]=1$. 将 $C_n$ 代入并整理即得 Ruiz 的公式.
 
 一个更简单些的方法是
 
@@ -648,7 +660,7 @@ $$
 \chi(n)=\left[\dfrac{2}{d(n)}\right].
 $$
 
-Lambert公式 给出了 $d(n)$ 的另一种构造方法.
+Lambert公式给出了 $d(n)$ 的另一种构造方法.
 
 除数函数有推广
 
@@ -659,13 +671,13 @@ $$
 则 $d(n)=\sigma_0(n)$. 如果 $n=p_1^{a_1}p_2^{a_2}\cdots p_r^{a_r}$， 则有
 
 $$
-\sigma_x(n)=\prod\limits_{i=1}^r\dfrac{p_i^{(a_i+1)x}-1}{p_i^x-1},x>0.
+\sigma_x(n)=\prod\limits_{i=1}^r\dfrac{p_i^{(a_i+1)x}-1}{p_i^x-1},x>0,
 $$
 
 当 $n$ 是素数时， 它只有 $1$ 和 $n$ 两个因数， 故 $\sigma_x(n)=n^x+1$， 若 $n$ 不是素数， 则 $\sigma_x(n)>n^x+1$， 故有
 
 $$
-\chi(n)=\left[\dfrac{n^x+1}{\sigma_x(n)}\right],n>1
+\chi(n)=\left[\dfrac{n^x+1}{\sigma_x(n)}\right],n>1.
 $$
 
 基于 Euler $\varphi$ 函数的性质也可给出一个素数通项公式.
@@ -683,7 +695,7 @@ $$
 $$
 \begin{bmatrix}
 \dfrac{\varphi(n)}{n-1}
-\end{bmatrix}=1.
+\end{bmatrix}=1,
 $$
 
 当 $n$ 不为素数时有 $\varphi(n)<n-1$， 从而
@@ -691,10 +703,10 @@ $$
 $$
 \begin{bmatrix}
 \dfrac{\varphi(n)}{n-1}
-\end{bmatrix}=0.
+\end{bmatrix}=0,
 $$
 
-初等数论中有公式 $\varphi(n)=n\prod\limits_{p|n}\left(1-\dfrac{1}{p}\right)$， 将其代入即得
+初等数论中有公式 $\varphi(n)=n\prod\limits_{p\mid n}\left(1-\dfrac{1}{p}\right)$， 将其代入即得
 
 $$
 \chi(n)=\begin{bmatrix}
@@ -751,7 +763,7 @@ $$
 $$
 \chi(k)= 1-\lim_{m\to\infty}\left(
 1-\prod_{j=2}^{k-1}\sin^2\left(\dfrac{k\pi}{j}\right)
-\right)^m,k\ge3.
+\right)^m,k\ge3,
 $$
 故
 $$
@@ -768,18 +780,18 @@ $$
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理(Kaddoura-Abdul-Nabi公式)</b>
 $$
-p_{n}=3+2[n\ln n]-\sum_{x=7}^{2([n\ln n]+1)}\left(\left[\frac{1}{n}\left(4+\left(\sum_{j=1}^{\left[\frac{x-1}{6} \right] }\left[S(6 j+1)\right ]+\sum_{j=1}^{\left[\frac{x+1}{6}\right]}\left[ S(6 j-1)\right]\right)\right)\right]\right).
+p_{n}=3+2[n\ln n]-\sum_{x=7}^{2([n\ln n]+1)}\left(\left[\frac{1}{n}\left(4+\left(\sum_{j=1}^{\left[\frac{x-1}{6} \right] }\left[S(6 j+1)\right ]+\sum_{j=1}^{\left[\frac{x+1}{6}\right]}\left[ S(6 j-1)\right]\right)\right)\right]\right),
 $$
 
 $$
 p_n=7+\sum_{x=7}^{2([n\ln n]+1)}\begin{bmatrix}
 \dfrac{2}{5+n+\sum\limits_{j=1}^{\left[\frac{x-1}{6} \right] }\left[S(6 j+1)\right ]+\sum\limits_{j=1}^{\left[\frac{x+1}{6}\right]}\left[ S(6 j-1)\right]}
-\end{bmatrix}
+\end{bmatrix},
 $$
 
 其中, $S(n)=\dfrac{S_1(n)+S_2(n)}{2}$,
 $$
-S_1(n)=\dfrac{-1}{\left[\dfrac{\left[\sqrt{n}\right]}{6}\right]+1}\sum_{k=1}^{\left[\frac{\left[\sqrt{n}\right]}{6}\right]+1}\left[\left[\dfrac{n}{6k+1}\right]-\dfrac{n}{6k+1}\right].
+S_1(n)=\dfrac{-1}{\left[\dfrac{\left[\sqrt{n}\right]}{6}\right]+1}\sum_{k=1}^{\left[\frac{\left[\sqrt{n}\right]}{6}\right]+1}\left[\left[\dfrac{n}{6k+1}\right]-\dfrac{n}{6k+1}\right],
 $$
 $$
 S_2(n)=\dfrac{-1}{\left[\dfrac{\left[\sqrt{n}\right]}{6}\right]+1}\sum_{k=1}^{\left[\frac{\left[\sqrt{n}\right]}{6}\right]+1}\left[\left[\dfrac{n}{6k-1}\right]-\dfrac{n}{6k-1}\right].
@@ -787,39 +799,52 @@ $$
 </div>
 
 作者在 [11] 中首先证明了, $n$ 为与 $6$ 互素的整数时,
+
 $$
 [S(n)]=\begin{cases}
-1, & n\text{是素数}\\
+1, & n\text{是素数};\\
 0, & n\text{不是素数}
 \end{cases}
 $$
+
 因为素数只可能是 $6j+1$ 或 $6j-1$ 的形式, 所以
+
 $$
 \pi(n)=4+\sum\limits_{j=1}^{\left[\frac{n-1}{6} \right] }\left[S(6 j+1)\right ]+\sum\limits_{j=1}^{\left[\frac{n+1}{6}\right]}\left[ S(6 j-1)\right].
 $$
 
 然后利用函数
+
 $$
 1-\left[\dfrac{x}{n}\right]=\begin{cases}
-1, & x<n\\
+1, & x<n;\\
 0, & x\ge n
 \end{cases}
 $$
+
 和
+
 $$
+
 \left[\dfrac{2n}{x+n+1}\right]=\begin{cases}
-1, & x<n\\
+1, & x<n;\\
 0, & x\ge n
 \end{cases}
 $$
+
 分别可得
+
 $$
 p_n=7+\sum_{x=7}^{2([n\ln n]+1)}\left(1-\left[\dfrac{\pi(x)}{n}\right]\right)
 $$
+
 和
+
 $$
+
 p_n=7+\sum_{x=7}^{2([n\ln n]+1)}\left[\dfrac{2n}{\pi(x)+n+1}\right],
 $$
+
 整理即得 Kaddoura-Abdul-Nabi 公式.
 
 
@@ -832,11 +857,17 @@ $$
 $$
 
 其中 $P_n=p_1p_2\cdots p_n$, $\mu(n)$ 为 Möbius 函数,
-$$\mu(n)=\begin{cases}
+
+$$
+
+\mu(n)=\begin{cases}
 1, & n=1\\
 (-1)^r, & n\text{为}r\text{个不同的素数的积}\\
 0,&\text{其它}
-\end{cases}$$
+\end{cases}
+
+$$
+
 它可以由单位根给出一个不分段的形式,
 
 $$
@@ -860,44 +891,50 @@ Golomb 在 1976 年得到了一个定理, 这个定理的一种特殊情况可�
 <b>定理(Golomb公式)</b>
 
 $$
-p_{n+1}=\lim_{s\to\infty}\left(P_n(s)\zeta(s) -1\right)^{-\frac{1}{s}}
+p_{n+1}=\lim_{s\to\infty}\left(P_n(s)\zeta(s) -1\right)^{-\frac{1}{s}},
 $$
 
 $$
-p_{n+1}=\lim_{s\to\infty}\left(P_n(s) -\dfrac{1}{\zeta(s)}\right)^{-\frac{1}{s}}
+p_{n+1}=\lim_{s\to\infty}\left(P_n(s) -\dfrac{1}{\zeta(s)}\right)^{-\frac{1}{s}},
 $$
 
 $$
-p_{n+1}=\lim_{s\to\infty}\left(\zeta(s) -\dfrac{1}{P_n(s)}\right)^{-\frac{1}{s}}
+p_{n+1}=\lim_{s\to\infty}\left(\zeta(s) -\dfrac{1}{P_n(s)}\right)^{-\frac{1}{s}},
 $$
 
 $$
-p_{n+1}=\lim_{s\to\infty}\left(1 -\dfrac{1}{P_n(s)\zeta(s)}\right)^{-\frac{1}{s}}
+p_{n+1}=\lim_{s\to\infty}\left(1 -\dfrac{1}{P_n(s)\zeta(s)}\right)^{-\frac{1}{s}}.
 $$
 </div>
 
-其中 $P_n(s)=\prod\limits_{p_i|P_n}(1-p_i^{-s})$, $P_n=p_1p_2\cdots p_n$, $\zeta(s)=\sum\limits_{n=1}^\infty\dfrac{1}{n^s}$ 为 Riemann $\zeta$ 函数.
+其中 $P_n(s)=\prod\limits_{p_i\mid P_n}(1-p_i^{-s})$, $P_n=p_1p_2\cdots p_n$, $\zeta(s)=\sum\limits_{n=1}^\infty\dfrac{1}{n^s}$ 为 Riemann $\zeta$ 函数.
 
 这四个公式也可以用 Euler 乘积公式直接证明, 举例明之.
-$$\displaylines{
+
+$$
+
+\displaylines{
 P_n(s)\zeta(s)=\left(\prod\limits_{p_i|P_n}(1-p_i^{-s})\right)\left(\sum\limits_{n=1}^\infty\dfrac{1}{n^s}\right)\\
 =\left(\prod\limits_{i=1}^n(1-p_i^{-s})\right)\left(\prod\limits_{j=1}^\infty(1-p_j^{-s})^{-1}\right)\\
 =\prod\limits_{j=n+1}^\infty(1-p_j^{-s})^{-1}.
-}$$
+}
+
+$$
 
 而 $s\to\infty$ 时, $\prod\limits_{j=n+1}^\infty(1-p_j^{-s})^{-1}\sim1+p_{n+1}^{-s}$, 故
 
 $$
 p_{n+1}=\lim_{s\to\infty}\left(P_n(s)\zeta(s) -1\right)^{-\frac{1}{s}}.
 $$
-\qed
 
 Lambert 级数是数论常见的一个工具, 其定义为
+
 $$
 F(x)=\sum_{n=1}^\infty a_n\dfrac{x^n}{1-x^n}.
 $$
 
 其中 $a_n$ 是算数函数. 当 $0\le x<1$ 时, 这类级数都绝对收敛. Lambert 级数里有一个几何级数, 将其展开即得
+
 $$
 F(x)=\sum_{n=1}^\infty \left(a_n\sum_{m=1}^\infty x^{mn}\right)=\sum_{k=1}^\infty b_k x^k,
 $$
@@ -913,6 +950,7 @@ $$
 $$
 \sum_{n|k}\mu(n)=\left[\dfrac{1}{k}\right],
 $$
+
 有
 
 $$
