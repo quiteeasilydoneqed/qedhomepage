@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "伯努利数"
-subtitle: "高斯的第一个证明"
+subtitle: ""
 header-img: "img/post-bg-infinity.jpg"
 header-mask: 0.3
 math: true
@@ -64,17 +64,13 @@ $$
 
 $$
 \displaylines{
-z = (e^z - 1) \sum_{k=0}^{\infty} \frac{B_k z^k}{k!} \\
-= \left(\sum_{n=1}^{\infty} \frac{z^{n+1}}{(n+1)!}\right)\left(\sum_{k=0}^{\infty} \frac{B_k z^k}{k!}\right) \\
-= \sum_{n=0}^{\infty} \sum_{k=0}^{n} \frac{B_k z^{n+1}}{(n+1-k)!k!} \\
-= \sum_{n=0}^{\infty} \sum_{k=0}^{n} \frac{(n+1)!B_k}{(n+1-k)!k!} \cdot \frac{z^{n+1}}{(n+1)!} \\
-= \sum_{n=0}^{\infty} \sum_{k=0}^{n} \binom{n+1}{k} B_k \frac{z^{n+1}}{(n+1)!} \\
-= \sum_{n=1}^{\infty} \sum_{k=0}^{n-1} \binom{n}{k} B_k \frac{z^n}{n!},
+z = (e^z - 1) \sum_{k=0}^{\infty} \frac{B_k z^k}{k!} = \left(\sum_{n=1}^{\infty} \frac{z^{n+1}}{(n+1)!}\right)\left(\sum_{k=0}^{\infty} \frac{B_k z^k}{k!}\right) = \sum_{n=0}^{\infty} \sum_{k=0}^{n} \frac{B_k z^{n+1}}{(n+1-k)!k!} \\
+= \sum_{n=0}^{\infty} \sum_{k=0}^{n} \frac{(n+1)!B_k}{(n+1-k)!k!} \cdot \frac{z^{n+1}}{(n+1)!} = \sum_{n=0}^{\infty} \sum_{k=0}^{n} \binom{n+1}{k} B_k \frac{z^{n+1}}{(n+1)!} = \sum_{n=1}^{\infty} \sum_{k=0}^{n-1} \binom{n}{k} B_k \frac{z^n}{n!},
 }
 $$
 
 对比 $ z^n $ 的系数即可得证.
-</div>
+</div><br>
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
@@ -94,7 +90,7 @@ f(z) = \frac{z(e^z + 1)}{2(e^z - 1)} = \frac{z}{e^z - 1} + \frac{1}{2}z = 1 + \s
 $$
 
 容易验证有$ f(z)=f(-z) $, 展开后对比系数即得$ B_{2n-1} = 0 $.
-</div>
+</div><br>
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
@@ -162,7 +158,7 @@ $$
 于是定理全部得证.
 </div>
 
-事实上, 只有$ n=1 $时$ B_n(0)\neq B_n(1) $, 其中$ B_1(0)=-\frac{1}{2} $, $ B_1(1)=\frac{1}{2} $, 有时也有$ B_n^+=B_n(1) $和$ B_n^-=B_n(0) $的记法.
+事实上, 只有 $ n=1 $ 时 $ B_n(0)\neq B_n(1) $, 其中 $ B_1(0)=-\frac{1}{2} $, $ B_1(1)=\frac{1}{2} $, 有时也有 $ B_n^+=B_n(1) $ 和 $ B_n^-=B_n(0) $ 的记法.
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
@@ -221,7 +217,7 @@ $$
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>证明</b>
-考虑$ S_m(n) $的生成函数
+考虑 $ S_m(n) $ 的生成函数
 
 $$
 f_n(z)=\sum_{m=0}^\infty S_m(n)\frac{z^m}{m!}=\sum_{m=0}^\infty \sum_{k=1}^n k^m\frac{z^m}{m!}=\sum_{k=1}^n\sum_{m=0}^\infty\frac{(kz)^m}{m!}=\sum_{k=1}^ne^{kz}=e^{z}\frac{1-e^{nz}}{1-e^z},
@@ -245,7 +241,7 @@ $$
 S_m(n)=\sum_{k=0}^{m} \frac{m!(-1)^k B_k n^{m-k+1}}{k!(m - k + 1)!}=\frac{1}{m+1}\sum_{k=0}^m\binom{m+1}{k}(-1)^kB_k n^{m+1-k},
 $$
 
-又因$ k $取大于$ 1 $的奇数时$ B_k=0 $, 故
+又因 $ k $ 取大于 $ 1 $ 的奇数时 $ B_k=0 $, 故
 
 $$
 S_m(n)=\frac{1}{m+1}\sum_{k=0}^m\binom{m+1}{k}B^+_k n^{m+1-k},
@@ -274,23 +270,24 @@ $$
 \coth z = \frac{1}{z} + \sum_{n=1}^{\infty} \frac{4^{n} B_{2n} z^{2n-1}}{(2n)!},
 $$
 
-做代换$ z\mapsto iz $, 因为$ i\coth iz=\cot z $, 于是得到余切函数的洛朗展开式
+做代换 $ z\mapsto iz $, 因为 $ i\coth iz=\cot z $, 于是得到余切函数的洛朗展开式
 
 $$
 \cot z = \frac{i}{iz} + i\sum_{k=1}^{\infty} \frac{4^kB_{2k}}{(2k)!}(iz)^{2k-1} = \frac{1}{z} + \sum_{k=1}^{\infty} \frac{(-1)^k 4^k B_{2k}}{(2k)!} z^{2k-1},
 $$
 
-由三角恒等变换$ \tan z=\cot z-2\cot2z $得
+由三角恒等变换 $ \tan z=\cot z-2\cot2z $ 得
 
 $$
-\tan(z) = \frac{1}{z} - \frac{2}{2z} + \sum_{k=1}^{\infty} \frac{(-1)^k 4^k B_{2k}}{(2k)!}\left(z^{2k-1} - 2^{2k}z^{2k-1}\right) = \sum_{k=1}^{\infty} \frac{(-1)^{k+1} 4^{k}(4^{k} - 1)B_{2k}}{(2k)!}z^{2k-1},
+\displaylines{\tan(z) = \frac{1}{z} - \frac{2}{2z} + \sum_{k=1}^{\infty} \frac{(-1)^k 4^k B_{2k}}{(2k)!}\left(z^{2k-1} - 2^{2k}z^{2k-1}\right) \\
+= \sum_{k=1}^{\infty} \frac{(-1)^{k+1} 4^{k}(4^{k} - 1)B_{2k}}{(2k)!}z^{2k-1},}
 $$
 
-这就是正切函数的泰勒展开式, 它在圆盘$ |z|<\frac{\pi}{2} $内收敛.
+这就是正切函数的泰勒展开式, 它在圆盘 $ \lvert z \rvert < \frac{\pi}{2} $ 内收敛.
 
 # 欧拉-麦克劳林求和公式
 
-首先定义$ b_1(u)=\left(u-[u]\right))-\frac{1}{2} $, 其中$ [\cdot] $表示取整函数, 显然它是以$ 1 $为周期的周期函数, 并且在$ [0,1] $上的积分值为$ 0 $, 我们按以下递推公式定义函数列$ b_n(u) $:
+首先定义 $ b_1(u)=\left(u-[u]\right))-\frac{1}{2} $, 其中 $ [\cdot] $ 表示取整函数, 显然它是以 $ 1 $ 为周期的周期函数, 并且在 $ [0,1] $ 上的积分值为 $ 0 $, 我们按以下递推公式定义函数列 $ b_n(u) $:
 
 $$
 b_{n+1}(u) - b_{n+1}(0) = \int_{0}^{u} b_n(t)\mathrm{d}t,
@@ -300,26 +297,26 @@ $$
 \int_{0}^{1} b_{n+1}(u) \mathrm{d}u = 0,
 $$
 
-显然这两个条件由$ b_n $完全确定了函数$ b_{n+1} $, 并且这一列函数均以$ 1 $为周期, 并且在$ [0,1] $上的积分值为$ 0 $.
+显然这两个条件由 $ b_n $ 完全确定了函数 $ b_{n+1} $, 并且这一列函数均以 $ 1 $ 为周期, 并且在 $ [0,1] $ 上的积分值为 $ 0 $.
 
-由定义知$ b_1(u)=B_1(u-[u]) $, 由以上两式和归纳法容易证明, 对任意正整数$ n $, 有
+由定义知 $ b_1(u)=B_1(u-[u]) $, 由以上两式和归纳法容易证明, 对任意正整数 $ n $, 有
 
 $$
 b_n(u)=\frac{B_n(u-[u])}{n!},
 $$
 
-因此当$ u $取整数时, 就有$ b_n(u)=\frac{B_n}{n!} $.
+因此当 $ u $ 取整数时, 就有 $ b_n(u)=\frac{B_n}{n!} $.
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理(欧拉-麦克劳林求和公式)</b>
-设$ f(u) $在区间$ [u_1,u_2] $上$ n $阶连续可导, 则有
+设 $ f(u) $ 在区间 $ [u_1,u_2] $ 上 $ n $ 阶连续可导, 则有
 
 $$
 \sum_{u_1 < k \le u_2} f(k) = \int_{u_1}^{u_2} f(u) \mathrm{d}u + \left. \sum_{k=1}^{n} (-1)^k b_k(u) f^{(k-1)}(u) \right|_{u_1}^{u_2} + (-1)^{n+1} \int_{u_1}^{u_2} b_n(u) f^{(n)}(u)\mathrm{d}u.
 $$
 </div>
 
-更常用的情形是$ u_1,u_2 $均为整数, 并令$ n\to\infty $, 公式变为
+更常用的情形是 $ u_1,u_2 $ 均为整数, 并令 $ n\to\infty $, 公式变为
 
 $$
 \sum_{k=a}^{b} f(k)
@@ -334,7 +331,7 @@ $$
 \sum_{k=1}^{n} f(k) = \int_{0}^{n} f(x)  \mathrm{d}x + \frac{f(n) - f(0)}{2} + \sum_{k=1}^{\infty} \frac{B_{2k}}{(2k)!} \left( f^{(2k-1)}(n) - f^{(2k-1)}(0) \right),
 $$
 
-等式右边拆分为与$ n $有关和无关两部分, 得到
+等式右边拆分为与 $ n $ 有关和无关两部分, 得到
 
 $$
 \sum_{k=1}^{n} f(k) =C(a)+\int_{a}^{n} f(x)  \mathrm{d}x + \frac{ f(n)}{2} + \sum_{k=1}^{\infty} \frac{B_{2k}}{(2k)!} f^{(2k-1)}(n),
@@ -346,7 +343,7 @@ $$
 C(a)=\int_0^af(x)\mathrm{d}x-\frac{f(0)}{2} - \sum_{k=1}^{\infty} \frac{B_{2k}}{(2k)!} f^{(2k-1)}(0),
 $$
 
-当$\sum\limits_{k=1}^{\infty} f(k)$收敛时, 令$ a\to\infty $, 则显然有$\sum\limits_{k=1}^{n} f(k)=\lim\limits_{a\to\infty }C(a)$, 若$\sum\limits_{k=1}^{\infty} f(k)$发散, 则令$ C(0) $为其拉马努金和, 记作
+当 $\sum\limits_{k=1}^{\infty} f(k)$ 收敛时, 令 $ a\to\infty $, 则显然有 $\sum\limits_{k=1}^{n} f(k)=\lim\limits_{a\to\infty }C(a)$, 若 $\sum\limits_{k=1}^{\infty} f(k)$ 发散, 则令 $ C(0) $ 为其拉马努金和, 记作
 
 $$
 \sum_{k\ge1}^{\mathfrak{R}}f(k)=\begin{cases}
@@ -379,13 +376,13 @@ $$
 1+\sum_{k\ge1}^{\mathfrak{R}}\frac{1}{1+k}=1+\lim_{n\to\infty}\left(\sum_{k=1}^{n} \frac{1}{k+1}-\int_{0}^{n}  \frac{1}{x+1} \mathrm{d}x\right)=\gamma,
 $$
 
-即调和级数的拉马努金和是欧拉常数.(因$\frac{1}{x}$在$ 0 $处无定义, 所以用$\frac{1}{1+x}$将极点平移掉, 实际上当$f$在$ 0 $处无定义时有另一种拉马努金和, 其计算结果与这里相同.)
+即调和级数的拉马努金和是欧拉常数.(因 $\frac{1}{x}$ 在 $ 0 $ 处无定义, 所以用 $\frac{1}{1+x}$ 将极点平移掉, 实际上当 $f$ 在 $ 0 $ 处无定义时有另一种拉马努金和, 其计算结果与这里相同.)
 
 欧拉常数也是欧拉-麦克劳林求和公式的推论之一.
 
 <div style="border: 3px solid #000; padding: 10px;">
-<b>定理()</b>
-设$ k $是正整数, 当$ x\ge2 $时, 有
+<b>定理</b>
+设 $ k $ 是正整数, 当 $ x\ge2 $ 时, 有
 
 $$
 \sum_{\substack{n \leq x}} \frac{(\ln n)^k}{n} = \frac{1}{k+1} (\ln x)^{k+1} + \gamma_k + O\left( \frac{(\ln x)^k}{x} \right),
@@ -399,7 +396,7 @@ $$
 </div>
 
 <div style="border: 3px solid #000; padding: 10px;">
-<b>证明()</b>
+<b>证明</b>
 由欧拉-麦克劳林求和公式得
 
 $$
@@ -412,7 +409,7 @@ $$
 \int_{1}^{x} \frac{(\ln t)^k}{t}  \mathrm{d}t = \frac{1}{k+1} (\ln x)^{k+1}
 $$
 
-且当$ x\ge2 $时
+且当 $ x\ge2 $ 时
 
 $$
 \int_{x}^{+\infty} (t - [t]) \frac{k(\ln t)^{k-1} - (\ln t)^k}{t^2}  \mathrm{d}t = O\left( \frac{(\ln x)^k}{x} \right),
@@ -421,10 +418,10 @@ $$
 三式合起来即可.
 </div>
 
-欧拉常数可以在某种意义下看做$\gamma=\gamma_0$, 所有的$\gamma_k$统称为斯蒂尔杰斯常数.
+欧拉常数可以在某种意义下看做 $\gamma=\gamma_0$, 所有的 $\gamma_k$ 统称为斯蒂尔杰斯常数.
 
 <div style="border: 3px solid #000; padding: 10px;">
-<b>定理()</b>
+<b>定理</b>
 设$\gamma$是欧拉常数, $ B_k $是伯努利数, 则
 
 $$
@@ -433,7 +430,7 @@ $$
 </div>
 
 <div style="border: 3px solid #000; padding: 10px;">
-<b>证明()</b>
+<b>证明</b>
 由欧拉-麦克劳林求和公式得
 
 $$
@@ -454,15 +451,15 @@ $$
 # 黎曼$\zeta$函数
 
 <div style="border: 3px solid #000; padding: 10px;">
-<b>定义(黎曼$\zeta$函数)</b>
-黎曼$\zeta$函数是定义在右半平面$\mathrm{Re}(s)>1$上的函数
+<b>定义(黎曼 $ \zeta $ 函数)</b>
+黎曼 $ \zeta $ 函数是定义在右半平面 $ \mathrm{Re}(s)>1 $ 上的函数
 
 $$
 \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}.
 $$
 </div>
 
-黎曼$\zeta$函数可以延拓为$\mathbb{C}$上的亚纯函数, 在$s=1$处有唯一的极点, 阶数为$ 1 $, 在$s=1$附近有洛朗展开式
+黎曼 $ \zeta $ 函数可以延拓为 $ \mathbb{C} $ 上的亚纯函数, 在 $ s=1 $ 处有唯一的极点, 阶数为 $  1 $, 在 $ s=1 $ 附近有洛朗展开式
 
 $$
 \zeta(s)=\frac{1}{s-1}+\gamma+\sum_{n=1}^\infty\gamma_n\frac{(s-1)^n}{n!},
@@ -470,11 +467,11 @@ $$
 
 其中系数为斯蒂尔杰斯常数.
 
-与伯努利数相关的是$\zeta$函数在正偶数和负整数处的值, 有:
+与伯努利数相关的是 $ \zeta $ 函数在正偶数和负整数处的值, 有:
 
 <div style="border: 3px solid #000; padding: 10px;">
-<b>定理()</b>
-设$ n $是正整数, 则
+<b>定理</b>
+设 $  n  $ 是正整数, 则
 
 $$
 \zeta(2n) = \sum_{k=1}^{\infty} \frac{1}{k^{2n}} = \frac{(-1)^{n-1}B_{2n} (2\pi)^{2n}}{2(2n)!}.
@@ -482,7 +479,7 @@ $$
 </div>
 
 <div style="border: 3px solid #000; padding: 10px;">
-<b>证明()</b>
+<b>证明</b>
 由傅里叶分析知有无穷乘积
 
 $$
@@ -501,7 +498,7 @@ $$
 \ln\left(\frac{\sin x}{x}\right) = \sum_{k=1}^{\infty} \ln\left(1 - \frac{x^2}{k^2\pi^2}\right),
 $$
 
-两边对$ x $求导
+两边对 $  x  $ 求导
 
 $$
 \frac{x \cos x - \sin x}{x \sin x} = \sum_{k=1}^{\infty} \frac{-2x}{k^2\pi^2 - x^2},
@@ -510,10 +507,11 @@ $$
 整理得
 
 $$
-\cot x - \frac{1}{x} = -2 \sum_{k=1}^{\infty} \frac{x}{k^2\pi^2 - x^2} = -2 \sum_{k=1}^{\infty} \frac{x}{k^2\pi^2} \cdot \frac{1}{1 - \frac{x^2}{k^2\pi^2}}=-2 \sum_{k=1}^{\infty} \frac{x}{k^2\pi^2} \sum_{n=0}^{\infty} \left( \frac{x^2}{k^2\pi^2} \right)^n,
+\displaylines{\cot x - \frac{1}{x} = -2 \sum_{k=1}^{\infty} \frac{x}{k^2\pi^2 - x^2} = -2 \sum_{k=1}^{\infty} \frac{x}{k^2\pi^2} \cdot \frac{1}{1 - \frac{x^2}{k^2\pi^2}}=\\
+-2 \sum_{k=1}^{\infty} \frac{x}{k^2\pi^2} \sum_{n=0}^{\infty} \left( \frac{x^2}{k^2\pi^2} \right)^n,}
 $$
 
-交换求和顺序并由$\zeta$函数定义即得
+交换求和顺序并由 $ \zeta $ 函数定义即得
 
 $$
 \cot x - \frac{1}{x} = -2 \sum_{n=0}^{\infty}  \frac{\zeta(2n+2)}{\pi^{2n+2}} x^{2n+1} = -2 \sum_{n=1}^{\infty}  \frac{\zeta(2n)}{\pi^{2n}} x^{2n-1},
@@ -536,20 +534,20 @@ $$
 $$
 
 定理得证.
-</div>
+</div><br>
 
 <div style="border: 3px solid #000; padding: 10px;">
-<b>定理()</b>
-设$ n $是非负整数, 则
+<b>定理</b>
+设 $  n  $ 是非负整数, 则
 
 $$
 \zeta(-n) = (-1)^n \frac{B_{n+1}}{n+1}.
 $$
 </div>
 
-这说明$\zeta$在负偶数处有零点, 它们称为平凡零点, 黎曼猜想除此之外的零点的实部均为$\frac{1}{2}$.
+这说明 $ \zeta $ 在负偶数处有零点, 它们称为平凡零点, 黎曼猜想除此之外的零点的实部均为 $ \frac{1}{2} $.
 
-进一步定义黎曼-赫尔维茨$\zeta$函数为
+进一步定义黎曼-赫尔维茨 $ \zeta $ 函数为
 
 $$
 \zeta(s, a) = \sum_{n=0}^{\infty} \frac{1}{(n + a)^s}, \quad \mathrm{Re}(s) > 0,\ a > 0,
@@ -561,7 +559,7 @@ $$
 \zeta(s,1)=\zeta(s),
 $$
 
-对于非负整数$ n $, 有
+对于非负整数 $  n  $ , 有
 
 $$
 \zeta(-n, a) = -\frac{B_{n+1}(a)}{n+1}.
@@ -569,19 +567,19 @@ $$
 
 # 哑演算
 
-设$ B $是伯努利数的哑元, 记$ B^n=B_n $, 前者是$ n $次幂, 后者是第$ n $个伯努利数, 由二项式定理得
+设 $  B  $ 是伯努利数的哑元, 记 $  B^n=B_n  $, 前者是 $  n  $ 次幂, 后者是第 $  n  $ 个伯努利数, 由二项式定理得
 
 $$
 (x+B)^n=\sum_{k=0}^{n} \binom{n}{k} B^k x^{n-k},
 $$
 
-由伯努利多项式的伯努利数表示知$(x+B)^n$就代表第$ n $个伯努利多项式, 使用哑元, 伯努利数的生成函数可以表示为$\frac{z}{e^z-1}=e^{Bz}$, 伯努利多项式的生成函数就是$ e^{(x+B)z}=e^{xz}e^B=\frac{ze^{xz}}{e^z-1} $, 代入$ x=1 $, 有
+由伯努利多项式的伯努利数表示知 $ (x+B)^n $ 就代表第 $  n  $ 个伯努利多项式, 使用哑元, 伯努利数的生成函数可以表示为 $ \frac{z}{e^z-1}=e^{Bz} $, 伯努利多项式的生成函数就是 $  e^{(x+B)z}=e^{xz}e^B=\frac{ze^{xz}}{e^z-1} $, 代入 $  x=1 $, 有
 
 $$
 e^{Bz}-e^{(1+B)z}=e^{Bz}(e^z-1)=\frac{z}{e^z-1}(e^z-1)=z,
 $$
 
-左边展开为幂级数后比较系数得$ n=1 $时$(1+B)^n-B^n=1$, $ n>1 $时$(1+B)^n=B^n$, 所以$ B_1(1)-B_1(0)=1 $, $ n>1 $时$ B_n(0)=B_n(1) $, 与之前得到的结论一致. 在二项式展开式中令$ x=1 $, 则有$ n>1 $时,
+左边展开为幂级数后比较系数得 $  n=1  $ 时 $ (1+B)^n-B^n=1 $, $ n>1  $ 时 $ (1+B)^n=B^n$, 所以 $  B_1(1)-B_1(0)=1 $, $ n>1 $ 时 $ B_n(0)=B_n(1) $, 与之前得到的结论一致. 在二项式展开式中令 $ x=1 $, 则有 $ n>1 $ 时,
 
 $$
 (1+B)^n-B^n=\sum_{k=0}^{n} \binom{n}{k} B^k =0,
@@ -595,13 +593,13 @@ $$
 \Delta (n+B)^{k+1}=(n+(1+B))^{k+1}-(n+B)^{k+1},
 $$
 
-使用二项式定理展开后代入$(1+B)^n$和$ B^n $得
+使用二项式定理展开后代入 $ (1+B)^n $ 和 $ B^n $ 得
 
 $$
 \Delta (n+B)^{k+1}=(k+1)n^{k},
 $$
 
-两边对$ n $求和得
+两边对 $ n $ 求和得
 
 $$
 (m+(1+B))^{k+1}-(1+B)^{k+1}=\sum_{n=1}^m\Delta (n+B)^{k+1}=(k+1)\sum_{n=1}^m n^{k}=(k+1)S_k(m),
