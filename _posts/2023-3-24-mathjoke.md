@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "代数基本定理"
-subtitle: "高斯的第一个证明"
+title: "FOOLPROOF：数学民间幽默选录"
+subtitle: ""
 header-img: "img/post-bg-infinity.jpg"
 header-mask: 0.3
 math: true
