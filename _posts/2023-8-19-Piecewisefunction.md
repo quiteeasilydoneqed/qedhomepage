@@ -13,7 +13,7 @@ tags:
 
 $$
 
-\lvert x \rvert=\left\{\begin{matrix}x & x \ge 0; \\-x & x < 0.\end{matrix}\right.
+\lvert x \rvert=\left\{\begin{matrix}x, & x \ge 0; \\-x, & x < 0\end{matrix}\right.
 
 $$
 
@@ -23,7 +23,7 @@ $$
 
 $$
 
-f(x)=\left\{\begin{matrix}x & x \ge 0; \\0 & x < 0.\end{matrix}\right.
+f(x)=\left\{\begin{matrix}x, & x \ge 0; \\0, & x < 0\end{matrix}\right.
 
 $$
 
@@ -31,7 +31,7 @@ $$
 
 $$
 
-x+\lvert x \rvert=\left\{\begin{matrix}2x & x \ge 0;\\0 & x < 0\end{matrix}.\right.
+x+\lvert x \rvert=\left\{\begin{matrix}2x, & x \ge 0;\\0, & x < 0\end{matrix}.\right.
 
 $$
 
@@ -41,7 +41,7 @@ $$
 
 $$
 
-g(x)=\left\{\begin{matrix}0 & x > 0;\\x & x \le 0.\end{matrix}\right.
+g(x)=\left\{\begin{matrix}0, & x > 0;\\x, & x \le 0\end{matrix}\right.
 
 $$
 
@@ -49,7 +49,7 @@ $$
 
 $$
 
-h(x)=\left\{\begin{matrix}x & x \ge a;\\a & x < a.\end{matrix}\right.
+h(x)=\left\{\begin{matrix}x, & x \ge a;\\a, & x < a\end{matrix}\right.
 
 $$
 
@@ -57,7 +57,7 @@ $$
 
 $$
 
-f(x)=\left\{\begin{matrix}x & x \ge 0;\\0 & x < 0.\end{matrix}\right.
+f(x)=\left\{\begin{matrix}x, & x \ge 0;\\0, & x < 0\end{matrix}\right.
 
 $$
 
@@ -67,7 +67,7 @@ $$
 
 $$
 
-m(x)=\left\{\begin{matrix}b & x > b;\\x & a\le x \le b;\\a&x<a.\end{matrix}\right.
+m(x)=\left\{\begin{matrix}b, & x > b;\\x, & a\le x \le b;\\a&x<a\end{matrix}\right.
 
 $$
 
@@ -77,19 +77,19 @@ $$
 
 $$
 
-I_{(-\infty, a]}=\frac{1}{2}(x+a-\lvert x-a \rvert)=\left\{\begin{matrix}a & x > a;\\x & x \le a.\end{matrix}\right.
+I_{(-\infty, a]}=\frac{1}{2}(x+a-\lvert x-a \rvert)=\left\{\begin{matrix}a, & x > a;\\x, & x \le a\end{matrix}\right.
 
 $$
 
 $$
 
-I_{[a, +\infty)}=\frac{1}{2}(x+a+\lvert x-a \rvert)=\left\{\begin{matrix}x & x \ge a;\\a & x < a.\end{matrix}\right.
+I_{[a, +\infty)}=\frac{1}{2}(x+a+\lvert x-a \rvert)=\left\{\begin{matrix}x, & x \ge a;\\a, & x < a\end{matrix}\right.
 
 $$
 
 $$
 
-I_{[a, b]}=\frac{1}{2}(a+b+\lvert x-a \rvert-\lvert x-b \rvert)=\left\{\begin{matrix}b & x > b;\\x & a\le x \le b;\\a&x<a.\end{matrix}\right.
+I_{[a, b]}=\frac{1}{2}(a+b+\lvert x-a \rvert-\lvert x-b \rvert)=\left\{\begin{matrix}b, & x > b;\\x, & a\le x \le b;\\a&x<a\end{matrix}\right.
 
 $$
 
@@ -98,7 +98,7 @@ $$
 
 $$
 
-f(x)=\left\{\begin{matrix}\ln x & x > 1;\\-x+1 & 0\le x\le 1;\\e^x&x<0.\end{matrix}\right.
+f(x)=\left\{\begin{matrix}\ln x, & x > 1;\\-x+1, & 0\le x\le 1;\\e^x&x<0\end{matrix}\right.
 
 $$
 
@@ -122,7 +122,7 @@ $$
 
 $$
 
-D(x)=\left\{\begin{matrix}1 & x\text{为有理数};\\ 0 &x\text{为无理数}.\end{matrix}\right. 
+D(x)=\left\{\begin{matrix}1, & x\text{为有理数};\\ 0, &x\text{为无理数}\end{matrix}\right. 
 
 $$
 
@@ -140,7 +140,7 @@ $$
 
 $$
 
-f(x)=\left\{\begin{matrix}3x+1 & x\text{为奇数};\\ \dfrac{x}{2} &x\text{为偶数}.\end{matrix}\right. 
+f(x)=\left\{\begin{matrix}3x+1, & x\text{为奇数};\\ \dfrac{x}{2}, &x\text{为偶数}\end{matrix}\right. 
 
 $$
 
