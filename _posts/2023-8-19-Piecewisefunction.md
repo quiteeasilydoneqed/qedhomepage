@@ -13,7 +13,7 @@ tags:
 
 $$
 
-\lvert x \rvert=\begin{cases}x & x \ge 0; \\-x & x < 0.\end{cases}
+\lvert x \rvert=\begin{matrix}x & x \ge 0; \\-x & x < 0.\end{matrix}
 
 $$
 
@@ -23,7 +23,7 @@ $$
 
 $$
 
-f(x)=\begin{cases}x & x \ge 0; \\0 & x < 0.\end{cases}
+f(x)=\begin{matrix}x & x \ge 0; \\0 & x < 0.\end{matrix}
 
 $$
 
@@ -31,7 +31,7 @@ $$
 
 $$
 
-x+\lvert x \rvert=\begin{cases}2x & x \ge 0\\0 & x < 0\end{cases}, 
+x+\lvert x \rvert=\begin{matrix}2x & x \ge 0\\0 & x < 0\end{matrix}, 
 
 $$
 
@@ -41,7 +41,7 @@ $$
 
 $$
 
-g(x)=\begin{cases}0 & x > 0;\\x & x \le 0.\end{cases}
+g(x)=\begin{matrix}0 & x > 0;\\x & x \le 0.\end{matrix}
 
 $$
 
@@ -49,7 +49,7 @@ $$
 
 $$
 
-h(x)=\begin{cases}x & x \ge a;\\a & x < a.\end{cases}
+h(x)=\begin{matrix}x & x \ge a;\\a & x < a.\end{matrix}
 
 $$
 
@@ -57,7 +57,7 @@ $$
 
 $$
 
-f(x)=\begin{cases}x & x \ge 0\\0 & x < 0\end{cases}
+f(x)=\begin{matrix}x & x \ge 0\\0 & x < 0\end{matrix}
 
 $$
 
@@ -67,7 +67,7 @@ $$
 
 $$
 
-m(x)=\begin{cases}b & x > b\\x & a\le x \le b\\a&x<a\end{cases}.
+m(x)=\begin{matrix}b & x > b\\x & a\le x \le b\\a&x<a\end{matrix}.
 
 $$
 
@@ -77,19 +77,19 @@ $$
 
 $$
 
-I_{(-\infty, a]}=\frac{1}{2}(x+a-\lvert x-a \rvert)=\begin{cases}a & x > a\\x & x \le a\end{cases}
+I_{(-\infty, a]}=\frac{1}{2}(x+a-\lvert x-a \rvert)=\begin{matrix}a & x > a\\x & x \le a\end{matrix}
 
 $$
 
 $$
 
-I_{[a, +\infty)}=\frac{1}{2}(x+a+\lvert x-a \rvert)=\begin{cases}x & x \ge a\\a & x < a\end{cases}
+I_{[a, +\infty)}=\frac{1}{2}(x+a+\lvert x-a \rvert)=\begin{matrix}x & x \ge a\\a & x < a\end{matrix}
 
 $$
 
 $$
 
-I_{[a, b]}=\frac{1}{2}(a+b+\lvert x-a \rvert-\lvert x-b \rvert)=\begin{cases}b & x > b\\x & a\le x \le b\\a&x<a\end{cases}
+I_{[a, b]}=\frac{1}{2}(a+b+\lvert x-a \rvert-\lvert x-b \rvert)=\begin{matrix}b & x > b\\x & a\le x \le b\\a&x<a\end{matrix}
 
 $$
 
@@ -98,7 +98,7 @@ $$
 
 $$
 
-f(x)=\begin{cases}\ln x & x > 1;\\-x+1 & 0\le x\le 1;\\e^x&x<0.\end{cases}
+f(x)=\begin{matrix}\ln x & x > 1;\\-x+1 & 0\le x\le 1;\\e^x&x<0.\end{matrix}
 
 $$
 
@@ -122,7 +122,7 @@ $$
 
 $$
 
-D(x)=\begin{cases}1 & x\text{为有理数};\\ 0 &x\text{为无理数}.\end{cases} 
+D(x)=\begin{matrix}1 & x\text{为有理数};\\ 0 &x\text{为无理数}.\end{matrix} 
 
 $$
 
@@ -140,7 +140,7 @@ $$
 
 $$
 
-f(x)=\begin{cases}3x+1 & x\text{为奇数};\\ \dfrac{x}{2} &x\text{为偶数}.\end{cases} 
+f(x)=\begin{matrix}3x+1 & x\text{为奇数};\\ \dfrac{x}{2} &x\text{为偶数}.\end{matrix} 
 
 $$
 
