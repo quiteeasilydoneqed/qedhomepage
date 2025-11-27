@@ -20,7 +20,6 @@ tags:
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>例</b>
-    
 设 $\mathcal{H}$ 是一个可分希尔伯特空间, 对于集合 $X$ 中的任何元素 $x$, 都有 $\mathcal{H}_x=\mathcal{H}$, 它显然是一个可测希尔伯特空间场, 称为 **常值希尔伯特空间场** 或简称为 **常值场**.
 
 </div><br>
