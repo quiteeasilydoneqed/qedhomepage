@@ -26,7 +26,7 @@ tags:
 > [http://www.math.utah.edu/~cherk/mathjokes.html](http://www.math.utah.edu/~cherk/mathjokes.html)；
 > [http://www.workjoke.com/projoke22.htm](http://www.workjoke.com/projoke22.htm)；
 > [http://users.ox.ac.uk/~invar/links/jokes.html](http://users.ox.ac.uk/~invar/links/jokes.html)；
-》[http://outreach.math.wisc.edu/local/miscellany/MathJokes.htm](http://outreach.math.wisc.edu/local/miscellany/MathJokes.htm)。
+> [http://outreach.math.wisc.edu/local/miscellany/MathJokes.htm](http://outreach.math.wisc.edu/local/miscellany/MathJokes.htm)。
 >
 > 我们在这里也认为读者对相关数学知识有一定的了解，只提供在英语语言理解方面的解释，而不提供数学知识上的解释。
 
@@ -37,39 +37,39 @@ tags:
 许多英文的数学笑话都是基于标准数学概念和术语的文字游戏。事实上，很多笑话都涉及到食物，这可能反映了一些数学概念难以消化，或者难以下咽的事实：
 
 Q: 什么是紫色且交换的？
-<br>A： 阿贝尔葡萄（An abelian grape）。
+<br>A：阿贝尔葡萄（An abelian grape）。
 > 注：葡萄（grape）和群（group）写法与读音相似。
 
 下面是这类笑话的变体：
 
 Q: 什么是紫色的，交换的，且被有限数目的人崇拜？
- 有限崇敬（finite-venerate）阿贝尔葡萄。
+<br>A：有限崇敬（finite-venerate）阿贝尔葡萄。
 > 注：崇敬（venerate）和生成（generate）写法相似。
 
 Q: 什么是淡紫色且交换的？
- 未熟阿贝尔葡萄（An abelian semigrape）。
+<br>A：未熟阿贝尔葡萄（An abelian semigrape）。
 
 Q: 什么是紫色且其所有后代都被送进了福利机构？
- 单葡萄：它没有正常的（normal）子葡萄。
+<br>A：单葡萄：它没有正常的（normal）子葡萄。
 > 注：normal 既能表示正常又能表示正规的。
 
 Q: 什么是紫色的，圆形的，并且在圣诞节得不到太多？
- 有限呈现（presented）葡萄。
+<br>A：有限呈现（presented）葡萄。
 > 注：present 既能表示礼物又能表示呈现。
 
 Q: 关于加法封闭，满足结合律，满足分配律，且受到诅咒的阿贝尔群是什么？
- 尼伯龙之环（The Ring of the Nibelung）。
+<br>A：尼伯龙之环（The Ring of the Nibelung）。
 > 注：The Ring of the Nibelung 是北欧神话中的内容。
 
 Q: 什么是有营养且交换的？
- 阿贝尔汤（Abel soup）。
+<br>A：阿贝尔汤（Abel soup）。
 > 注：汤（soup）和群（group）读音和写法相似。
 
 Q: 什么是热的，令人发胖的，且作用在多边形上的？
- 二面体汤（Dihedral soup）。
+<br>A：二面体汤（Dihedral soup）。
 
 Q: 什么是酸的，黄色的，且等价于选择公理的？
- 佐恩柠檬（Zorn's Lemon）。
+<br>A：佐恩柠檬（Zorn's Lemon）。
 > 注：柠檬（lemon）和引理（lemma）写法与读音类似。
 
 数学中有成千上万的引理，所以原则上，同样的文字游戏适用于任何一个引理，但这个基于佐恩引理的笑话仍然很受欢迎。为什么会这样呢? 当我们注意到选择公理可以用来证明集合论中的许多反直觉结果时，原因就变得更清楚了，例如 Banach-Tarski 悖论。这也导致一些数学家反对选择公理。然而，因为它非常有用（而且因为它乍一看似乎无伤大雅），许多数学家已经接受了它，但仍保有强烈的保留意见。他们觉得它令人厌恶，或者不可口，或者如果你愿意这么说的话，像一种尝起来很涩的水果。
@@ -77,25 +77,25 @@ Q: 什么是酸的，黄色的，且等价于选择公理的？
 下面还有一个例子，更能说明问题：
 
 Q: 什么是棕色的，毛茸茸的，且等价于选择公理?
- 佐恩旅鼠（Zorn's lemming）。
+<br>A：佐恩旅鼠（Zorn's lemming）。
 > 注：旅鼠（lemming）和引理（lemma）写法与读音相似。
 
 众所周知，旅鼠会盲目地跟随彼此进入大海，然后被淹死。这个版本的含义似乎是，依赖于选择公理的数学家都是盲目跟随彼此的旅鼠，走向智力的死亡。
 
 Q: 什么是绿色的，且同胚于单位开区间?
- 真正的酸橙（The real lime）。
+<br>A：真正的酸橙（The real lime）。
 > 注：实直线（即实数集）（real line）和真正的酸橙（real lime）写法和读音相似。
 
 Q: 什么是黄色的，线性的，赋范的，且完备的？
- 香蕉赫（bananach）空间。
+<br>A：香蕉赫（bananach）空间。
 > 注：bananach 是由巴拿赫（banach）和香蕉（banana）合成造出来的词。
 
 Q: 你管小本征羊（young eigensheep）叫什么？
- 叫羊羔，废话！（lamb， duh!）
+<br>A：叫羊羔，废话！（lamb， duh!）
 > 注：lamb， duh 与 lambda 写法和读音相似。
 
 Q: 围绕西欧的围道积分的值是多少？
- $0$，因为所有的波兰人都在东欧。
+<br>A：$0$，因为所有的波兰人都在东欧。
 补充： 实际上在西欧有一些波兰人，但他们是可去的。
 > 注：极点（pole）和波兰人（Pole）是同一个词。
 
@@ -111,30 +111,30 @@ Q: 围绕西欧的围道积分的值是多少？
 
 
 Q: 为什么数学家给他们的狗起名叫“柯西”？
- 因为它在每个杆子（pole）下面留下残渣（residue）。
+<br>A：因为它在每个杆子（pole）下面留下残渣（residue）。
 > 注：residue 既能表示残渣又能表示留数，pole 既能表示杆子又能表示极点。
 
 Q: 拓扑学家是什么？
- 分不清甜甜圈和咖啡杯的人。
+<br>A：分不清甜甜圈和咖啡杯的人。
 
 Q: 为什么牛顿没有发现群论？
- 因为他不是阿贝尔（wasn't Abel）。
+<br>A：因为他不是阿贝尔（wasn't Abel）。
 > 注：不能（wasn't able）和不是阿贝尔（wasn't Abel）写法相似。
 
 Q: 如果你将大象和香蕉杂交（cross），你会得到什么？
- $\left|\text{大象}\right|\cdot\left|\text{香蕉}\right|\cdot\sin(\theta)$。
+<br>A：$\left|\text{大象}\right|\cdot\left|\text{香蕉}\right|\cdot\sin(\theta)$。
 > 注：cross 这个词有杂交和叉乘两个不同的意思。
 
 Q: 如果你将蚊子和登山者杂交（cross），你会得到什么？
- 不能，因为向量（vector）不能和标量做叉乘。
+<br>A：不能，因为向量（vector）不能和标量做叉乘。
 > 注：cross 意思如上，vector 既能表示向量又能表示病毒传播媒介。
 
 Q: 如果你将登山者和山羊杂交（cross），你会得到什么？
- 不能，因为不能给标量与标量做叉乘。
+<br>A：不能，因为不能给标量与标量做叉乘。
 > 注：关于杂交谜语的更多讨论，请参见 [AH]。
 
 Q: 什么是紧凑型（compact）城市？
- 可以由有限多个近视的警察守卫的城市。
+<br>A：可以由有限多个近视的警察守卫的城市。
 > 注：compact 既能表示紧凑的，也能表示紧致的。
 
 > 注：一些数学家非常关心准确性，以至于他们不得不自己纠正笑话中的数学。以下关于这个笑话的电子邮件评论出现在 [https://jcdverha.home.xs4all.nl/scijokes/1\_6.html](https://jcdverha.home.xs4all.nl/scijokes/1_6.html) ：来自：[http://wheierman#NoSpam.corunduminium.com](http://wheierman#NoSpam.corunduminium.com)（Will Heierman）：
@@ -156,94 +156,94 @@ Q: 什么是紧凑型（compact）城市？
 > “我可能会稍微修改一下：一个紧凑的城市是一个可以由有限数量的警察守卫的城市，无论警察多么近视。”
 
 Q: 什么是困境（dilemma）？
- 能导出两种结果的引理。
+<br>A：能导出两种结果的引理。
 > 注：dilemma 既能表示困境，也可以拆分为表示双的前缀 di- 和引理 lemma。
 
 Q: 什么是 pieces of seven! pieces of seven!
- 鹦鹉学舌（A parroty error）。
+<br>A：鹦鹉学舌（A parroty error）。
 > 注：鹦鹉学舌（parroty）和奇偶校验（parity），海盗（parity）写法和读音相似，而海盗和鹦鹉常常联系在一起，“pieces of eight”是指古西班牙的一种银币，价值为八个里亚尔。这句话是《金银岛》中西尔弗的宠物鹦鹉“弗林特船长”的口头禅，所以说问句中的 pieces of seven 是一个鹦鹉学舌的错误，同时也是一个奇偶校验错误。
 >
 > 另外，也有人认为这个笑话有一定的数学错误，应该将 pieces of seven! 改成 pieces of nine! 因为 $7$ 和 $8$ 的二进制表示中的 $1$ 的个数都是奇数，而 $9$ 的二进制表示中 $1$ 的个数是偶数。
 
 Q: 北极（polar）熊是什么？
- 坐标变化后的矩形熊。
+<br>A：坐标变化后的矩形熊。
 > 注：polar 既能表示极点的，也能表示极坐标的。
 
 Q: 为什么不能在 $\mathbb{Z}/6\mathbb{Z}$ 上种小麦？
- 因为它不是田地（field）。
+<br>A：因为它不是田地（field）。
 > 注：field 既能表示田地又能表示域。
 
 Q: 什么是大的，灰色的，可以证明实数集的不可数性。
- 康托对角线大象（Cantor's diagonal elephant）。
+<br>A：康托对角线大象（Cantor's diagonal elephant）。
 > 注：论证（argument）和（elephant）读音相似。
 > >
 > 注：有关大象循环的其他笑话的意义的讨论，请参阅 [AD]。
 
 
 Q: 什么是灰色的，巨大的，且具有整数系数？
- 一个大象方程（An elephantine equation）。
+<br>A：一个大象方程（An elephantine equation）。
 > 注：与丢番图方程（Diophantine equation）写法读音相似。
 
 Q: 什么东西很古老，被农民使用，并且遵守算术基本定理？
- 古老的拖拉机化域（antique tractorization domain）。
+<br>A：古老的拖拉机化域（antique tractorization domain）。
 > 注：与分式域（fractional domain）写法读音相似。
 
 Q: 什么是致幻的，并且存在于所有顺序可被 $p_k$ 整除的群中？
- 裸盖菇素 p-子群（psilocybin p-subgroup）。
+<br>A：裸盖菇素 p-子群（psilocybin p-subgroup）。
 > 注：裸盖菇素（psilocybin）与 p-子群（p-subgroup）写法读音相似。
 
 Q: 加拿大人经常用什么来帮助解决某些微分方程？
- 长曲棍球变换（The Lacross transform）。
+<br>A：长曲棍球变换（The Lacross transform）。
 > 注：与拉普拉斯变换（Laplace transform）写法读音相似。
 
 Q: 什么是清晰的，被时髦精明的工程师用来求解其他微分方程的？
- 泡泡水变换（Perrier transform）。
+<br>A：泡泡水变换（Perrier transform）。
 > 注：与傅里叶变换（Fourier transform）写法读音相似。
 
 Q: 谁知道有关矢量分析的所有知识？
- 德尔菲神谕（The Oracle of $\nabla \phi$）！
+<br>A：德尔菲神谕（The Oracle of $\nabla \phi$）！
 > 注：德尔菲（delphi）拆开即 $\nabla \phi$，表示 del 算子和变量 phi，即 $\phi$ 的散度。
 
 Q: 为什么美国的鱼可以不用护照进入加拿大海域？
- 这是水生互惠法则（the Law of Aquatic reciprocity）允许的！
+<br>A：这是水生互惠法则（the Law of Aquatic reciprocity）允许的！
 > 注：与二次互反律（Law of Quadratic Reciprocity）写法与读音相似。
 
 Q: 为什么拓扑学家特别容易患疟疾？
- 这种病来自采采蝇（the Tietze fly）！！
+<br>A：这种病来自采采蝇（the Tietze fly）！！
 > 注：这个笑话有一个流行病学的错误，应该更正为：“为什么拓扑学家特别容易患昏睡病？”因为昏睡病才是由采采蝇传播的，而不是疟疾。
 
 > 注：Tietze 扩张定理的 Tietze 和采采蝇（Tsetes fly）写法和读音相似。
 
 Q: 为什么麦克劳林级数部分和和原函数拟合得这么好？
- 因为它们是“泰勒（Taylor）”制作的。
+<br>A：因为它们是“泰勒（Taylor）”制作的。
 > 注：泰勒（Taylor）和裁缝（tailor）写法和读音相似。
 
 Q: 什么东西局部地像戒指并且很邪恶？
- 恶毒的计划（scheme）。
+<br>A：恶毒的计划（scheme）。
 > 注：scheme 既能表示计划又能表示概形。
 
 Q: 什么是证明（a proof）？
- $0.5\%$ 的酒精。
+<br>A：$0.5\%$ 的酒精。
 > 注：proof 既能表示证明，又能表示酒精计量单位标准酒度，一个标准酒度（a proof）等于 $0.5\%$ 的酒精体积百分比。
 
 Q: 你能证明拉格朗日的身份（Identity）吗？
- 你在开玩笑吗？证明一个已经死去 $150$ 多年的人的身份真的很难！
+<br>A：你在开玩笑吗？证明一个已经死去 $150$ 多年的人的身份真的很难！
 > 注：Identity 既能表示身份又能表示恒等式。
 
 Q: 什么有黑白键而且能充满整个空间？
- 钢琴（piano）曲线。
+<br>A：钢琴（piano）曲线。
 > 注：钢琴（piano）和皮亚诺（Peano）写法和读音相似。
 
 Q: 对电话公司来说，什么是礼貌和有效的？
-<br>A： 恭敬的运营商（A deferential operator.）。
+<br>A：恭敬的运营商（A deferential operator.）。
 > 注：恭敬的（deferential）和微分（differential）写法和读音相似，operator 既能表示运营商又能表示算子。
 
 Q: 解析数论家在溺水时会说什么？
-<br>A： Log-log， log-log， log-log...
+<br>A：Log-log， log-log， log-log...
 > 注：log 既能表示对数，又能表示拟声词，即溺水时的声音。
 
 Q: 拓扑学家称处女是怎么样的？
-<br>A： 单连通的（Simply connected）。
+<br>A：单连通的（Simply connected）。
 > 注：Simply connected 既能表示没有复杂的经历，也能表示单连通的。
 > 
 > 注：这里，再次表明编笑话的人缺乏对数学或解剖学的理解。
@@ -252,54 +252,54 @@ Q: 拓扑学家称处女是怎么样的？
 一些笑话是经典俗语的改编。“换一个灯泡需要多少个 $xxxx$？”这类问题有许多答案 [D2]，包括以下内容：
 
 Q: 换一个灯泡需要多少个拓扑学家？
-<br>A： 只要一个，但是你要甜甜圈干什么？
+<br>A：只要一个，但是你要甜甜圈干什么？
 
 Q: 换一个灯泡需要多少个数论学家？
-<br>A： 不知道，但推测可能是一个优雅的素数。
+<br>A：不知道，但推测可能是一个优雅的素数。
 
 Q: 拧一个灯泡需要多少几何学？
-<br>A： 做不到，因为你不能使用直尺和圆规做这件事。
+<br>A：做不到，因为你不能使用直尺和圆规做这件事。
 
 Q: 拧一个灯泡需要多少分析学家？
-<br>A： 三个，一个证明存在性，一个证明唯一性，一个推导拧灯泡的非构造性算法。
+<br>A：三个，一个证明存在性，一个证明唯一性，一个推导拧灯泡的非构造性算法。
 
 Q: 换一个灯泡需要多少个布尔巴基学派的数学家？
-<br>A： 更换灯泡是有关电气系统维护和修理的更一般定理的特例。要确定所需人员数量的上限和下限，我们必须确定引理 $2.1$（人员可用性）和推论 $2.3.55$（人员动机）的充分条件是否适用。当且仅当满足这些条件时，我们通过应用第 $3.1123$ 节中的定理推导出结果。当然，由此产生的上界是在抽象测量空间上弱\*拓扑中的结果。
+<br>A：更换灯泡是有关电气系统维护和修理的更一般定理的特例。要确定所需人员数量的上限和下限，我们必须确定引理 $2.1$（人员可用性）和推论 $2.3.55$（人员动机）的充分条件是否适用。当且仅当满足这些条件时，我们通过应用第 $3.1123$ 节中的定理推导出结果。当然，由此产生的上界是在抽象测量空间上弱\*拓扑中的结果。
 
 Q: 拧一个灯泡需要多少数学家？
-<br>A： $0.999999...$
+<br>A：$0.999999...$
 
 除了取笑初学数学的学生难以掌握等式 $0.9999\cdots=1$，这个笑话还表明数学本质上是一种孤独的努力，因为它只需要一个数学家就可以完成。这可以与该问题的许多其他标准答案形成对比，这些答案表明通常需要一群人。事实上，从下面的文本中可以看出，数学家们聪明到可以想象出一个会自己变化的灯泡！
 
 Q: 换一个灯泡需要多少个灯泡？
-<br>A： 一个，如果它知道自己的哥德尔数的话。
+<br>A：一个，如果它知道自己的哥德尔数的话。
 
 这个笑话还表达了对数学本身可能不一致（甚至可能导致悖论）的恐惧，因为哥德尔使用哥德尔数证明了他的两个著名的不完备性定理，这两个定理动摇了数学的基础。在以下对传统笑话的模仿中，同样的焦虑也浮出水面：“鸡为什么要过马路？为了到达另一边（To get to the other side）。”
 > 注：the other side 可以有两种解释，一种是马路的对面，另一种是死亡的彼岸。
 
 Q: 鸡为什么要过马路？
-<br>A： 哥德尔：无法证明鸡是否过了马路。
+<br>A：哥德尔：无法证明鸡是否过了马路。
 
 其他著名数学家对这个问题提供的一些答案包括：
 
 Q: 鸡为什么要过马路？
-<br>A： 埃尔德什：鸽巢原理（chicken-hole principle）迫使它过去。
+<br>A：埃尔德什：鸽巢原理（chicken-hole principle）迫使它过去。
 
 Q: 鸡为什么要过马路？
-<br>A： 黎曼：答案在狄利赫雷的讲义里。
+<br>A：黎曼：答案在狄利赫雷的讲义里。
 
 Q: 鸡为什么要过马路？
-<br>A： 费马：这一边的空间太小。
+<br>A：费马：这一边的空间太小。
 
 一位优秀的数学家总是为未经证实的猜想寻找可能的反例。这是小鸡过街笑话的一个有趣变体，表明“另一边”的概念并不总是像看起来那么简单：
 
 Q: 鸡为什么要穿过莫比乌斯带？
-<br>A： 为了到达另一，呃...
+<br>A：为了到达另一，呃...
 
 如果你不能证明这个定理，证明一个不同的。
 
 Q: 鸡为什么要穿过莫比乌斯带？
-<br>A： 为了到达同一边。
+<br>A：为了到达同一边。
 
 尽管双关语和一句话笑话出现在口头上，但现代民间传说可以通过复印机、电子邮件和互联网传播，通常以列表的形式 [DP]。这种形式的一个例子是下面的“不做作业的十大借口”：
 
