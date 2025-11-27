@@ -534,7 +534,7 @@ $\aleph_0$ 瓶啤酒，
 心不在焉的教授（数学家）的刻板印象可能包含一个事实。即解决数学问题需要的这样的专注程度，他不得不暂时把其他几乎所有事情都放在一边，将一个人所有的精神能量都投入到解决问题中。
 
 值得一提的是，数学民间幽默的语料库并不是封闭的，而且还在不断增加，经常反映新趋势和时事热点。女权主义可能对以下传统笑话负有部分责任，这些笑话批评女性无法理解高等数学的刻板印象（并说明了对傲慢的数学家的刻板印象）
-> 注：有趣的是，与传统的金发女郎笑话将金发女郎描述为愚蠢的人不同，在这个笑话中，金发女郎比数学家更聪明。有关金发女郎笑话循环的更多信息，请参阅 [DP] 及其中的参考资料。
+> 注：有趣的是，与传统的金发女郎笑话将金发女郎描述为愚蠢的人不同，在这个笑话中，金发女郎比数学家更聪明。有关金发女郎笑话的更多信息，请参阅 [DP] 及其中的参考资料。
 
 两个数学家在酒吧里。第一个人对第二个说，一般人对于基础数学知之甚少。第二个人不同意，并认为大多数人可以应付合理数量的数学。在第一个数学家去洗手间时，第二个数学家趁他不在叫来了女服务员。他告诉她，几分钟后，他的朋友回来后，他会把她叫过来并问她一个问题。她所要做的就是回答“三分之一 $x$ 的立方（one third $x$ cubed）”。她重复道：“one thir–dex cue？” 他重复：“三分之一 $x$ 的立方”。她问道：“三分之一 $x$ 的立方？” “是的，没错，” 他说。服务员同意了，然后喃喃自语，“三分之一 $x$ 的立方...”。第一个数学家回来后，第二个数学家提出打赌来证明他的观点，即大多数人确实对基础数学有所了解。他说他会向金发女服务员问积分问题，第一个人笑着同意了。第二个人叫来女服务员，问：“$x$ 平方的积分是多少？” 女服务员说“三分之一 $x$ 的立方”并准备离开，这时她突然回过头说，“再加上一个常数！”
 
@@ -574,11 +574,19 @@ $\aleph_0$ 瓶啤酒，
 ## 参考文献
 
 [AD] R. ABRAHAMS and A. DUNDES， On elephantasy and elephanticide， The Psychoanalytic Review 56 (1969)， 225–241.
+
 [AH] R. D. ABRAHAMS and J. C. HICKERSON， Cross-fertilization riddles， Western Folklore 23 (1964)， 253–257.
+
 [B] J. BRUNVAND， A classification for shaggy dog stories， Journal of American Folkore 76 (1963)， 42–68.
+
 [D1] A. DUNDES ed.， International Folkloristics: Classic Contributions by the Founders of Folklore， Rowman and Lit tlefield Publishers， Lanham， 1999.
+
 [D2] ____， Many hands make light work or caught in the act of screwing in lightbulbs， Western Folklore 40 (1981)， 261–266
+
 [DP] A. DUNDES and C. PAGTER， Why Don't Sheep Shrink When it Rains?， Syracuse University Press， Syracuse， 2000.
+
 [G] C. GILKEY， The physicist， the mathematician and the engineer: Scientists and the professional slur， Western Folklore 49 (1990)， 215–220.
+
 [J] B. JACKSON， The greatest mathematician in the world: Norbert Wiener stories， Western Folklore 31 (1972)， 1–22.
+
 [K] S. KRANTZ， Mathematical anecdotes， The Mathematical Intelligencer 12 (4) (1990)， 32–38.
