@@ -31,7 +31,7 @@ $$
 
 $$
 
-x+\lvert x \rvert=\left\{\begin{matrix}2x, & x \ge 0;\\0, & x < 0\end{matrix}.\right.
+x+\lvert x \rvert=\left\{\begin{matrix}2x, & x \ge 0;\\0, & x < 0\end{matrix}\right.
 
 $$
 
