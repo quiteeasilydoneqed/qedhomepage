@@ -63,11 +63,14 @@ $$
 展开生成函数的分母为幂级数,
 
 $$
-\displaylines{
-z = (e^z - 1) \sum_{k=0}^{\infty} \frac{B_k z^k}{k!} = \left(\sum_{n=1}^{\infty} \frac{z^{n+1}}{(n+1)!}\right)\left(\sum_{k=0}^{\infty} \frac{B_k z^k}{k!}\right) \\
-= \sum_{n=0}^{\infty} \sum_{k=0}^{n} \frac{B_k z^{n+1}}{(n+1-k)!k!} = \sum_{n=0}^{\infty} \sum_{k=0}^{n} \frac{(n+1)!B_k}{(n+1-k)!k!} \cdot \frac{z^{n+1}}{(n+1)!} \\
-= \sum_{n=0}^{\infty} \sum_{k=0}^{n} \binom{n+1}{k} B_k \frac{z^{n+1}}{(n+1)!} = \sum_{n=1}^{\infty} \sum_{k=0}^{n-1} \binom{n}{k} B_k \frac{z^n}{n!},
-}
+\begin{align*}
+    z &= (e^z - 1) \sum_{k=0}^{\infty} \frac{B_k z^k}{k!} \\
+    &= \left(\sum_{n=1}^{\infty} \frac{z^{n+1}}{(n+1)!}\right)\left(\sum_{k=0}^{\infty} \frac{B_k z^k}{k!}\right) \\
+    &= \sum_{n=0}^{\infty} \sum_{k=0}^{n} \frac{B_k z^{n+1}}{(n+1-k)!k!} \\
+    &= \sum_{n=0}^{\infty} \sum_{k=0}^{n} \frac{(n+1)!B_k}{(n+1-k)!k!} \cdot \frac{z^{n+1}}{(n+1)!} \\
+    &= \sum_{n=0}^{\infty} \sum_{k=0}^{n} \binom{n+1}{k} B_k \frac{z^{n+1}}{(n+1)!} \\
+    &= \sum_{n=1}^{\infty} \sum_{k=0}^{n-1} \binom{n}{k} B_k \frac{z^n}{n!},
+\end{align*}
 $$
 
 对比 $ z^n $ 的系数即可得证.
