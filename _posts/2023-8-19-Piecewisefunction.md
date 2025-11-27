@@ -31,7 +31,7 @@ $$
 
 $$
 
-x+\lvert x \rvert=\left\{\begin{matrix}2x & x \ge 0\\0 & x < 0\end{matrix}\right., 
+x+\lvert x \rvert=\left\{\begin{matrix}2x & x \ge 0;\\0 & x < 0\end{matrix}.\right.
 
 $$
 
@@ -57,39 +57,39 @@ $$
 
 $$
 
-f(x)=\left\{\begin{matrix}x & x \ge 0\\0 & x < 0\end{matrix}\right.
+f(x)=\left\{\begin{matrix}x & x \ge 0;\\0 & x < 0.\end{matrix}\right.
 
 $$
 
-向右平移 $a$ 个单位, 再向上平移 $a$ 个单位, 所以的不分段形式就是 $h(x)=\frac{1}{2}(x-a+\lvert x-a \rvert)+a$, 整理即得 $h(x)=\frac{1}{2}(x+a+\lvert x-a\rvert).$
+向右平移 $a$ 个单位, 再向上平移 $a$ 个单位, 所以不分段形式就是 $h(x)=\frac{1}{2}(x-a+\lvert x-a \rvert)+a$, 整理即得 $h(x)=\frac{1}{2}(x+a+\lvert x-a\rvert).$
 
 再考虑一个三段的函数,
 
 $$
 
-m(x)=\left\{\begin{matrix}b & x > b\\x & a\le x \le b\\a&x<a\end{matrix}\right..
+m(x)=\left\{\begin{matrix}b & x > b;\\x & a\le x \le b;\\a&x<a.\end{matrix}\right.
 
 $$
 
-显然, 只使用一个绝对值是不够的, 我们需要两个绝对值来表达, $m(x)=\frac{1}{2}(a+b+\lvert x-a \rvert-\lvert x-b \rvert)$.
+只使用一个绝对值是不够的, 我们需要两个绝对值, $m(x)=\frac{1}{2}(a+b+\lvert x-a \rvert-\lvert x-b \rvert)$.
 
 为了表示更复杂的分段函数, 我们先引入以下记号.
 
 $$
 
-I_{(-\infty, a]}=\frac{1}{2}(x+a-\lvert x-a \rvert)=\left\{\begin{matrix}a & x > a\\x & x \le a\end{matrix}\right.
+I_{(-\infty, a]}=\frac{1}{2}(x+a-\lvert x-a \rvert)=\left\{\begin{matrix}a & x > a;\\x & x \le a.\end{matrix}\right.
 
 $$
 
 $$
 
-I_{[a, +\infty)}=\frac{1}{2}(x+a+\lvert x-a \rvert)=\left\{\begin{matrix}x & x \ge a\\a & x < a\end{matrix}\right.
+I_{[a, +\infty)}=\frac{1}{2}(x+a+\lvert x-a \rvert)=\left\{\begin{matrix}x & x \ge a;\\a & x < a.\end{matrix}\right.
 
 $$
 
 $$
 
-I_{[a, b]}=\frac{1}{2}(a+b+\lvert x-a \rvert-\lvert x-b \rvert)=\left\{\begin{matrix}b & x > b\\x & a\le x \le b\\a&x<a\end{matrix}\right.
+I_{[a, b]}=\frac{1}{2}(a+b+\lvert x-a \rvert-\lvert x-b \rvert)=\left\{\begin{matrix}b & x > b;\\x & a\le x \le b;\\a&x<a.\end{matrix}\right.
 
 $$
 
@@ -130,7 +130,7 @@ $$
 
 $$
 
-D(x)=\lim_{k\to\infty}\lim_{j\to\infty}\left((\cos k!\pi x)^{2j}\right)
+D(x)=\lim_{k\to\infty}\lim_{j\to\infty}\left((\cos k!\pi x)^{2j}\right),
 
 $$
 
