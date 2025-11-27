@@ -41,7 +41,7 @@ $[x]$为取整函数或高斯函数, 即小于等于$x$的最大整数.
 
 # 素数通项公式
 
-## 使用常数生成素数
+### 使用常数生成素数
 
 我们需要Bertrand's postulate, 也叫Bertrand–Chebyshev定理.
 
@@ -111,7 +111,7 @@ $$
 则数列$\{f_n\}$可由递推公式
 
 $$
-\displaylines{f_{n+1}=[f_n](f_n-[f_n]+1)},
+\displaylines{f_{n+1}=[f_n](f_n-[f_n]+1)}
 $$
 
 生成.
@@ -232,7 +232,7 @@ $$
 这类公式有一个明显的缺陷, 当我们计算$p_n$时, 需要提前计算一个包含了素数信息的常数值, 而计算这个常数的精确值又需要所有素数的值, 所以这类公式实际上是无法使用的.
 
 
-## 利用$\pi(n)$或$\chi(n)$
+### 利用$\pi(n)$或$\chi(n)$
 
 这类公式使用素数的各种性质来构造函数, 其中有两个重点, 一是构造出 $\pi(n)$ 或 $\chi(n)$, 二是从 $\pi(n)$ 构造 $p_n$, 使用不同的构造方法, 就能得到不同的通项公式. 显然, 当我们已经构造出 $\chi(n)$ 后, 就可以直接写出 $\pi(n)$, 即
 
@@ -332,7 +332,7 @@ $$
 
 $$
 A_n(a)=\begin{cases}
-1, & a<n\\
+1, & a<n;\\
 0, &a\ge n
 \end{cases}
 $$
@@ -341,9 +341,9 @@ Jones 给出了另一种构造 [4]， 他定义
 
 $$
 a\ominus b=\begin{cases}
-0, & a<b\\
+0, & a<b;\\
 a-b, &a\ge b
-\end{cases},
+\end{cases}
 $$
 
 即 $a\ominus b=\dfrac{\lvert a-b\rvert+a-b}{2}$, 则
@@ -385,7 +385,7 @@ $$
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理(Willans公式3)</b>
 $$
-p_n=2+\sum_{m=2}^{2^n}C_n\left(\sum_{k=2}^m\dfrac{\sin^2\pi\dfrac{(k-1)!^2}{k}}{\sin^2\dfrac{\pi}{k}}\right).
+p_n=2+\sum_{m=2}^{2^n}C_n\left(\sum_{k=2}^m\dfrac{\sin^2\pi\dfrac{(k-1)!^2}{k}}{\sin^2\dfrac{\pi}{k}}\right),
 $$
 其中 $C_n(a)=\sin\pi2^{y-1}, y=a^2(a-1)^2\cdots(a-n+1)^2$, $n$， $a$ 为正整数.
 </div>
@@ -433,7 +433,7 @@ $$
 
 $$
 
-\pi(n)=2+\sum_{k=5}^n\left((k-2)!-k\left[\dfrac{(k-2)!}{k}\right]\right),k>4.
+\pi(n)=2+\sum_{k=5}^n\left((k-2)!-k\left[\dfrac{(k-2)!}{k}\right]\right),k>4,
 
 $$
 
@@ -442,9 +442,9 @@ $$
 $$
 
 f(x,y)=\begin{cases}
-1, & x>y\\
+1, & x>y;\\
 0, & x\le y
-\end{cases},
+\end{cases}
 
 $$
 
@@ -608,7 +608,7 @@ $$
 $$
 \left[\dfrac{i}{j}\right]-\left[\dfrac{i-1}{j}\right]=\begin{cases}
 1, & j\ |\ i;\\
-0, & j\not|\ i
+0, & j\ \nmid\ i
 \end{cases}
 $$
 
@@ -621,10 +621,10 @@ $$
 Ruiz 构造出函数
 
 $$
--\left[-\dfrac{d(i)-2}{i}\right],i>1.
+-\left[-\dfrac{d(i)-2}{i}\right],i>1,
 $$
 
-当 $i$ 是素数时， 因为它只有 $1$ 和其自身两个因子， $d(i)=2$， $-\left[-\dfrac{d(i)-2}{i}\right]=0$， $i$ 不是素数时， $d(i)>2$， 从而 $0<\dfrac{d(i)-2}{i}<1$， $-\left[-\dfrac{d(i)-2}{i}\right]=1$. 故
+当 $i$ 是素数时， 因为它只有 $1$ 和其自身两个因子， $d(i)=2$， $-\left[-\dfrac{d(i)-2}{i}\right]=0$. $i$ 不是素数时， $d(i)>2$， 从而 $0<\dfrac{d(i)-2}{i}<1$， $-\left[-\dfrac{d(i)-2}{i}\right]=1$. 故
 
 $$
 \chi(i)=1-\left(-\left[-\dfrac{d(i)-2}{i}\right]\right)=1+\left[-\dfrac{d(i)-2}{i}\right], i>1,
@@ -848,7 +848,7 @@ $$
 整理即得 Kaddoura-Abdul-Nabi 公式.
 
 
-## 其他方法
+### 其他方法
 
 1971 年, J.W. Gandhi 证明了 $p_{n+1}$ 是满足下面这个不等式的唯一正整数 $t$,
 
@@ -927,10 +927,10 @@ $$
 p_{n+1}=\lim_{s\to\infty}\left(P_n(s)\zeta(s) -1\right)^{-\frac{1}{s}}.
 $$
 
-Lambert 级数是数论常见的一个工具, 其定义为
+Lambert 级数是数论中常见的一个工具, 其定义为
 
 $$
-F(x)=\sum_{n=1}^\infty a_n\dfrac{x^n}{1-x^n}.
+F(x)=\sum_{n=1}^\infty a_n\dfrac{x^n}{1-x^n},
 $$
 
 其中 $a_n$ 是算数函数. 当 $0\le x<1$ 时, 这类级数都绝对收敛. Lambert 级数里有一个几何级数, 将其展开即得
@@ -979,11 +979,11 @@ $$
 <b>定理(Lambert公式)</b>
 
 $$
-d(k)=\left.\left(\dfrac{1}{k!}\dfrac{\mathrm{d}^k}{\mathrm{d}x^k}\left(\sum\limits_{n=1}^\infty \dfrac{x^n}{1-x^n}\right)\right)\right|_{x=0}, k>1
+d(k)=\left.\left(\dfrac{1}{k!}\dfrac{\mathrm{d}^k}{\mathrm{d}x^k}\left(\sum\limits_{n=1}^\infty \dfrac{x^n}{1-x^n}\right)\right)\right|_{x=0}, k>1.
 $$
 </div>
 
-按照Ruiz公式的方法将其转化为 $p_k$ 即可.\qed
+按照Ruiz公式的方法将其转化为 $p_k$ 即可.
 
 1955 年, Teuffel 利用 Riemann $\zeta$ 函数给出了一个素数通项公式.
 
@@ -991,7 +991,7 @@ $$
 <b>定理(Teuffel公式)</b>
 
 $$
-p_n=\left[1+\left(1-\dfrac{1}{1-\zeta(k)\Pi_n}\right)^{\frac{1}{k}}\right].
+p_n=\left[1+\left(1-\dfrac{1}{1-\zeta(k)\Pi_n}\right)^{\frac{1}{k}}\right],
 $$
 
 这里 $\Pi_n=\prod\limits_{i=1}^{n-1}(1-p_i^{-k})$, $k\ge 2p_{n-1}$.
@@ -1000,7 +1000,7 @@ $$
 由 Euler 乘积公式可知 $\zeta(k)=\prod\limits_{i=1}^\infty\dfrac{1}{1-p_i^{-k}}$, 令 $\vartheta=\prod\limits_{i=n+1}^{\infty}(1-p_i^{-k})$, 则有
 
 $$
-\dfrac{1}{\zeta(k)}=\left(1-\dfrac{1}{p_n^k}\right)\Pi_n\vartheta.
+\dfrac{1}{\zeta(k)}=\left(1-\dfrac{1}{p_n^k}\right)\Pi_n\vartheta,
 $$
 
 故
@@ -1018,17 +1018,20 @@ $$
 Teuffel 在 [23] 中证明了当 $k\ge 2p_{n-1}$ 时, 有 $0<p_n-q_n<1$, 从而可以由前 $n-1$ 个素数计算第 $n$ 个素数,
 
 $$
+
 p_n=\left[1+\left(1-\dfrac{1}{1-\zeta(k)\Pi_n}\right)^{\frac{1}{k}}\right].
+
 $$
-\qed
 
 1979 年, Knopfmacher 使用类似的方法给出公式:
 
 <div style="border: 3px solid #000; padding: 10px;">
-<b>定理</b>
+<b>定理(Knopfmacher公式)</b>
 
 $$
-p_{n}=\left[2^{\frac{1}{s}}\left(1-\dfrac{1}{\zeta(s)\Pi_n}\right)^{-\frac{1}{s}}\right].
+
+p_{n}=\left[2^{\frac{1}{s}}\left(1-\dfrac{1}{\zeta(s)\Pi_n}\right)^{-\frac{1}{s}}\right],
+
 $$
 
 这里 $\Pi_n=\prod\limits_{i=1}^{n-1}(1-p_i^{-k})$, $s\ge 2p_{n-1}$.
