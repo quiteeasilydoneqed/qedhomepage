@@ -14,6 +14,24 @@ tags:
 我在[B站小号](https://space.bilibili.com/3546976641615898)上制作并发布一些声优和动漫音乐人切片视频, 严格来说这些视频是侵权的.
 
 
+# 签名
+
+成果签名(已卖)
+
+大西亚玖璃签名
+![大西亚玖璃签名]({{ site.baseurl }}/img/onishi.jpg "大西亚玖璃签名")
+张益唐签名(学术追星也是追星)
+![张益唐签名]({{ site.baseurl }}/img/zhang.jpg "张益唐签名")
+丘成桐签名
+![丘成桐签名]({{ site.baseurl }}/img/yau.jpg "丘成桐签名")
+内田秀签名
+![内田秀签名]({{ site.baseurl }}/img/uchida.jpg "内田秀签名")
+土屋李央签名
+![土屋李央签名1]({{ site.baseurl }}/img/rio1.jpg "土屋李央签名1")
+![土屋李央签名2]({{ site.baseurl }}/img/rio2.jpg "土屋李央签名2")
+
+
+
 # 线下活动
 
 参加活动名:
@@ -81,20 +99,6 @@ tags:
 - 魚住英里奈
 - 花園distance
 
-
-# 签名
-
-成果签名(已卖)
-
-大西亚玖璃签名
-![大西亚玖璃签名]({{ site.baseurl }}/img/onishi.jpg "大西亚玖璃签名")
-张益唐签名(学术追星也是追星)
-![张益唐签名]({{ site.baseurl }}/img/zhang.jpg "张益唐签名")
-内田秀签名
-![内田秀签名]({{ site.baseurl }}/img/uchida.jpg "内田秀签名")
-土屋李央签名
-![土屋李央签名1]({{ site.baseurl }}/img/rio1.jpg "土屋李央签名1")
-![土屋李央签名2]({{ site.baseurl }}/img/rio2.jpg "土屋李央签名2")
 
 
 # 其他
