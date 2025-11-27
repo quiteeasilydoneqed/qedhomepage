@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "FOOLPROOF：数学民间幽默选录"
-subtitle: ""
+subtitle: "（翻译）"
 header-img: "img/post-bg-infinity.jpg"
 header-mask: 0.3
 math: true
