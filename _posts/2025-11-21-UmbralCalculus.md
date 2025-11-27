@@ -128,7 +128,7 @@ $$
 \langle L \mid p(x) \rangle,
 $$
 
-这借鉴自物理学中的狄拉克符号,<br>
+这借鉴自物理学中的狄拉克符号,
 
 设数列 $ \\{a_n\\}_{n=0}^\infty $ 的指数型生成函数是
 
@@ -138,7 +138,7 @@ $$
 
 定义它对应的线性泛函为
 $ \langle A \mid x^n \rangle=a_n, $
-称 $ A $ 为该数列对应的哑元, 在经典哑演算中, 也写作 $ A^n=a_n $, 对应经典哑演算将下标移为上标的操作.<br>
+称 $ A $ 为该数列对应的哑元, 在经典哑演算中, 也写作 $ A^n=a_n $, 对应经典哑演算将下标移为上标的操作.
 
 设 $ \mathbb{C}[[t]] $ 为以 $ t $ 为变量的形式幂级数代数, 对于 $ L\in P^* $, 定义映射
 
@@ -146,7 +146,7 @@ $$
 L\mapsto f_L(t)=\sum_{k=0}^{\infty} \frac{\langle L \mid x^k \rangle}{k!} t^k,
 $$
 
-由前面的讨论知该映射是双射, 并且显然保持线性空间的结构, 因此它是从 $ P^* $ 到 $ \mathbb{C}[[t]] $ 的线性同构, 此后将两者看做同一. 先来看一些简单的性质.<br>
+由前面的讨论知该映射是双射, 并且显然保持线性空间的结构, 因此它是从 $ P^* $ 到 $ \mathbb{C}[[t]] $ 的线性同构, 此后将两者看做同一. 先来看一些简单的性质.
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
@@ -185,13 +185,13 @@ $$
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>例</b>
-取 $ f(t)=1 $, 则 $ \langle 1 \mid x^n \rangle=\delta_{0,n} $ 为克罗内克符号, 从而有 $ \langle 1 \mid p(x) \rangle=p(0) $.
+取 $ f(t)=1 $, 则 $ \langle 1 \mid x^n \rangle=\delta_{0,n} $ 为克罗内克符号, 从而有 $ \langle 1 \mid p(x) \rangle=p(0) $.<br>
 
-取 $ f(t)=t^k $, 则 $ \langle t^k \mid x^n \rangle=\frac{\delta_{k,n}}{n!} $, 从而有 $ \langle t^k \mid p(x) \rangle=p^{(k)}(0) $.
+取 $ f(t)=t^k $, 则 $ \langle t^k \mid x^n \rangle=\frac{\delta_{k,n}}{n!} $, 从而有 $ \langle t^k \mid p(x) \rangle=p^{(k)}(0) $.<br>
 
-取 $ f(t)=e^{yt} $, 则 $ \langle e^{yt} \mid x^n \rangle=y^n $, 从而有 $ \langle e^{yt} \mid p(x) \rangle=p(y) $, 因此称为取值泛函, 显然 $ \langle e^{yt}-1 \mid p(x) \rangle=p(y)-p(0) $.
+取 $ f(t)=e^{yt} $, 则 $ \langle e^{yt} \mid x^n \rangle=y^n $, 从而有 $ \langle e^{yt} \mid p(x) \rangle=p(y) $, 因此称为取值泛函, 显然 $ \langle e^{yt}-1 \mid p(x) \rangle=p(y)-p(0) $.<br>
 
-取 $ f(t)=te^{yt} $, 则 $ \langle te^{yt} \mid x^n \rangle=ny^{n-1} $, 从而有 $ \langle te^{yt} \mid p(x) \rangle=p'(y) $, 进而 $ \langle t^ke^{yt}-1 \mid p(x) \rangle=p^{(k)}(y) $.
+取 $ f(t)=te^{yt} $, 则 $ \langle te^{yt} \mid x^n \rangle=ny^{n-1} $, 从而有 $ \langle te^{yt} \mid p(x) \rangle=p'(y) $, 进而 $ \langle t^ke^{yt}-1 \mid p(x) \rangle=p^{(k)}(y) $.<br>
 
 取 $ f(t)=(1 - t)^{-1} $, 则 $ \langle (1 - t)^{-1} \mid x^n \rangle=n! $, 因为 $ n!=\int_0^\infty u^ne^{-u}\mathrm{d}u $, 从而有
 
@@ -205,9 +205,9 @@ $$
 \langle \frac{e^{yt}-1}{t} \mid p(x) \rangle=\int_0^y p(u)\mathrm{d}u,
 $$
 
-称为积分泛函.
+称为积分泛函.<br>
 
-取 $ f(t)=\frac{t}{e^t-1} $, 它是积分泛函的逆泛函, 设它对应的哑元为 $ B $, 则 $ \langle B \mid x^n \rangle=B_n $ 为伯努利数 经典哑演算中写作 $ B^n=B_n $.
+取 $ f(t)=\frac{t}{e^t-1} $, 它是积分泛函的逆泛函, 设它对应的哑元为 $ B $, 则 $ \langle B \mid x^n \rangle=B_n $ 为伯努利数 经典哑演算中写作 $ B^n=B_n $.<br>
 
 取 $ f(t)=\frac{1 + e^{yt}}{2} $, 则
 
@@ -228,9 +228,9 @@ $$
 f_L(t)\cdot x^n=\sum_{k=0}^{n}\binom{n}{k} L_kx^{n-k},
 $$
 
-这定义了一个 $ P\to P $ 的线性变换, 称它为由级数 $ f_L(t) $ 生成的线性变换.<br>
+这定义了一个 $ P\to P $ 的线性变换, 称它为由级数 $ f_L(t) $ 生成的线性变换.
 
-如果 $ P $ 上的线性变换将 $ n $ 次多项式映为 $ n $ 次多项式, 则它显然是线性同构, 如果它还由 $ f_L(t) $ 生成, 则显然有 $ L_0=f_L(0)\neq0 $.<br>
+如果 $ P $ 上的线性变换将 $ n $ 次多项式映为 $ n $ 次多项式, 则它显然是线性同构, 如果它还由 $ f_L(t) $ 生成, 则显然有 $ L_0=f_L(0)\neq0 $.
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>例</b>
@@ -246,22 +246,16 @@ $$
 e^{yt}\cdot p(x)=p(x+y),
 $$
 
-因此称其为平移变换或平移算子.
-</div><br>
+因此称其为平移变换或平移算子.<br>
 
-<div style="border: 3px solid #000; padding: 10px;">
-<b>例</b>
 设 $ f(t)=t $, 则 $ t\cdot p(x)=p'(x) $, 因此也称其为微分变换或微分算子, 记其哑元为 $ D $, 因此形式上有
 
 $$
 e^{yt}=e^{yD},
 $$
 
-并且 $ e^{yD}\cdot p(x)=p(x+y) $, 左边展开为级数就得到了 $ p $ 在 $ x $ 处的泰勒级数, 因为 $ p $ 是多项式, 这里不必考虑收敛问题, 这就是经典哑演算中 $ e^{\frac{\mathrm{d}}{\mathrm{d}x}} $ 的意义.
-</div><br>
+并且 $ e^{yD}\cdot p(x)=p(x+y) $, 左边展开为级数就得到了 $ p $ 在 $ x $ 处的泰勒级数, 因为 $ p $ 是多项式, 这里不必考虑收敛问题, 这就是经典哑演算中 $ e^{\frac{\mathrm{d}}{\mathrm{d}x}} $ 的意义.<br>
 
-<div style="border: 3px solid #000; padding: 10px;">
-<b>例</b>
 更多的例子:
 
 $$
@@ -296,7 +290,7 @@ $$
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 设 $ T $ 是 $ P $ 上一个将 $ n $ 次多项式映为 $ n $ 次多项式的线性变换, 则 $ T $ 可以由级数 $ f_L(t) $ 生成当且仅当 $ T $ 把 $ x^n $ 映为阿佩尔多项式列.
-</div><br>
+</div>
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>证明</b>
@@ -306,7 +300,9 @@ $$
 \sum_{n=0}^\infty T(x^n)\frac{t^n}{n!}=\sum_{n=0}^\infty\sum_{k=0}^{n}\binom{n}{k} L_kx^{n-k}\frac{t^n}{n!}=f_L(t)e^{xt},
 $$
 
-因为 $ T $ 将 $ n $ 次多项式映为 $ n $ 次多项式, 所以必有 $ f_L(0)\neq0 $, 由阿佩尔多项式列的性质知 $ \{T(x^n)\}_{n=0}^\infty $ 为阿佩尔多项式列.<br>
+因为 $ T $ 将 $ n $ 次多项式映为 $ n $ 次多项式, 所以必有 $ f_L(0)\neq0 $, 由阿佩尔多项式列的性质知 $ \{T(x^n)\}_{n=0}^\infty $ 为阿佩尔多项式列.
+
+<br>
 
 设 $ T(x^n)=p_n(x) $ 为阿佩尔多项式列, 则它的生成函数为 $ A(t)e^{xt} $ 的形式, 其中 $ A(t)=\sum_{k=0}^\infty A_kx^k $ 为常数项非零的幂级数, 则
 
@@ -315,7 +311,7 @@ A(t)\cdot x^n=\sum_{k=0}^n\binom{n}{k}A_kk!x^{n-k}=p_n(x),
 $$
 
 第一个等号是左乘作用的定义, 第二个等号是之前得到的阿佩尔多项式列的具体形式, 所以由 $ A(t) $ 就可以生成 $ T $.
-</div><br>
+</div>
 
 设阿佩尔多项式列 $ \{p_n(x)\} $ 的指数型生成函数是
 
@@ -329,7 +325,7 @@ $$
 G(0,t)\cdot x^n=p_n(x),
 $$
 
-将 $ G(x,t)) $ 解释为含参数 $ x $ 的泛函 $ \mathbb{C}[y]\to\mathbb{C} $ 时, 有
+将 $ G(x,t) $ 解释为含参数 $ x $ 的泛函 $ \mathbb{C}[y]\to\mathbb{C} $ 时, 有
 
 $$
 \langle G(x,t)\mid y^n\rangle=p_n(x),
@@ -359,9 +355,9 @@ $$
 \sum_{k=0}^n\binom{n}{k}p_n(y) x^{n-k}=p_n(x+y),
 $$
 
-这个式子称为阿佩尔恒等式.<br>
+这个式子称为阿佩尔恒等式.
 
-接下来介绍谢弗多项式列的另一种定义.<br>
+接下来介绍谢弗多项式列的另一种定义.
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
@@ -383,7 +379,7 @@ $$
 $$
 
 对任意非负整数 $ n $ 和 $ k $ 成立.
-</div><br>
+</div>
 
 事实上, 如果 $ \langle g(t)\left(f(t)\right)^k\mid p_n(x)\rangle=n!\delta_{nk}, $ 那么 $ p_n(x) $ 的生成函数就是
 
@@ -391,7 +387,7 @@ $$
 \sum_{n=0}^\infty p_n(x)\frac{t^n}{n!}=\frac{1}{g(\bar f(t))}e^{x\bar{f}(t)},
 $$
 
-其中 $ f(\bar{f}(t))=\bar{f}(f(t))=t. $<br>
+其中 $ f(\bar{f}(t))=\bar{f}(f(t))=t. $
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
@@ -415,6 +411,329 @@ $$
 对任意非负整数 $ n $ 和 $ k $ 成立.
 </div>
 
+
+
+# 算子与伴随算子
+
+<div style="border: 3px solid #000; padding: 10px;">
+<b>定义(哑算子, 谢弗算子)</b>
+设 $ \{q_n(x)\} $ 是二项式型多项式列, 如果线性算子 $ \lambda: P\to P $ 满足条件
+
+$$
+\lambda(x^n)=q_n(x),
+$$
+
+则称其为哑算子。
+
+设 $ \{p_n(x)\} $ 是谢弗多项式列, 如果线性算子 $ \lambda: P\to P $ 满足条件
+
+$$
+\lambda(x^n)=p_n(x),
+$$
+
+则称其为谢弗算子。
+</div><br>
+
+<div style="border: 3px solid #000; padding: 10px;">
+<b>定义(哑移位, 谢弗移位)</b>
+设 $ \{q_n(x)\} $ 是二项式型多项式列, 如果线性算子 $ \lambda: P\to P $ 满足条件
+
+$$
+\theta(q_n(x))=q_{n+1}(x),
+$$
+
+则称其为哑移位。
+
+设 $ \{p_n(x)\} $ 是谢弗多项式列, 如果线性算子 $ \lambda: P\to P $ 满足条件
+
+$$
+\theta(p_n(x))=p_{n+1}(x),
+$$
+
+则称其为谢弗移位。
+</div><br>
+
+<div style="border: 3px solid #000; padding: 10px;">
+<b>定义(连续)</b>
+设 $ T $ 是 $ P^\* \cong\mathbb{C}[[t]] $ 上的线性算子, 如果对于 $ P^\* $ 中一列满足
+
+$$
+\lim_{k\to\infty} o(f_k(t))=\infty
+$$
+
+的序列 $ \{f_k(t)\} $, 都有
+
+$$
+T\left(\sum_{k=0}^\infty a_kf_k(t)\right)=\sum_{k=0}^\infty a_nT(f_k(t)),
+$$
+
+其中 $ a_k\in\mathbb{C} $, 则称算子 $ T $ 是连续的。
+</div><br>
+
+<div style="border: 3px solid #000; padding: 10px;">
+<b>定理</b>
+$ P^\* $ 上的算子 $ T $ 是连续的当且仅当对任意满足
+
+$$
+\lim_{k\to\infty} o(f_k(t))=\infty
+$$
+
+的序列 $ \{f_k(t)\} $, 都有
+
+$$
+\lim_{k\to\infty} o(T(f_k(t)))=\infty.
+$$
+</div><br>
+
+举两个例子。
+
+<div style="border: 3px solid #000; padding: 10px;">
+<b>例(自同构算子, 导数算子)</b>
+如果 $ T $ 是 $ P^\* $ 上的代数自同构, 则可以证明一定有 $ o(T(f))=o(f) $, 进而是连续的, $ T $ 称为自同构算子。
+
+如果 $ D $ 是 $ P^\* $ 上满足莱布尼兹律
+
+$$
+D(fg)=D(f)g+fD(g),\quad f,g\in P^\*
+$$
+
+的线性算子, 则称其为一个导数算子。当 $ o(f)>1 $ 时, 可以证明任何一个满射的导数算子都有 $ o(D(f))=o(f)-1 $, 并且 $ D(c)=0 $, $ c\in\mathbb{C} $, 所以任何满射的导数算子都是连续的。
+</div><br>
+
+伴随算子的定义与通常泛函分析中相同。
+
+<div style="border: 3px solid #000; padding: 10px;">
+<b>定义(伴随)</b>
+设 $ \tau\in L(P) $ 是 $ P $ 上的线性变换, 定义其伴随 $ \tau^\times:P^\*\to P^\* $ 为满足
+
+$$
+\tau^\times(f(t))=f(t)\circ \tau,\quad f(t)\in P^\*
+$$
+
+也就是说对任意 $ f(t)\in P^\* $ 和 $ p(x)\in P $, 有
+
+$$
+\langle \tau^\times(f(t))\mid p(x)\rangle=\langle f(t)\mid \tau(p(x))\rangle.
+$$
+</div><br>
+
+<div style="border: 3px solid #000; padding: 10px;">
+<b>定理</b>
+伴随有如下性质:
+
+$ (\tau + \sigma)^\times = \tau^\times + \sigma^\times, $
+
+若 $ r \in \mathbb{C} $, $ (r\tau)^\times = r\tau^\times , $
+
+$ (\tau\sigma)^\times = \sigma^\times\tau^\times, $
+
+若 $ \tau $ 可逆, $ (\tau^{-1})^\times = (\tau^\times)^{-1} . $
+</div><br>
+
+<div style="border: 3px solid #000; padding: 10px;">
+<b>定理</b>
+幂级数 $ f(t) $ 以左乘作用在 $ P $ 上时, 为 $ P $ 上的线性变换, 它的伴随 $ f(t)^\times $ 作用在 $ g(t) $ 上是幂级数的乘法 $ f(t)^\times (g(t))=f(t)g(t) $。
+</div><br>
+
+<div style="border: 3px solid #000; padding: 10px;">
+<b>证明</b>
+只需证明当 $ f(t),g(t)\in P^\* $ 时,
+
+$$
+\langle f(t)g(t) \mid p(x) \rangle = \langle g(t) \mid f(t)\cdotp(x) \rangle
+$$
+
+对任意 $ p(x)\in P $ 都成立, 设
+
+$$
+f(t) = \sum_{k=0}^{\infty} \frac{\langle f(t) \mid x^k \rangle}{k!} t^k,
+$$
+
+$$
+ g(t) = \sum_{k=0}^{\infty} \frac{\langle g(t) \mid x^k \rangle}{k!} t^k,
+$$
+
+则
+
+\begin{align*}
+    \langle g(t) \mid f(t) \cdot x^n \rangle =& \left\langle g(t) \bigg\lvert \sum_{k=0}^{n} \binom{n}{k} \langle f(t) \mid x^k \rangle x^{n-k} \right\rangle\\ 
+    =& \sum_{k=0}^{n} \binom{n}{k} \langle f(t) \mid x^k \rangle \langle g(t) \mid x^{n-k} \rangle\\
+    =&\langle f(t)g(t) \mid x^n \rangle,
+\end{align*}
+
+进而
+
+$$
+\langle f(t)g(t) \mid p(x) \rangle = \langle g(t) \mid f(t)\cdot p(x) \rangle
+$$
+
+对任意 $ p(x)\in P $ 都成立。
+</div>
+
+举一个例子,
+
+$$
+\delta_{1n}=\langle1\mid x^n\rangle=\left\langle\frac{e^t-1}{t}\frac{t}{e^t-1}\bigg\lvert x^n\right\rangle=\left\langle\frac{e^t-1}{t}\bigg\lvert\frac{t}{e^t-1}\cdot x^n\right\rangle=\left\langle\frac{e^t-1}{t}\bigg\lvert B_n(x)\right\rangle=\int_0^1 B_n(x)\mathrm{d}x,
+$$
+
+其中 $ B_n(x) $ 是伯努利多项式, 这就是伯努利多项式的积分性质, 另一方面,
+
+$$
+\delta_{1n}=\langle1\mid x^n\rangle=\left\langle\frac{t}{e^t-1}\frac{e^t-1}{t}\bigg\lvert x^n\right\rangle=\left\langle\frac{t}{e^t-1}\bigg\lvert\frac{e^t-1}{t}\cdot x^n\right\rangle=\left\langle\frac{t}{e^t-1}\bigg\lvert\int_x^{x+1}u^n\mathrm{d}u\right\rangle
+$$
+
+$$
+=\left\langle\frac{t}{e^t-1}\bigg\lvert\frac{(x+1)^{n+1}-x^{n+1}}{n+1}\right\rangle=\frac{1}{n+1}\sum_{k=0}^{n}\binom{n+1}{k}B_k,
+$$
+
+这就是伯努利数的递推公式。
+
+<div style="border: 3px solid #000; padding: 10px;">
+<b>定理</b>
+$ P^\* $ 上的算子 $ T $ 是 $ P $ 上中某个算子的伴随当且仅当 $ T $ 连续, 也就是说, 线性同态
+
+$$
+\times:L(P)\to L(P^{*})
+$$
+
+的像是所有连续算子组成的线性子空间。
+</div><br>
+
+既然伴随 $ \times $ 是从 $ :L(P) $ 到 $ L(P^\*) $ 中所有连续算子组成的子空间的同构, 自然的想法是考虑该映射下 $ L(P) $ 中各种类型元素的对应关系, 事实上, 先前介绍的 $ L(P) $ 中两类重要的算子, 哑算子和哑移位, 在该映射下的像恰好分别是 $ P^\* $ 上自同构算子和满导数算子。
+
+假设 $ \lambda\in L(P) $ 将 $ x^n $ 映为 $ p_n(x) $, $ \{p_n(x)\} $ 是二项式型多项式列, 并且有 $ f(t)\in P^\* $,
+
+$$
+\langle \left(f(t)\right)^k\mid p_n(x)\rangle=n!\delta_{nk}
+$$
+
+对任意非负整数 $ n $ 和 $ k $ 成立, 此后将明确了 $ f $ 的哑算子 $ \lambda $ 记为 $ \lambda_f $。
+
+<div style="border: 3px solid #000; padding: 10px;">
+<b>定理</b>
+算子 $ \lambda\in L(P) $ 是哑算子当且仅当其伴随 $ \lambda^\times $ 是 $ P^\* $ 上自同构算子。
+</div><br>
+
+<div style="border: 3px solid #000; padding: 10px;">
+<b>证明</b>
+假设 $ \lambda=\lambda_f $ 将 $ x^n $ 映为 $ p_n(x) $, 则有
+
+$$
+\langle\lambda_f^\times(f(t)^k)\mid x^n\rangle=\langle f(t)^k\mid\lambda_f(x^n)\rangle=\langle f(t)^k\mid p_n(x)\rangle=n!\delta_{kn}=\langle t^k\mid x^n\rangle,
+$$
+
+这就是说, $ \lambda^\times $ 将 $ f(x)^k $ 映为 $ t^k $ 对任意非负整数 $ k $ 都成立, 已知伴随像都是连续算子, 所以对任意 $ g(t)\in P^\* $, 都有
+
+$$
+\lambda^\times(g(f(t)))=g(t),
+$$
+
+假设 $ f $ 的逆是 $ \bar{f} $, 则
+
+$$
+\lambda^\times(g(t)=g(\bar{f}(t)),
+$$
+
+这说明
+
+$$
+\times:\lambda_f\mapsto\left[\lambda_f^\times:g(t)\mapsto g(\bar{f}(t)),g\in P^\*\right],
+$$
+
+并且显然
+
+$$
+\lambda_f^\times(g(t)h(t)) = g(\bar{f}(t))h(\bar{f}(t))=\lambda_f^\times(g(t))\lambda_f^\times(h(t)),
+$$
+
+所以 $ \lambda_f^\times $ 是代数自同构。
+
+如果 $ \lambda^\times $ 是自同构算子, 则它是满射, 故存在幂级数 $ f $ 使得 $ \lambda^\times(f(t))=t $, 由之前的讨论知一定存在二项式型多项式列 $ \{p_n(x)\} $ 使得
+
+$$
+\langle \left(f(t)\right)^k\mid p_n(x)\rangle=n!\delta_{nk}
+$$
+
+对任意非负整数 $ n $ 和 $ k $ 成立, 故有
+
+$$
+\langle f(t)^k\mid\lambda(x^n)\rangle=\langle\lambda^\times(f(t)^k)\mid x^n\rangle=n!\delta_{kn}=\langle t^k\mid x^n\rangle=\langle f(t)^k\mid p_n(x)\rangle,
+$$
+
+由唯一性知
+
+$$
+\lambda(x^n)=p_n(x),
+$$
+
+所以算子 $ \lambda\in L(P) $ 是哑算子。
+</div>
+
+设 $ \lambda_f $ 和 $ \lambda_g $ 是哑算子, 并且 $ \lambda_f(x^n)=p_n(x) $, $ \lambda_g(x^n)=q_n(x) $, 则它们的复合 $ \lambda_f\circ\lambda_g(x^n)=\lambda_fq_n(x)=(q\circ p)_n(x) $ 是哑复合, 先前已说明二项式型多项式列在哑复合下构成群, 所以哑算子在算子复合下也构成群, 并且与 $ \mathbb{B} $ 同构。另一方面, 还有 $ \lambda_f\circ\lambda_g=\lambda_{g\circ f} $, 其中下标是幂级数的复合, 这是因为二者的生成函数分别是 $ e^{x\bar{f}(t)} $ 和 $ e^{x\bar{g}(t)} $, 哑复合的生成函数就是 $ e^{x\bar{f}(\bar{g}(t))}=e^{x\overline{g\circ f}(t)} $, 其中 $ \bar{f} $ 是 $ f $ 的复合逆, 所以还有 $ \lambda_f^{-1}=\lambda_{\bar{f}} $。
+
+因为谢弗多项式列在哑复合下也构成群, 所以谢弗算子在算子下也构成群, 并且同构于 $ \mathbb{S} $。假设 $ \lambda\in L(P) $ 将 $ x^n $ 映为 $ p_n(x) $, $ \{p_n(x)\} $ 是谢弗多项式列, 并且有 $ f(t),g(t)\in P^\* $,
+
+$$
+\langle g(t)\left(f(t)\right)^k\mid p_n(x)\rangle=n!\delta_{nk}
+$$
+
+对任意非负整数 $ n $ 和 $ k $ 成立, 此后将明确了 $ f $ 和 $ g $ 的谢弗算子 $ \lambda $ 记为 $ \lambda_{f,g} $, 由生成函数易知有
+
+$$
+\lambda_{f,g}=\frac{1}{g(t)}\circ\lambda_{1,f}=\frac{1}{g(t)}\circ\lambda_f,
+$$
+
+即谢弗算子一定与哑算子差一个由可逆幂级数定义的线性算子, 并且有
+
+$$
+\lambda_{f,g}\circ\lambda_{h,k}=\lambda_{g\cdot h\circ f,k\circ f},
+$$
+
+其中 $ \circ $ 是幂级数复合, $ \cdot $ 是幂级数乘法, 故有 $ \lambda_{f,g}^{-1}=\lambda_{\frac{1}{g}\circ\bar{f},\bar{f}} $。
+
+与之类似, 可以证明如下定理:
+
+<div style="border: 3px solid #000; padding: 10px;">
+<b>定理</b>
+算子 $ \theta\in L(P) $ 是哑移位当且仅当其伴随 $ \lambda^\times $ 是 $ P^\* $ 上满的导数算子。
+</div><br>
+
+如果哑移位 $ \theta (p_n(x))=p_{n+1}(x) $, 有 $ \langle \left(f(t)\right)^k\mid p_n(x)\rangle=n!\delta_{nk} $ 成立时将其记为 $ \theta_f $, 有 $ \langle g(t)\left(f(t)\right)^k\mid p_n(x)\rangle=n!\delta_{nk} $ 成立时则记作 $ \theta_{f,g} $, 那么有
+
+$$
+\theta_f^\times(f(t)^k)=kf(t)^{k-1}
+$$
+
+对所有正整数 $ k $ 成立, 还有
+
+$$
+\theta_{f,g}=\frac{1}{g(t)}\theta_f(g(t))
+$$
+
+伴随 $ \times $ 将所有哑移位组成的集合映为所有满导数算子组成的集合, 一般记 $ \theta_f^\times=D_f $。
+
+<div style="border: 3px solid #000; padding: 10px;">
+<b>定理</b>
+若 $ \theta\in L(P) $ 是哑移位, 那么对任意 $ f(t)\in P^\* $, 有
+
+$$
+\theta^\times f(t)=f(t)\circ\theta-\theta\circ f(t).
+$$
+</div><br>
+
+例如, 如果 $ \theta_t(x^n)=x^{n+1} $, 那么记 $ \theta^\times_t=D_t $, 有
+
+$$
+f'(t)=D_t(f(t))=f(t)\circ\theta_t-\theta_t\circ f(t)=f(t)\circ x-x\circ f(t),
+$$
+
+两边均为 $ P $ 上的算子, 最后一个等号是因为 $ \theta_t $ 作用在多项式上等价于给多项式乘 $ x $。
+
+若 $ \theta_{f,g} $ 是谢弗移位, 则有
+
+$$
+\theta_{f,g}=\frac{1}{g(t)}\circ\theta_f\circ g(t).
+$$
 
 
 
