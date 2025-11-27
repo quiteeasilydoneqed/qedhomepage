@@ -222,7 +222,7 @@ $$
 
 # 线性变换
 
-接下来我们把 $ P^\* $ 中的元素做成 $ P $ 上的线性变换, 设 $ f_L(t)=\sum_{k=0}^{\infty} \frac{\langle L \mid x^k \rangle}{k!} t^k $, 再设 $ \langle L \mid x^k \rangle=L_k $, 定义 $ f_L(t) $ 的左乘作用为
+接下来我们把 $ P^* $ 中的元素做成 $ P $ 上的线性变换, 设 $ f_L(t)=\sum_{k=0}^{\infty} \frac{\langle L \mid x^k \rangle}{k!} t^k $, 再设 $ \langle L \mid x^k \rangle=L_k $, 定义 $ f_L(t) $ 的左乘作用为
 
 $$
 f_L(t)\cdot x^n=\sum_{k=0}^{n}\binom{n}{k} L_kx^{n-k},
@@ -598,7 +598,7 @@ $$
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
-$ P^\* $ 上的算子 $ T $ 是 $ P $ 上中某个算子的伴随当且仅当 $ T $ 连续, 也就是说, 线性同态
+$ P^* $ 上的算子 $ T $ 是 $ P $ 上中某个算子的伴随当且仅当 $ T $ 连续, 也就是说, 线性同态
 
 $$
 \times:L(P)\to L(P^{*})
@@ -607,9 +607,9 @@ $$
 的像是所有连续算子组成的线性子空间.
 </div>
 
-既然伴随 $ \times $ 是从 $ :L(P) $ 到 $ L(P^\*) $ 中所有连续算子组成的子空间的同构, 自然的想法是考虑该映射下 $ L(P) $ 中各种类型元素的对应关系, 事实上, 先前介绍的 $ L(P) $ 中两类重要的算子, 哑算子和哑移位, 在该映射下的像恰好分别是 $ P^\* $ 上自同构算子和满导数算子.
+既然伴随 $ \times $ 是从 $ :L(P) $ 到 $ L(P^*) $ 中所有连续算子组成的子空间的同构, 自然的想法是考虑该映射下 $ L(P) $ 中各种类型元素的对应关系, 事实上, 先前介绍的 $ L(P) $ 中两类重要的算子, 哑算子和哑移位, 在该映射下的像恰好分别是 $ P^* $ 上自同构算子和满导数算子.
 
-假设 $ \lambda\in L(P) $ 将 $ x^n $ 映为 $ p_n(x) $, $ \{p_n(x)\} $ 是二项式型多项式列, 并且有 $ f(t)\in P^\* $,
+假设 $ \lambda\in L(P) $ 将 $ x^n $ 映为 $ p_n(x) $, $ \{p_n(x)\} $ 是二项式型多项式列, 并且有 $ f(t)\in P^* $,
 
 $$
 \langle \left(f(t)\right)^k\mid p_n(x)\rangle=n!\delta_{nk}
@@ -619,7 +619,7 @@ $$
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
-算子 $ \lambda\in L(P) $ 是哑算子当且仅当其伴随 $ \lambda^\times $ 是 $ P^\* $ 上自同构算子.
+算子 $ \lambda\in L(P) $ 是哑算子当且仅当其伴随 $ \lambda^\times $ 是 $ P^* $ 上自同构算子.
 </div>
 
 <div style="border: 3px solid #000; padding: 10px;">
@@ -630,7 +630,7 @@ $$
 \langle\lambda_f^\times(f(t)^k)\mid x^n\rangle=\langle f(t)^k\mid\lambda_f(x^n)\rangle=\langle f(t)^k\mid p_n(x)\rangle=n!\delta_{kn}=\langle t^k\mid x^n\rangle,
 $$
 
-这就是说, $ \lambda^\times $ 将 $ f(x)^k $ 映为 $ t^k $ 对任意非负整数 $ k $ 都成立, 已知伴随像都是连续算子, 所以对任意 $ g(t)\in P^\* $, 都有
+这就是说, $ \lambda^\times $ 将 $ f(x)^k $ 映为 $ t^k $ 对任意非负整数 $ k $ 都成立, 已知伴随像都是连续算子, 所以对任意 $ g(t)\in P^* $, 都有
 
 $$
 \lambda^\times(g(f(t)))=g(t),
@@ -810,7 +810,7 @@ $$
 
 另一种生成 $ P $ 上的线性变换的方式是, 定义 $ \lambda_{f,g}(x^n) $ 等于满足 $ \langle g(t)\left(f(t)\right)^k\mid p_n(x)\rangle=n!\delta_{nk} $ 的谢弗多项式列 $ p_n(x) $, 这种生成方式实际上包含了上一种方式, 因为 $ \lambda_{t,\frac{1}{g}} $ 就是将 $ x^n $ 映为阿佩尔多项式列 $ g(t)\cdot x^n $ 的线性变换.
 
-线性变换的伴随将 $ L(P) $ 中的元素映为 $ L(P^*) $ 中的连续算子, 记所有连续算子组成的集合在加法, 数乘和复合下构成的 $ \mathbb{C} $ 代数为 $ CL(P^*) $, 则有代数同构
+线性变换的伴随将 $ L(P) $ 中的元素映为 $ L(P^\*) $ 中的连续算子, 记所有连续算子组成的集合在加法, 数乘和复合下构成的 $ \mathbb{C} $ 代数为 $ CL(P^\*) $, 则有代数同构
 
 $$
 L(P)\cong CL(P^*)^{op},
@@ -818,7 +818,7 @@ $$
 
 其中上标 $ op $ 代表反乘法下的反环.
 
-一个重要的子集是哑算子 $ \lambda_{f,1} $, 它将 $ x^n $ 映为二项式型多项式列, 设二项式行列式列在哑复合下构成的非交换群为 $ \mathbb{B} $, 那么它同构于所有将 $ x^n $ 映为二项式型多项式列的线性变换在反复合下构成的群, 也由伴随同构于 $ \mathrm{Aut}(P^*) $ 在复合下构成的群, 由于每个将 $ x^n $ 映为二项式型多项式列的线性变换 $ \lambda_{f,1} $ 都对应一个存在复合逆的幂级数 $ f $, 所以 $ \mathbb{S} $ 在还同构于 $ (P^*,\circ)^\times $, 即有非交换群同构
+一个重要的子集是哑算子 $ \lambda_{f,1} $, 它将 $ x^n $ 映为二项式型多项式列, 设二项式行列式列在哑复合下构成的非交换群为 $ \mathbb{B} $, 那么它同构于所有将 $ x^n $ 映为二项式型多项式列的线性变换在反复合下构成的群, 也由伴随同构于 $ \mathrm{Aut}(P^\*) $ 在复合下构成的群, 由于每个将 $ x^n $ 映为二项式型多项式列的线性变换 $ \lambda_{f,1} $ 都对应一个存在复合逆的幂级数 $ f $, 所以 $ \mathbb{S} $ 在还同构于 $ (P^\*,\circ)^\times $, 即有非交换群同构
 
 $$
 \mathbb{B}\cong \left(\{\lambda:x^n\mapsto p_n(x)|p_n(x)\text{是二项式型多项式列}\},\circ\right)^{op}\cong\mathrm{Aut}(P^*)\cong(P^*,\circ)^\times.
@@ -846,7 +846,7 @@ $$
 
 以上结论用图可以表示为:
 
-
+![示意图]({{ site.baseurl }}/img/uc.jpg "示意图")
 
 # 参考文献
 
