@@ -65,7 +65,7 @@ $$
 这里,
 
 $$
-\displaylines{f_1=\sum_{k=1}^\infty\dfrac{p_k-1}{\prod\limits_{i=1}^{k-1}p_i}}
+\displaylines{f_1=\sum_{k=1}^\infty\dfrac{p_k-1}{\prod\limits_{i=1}^{k-1}p_i}}.
 $$
 </div>
 
@@ -84,19 +84,26 @@ $$
 
 故$f_1$存在, 且$\left[f_1\right]=2=p_1$.
 
-定义$f_n=\begin{pmatrix}f_1-\sum\limits_{k=1}^{n-1}\dfrac{p_k-1}{\prod\limits_{i=1}^{k-1}p_i}\end{pmatrix}\prod\limits_{i=1}^{n-1}p_i=(p_n-1)+\dfrac{p_{n+1}-1}{p_n}+\dfrac{p_{n+2}-1}{p_np_{n+1}}+\dfrac{p_{n+2}-1}{p_np_{n+1}p_{n+2}}+\cdots$, 
+定义
+
+$$
+
+f_n=\begin{pmatrix}f_1-\sum\limits_{k=1}^{n-1}\dfrac{p_k-1}{\prod\limits_{i=1}^{k-1}p_i}\end{pmatrix}\prod\limits_{i=1}^{n-1}p_i=(p_n-1)+\dfrac{p_{n+1}-1}{p_n}+\dfrac{p_{n+2}-1}{p_np_{n+1}}+\cdots,
+
+$$
+
 则有$f_{n}=p_{n-1}(f_{n-1}-p_{n-1}+1)$.
 
 再使用一次Bertrand–Chebyshev定理, 有
 
 $$
-\displaylines{f_n>(p_n-1)+\dfrac{p_n-1}{p_n}+\dfrac{p_{n+1}-1}{p_np_{n+1}}+\dfrac{p_{n+2}-1}{p_np_{n+1}p_{n+2}}+\cdots}
+\displaylines{f_n>(p_n-1)+\dfrac{p_n-1}{p_n}+\dfrac{p_{n+1}-1}{p_np_{n+1}}+\dfrac{p_{n+2}-1}{p_np_{n+1}p_{n+2}}+\cdots},
 $$
 
 和
 
 $$
-\displaylines{f_n<(p_n-1)+\dfrac{2p_n-2}{p_n}+\dfrac{2p_{n+1}-2}{p_np_{n+1}}+\dfrac{2p_{n+2}-2}{p_np_{n+1}p_{n+2}}+\cdots}
+\displaylines{f_n<(p_n-1)+\dfrac{2p_n-2}{p_n}+\dfrac{2p_{n+1}-2}{p_np_{n+1}}+\dfrac{2p_{n+2}-2}{p_np_{n+1}p_{n+2}}+\cdots},
 $$
 
 故$p_n<f_n<p_n+1$, 即$[f_n]=p_n$.
@@ -104,7 +111,7 @@ $$
 则数列$\{f_n\}$可由递推公式
 
 $$
-\displaylines{f_{n+1}=[f_n](f_n-[f_n]+1)}
+\displaylines{f_{n+1}=[f_n](f_n-[f_n]+1)},
 $$
 
 生成.
@@ -117,13 +124,13 @@ $$
 设$A=0.02030005000000070\cdots$, 则有
 
 $$
-\displaylines{p_n=[10^{2^n} A]-10^{2^{n-1}}[10^{2^{n-1}} A]}
+\displaylines{p_n=[10^{2^n} A]-10^{2^{n-1}}[10^{2^{n-1}} A]},
 $$
 
 这里,
 
 $$
-\displaylines{A=\sum_{m=1}^\infty p_m 10^{-2^m}}
+\displaylines{A=\sum_{m=1}^\infty p_m 10^{-2^m}}.
 $$
 </div>
 
@@ -134,27 +141,27 @@ $A$显然收敛, 因为$p_m<2^{2^m}=4^{2^{m-1}}$, 故有
 $$
 \displaylines{
 0<10^{2^{m}} \sum_{m=n+1}^{\infty} p_{m} 10^{-2^{m}}<\sum_{m=n+1}^{\infty} 4^{2^{m-1}} 10^{-2^{m-1}} \\
-=\sum_{m=n+1}^{\infty}\left(\frac{2}{5}\right)^{2^{m-1}}<\left(\frac{2}{5}\right)^{2^{n}} \frac{1}{\left(1-\frac{2}{5}\right)}<\frac{4}{15}<1
+=\sum_{m=n+1}^{\infty}\left(\frac{2}{5}\right)^{2^{m-1}}<\left(\frac{2}{5}\right)^{2^{n}} \frac{1}{\left(1-\frac{2}{5}\right)}<\frac{4}{15}<1,
 }
 $$
 
 从而有
 
 $$
-\displaylines{\left[10^{2^{n}} A\right]=10^{2^{n}} \sum_{m=1}^{n} p_{m} 10^{-2^{m}}}
+\displaylines{\left[10^{2^{n}} A\right]=10^{2^{n}} \sum_{m=1}^{n} p_{m} 10^{-2^{m}}},
 $$
 
 类似地,
 
 $$
-\displaylines{\left[10^{2^{n-1}} A\right]=10^{2^{n-1}} \sum_{m=1}^{n-1} p_{m} 10^{-2^{m}}}
+\displaylines{\left[10^{2^{n-1}} A\right]=10^{2^{n-1}} \sum_{m=1}^{n-1} p_{m} 10^{-2^{m}}},
 $$
 
 从而
 
 $$
 \displaylines{
-\left[10^{2^{n}} A\right]-10^{2^{n-1}}\left[10^{2^{n-1}} A\right]=10^{2^{n}}\left(\sum_{m=1}^{n} p_{m} 10^{-2^{m}}-\sum_{m=1}^{n-1} p_{m} 10^{-2^{m}}\right)=p_{n}
+\left[10^{2^{n}} A\right]-10^{2^{n-1}}\left[10^{2^{n-1}} A\right]=10^{2^{n}}\left(\sum_{m=1}^{n} p_{m} 10^{-2^{m}}-\sum_{m=1}^{n-1} p_{m} 10^{-2^{m}}\right)=p_{n}.
 }
 $$
 </div>
@@ -166,13 +173,13 @@ $$
 设$\gamma= 0.203005000700011\cdots$, 则有
 
 $$
-\displaylines{p_n=\left[\gamma \cdot 10^{\frac{n(n+1)}{2}}\right]-10^n \left[\gamma \cdot 10^{\frac{n(n-1)}{2}}\right]}
+\displaylines{p_n=\left[\gamma \cdot 10^{\frac{n(n+1)}{2}}\right]-10^n \left[\gamma \cdot 10^{\frac{n(n-1)}{2}}\right]},
 $$
 
 这里,
 
 $$
-\displaylines{\gamma=\sum_{m=1}^\infty p_m 10^{-\frac{m(m+1)}{2}}}
+\displaylines{\gamma=\sum_{m=1}^\infty p_m 10^{-\frac{m(m+1)}{2}}}.
 $$
 </div>
 
@@ -183,30 +190,30 @@ $$
 设
 
 $$
-\displaylines{a=\sum_{m=1}^\infty p_m 10^{-m^2}}
+\displaylines{a=\sum_{m=1}^\infty p_m 10^{-m^2}},
 $$
 
 则有
 
 $$
-\displaylines{p_n=\left[10^{2n-1}\left(a\cdot10^{(n-1)^2}-\left[a\cdot10^{(n-1)^2}\right]\right)\right]}
+\displaylines{p_n=\left[10^{2n-1}\left(a\cdot10^{(n-1)^2}-\left[a\cdot10^{(n-1)^2}\right]\right)\right]}.
 $$
 </div>
 
-Hardy和Wright则更进一步,
+Hardy和Wright提出
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理(Hardy-Wright公式)</b>
 对于任意大于$1$的整数$r$, 设
 
 $$
-\displaylines{B=\sum_{m=1}^\infty p_m r^{-m^2}}
+\displaylines{B=\sum_{m=1}^\infty p_m r^{-m^2}},
 $$
 
 则有
 
 $$
-\displaylines{p_n=[r^{n^2} B]-r^{2n-1} [r^{(n-1)^2} B]}
+\displaylines{p_n=[r^{n^2} B]-r^{2n-1} [r^{(n-1)^2} B]}.
 $$
 </div>
 
@@ -215,7 +222,7 @@ Knopfmacher给出了另一种不同的方法.
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理(Knopfmacher公式)</b>
 $$
-\displaylines{p_n=\left[1-\log_y\left(1-\dfrac{A_y}{(1-y^{-2})(1-y^{-3})\cdots(1-y^{-p_{n-1}})}\right)\right],y>3}
+\displaylines{p_n=\left[1-\log_y\left(1-\dfrac{A_y}{(1-y^{-2})(1-y^{-3})\cdots(1-y^{-p_{n-1}})}\right)\right],y>3},
 $$
 这里$A_y=\prod\limits_{i=1}^\infty(1-y^{-p_i})<1$.
 </div>
@@ -228,20 +235,29 @@ $$
 ## 利用$\pi(n)$或$\chi(n)$
 
 这类公式使用素数的各种性质来构造函数, 其中有两个重点, 一是构造出 $\pi(n)$ 或 $\chi(n)$, 二是从 $\pi(n)$ 构造 $p_n$, 使用不同的构造方法, 就能得到不同的通项公式. 显然, 当我们已经构造出 $\chi(n)$ 后, 就可以直接写出 $\pi(n)$, 即
+
 $$
+
 \pi(n)=\sum_{k=2}^n \chi(k),
+
 $$
 
 如果 $\chi(n)$ 可以解析延拓使得积分
+
 $$
+
 \frac{1}{2\pi i}\int_C\frac{(1-\chi(x))'}{1-\chi(x)}\mathrm{d}x,
+
 $$
 
 有意义的话, 上式的值也将等于 $\pi(x)$. 这里围道 $C$ 取包含 $x$ 轴上从 $1$ 到 $x$ 函数 $1-\chi(x)$ 的所有零点.
 
 顺便插一句, 由 $\chi(x)$ 可以直接写出素数的递推公式,
+
 $$
+
 p_{n+1}=p_n+1+\sum_{m=p_n+1}^{2p_n}\prod_{i=p_n+1}^m(1-\chi(i)).
+
 $$
 
 首先来看基于 Wilson 定理的公式.
@@ -260,15 +276,19 @@ $$
 </div>
 
 由 Wilson 定理知 $n$ 是素数当且仅当 $\dfrac{(n-1)!+1}{n}$ 是整数, 于是 $\cos\pi\dfrac{(n-1)!+1}{n}$ 当且仅当 $n$ 是素数时值为 $\pm1$, 否则其值属于 $(-1,1)$, 平方再取整后, 即可得到
+
 $$
 \left[\cos^2\pi\dfrac{(n-1)!+1}{n}\right]=\chi(n),n>1.
 $$
+
 但是 $n=1$ 时, 上式左边值为 $1$, 右边为 $0$, 我们需要稍作调整,
+
 $$
 \pi(n)=-1+\sum_{k=1}^n\left[\cos^2\pi\frac{(k-1)!+1}{k}\right].
 $$
 
 接着, Willans 给出一个函数 $A_n(a)=\left[\sqrt[n]{\dfrac{n}{1+a}}\right], n\in \mathbb Z_{>0},a\in \mathbb Z_{\ge0}$, 当 $a<n$ 时, $1\le\dfrac{n}{1+a}\le n$, $1\le\sqrt[n]{\dfrac{n}{1+a}}\le\sqrt[n]{n}<2$, 故 $A_n(a)=1$. 当 $a\ge n$ 时, $0<\sqrt[n]{\dfrac{n}{1+a}}<1$, 故 $A_n(a)=0$. 即
+
 $$
 A_n(a)=\begin{cases}
 1, & a<n\\
@@ -277,10 +297,13 @@ A_n(a)=\begin{cases}
 $$
 
 因为给定自然数 $n$， 满足 $\pi(m)<n$ 的 $m$ 的个数就是 $p_n-1$， 将 $A_n(a)$ 与 $\pi(n)$ 复合即可得到素数通项公式
+
 $$
 p_n=1+\sum_{m=1}^N A_n(\pi(m)).
 $$
+
 这里 $N$ 是足够大的正整数, 由 Bertrand–Chebyshev 定理可得 $p_n<2^n$ 对所有正整数 $n$ 都成立, 故可取 $N=2^n$， 整理即得,
+
 $$
 p_n=1+\sum_{m=1}^{2^n}\left[\begin{pmatrix}\dfrac{n}{\sum\limits_{k=1}^m\left[\cos^2\pi\dfrac{(k-1)!+1}{k}\right]}\end{pmatrix}^{\frac{1}{n}}\right].
 $$
@@ -290,32 +313,39 @@ James P.Jones 给出了一个类似的公式.
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理(Jones公式)</b>
+
 $$
-p_n=\sum_{m=0}^{2^n}(1\ominus ((1+\pi(m))\ominus n)).
+p_n=\sum_{m=0}^{2^n}(1\ominus ((1+\pi(m))\ominus n)),
 $$
 其中 $a\ominus b=\dfrac{|a-b|+a-b}{2}$.
 </div>
 
 Jones 使用模除运算给出 $\chi(n)$, 记 $a \mod b$ 为 $a$ 除以 $b$ 所得的余数, 显然由 Wilson 定理可得 $\chi(n)=((n-1)!^2\mod n)$, 此时就不需要排除 $n=1$ 处的干扰, 但该式本质上与 Willans 的式子没多大区别. 故有
+
 $$
 \pi(n)=\sum_{k=1}^n ((k-1)!^2\mod k).
 $$
 
 对于函数
+
 $$
 A_n(a)=\begin{cases}
 1, & a<n\\
 0, &a\ge n
 \end{cases}
 $$
+
 Jones 给出了另一种构造 [4]， 他定义
+
 $$
 a\ominus b=\begin{cases}
 0, & a<b\\
 a-b, &a\ge b
 \end{cases},
 $$
+
 即 $a\ominus b=\dfrac{|a-b|+a-b}{2}$, 则
+
 $$
 A_n(a)=1\ominus ((1+a)\ominus n).
 $$
@@ -326,6 +356,7 @@ $$
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理(Tsangaris-Jones公式)</b>
+  
 $$
 \chi(n)=1\ominus\sum_{0<i<k\le [\sqrt{n}]}\left(2\left[\dfrac{in}{k}\right]-n+1\right).
 $$
@@ -357,21 +388,26 @@ $$
 </div>
 
 对于函数 $\dfrac{(n-1)!^2}{n}$， 当 $n$ 为素数时,
+
 $$
 \dfrac{(n-1)!^2}{n}=\dfrac{((n-1)!-1)((n-1)!+1)}{n}+\dfrac{1}{n}=\text{整数}+\dfrac{1}{n}.
 $$
+
 当 $n$ 不为素数时, $\dfrac{(n-1)!^2}{n}$ 为整数, 由正弦函数的性质可得
+
 $$
 \chi(n)=\dfrac{\sin^2\pi\dfrac{(k-1)!^2}{k}}{\sin^2\dfrac{\pi}{k}}, n>1.
 $$
 
 对于函数 $C_n(a)$, 由正弦函数的性质知
+
 $$
 C_n(a)=\begin{cases}
 1, & a<n\\
 0, &a\ge n
 \end{cases}.
 $$
+
 将二者其组合起来即可.
 
 Hardy 和 Wright 给出了另一种基于 Wilson 公式的素数通项公式.
@@ -404,6 +440,8 @@ $$
 将二者组合起来即可.
 
 还有其它的构造方法, 仅罗列如下:
+
+<div style="border: 3px solid #000; padding: 10px;">
 
 Willans公式4:
 $$
@@ -444,6 +482,8 @@ $$
 $$
 \chi(n)=\dfrac{e^{\frac{2\pi i(n-1)!}{n}}-1}{e^{-\frac{2\pi i}{n}}-1}.
 $$
+</div>
+
 
 这些公式都可以用 Wilson 定理证明, 且过程完全类似. 接下来我们介绍基于 Fermat 小定理得到的素数通项公式.
 
@@ -479,37 +519,49 @@ $$
 </div>
 
 考虑函数
+
 $$
 g(n)=\sum\limits_{i=1}^{n-1}\left[\dfrac{\left[\dfrac{n}{i}\right]}{\dfrac{n}{i}}\right]
 $$
+
 对于任意大于 $0$ 的 $x$， 当 $x$ 为整数时， $\left[\dfrac{[x]}{x}\right]=1$， 当 $x$ 不是整数时 $\left[\dfrac{[x]}{x}\right]=0$. 设 $i=1,2,\cdots, n-1$， 如果 $n$ 是素数， $\dfrac{n}{i}$ 是整数当且仅当 $i=1$， 所以
+
 $$
 \sum\limits_{i=1}^{n-1}\left[\dfrac{\left[\dfrac{n}{i}\right]}{\dfrac{n}{i}}\right]=1,
 $$
+
 如果 $n$ 不是素数， 那么必然存在不等于 $1$ 的 $i$， 使得 $\dfrac{n}{i}$ 为整数， 故
+
 $$
 \sum\limits_{i=1}^{n-1}\left[\dfrac{\left[\dfrac{n}{i}\right]}{\dfrac{n}{i}}\right]>1,
 $$
+
 给 $g(n)$ 取倒数再取整即得素数特征函数， 即
+
 $$
-\chi(n)=\begin{bmatrix}\dfrac{1}{\sum\limits_{i=1}^{n-1}\left[\dfrac{\left[\dfrac{n}{i}\right]}{\dfrac{n}{i}}\right]}\end{bmatrix}
+\chi(n)=\begin{bmatrix}\dfrac{1}{\sum\limits_{i=1}^{n-1}\left[\dfrac{\left[\dfrac{n}{i}\right]}{\dfrac{n}{i}}\right]}\end{bmatrix}.
 $$
 
 因为
+
 $$
 \chi(n)\pi(n)=\begin{cases}
-\pi(n), & n\text{是素数}\\
+\pi(n), & n\text{是素数};\\
 0, & n\text{不是素数}
 \end{cases}
 $$
+
 令 $k$ 是一个正整数， 则有
+
 $$
 n\left[\dfrac{1}{1+|k-\chi(n)\pi(n)|}\right]=\begin{cases}
 n, & n\text{是第}k\text{个素数}\\
 0, & \text{其它}
 \end{cases}
 $$
+
 故
+
 $$
 p_k=\sum_{m=2}^{2^k}m\begin{bmatrix}
 \dfrac{1}{1+\left|k-\begin{bmatrix}\dfrac{1}{\sum\limits_{i=1}^{m-1}\left[\dfrac{\left[\dfrac{m}{i}\right]}{\dfrac{m}{i}}\right]}\end{bmatrix}\sum\limits_{n=2}^m\begin{bmatrix}\dfrac{1}{\sum\limits_{i=1}^{n-1}\left[\dfrac{\left[\dfrac{n}{i}\right]}{\dfrac{n}{i}}\right]}\end{bmatrix}
@@ -538,63 +590,80 @@ $$
 </div>
 
 设 $d(i)$ 为除数函数， 即 $i$ 的正因子的个数， 因为
+
 $$
 \left[\dfrac{i}{j}\right]-\left[\dfrac{i-1}{j}\right]=\begin{cases}
 1, & j\ |\ i\\
 0, & j\not|\ i
 \end{cases},
 $$
+
 故
+
 $$
 d(i)=\sum_{j=1}^i \left[\dfrac{i}{j}\right]-\left[\dfrac{i-1}{j}\right].
 $$
 
 Ruiz 构造出函数
+
 $$
 -\left[-\dfrac{d(i)-2}{i}\right],i>1.
 $$
+
 当 $i$ 是素数时， 因为它只有 $1$ 和其自身两个因子， $d(i)=2$， $-\left[-\dfrac{d(i)-2}{i}\right]=0$， $i$ 不是素数时， $d(i)>2$， 从而 $0<\dfrac{d(i)-2}{i}<1$， $-\left[-\dfrac{d(i)-2}{i}\right]=1$. 故
+
 $$
 \chi(i)=1-\left(-\left[-\dfrac{d(i)-2}{i}\right]\right)=1+\left[-\dfrac{d(i)-2}{i}\right], i>1.
 $$
+
 与之前相同的,
+
 $$
 \pi(n)=\sum_{i=2}^n \chi(i).
 $$
 
 因为 $1\le k\le p_n-1$ 时， 一定有 $\left[\dfrac{\pi(k)}{n}\right]=0$， Ruiz 希望找出一个仅与 $n$ 有关的上界 $C_n$， 使得 $p_n\le k\le C_n$ 时， 有 $1\le \dfrac{\pi(k)}{n}<2$， 即 $\left[\dfrac{\pi(k)}{n}\right]=1$， 从而
+
 $$
 p_n=1+\sum_{k=1}^{C_n}\left(1-\left[\dfrac{\pi(k)}{n}\right]\right).
 $$
 
 Ruiz 选定的 $C_n$ 等于 $2([n\ln n]+1)$， 有以下两个不等式成立，
+
 $$
 p_n\le2([n\ln n]+1),
 $$
+
 $$
 \pi\left(2([n\ln n]+1)\right)<2n.
 $$
+
 我们省略其证明， 由这两个不等式可以推出 $p_n\le k\le C_n$ 时， $\left[\dfrac{\pi(k)}{n}\right]=1$.
 
 将 $C_n$ 代入并整理即得 Ruiz 的公式.
 
 一个更简单些的方法是
+
 $$
 \chi(n)=\left[\dfrac{2}{d(n)}\right].
 $$
 
-定理 $\ref{Lamber}$ 给出了 $d(n)$ 的另一种构造方法.
+Lambert公式 给出了 $d(n)$ 的另一种构造方法.
 
 除数函数有推广
+
 $$
 \sigma_x(n)=\sum\limits_{k|n}k^x,
 $$
+
 则 $d(n)=\sigma_0(n)$. 如果 $n=p_1^{a_1}p_2^{a_2}\cdots p_r^{a_r}$， 则有
+
 $$
 \sigma_x(n)=\prod\limits_{i=1}^r\dfrac{p_i^{(a_i+1)x}-1}{p_i^x-1},x>0.
 $$
 
 当 $n$ 是素数时， 它只有 $1$ 和 $n$ 两个因数， 故 $\sigma_x(n)=n^x+1$， 若 $n$ 不是素数， 则 $\sigma_x(n)>n^x+1$， 故有
+
 $$
 \chi(n)=\left[\dfrac{n^x+1}{\sigma_x(n)}\right],n>1
 $$
@@ -610,12 +679,15 @@ $$
 </div>
 
 因为 Euler $\varphi$ 函数为小于 $n$ 的正整数中与 $n$ 互素的数的数目， $n$ 为素数时当然有 $\varphi(n)=n-1$， 从而
+
 $$
 \begin{bmatrix}
 \dfrac{\varphi(n)}{n-1}
 \end{bmatrix}=1.
 $$
+
 当 $n$ 不为素数时有 $\varphi(n)<n-1$， 从而
+
 $$
 \begin{bmatrix}
 \dfrac{\varphi(n)}{n-1}
@@ -623,6 +695,7 @@ $$
 $$
 
 初等数论中有公式 $\varphi(n)=n\prod\limits_{p|n}\left(1-\dfrac{1}{p}\right)$， 将其代入即得
+
 $$
 \chi(n)=\begin{bmatrix}
 \dfrac{n\prod\limits_{p|n}\left(1-\dfrac{1}{p}\right)}{n-1}
@@ -634,30 +707,34 @@ $$
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理(Ortega Costa公式)</b>
 $$
-\pi(n)=n-\dfrac{1}{2\pi}\int_0^{2\pi}\sum_{m=1}^n\cos\left(x\prod_{1\le j,k\le m-1}(jk-m)\right)\dd x.
+\pi(n)=n-\dfrac{1}{2\pi}\int_0^{2\pi}\sum_{m=1}^n\cos\left(x\prod_{1\le j,k\le m-1}(jk-m)\right)\mathrm{d} x.
 $$
 </div>
 <div style="border: 3px solid #000; padding: 10px;">
 <b>证明</b>
 注意到 $m$ 为合数时 $\prod\limits_{1\le j,k\le m-1}(jk-m)=0$， $m$ 为素数时， $\prod\limits_{1\le j,k\le m-1}(jk-m)$ 等于一个整数， 故
 $$
-\dfrac{1}{2\pi}\int_0^{2\pi}\sum\limits_{m=1}^n\cos\left(x\prod\limits_{1\le j,k\le m-1}(jk-m)\right)\dd x
+\dfrac{1}{2\pi}\int_0^{2\pi}\sum\limits_{m=1}^n\cos\left(x\prod\limits_{1\le j,k\le m-1}(jk-m)\right)\mathrm{d} x,
 $$
 实际上就是小于等于 $n$ 的合数的数量， 故
 $$
-\pi(n)=n-\dfrac{1}{2\pi}\int_0^{2\pi}\sum_{m=1}^n\cos\left(x\prod_{1\le j,k\le m-1}(jk-m)\right)\dd x.
+\pi(n)=n-\dfrac{1}{2\pi}\int_0^{2\pi}\sum_{m=1}^n\cos\left(x\prod_{1\le j,k\le m-1}(jk-m)\right)\mathrm{d} x,
 $$
 将 $\pi(n)$ 按照之前的方法转化成 $p_n$ 即可.
-</div><br>
+</div>
+
 一个类似的公式是 Wormell 公式.
+
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理(Wormell公式)</b>
 $$
-\pi(n)=\sum_{m=2}^n\dfrac{1+(-1)^{2^{B(m)}}}{2}.
+\pi(n)=\sum_{m=2}^n\dfrac{1+(-1)^{2^{B(m)}}}{2},
 $$
 这里 $B(m)=\prod\limits_{1\le j,k\le m-1}(jk-m)^2.$
-</div><br>
+</div>
+
 1953 年, Sierpiński 提出下面这个包含极限的公式, 但这里的极限也可以设法用取整函数代替.
+
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理(Sierpiński公式)</b>
 $$
@@ -848,7 +925,7 @@ $$
 \sum_{n=1}^\infty \dfrac{\mu(n)}{2^n-1}-\dfrac{1}{2}=0.
 $$
 
-Golomb 在 1992 年利用 Lambert 级数又给出了 Gandhi 公式 [28] 的另一个证明, 详见.
+Golomb 在 1992 年利用 Lambert 级数又给出了 Gandhi 公式的另一个证明, 详见[28].
 
 当我们取 $a_n=1$ 时,
 
@@ -868,7 +945,7 @@ d(k)=\left.\left(\dfrac{1}{k!}\dfrac{\mathrm{d}^k}{\mathrm{d}x^k}\left(\sum\limi
 $$
 </div>
 
-按照定理 $\ref{ruiz}$ 的方法将其转化为 $p_k$ 即可.\qed
+按照Ruiz公式的方法将其转化为 $p_k$ 即可.\qed
 
 1955 年, Teuffel 利用 Riemann $\zeta$ 函数给出了一个素数通项公式.
 
