@@ -672,7 +672,7 @@ $$
 
 给定型 $\mathcal{F}$, 集合 $X$ 及其上等式集 $\Sigma$, 设 $X$ 上的 $\mathcal{F}$ 型 $\Sigma$ 自由代数为 $\mathbf{F}_{\Sigma}(X)$, $\iota\colon X\to F_{\Sigma}(X)$ 是自然的映射, 则对 $\Sigma$ 的任意一个 $\mathcal{F}$ 型模型 $\mathbf{A}=(A,F)$ 和映射 $\iota'\colon X \to A$, 都存在一个唯一的同态 $\varphi\colon F_{\Sigma}(X)\to A$, 使得下图交换:
 
-<img src="{{ site.baseurl }}/img/ua/1.png" alt="1" style="width: 50%; height: auto;">
+<img src="{{ site.baseurl }}/img/ua/1.png" alt="1" style="width: 30%; height: auto;">
 
 </div>
 
@@ -703,18 +703,7 @@ $SH\le HS$, $PS\le SP$, $PH\le HP$.
 关于这三种闭包算子之间的强度关系, 有如下图表:
 
 <div style="border: 3px solid #000; padding: 10px;">
-$$
-  \begin{tikzcd}
-                         & HSP                                        &                           &               \\
-                         & SHPS \arrow[u]                             &                           &               \\
-    HPS \arrow[ru]           & SPHS \arrow[u]                             & SHP \arrow[lu]            &               \\
-    PHS \arrow[ru] \arrow[u] &                                            & SPH \arrow[lu] \arrow[u]  &               \\
-    HS \arrow[u]             & HP \arrow[luu] \arrow[ruu]                 & PSH \arrow[u] \arrow[llu] & SP \arrow[lu] \\
-    SH \arrow[u] \arrow[rru] & PH \arrow[u] \arrow[ru]                    & PS \arrow[ru] \arrow[u]   &               \\
-    H \arrow[u] \arrow[ru]   & S \arrow[lu] \arrow[ru]                    & P \arrow[lu] \arrow[u]    &               \\
-                         & \mathsf{C} \arrow[u] \arrow[ru] \arrow[lu] &                           &              
-    \end{tikzcd}
-$$
+<img src="{{ site.baseurl }}/img/ua/2.png" alt="2" style="width: 50%; height: auto;">
 </div>
 
 如图, $HSP$ 位于该图的最顶端, 实际上, 有以下定理.
@@ -795,30 +784,15 @@ HSP定理中的 H 指同态像 Homomorphic image, S 指子代数 Subalgebra, P �
 
 由自由对象的泛性质, 对任意交换环 $S$ 和映射 $g\colon X\to S$, 存在唯一的态射 $\varphi$ 使下图交换,
 
-$$
-    \begin{tikzcd}
-        X \arrow[r, "\iota"] \arrow[rd, "g"'] & F(X) \arrow[d, "\varphi", dotted] \\
-                                      & S                                
-    \end{tikzcd}
-$$
+<img src="{{ site.baseurl }}/img/ua/3.png" alt="3" style="width: 30%; height: auto;">
 
 由余积的泛性质, 对于环 $S$ 和环同态 $\varphi\colon F(X)\to S$, 有唯一的环同态 $\psi$ 使下图交换,
 
-$$
-    \begin{tikzcd}
-        F(X) \arrow[r, "\iota'"] \arrow[rd, "\varphi"'] & R\coprod F(X) \arrow[d, "\psi", dotted] \\
-                                      & S                                
-    \end{tikzcd}
-$$
+<img src="{{ site.baseurl }}/img/ua/4.png" alt="4" style="width: 30%; height: auto;">
 
 将两图连接即得交换图
 
-$$
-    \begin{tikzcd}
-        X \arrow[r, "\iota'\circ\iota"] \arrow[rd, "g"'] & R\coprod F(X) \arrow[d, "\psi", dotted] \\
-                                      & S                                
-    \end{tikzcd}
-$$
+<img src="{{ site.baseurl }}/img/ua/5.png" alt="5" style="width: 30%; height: auto;">
 
 若 $S$ 同时为 $R$-代数, 该图依然成立, 便知 $R\coprod F(X)$ 为 $R$-$\mathsf{CAlg}$ 中的自由对象, 由自由对象唯一性知 $R\coprod F(X)$ 与 $R[X]$ 同构.
 
@@ -857,12 +831,7 @@ $$
 
 设 $\mathsf{V}$ 是一个簇, $\mathbf{G}=(G,F)$ 是簇 $\mathsf{V}$ 中的一个对象, 构造一个新簇 $\mathsf{V}(\mathbf{G})$, 其中对象是簇 $\mathsf{V}$ 中存在满足如下条件的代数 $\mathbf{H}=(H,F')$: 若存在从 $\mathbf{G}$ 到 $\mathbf{H}$ 的同态 $h$, 则 $\mathbf{H}$ 是 $\mathsf{V}(\mathbf{G})$ 中的对象, 称 $\mathbf{H}$ 为 $\mathbf{G}$ 上的代数, 强调同态 $h$ 时常将 $\mathbf{H}$ 写作 $(\mathbf{H},h)$. $\mathsf{V}(\mathbf{G})$ 中两个对象 $(\mathbf{H},h)$ 和 $(\mathbf{H}',h')$ 间的态射是使如下图交换的同态 $\varphi$,
 
-$$
-\begin{tikzcd}
-G \arrow[r, "h"] \arrow[rd, "h'"'] & H \arrow[d, "\varphi"] \\
-                                   & H'                    
-\end{tikzcd}
-$$
+<img src="{{ site.baseurl }}/img/ua/6.png" alt="6" style="width: 30%; height: auto;">
 
 故 $\operatorname{Hom}_{\mathsf{V}(\mathbf{G})}(\mathbf{H},\mathbf{H}')$ 是 $\operatorname{Hom}_\mathsf{V}(\mathbf{H},\mathbf{H}')$ 的子集.
 
