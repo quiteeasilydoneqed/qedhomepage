@@ -673,10 +673,10 @@ $$
 给定型 $\mathcal{F}$, 集合 $X$ 及其上等式集 $\Sigma$, 设 $X$ 上的 $\mathcal{F}$ 型 $\Sigma$ 自由代数为 $\mathbf{F}_{\Sigma}(X)$, $\iota\colon X\to F_{\Sigma}(X)$ 是自然的映射, 则对 $\Sigma$ 的任意一个 $\mathcal{F}$ 型模型 $\mathbf{A}=(A,F)$ 和映射 $\iota'\colon X \to A$, 都存在一个唯一的同态 $\varphi\colon F_{\Sigma}(X)\to A$, 使得下图交换:
 
 $$
-\xymatrix@R=1.5pc{
-X \ar[r]^{\iota} \ar[dr]_{\iota'} & F_{\Sigma}(X) \ar@{-->}[d]^{\varphi} \\
- & A
-}
+\begin{tikzcd}
+            X \arrow[r, "\iota"] \arrow[rd, "\iota'"'] & F_{\Sigma}(X) \arrow[d, "\varphi", dotted] \\
+                                          & A                                         
+        \end{tikzcd}
 $$
 
 </div>
@@ -709,16 +709,16 @@ $SH\le HS$, $PS\le SP$, $PH\le HP$.
 
 <div style="border: 3px solid #000; padding: 10px;">
 $$
-\xymatrix{
- & HSP & & \\
- & SHPS \ar[u] & & \\
-HPS \ar[ru] & SPHS \ar[u] & SHP \ar[lu] & \\
-PHS \ar[ru] \ar[u] & & SPH \ar[lu] \ar[u] & \\
-HS \ar[u] & HP \ar[luu] \ar[ruu] & PSH \ar[u] \ar[llu] & SP \ar[lu] \\
-SH \ar[u] \ar[rru] & PH \ar[u] \ar[ru] & PS \ar[ru] \ar[u] & \\
-H \ar[u] \ar[ru] & S \ar[lu] \ar[ru] & P \ar[lu] \ar[u] & \\
- & \mathsf{C} \ar[u] \ar[ru] \ar[lu] & &
-}
+  \begin{tikzcd}
+                         & HSP                                        &                           &               \\
+                         & SHPS \arrow[u]                             &                           &               \\
+    HPS \arrow[ru]           & SPHS \arrow[u]                             & SHP \arrow[lu]            &               \\
+    PHS \arrow[ru] \arrow[u] &                                            & SPH \arrow[lu] \arrow[u]  &               \\
+    HS \arrow[u]             & HP \arrow[luu] \arrow[ruu]                 & PSH \arrow[u] \arrow[llu] & SP \arrow[lu] \\
+    SH \arrow[u] \arrow[rru] & PH \arrow[u] \arrow[ru]                    & PS \arrow[ru] \arrow[u]   &               \\
+    H \arrow[u] \arrow[ru]   & S \arrow[lu] \arrow[ru]                    & P \arrow[lu] \arrow[u]    &               \\
+                         & \mathsf{C} \arrow[u] \arrow[ru] \arrow[lu] &                           &              
+    \end{tikzcd}
 $$
 </div>
 
