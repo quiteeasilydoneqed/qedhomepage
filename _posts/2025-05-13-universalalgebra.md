@@ -20,13 +20,13 @@ tags:
 
 <b>定义(笛卡尔积)</b>
 
-设 $I$ 是指标集, 对于每个 $i \in I$, $A_i$ 是一个集合, 集合族 $\\{A_i\\}_{i \in I}$ 的笛卡尔积, $\prod_{i \in I} A_i$, 定义为
+设 $I$ 是指标集, 对于每个 $i \in I$, $A_i$ 是一个集合, 集合族 $\{A_i\}_{i \in I}$ 的笛卡尔积, $\prod_{i \in I} A_i$, 定义为
 
 $$
 \prod_{i \in I} A_i = \{f \mid f\colon I \to \bigcup_{i \in I} A_i, \forall i \in I, f(i) \in A_i\}.
 $$
 
-当 $I$ 为有限集时, 比如设 $|I|=n$, 等价的将 $\prod_{i \in I} A_i$ 中的元素记作 $n$ 元有序组 $(a_1,\cdots,a_n), a_i\in A_i$, 特别的, 当 $I$ 是空集时, 空积为一元集 $\\{\emptyset\\}$.
+当 $I$ 为有限集时, 比如设 $|I|=n$, 等价的将 $\prod_{i \in I} A_i$ 中的元素记作 $n$ 元有序组 $(a_1,\cdots,a_n), a_i\in A_i$, 特别的, 当 $I$ 是空集时, 空积为一元集 $\{\emptyset\}$.
 
 当 $A=A_i=A_j, i,j\in I$ 时, 笛卡尔积记作 $A^I$, 若 $|I|=n$, 也记作 $A^n$.
 
@@ -77,10 +77,13 @@ $$
 <b>例(群)</b>
 
 一个群 $\mathbf{G}$ 是一个 $\{\cdot , {}^{-1}, 1\}$ 型代数 $(G,\cdot , {}^{-1}, 1)$, 其中 $\cdot$ 是二元运算, ${}^{-1}$ 是一元运算, $1$ 是零元运算, 并且要满足以下公式:
+<br>
 
 $\mathrm{(1)}$ $x \cdot (y \cdot z) \approx (x \cdot y) \cdot z;$
+<br>
 
 $\mathrm{(2)}$ $x \cdot 1 \approx 1 \cdot x \approx x ;$
+<br>
 
 $\mathrm{(3)}$ $x \cdot x^{-1} \approx x^{-1} \cdot x \approx 1.$
 
@@ -186,7 +189,7 @@ $$
 
 <b>定义(直积)</b>
 
-设 $I$ 是指标集, $(\mathbf{A}_i=(A_i,F_i))_{i \in I}$ 是一族 $\mathcal{F}$ 型的代数, 它们的直积 $\mathbf{A} = \prod_{i \in I} \mathbf{A}_i$ 是一个代数, 其论域为 $\prod_{i \in I} A_i$, 并且对于 $n$ 元函数 $f \in \mathcal{F}$ 和 $a_1, \cdots, a_n \in \prod_{i \in I} A_i$, 有
+设 $I$ 是指标集, $\{\mathbf{A}_i=(A_i,F_i)\}_{i \in I}$ 是一族 $\mathcal{F}$ 型的代数, 它们的直积 $\mathbf{A} = \prod_{i \in I} \mathbf{A}_i$ 是一个代数, 其论域为 $\prod_{i \in I} A_i$, 并且对于 $n$ 元函数 $f \in \mathcal{F}$ 和 $a_1, \cdots, a_n \in \prod_{i \in I} A_i$, 有
 
 $$
 f^{\mathbf{A}}(a_1, \cdots, a_n)(i) = f^{\mathbf{A}_i}(a_1(i), \cdots, a_n(i)), i \in I.
@@ -199,7 +202,7 @@ $$
 
 <b>定义(投影)</b>
 
-设 $I$ 是指标集, $(\mathbf{A}_i=(A_i,F_i))_{i \in I}$ 是一族同型的代数, 它们的直积为 $\mathbf{A} = \prod_{i \in I} \mathbf{A}_i$, 定义投影映射为
+设 $I$ 是指标集, $\{\mathbf{A}_i=(A_i,F_i)\}_{i \in I}$ 是一族同型的代数, 它们的直积为 $\mathbf{A} = \prod_{i \in I} \mathbf{A}_i$, 定义投影映射为
 
 $$
 \displaylines{
@@ -263,6 +266,7 @@ $\mathbf{A}$ 上的所有同余关系组成的集合记作 $\operatorname{Con}(\
 <b>定义(生成同余)</b>
 
 设 $\mathbf{A}=(A,F)$ 是一个代数, $R\subseteq A\times A$, 则由 $R$ 生成的同余为包含 $R$ 的最小同余关系, 记作 $\operatorname{Cg}^{\mathbf{A}}(R)$, 即 $\operatorname{Cg}^{\mathbf{A}}(R)=\cap\{\equiv\in\operatorname{Con}(\mathbf{A})\mid R\subseteq\equiv\}$.
+<br>
 
 若 $R$ 是有限集, 则称同余 $\operatorname{Cg}^{\mathbf{A}}(R)$ 是有限生成的, 若 $R$ 形如 $\{(x_1,x_2)\}$, 则称 $\operatorname{Cg}^{\mathbf{A}}(R)=\operatorname{Cg}^{\mathbf{A}}(x_1,x_2)$ 是一个主同余.
 
@@ -360,10 +364,10 @@ $$
 
 设 $\mathbf{A}=(A,F)$ 和 $\mathbf{B}=(B,F')$ 是同型的两个代数, 设 $\alpha$ 是 $\mathbf{A}$ 到 $\mathbf{B}$ 的同态, 则 $\mathbf{A}/\ker(\alpha)\cong \alpha(\mathbf{A})$.
 
-</div><br>
+</div>
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof</b>
+<b>证明</b>
 
 设 $A \to A/\ker(\alpha)$ 的自然同态为 $\pi$, 设映射 $\beta\colon A/\ker(\alpha)\to \alpha(A)$ 由 $\alpha=\beta\circ\pi$ 确定, 则 $\beta$ 即为所求的同构映射.
 
@@ -394,10 +398,10 @@ $$
 设 $\mathbf{A}=(A,F)$ 和 $\mathbf{B}=(B,F')$ 是同型的两个代数, $\mathbf{B}$ 是 $\mathbf{A}$ 的子代数, $\equiv$ 是 $\mathbf{A}$ 上的一个同余关系, 则 $\equiv\mid_B$ 是 $\mathbf{B}$ 上的同余关系, $\equiv\mid_{B^\equiv}$ 是 $\mathbf{B^\equiv}$ 上的同余关系, 且
 $ \mathbf{B}/\equiv\mid_B\cong\mathbf{B}^\equiv/\equiv\mid_{B^\equiv}$.
 
-</div><br>
+</div>
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof</b>
+<b>证明</b>
 
 同构由 $[b]_{\equiv\mid_B}\mapsto[b]_{\equiv\mid_{B^{\equiv}}}$ 给出.
 
@@ -419,10 +423,10 @@ $$
 
 设 $\mathbf{A}=(A,F)$ 是一个代数, 若 $\equiv_1,\equiv_2\in \operatorname{Con}(\mathbf{A})$, 且 $\equiv_1\subseteq\equiv_2$, 则 $\equiv_2/\equiv_1$ 是 $\mathbf{A}/\equiv_1$ 上的同余关系, 且 $(\mathbf{A}/\equiv_1)/(\equiv_2/\equiv_1)\cong \mathbf{A}/\equiv_2$.
 
-</div><br>
+</div>
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof</b>
+<b>证明</b>
 
 同构由 $[[a]_{\equiv_1}]_{\equiv_2/\equiv_1}\mapsto[a]_{\equiv_2}$ 给出.
 
@@ -463,10 +467,10 @@ $$
 
 设 $\mathbf{A}=(A,F)$ 是一个代数, $\equiv\in\operatorname{Con}(\mathbf{A})$, 则 $[\equiv,\nabla_A]\cong \operatorname{Con}(\mathbf{A}/\equiv)$ 是序同构.
 
-</div><br>
+</div>
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof</b>
+<b>证明</b>
 
 序同构由 $\equiv'\mapsto\equiv'/\equiv$ 给出.
 
@@ -491,10 +495,10 @@ $$
 
 设 $\mathbf{A}$ 是一个代数, $\equiv\in\operatorname{Con}(\mathbf{A})$, $\mathbf{A}/\equiv$ 是一个单代数当且仅当 $\equiv$ 是极大同余.
 
-</div><br>
+</div>
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof</b>
+<b>证明</b>
 
 由对应定理显然.
 
@@ -512,10 +516,13 @@ $$
 <b>定义(项)</b>
 
 设 $X$ 是一个集合, 其中元素称为变元, 设 $\mathcal{F}$ 为一个型, 定义基于 $X$ 的 $\mathcal{F}$ 型项的集合 $T(X)$ 是满足以下条件的最小集合:
+<br>
 
 $\mathrm{(1)}$ $X \cup \mathcal{F}_0 \subseteq T(X)$;
+<br>
  
 $\mathrm{(2)}$ 若 $p_1,\cdots,p_n \in T(X)$ 且 $f \in \mathcal{F}_n$, 则 $f(p_1, \dots, p_n) \in T(X)$.
+<br>
 
 $T(X)$ 中元素称为项.
 
@@ -579,6 +586,7 @@ p\approx q,
 $$
 
 其中 $p,q\in T(X)$, 记 $X$ 上所有 $\mathcal{F}$ 型等式组成的集合为 $\operatorname{Id}_{\mathcal{F}}(X)$, 它与 $T(X)\times T(X)$ 之间有自然的双射, 于是等式可以理解为 $T(X)$ 上的二元关系.
+<br>
  
 $\operatorname{Id}_{\mathcal{F}}(X)$ 的子集称为等式集或理论, 通常用 $\Sigma$ 表示, 即 $\Sigma\subseteq\operatorname{Id}_{\mathcal{F}}(X). $
 
@@ -594,6 +602,7 @@ p^{\mathbf{A}}(a_1,\cdots,a_n)=q^{\mathbf{A}}(a_1,\cdots,a_n),\forall a_1,\cdots
 $$
 
 则称代数 $\mathbf{A}$ 满足 $p\approx q$ 或 $\mathbf{A}$ 是 $p\approx q$ 的一个模型, 记作 $\mathbf{A}\models p\approx q$.
+<br>
  
 若 $\Sigma$ 是公式集, 且 $\mathbf{A}$ 满足 $\Sigma$ 中的每一条等式, 则称 $\mathbf{A}$ 满足 $\Sigma$ 或 $\mathbf{A}$ 是 $\Sigma$ 的一个模型, 记作 $\mathbf{A}\models \Sigma$.
 
@@ -605,7 +614,7 @@ $$
 
 <b>定义(簇)</b>
 
-给定型 $\mathcal{F}$, 集合 $X$ 及其上等式集 $\Sigma$, 一个簇是一个范畴 $\mathsf{V}$, 其对象为 $\Sigma$ 的全体 $\mathcal{F}$ 型模型, 态射为代数间同态, 这个簇记作 $\mathsf{V}=\Mod(\Sigma)$.
+给定型 $\mathcal{F}$, 集合 $X$ 及其上等式集 $\Sigma$, 一个簇是一个范畴 $\mathsf{V}$, 其对象为 $\Sigma$ 的全体 $\mathcal{F}$ 型模型, 态射为代数间同态, 这个簇记作 $\mathsf{V}=\operatorname{Mod}(\Sigma)$.
 
 </div><br>
 <div style="border: 3px solid #000; padding: 10px;">
@@ -619,23 +628,23 @@ $$
 
 <b>定义(演绎闭包)</b>
 
-设 $\mathsf{A}$ 是由一些 $\mathcal{F}$ 型代数及其同态组成的范畴, 记 $\Id(\mathsf{A})$ 是 $\mathsf{A}$ 满足的 $X$ 上所有 $\mathcal{F}$ 型等式组成的等式集, 则对于等式集 $\Sigma$, 称 $\Id(\Mod(\Sigma))$ 为 $\Sigma$ 的演绎闭包. 若 $\Sigma=\Id(\Mod(\Sigma))$, 则称 $\Sigma$ 是演绎闭的.
+设 $\mathsf{A}$ 是由一些 $\mathcal{F}$ 型代数及其同态组成的范畴, 记 $\operatorname{Id}(\mathsf{A})$ 是 $\mathsf{A}$ 满足的 $X$ 上所有 $\mathcal{F}$ 型等式组成的等式集, 则对于等式集 $\Sigma$, 称 $\operatorname{Id}(\operatorname{Mod}(\Sigma))$ 为 $\Sigma$ 的演绎闭包. 若 $\Sigma=\operatorname{Id}(\operatorname{Mod}(\Sigma))$, 则称 $\Sigma$ 是演绎闭的.
 
 </div>
 
-显然 $\Sigma\subseteq \Id(\Mod(\Sigma))$, 且 $\Id(\Mod(\Id(\Mod(\Sigma))))=\Id(\Mod(\Sigma))$, 这就是演绎闭包名称的来源.
+显然 $\Sigma\subseteq \operatorname{Id}(\operatorname{Mod}(\Sigma))$, 且 $\operatorname{Id}(\operatorname{Mod}(\operatorname{Id}(\operatorname{Mod}(\Sigma))))=\operatorname{Id}(\operatorname{Mod}(\Sigma))$, 这就是演绎闭包名称的来源.
 
-可以证明, $\Id(\mathsf{A})$ 一定是演绎闭的. 若 $\Sigma$ 是演绎闭的, 则存在一个簇 $\mathsf{V}$ 满足 $\Sigma=\Id(\mathsf{V)}$.
+可以证明, $\operatorname{Id}(\mathsf{A})$ 一定是演绎闭的. 若 $\Sigma$ 是演绎闭的, 则存在一个簇 $\mathsf{V}$ 满足 $\Sigma=\operatorname{Id}(\mathsf{V)}$.
 
-称 $\Mod(\Id(\mathsf{A}))$ 为 $\mathsf{A}$ 生成的簇, 若 $\mathsf{A}$ 是单元集 $\{\mathbf{A}\}$, 则记作 $\Mod(\Id(\mathbf{A}))$, 显然 $\Mod(\Id(\cdot))$ 也是一个闭包算子, 称为同语闭包. 若范畴 $\mathsf{V}$ 是簇, 则 $\Mod(\Id(\mathsf{V}))=\mathsf{V}$, 即同语闭, 反之, 若一个代数范畴同语闭则一定是簇, 显然此时 $\Sigma=\Id(\mathsf{V})$.
+称 $\operatorname{Mod}(\operatorname{Id}(\mathsf{A}))$ 为 $\mathsf{A}$ 生成的簇, 若 $\mathsf{A}$ 是单元集 $\{\mathbf{A}\}$, 则记作 $\operatorname{Mod}(\operatorname{Id}(\mathbf{A}))$, 显然 $\operatorname{Mod}(\operatorname{Id}(\cdot))$ 也是一个闭包算子, 称为同语闭包. 若范畴 $\mathsf{V}$ 是簇, 则 $\operatorname{Mod}(\operatorname{Id}(\mathsf{V}))=\mathsf{V}$, 即同语闭, 反之, 若一个代数范畴同语闭则一定是簇, 显然此时 $\Sigma=\operatorname{Id}(\mathsf{V})$.
 
-设 $\mathsf{C}$ 是一个范畴, 其中对象为 $\mathcal{F}$ 型代数的范畴 $\mathsf{A}$, 态射为各对象自身的对象集 $\operatorname{Ob}(\mathsf{A})$ 之间的包含映射给出的范畴间的函子. 再设 $\mathsf{E}=\mathscr{P}(\operatorname{Id}_{\mathcal{F}}(X))$ 为 $\operatorname{Id}_{\mathcal{F}}(X)$ 的幂集, 它关于集合间包含关系构成一个偏序集, 可以将其做成一个范畴, 对象为所有等式集, 态射为包含映射. 这样, $\Id(\cdot)$ 和 $\Mod(\cdot)$ 即为 $\mathsf{C}$ 和 $\mathsf{E}$ 之间的一对伴随函子. 设 $\mathsf{V}$ 是所有簇组成的范畴, 它是 $\mathsf{C}$ 的子范畴, 设 $\mathsf{D}$ 是所有演绎闭的等式集组成的范畴, 它是 $\mathsf{E}$ 的子范畴, 则 $\Id(\cdot)$ 和 $\Mod(\cdot)$ 为 $\mathsf{V}$ 和 $\mathsf{D}$ 之间的范畴同构.
+设 $\mathsf{C}$ 是一个范畴, 其中对象为 $\mathcal{F}$ 型代数的范畴 $\mathsf{A}$, 态射为各对象自身的对象集 $\operatorname{Ob}(\mathsf{A})$ 之间的包含映射给出的范畴间的函子. 再设 $\mathsf{E}=\mathscr{P}(\operatorname{Id}_{\mathcal{F}}(X))$ 为 $\operatorname{Id}_{\mathcal{F}}(X)$ 的幂集, 它关于集合间包含关系构成一个偏序集, 可以将其做成一个范畴, 对象为所有等式集, 态射为包含映射. 这样, $\operatorname{Id}(\cdot)$ 和 $\operatorname{Mod}(\cdot)$ 即为 $\mathsf{C}$ 和 $\mathsf{E}$ 之间的一对伴随函子. 设 $\mathsf{V}$ 是所有簇组成的范畴, 它是 $\mathsf{C}$ 的子范畴, 设 $\mathsf{D}$ 是所有演绎闭的等式集组成的范畴, 它是 $\mathsf{E}$ 的子范畴, 则 $\operatorname{Id}(\cdot)$ 和 $\operatorname{Mod}(\cdot)$ 为 $\mathsf{V}$ 和 $\mathsf{D}$ 之间的范畴同构.
 
 <div style="border: 3px solid #000; padding: 10px;">
 
 <b>例</b>
 
-如果取簇为半群范畴 $\mathsf{Sg}$, 取 $X=\{a,b,c\}$, 若取 $\Sigma=\{(a\cdot b)\cdot c\approx a\cdot(b\cdot c)\}$, 则 $\Mod(\Sigma)=\mathsf{Sg}$, 但 $\Id(\Mod(\Sigma))=\Id(\mathsf{Sg})=\{(a\cdot a)\cdot a\approx a\cdot(a\cdot a),\cdots,(c\cdot c)\cdot c\approx c\cdot(c\cdot c)\}$, 这个集合中一共有 $3^3=9$ 个元素.
+如果取簇为半群范畴 $\mathsf{Sg}$, 取 $X=\{a,b,c\}$, 若取 $\Sigma=\{(a\cdot b)\cdot c\approx a\cdot(b\cdot c)\}$, 则 $\operatorname{Mod}(\Sigma)=\mathsf{Sg}$, 但 $\operatorname{Id}(\operatorname{Mod}(\Sigma))=\operatorname{Id}(\mathsf{Sg})=\{(a\cdot a)\cdot a\approx a\cdot(a\cdot a),\cdots,(c\cdot c)\cdot c\approx c\cdot(c\cdot c)\}$, 这个集合中一共有 $3^3=9$ 个元素.
 
 </div>
 
@@ -645,7 +654,7 @@ $$
 
 <b>定义(自由代数)</b>
 
-给定型 $\mathcal{F}$ 和集合 $X$, 对应的项代数为 $\mathbf{T}(X)$, $\Sigma$ 是一个等式集, 在 $\mathbf{T}(X)$ 上定义同余关系 $\sim$, 若 $p,q\in T(X)$, 则 $p\sim q \Longleftrightarrow p\approx q\in \Id(\Mod(\Sigma))$, 则商代数 $\mathbf{T}(X)/\sim$ 称为 $X$ 上的 $\mathcal{F}$ 型 $\Sigma$ 自由代数, 记作 $\mathbf{F}_{\Sigma}(X)$, 其论域记作 $F_{\Sigma}(X)$.
+给定型 $\mathcal{F}$ 和集合 $X$, 对应的项代数为 $\mathbf{T}(X)$, $\Sigma$ 是一个等式集, 在 $\mathbf{T}(X)$ 上定义同余关系 $\sim$, 若 $p,q\in T(X)$, 则 $p\sim q \Longleftrightarrow p\approx q\in \operatorname{Id}(\operatorname{Mod}(\Sigma))$, 则商代数 $\mathbf{T}(X)/\sim$ 称为 $X$ 上的 $\mathcal{F}$ 型 $\Sigma$ 自由代数, 记作 $\mathbf{F}_{\Sigma}(X)$, 其论域记作 $F_{\Sigma}(X)$.
 
 </div>
 
@@ -665,11 +674,12 @@ $$
 给定型 $\mathcal{F}$, 集合 $X$ 及其上等式集 $\Sigma$, 设 $X$ 上的 $\mathcal{F}$ 型 $\Sigma$ 自由代数为 $\mathbf{F}_{\Sigma}(X)$, $\iota\colon X\to F_{\Sigma}(X)$ 是自然的映射, 则对 $\Sigma$ 的任意一个 $\mathcal{F}$ 型模型 $\mathbf{A}=(A,F)$ 和映射 $\iota'\colon X \to A$, 都存在一个唯一的同态 $\varphi\colon F_{\Sigma}(X)\to A$, 使得下图交换:
 
 $$
-\begin{array}{rcl}
-X & \xrightarrow{\iota} & F_{\Sigma}(X) \\
- & \searrow_{\iota'} & \downarrow_{\varphi} \\
- & & A
-\end{array}
+\require{AMScd}
+\begin{CD}
+X @>{\iota}>> F_{\Sigma}(X) \\
+@>{\iota'}>> @V{\varphi}V{\text{...}}V \\
+@. A
+\end{CD}
 $$
 
 </div>
@@ -702,22 +712,21 @@ $SH\le HS$, $PS\le SP$, $PH\le HP$.
 
 <div style="border: 3px solid #000; padding: 10px;">
 $$
-\begin{array}{rcl}
- & & HSP \\
- & & \uparrow \\
- & & SHPS \\
- & \nearrow & \uparrow \\
-HPS & & SPHS \\
-\uparrow & \nearrow & \uparrow \\
-PHS & & SPH \\
-\uparrow & & \uparrow \nearrow \\
-HS & & HP \searrow \searrow \\
-\uparrow & \nearrow & \uparrow \nearrow \\
-SH \searrow & PH & PS \nearrow \\
-\uparrow \nearrow & \uparrow \nearrow & \uparrow \nearrow \\
-H & S & P \\
-\uparrow \nearrow \nearrow & \uparrow \nearrow \nearrow & \uparrow \nearrow \\
- & \mathsf{C} &
+\begin{array}{ccccc}
+ & & HSP & & \\
+ & & \uparrow & & \\
+ & & SHPS & & \\
+HPS & \nearrow & \uparrow & & \\
+\uparrow & \nearrow & SPHS & \nearrow & SHP \\
+PHS \uparrow & & \uparrow & & \uparrow \\
+\uparrow & & SPH & \nearrow & \\
+HS \uparrow & & HP & \searrow \searrow & \\
+\uparrow \nearrow & & \uparrow \nearrow & & PSH \\
+SH \searrow & PH \uparrow & PS \nearrow & SP \uparrow \\
+\uparrow \nearrow & \uparrow \nearrow & \uparrow \nearrow & \\
+H & S & P & \\
+\uparrow \nearrow \nearrow & \uparrow \nearrow \nearrow & \uparrow \nearrow & \\
+ & \mathsf{C} & & & 
 \end{array}
 $$
 </div>
@@ -735,7 +744,7 @@ $$
 
 <b>定理</b>
 
-$\Id(\mathsf{C})=\Id(H(\mathsf{C}))=\Id(S(\mathsf{C}))=\Id(P(\mathsf{C}))=\Id(HSP(\mathsf{C}))$.
+$\operatorname{Id}(\mathsf{C})=\operatorname{Id}(H(\mathsf{C}))=\operatorname{Id}(S(\mathsf{C}))=\operatorname{Id}(P(\mathsf{C}))=\operatorname{Id}(HSP(\mathsf{C}))$.
 
 </div><br>
 <div style="border: 3px solid #000; padding: 10px;">
@@ -745,7 +754,7 @@ $\Id(\mathsf{C})=\Id(H(\mathsf{C}))=\Id(S(\mathsf{C}))=\Id(P(\mathsf{C}))=\Id(HS
 给定型 $\mathcal{F}$ 和集合 $X$, $\Sigma$ 是一个等式集, $X$ 上的 $\mathcal{F}$ 型 $\Sigma$ 自由代数为 $\mathbf{F}_{\Sigma}(X)$, 则有
 
 $$
-\Id(\Mod(\Sigma))=\Id(\mathbf{F}_{\Sigma}(X)).
+\operatorname{Id}(\operatorname{Mod}(\Sigma))=\operatorname{Id}(\mathbf{F}_{\Sigma}(X)).
 $$
 
 </div><br>
@@ -753,7 +762,7 @@ $$
 
 <b>定理</b>
 
-若一个由一些同型代数连同代数间同态组成的范畴 $\mathsf{C}$ 在取同态像, 取子代数, 取积代数下封闭, 即 $\mathsf{C}=HSP(\mathsf{C})$, 则有 $\mathsf{C}=\Mod(\Id(\mathsf{C))}$.
+若一个由一些同型代数连同代数间同态组成的范畴 $\mathsf{C}$ 在取同态像, 取子代数, 取积代数下封闭, 即 $\mathsf{C}=HSP(\mathsf{C})$, 则有 $\mathsf{C}=\operatorname{Mod}(\operatorname{Id}(\mathsf{C))}$.
 
 </div><br>
 <div style="border: 3px solid #000; padding: 10px;">
@@ -768,11 +777,11 @@ HSP定理中的 H 指同态像 Homomorphic image, S 指子代数 Subalgebra, P �
 
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof(HSP定理的证明)</b>
+<b>HSP定理的证明</b>
 
-若 $\mathsf{V}$ 是簇, 设 $\mathsf{V}=\Mod(\Sigma)$, 因为 $\Id(\mathsf{V})=\Id(\Mod(\Sigma))=\Id(HSP(\mathsf{V}))$, 则 $HSP(\mathsf{V})\subseteq \Mod(\Sigma)=\mathsf{V}$, 而由因 $\mathsf{V}\subseteq HSP(\mathsf{V})$ 知 $\mathsf{V}=HSP(\mathsf{V})$, 即它在取同态像, 取子代数, 取积代数下封闭.
-
-若一个由一些同型代数连同代数间同态组成的范畴 $\mathsf{C}$ 在取同态像, 取子代数, 取积代数下封闭, 即 $\mathsf{C}=HSP(\mathsf{C})$, 则有 $\mathsf{C}=\Mod(\Id(\mathsf{C))}$, 所以 $\mathsf{C}$ 是簇.
+若 $\mathsf{V}$ 是簇, 设 $\mathsf{V}=\operatorname{Mod}(\Sigma)$, 因为 $\operatorname{Id}(\mathsf{V})=\operatorname{Id}(\operatorname{Mod}(\Sigma))=\operatorname{Id}(HSP(\mathsf{V}))$, 则 $HSP(\mathsf{V})\subseteq \operatorname{Mod}(\Sigma)=\mathsf{V}$, 而由因 $\mathsf{V}\subseteq HSP(\mathsf{V})$ 知 $\mathsf{V}=HSP(\mathsf{V})$, 即它在取同态像, 取子代数, 取积代数下封闭.
+<br>
+若一个由一些同型代数连同代数间同态组成的范畴 $\mathsf{C}$ 在取同态像, 取子代数, 取积代数下封闭, 即 $\mathsf{C}=HSP(\mathsf{C})$, 则有 $\mathsf{C}=\operatorname{Mod}(\operatorname{Id}(\mathsf{C))}$, 所以 $\mathsf{C}$ 是簇.
 
 </div>
 
