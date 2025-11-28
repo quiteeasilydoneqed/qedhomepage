@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "设计"
-header-img: "img/post-bg-infinity.jpg"
+header-img: "img/design.jpg"
 header-mask: 0.3
 hide-in-nav: true
 tags:
