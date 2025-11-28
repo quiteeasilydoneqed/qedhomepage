@@ -672,12 +672,7 @@ $$
 
 给定型 $\mathcal{F}$, 集合 $X$ 及其上等式集 $\Sigma$, 设 $X$ 上的 $\mathcal{F}$ 型 $\Sigma$ 自由代数为 $\mathbf{F}_{\Sigma}(X)$, $\iota\colon X\to F_{\Sigma}(X)$ 是自然的映射, 则对 $\Sigma$ 的任意一个 $\mathcal{F}$ 型模型 $\mathbf{A}=(A,F)$ 和映射 $\iota'\colon X \to A$, 都存在一个唯一的同态 $\varphi\colon F_{\Sigma}(X)\to A$, 使得下图交换:
 
-$$
-\begin{tikzcd}
-            X \arrow[r, "\iota"] \arrow[rd, "\iota'"'] & F_{\Sigma}(X) \arrow[d, "\varphi", dotted] \\
-                                          & A                                         
-        \end{tikzcd}
-$$
+<img src="{{ site.baseurl }}/img/ua/1.jpg" alt="1" style="width: 50%; height: auto;">
 
 </div>
 
