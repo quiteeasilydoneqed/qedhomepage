@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "数学"
-header-img: "img/math.jpg"
+header-img: "img/math.png"
 header-mask: 0.3
 hide-in-nav: true
 tags:
