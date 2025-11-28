@@ -674,11 +674,10 @@ $$
 给定型 $\mathcal{F}$, 集合 $X$ 及其上等式集 $\Sigma$, 设 $X$ 上的 $\mathcal{F}$ 型 $\Sigma$ 自由代数为 $\mathbf{F}_{\Sigma}(X)$, $\iota\colon X\to F_{\Sigma}(X)$ 是自然的映射, 则对 $\Sigma$ 的任意一个 $\mathcal{F}$ 型模型 $\mathbf{A}=(A,F)$ 和映射 $\iota'\colon X \to A$, 都存在一个唯一的同态 $\varphi\colon F_{\Sigma}(X)\to A$, 使得下图交换:
 
 $$
-\begin{CD}
-X @>{\iota}>> F_{\Sigma}(X) \\
-@>{\iota'}>> @V{\varphi}V{\text{...}}V \\
-@. A
-\end{CD}
+\begin{tikzcd}
+            X \arrow[r, "\iota"] \arrow[rd, "\iota'"'] & F_{\Sigma}(X) \arrow[d, "\varphi", dotted] \\
+                                          & A                                         
+\end{tikzcd}
 $$
 
 </div>
@@ -711,22 +710,16 @@ $SH\le HS$, $PS\le SP$, $PH\le HP$.
 
 <div style="border: 3px solid #000; padding: 10px;">
 $$
-\begin{array}{ccccc}
- & & HSP & & \\
- & & \uparrow & & \\
- & & SHPS & & \\
-HPS & \nearrow & \uparrow & & \\
-\uparrow & \nearrow & SPHS & \nearrow & SHP \\
-PHS \uparrow & & \uparrow & & \uparrow \\
-\uparrow & & SPH & \nearrow & \\
-HS \uparrow & & HP & \searrow \searrow & \\
-\uparrow \nearrow & & \uparrow \nearrow & & PSH \\
-SH \searrow & PH \uparrow & PS \nearrow & SP \uparrow \\
-\uparrow \nearrow & \uparrow \nearrow & \uparrow \nearrow & \\
-H & S & P & \\
-\uparrow \nearrow \nearrow & \uparrow \nearrow \nearrow & \uparrow \nearrow & \\
- & \mathsf{C} & & & 
-\end{array}
+    \begin{tikzcd}
+                         & HSP                                        &                           &               \\
+                         & SHPS \arrow[u]                             &                           &               \\
+    HPS \arrow[ru]           & SPHS \arrow[u]                             & SHP \arrow[lu]            &               \\
+    PHS \arrow[ru] \arrow[u] &                                            & SPH \arrow[lu] \arrow[u]  &               \\
+    HS \arrow[u]             & HP \arrow[luu] \arrow[ruu]                 & PSH \arrow[u] \arrow[llu] & SP \arrow[lu] \\
+    SH \arrow[u] \arrow[rru] & PH \arrow[u] \arrow[ru]                    & PS \arrow[ru] \arrow[u]   &               \\
+    H \arrow[u] \arrow[ru]   & S \arrow[lu] \arrow[ru]                    & P \arrow[lu] \arrow[u]    &               \\
+                         & \mathsf{C} \arrow[u] \arrow[ru] \arrow[lu] &                           &              
+    \end{tikzcd}
 $$
 </div>
 
@@ -804,36 +797,33 @@ HSP定理中的 H 指同态像 Homomorphic image, S 指子代数 Subalgebra, P �
 </div><br>
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof</b>
+<b>证明</b>
 
 由自由对象的泛性质, 对任意交换环 $S$ 和映射 $g\colon X\to S$, 存在唯一的态射 $\varphi$ 使下图交换,
 
 $$
-\begin{CD}
-X @>{\iota}>> F(X) \\
-@V{g}V{\text{ }}V @V{\varphi}V{\text{...}}V \\
-S @= S
-\end{CD}
+    \begin{tikzcd}
+        X \arrow[r, "\iota"] \arrow[rd, "g"'] & F(X) \arrow[d, "\varphi", dotted] \\
+                                      & S                                
+    \end{tikzcd}
 $$
 
 由余积的泛性质, 对于环 $S$ 和环同态 $\varphi\colon F(X)\to S$, 有唯一的环同态 $\psi$ 使下图交换,
 
 $$
-\begin{CD}
-F(X) @>{\iota'}>> R\coprod F(X) \\
-@V{\varphi}V{\text{ }}V @V{\psi}V{\text{...}}V \\
-S @= S
-\end{CD}
+    \begin{tikzcd}
+        F(X) \arrow[r, "\iota'"] \arrow[rd, "\varphi"'] & R\coprod F(X) \arrow[d, "\psi", dotted] \\
+                                      & S                                
+    \end{tikzcd}
 $$
 
 将两图连接即得交换图
 
 $$
-\begin{CD}
-X @>{\iota'\circ\iota}>> R\coprod F(X) \\
-@V{g}V{\text{ }}V @V{\psi}V{\text{...}}V \\
-S @= S
-\end{CD}
+    \begin{tikzcd}
+        X \arrow[r, "\iota'\circ\iota"] \arrow[rd, "g"'] & R\coprod F(X) \arrow[d, "\psi", dotted] \\
+                                      & S                                
+    \end{tikzcd}
 $$
 
 若 $S$ 同时为 $R$-代数, 该图依然成立, 便知 $R\coprod F(X)$ 为 $R$-$\mathsf{CAlg}$ 中的自由对象, 由自由对象唯一性知 $R\coprod F(X)$ 与 $R[X]$ 同构.
@@ -842,14 +832,14 @@ $$
 
 设 $k$ 是一个代数闭域, 给定有限变量集 $X$, 则 $k$ 上的多项式代数便是范畴 $k$-$\mathsf{CAlg}$ 中的自由对象, 即簇 $k$-$\mathsf{CAlg}$ 中的自由代数. 仿射空间定义为从 $X$ 到 $k$ 的所有映射组成的集合 $k^X$, 若 $|X|=n$, 则记作 $k^n$.
 
-任意一个集合间映射 $\mu\colon X\to k$ 都给出一个 $k$-代数间同态, 即代入映射 $\mu'\colon k[X]\to k$, 而每一个 $k$-代数间同态 $\mu'\colon k[X]\to k$ 都由 $x\mapsto\mu'(x),x\in X$ 给出一个集合间映射 $\mu\colon X\to k$, 若 $X=\{x_1,\cdots,x_n\}$, $\mu$ 便对应 $k^{|X|}$ 中的点 $(\mu'(x_1),\cdots,\mu'(x_n))$. 因此, 在泛代数几何中, 仿射空间定义为 $\Hom_{k\text{-}\mathsf{CAlg}}(k[X],k)$, 若 $|X|=n$ 则称其为 $n$ 维仿射空间. 我们仍称仿射空间中的元素 $\mu$ 为点, 这种做法在很多时候是方便的.
+任意一个集合间映射 $\mu\colon X\to k$ 都给出一个 $k$-代数间同态, 即代入映射 $\mu'\colon k[X]\to k$, 而每一个 $k$-代数间同态 $\mu'\colon k[X]\to k$ 都由 $x\mapsto\mu'(x),x\in X$ 给出一个集合间映射 $\mu\colon X\to k$, 若 $X=\{x_1,\cdots,x_n\}$, $\mu$ 便对应 $k^{|X|}$ 中的点 $(\mu'(x_1),\cdots,\mu'(x_n))$. 因此, 在泛代数几何中, 仿射空间定义为 $\operatorname{Hom}_{k\text{-}\mathsf{CAlg}}(k[X],k)$, 若 $|X|=n$ 则称其为 $n$ 维仿射空间. 我们仍称仿射空间中的元素 $\mu$ 为点, 这种做法在很多时候是方便的.
 
-对于一个多项式 $f\in k[X]$ 和仿射空间中的一个点 $\mu\in\Hom_{k\text{-}\mathsf{CAlg}}(k[X],k)$, 若 $\mu(f)=0$, 则称 $f$ 在点 $\mu$ 处消失, 称 $\mu$ 是多项式 $f$ 的零点或根. 在点 $\mu$ 处消失的所有多项式组成的集合记作 $\ker\mu=\mu^{-1}(0)$, $f\in\ker\mu$ 等价于说 $\mu(f)=0$, 而多项式 $f$ 的全体零点组成的集合则为 $\{\mu\in\Hom_{k\text{-}\mathsf{CAlg}}(k[X],k]\mid \mu(f)=0\}$.
+对于一个多项式 $f\in k[X]$ 和仿射空间中的一个点 $\mu\in\operatorname{Hom}_{k\text{-}\mathsf{CAlg}}(k[X],k)$, 若 $\mu(f)=0$, 则称 $f$ 在点 $\mu$ 处消失, 称 $\mu$ 是多项式 $f$ 的零点或根. 在点 $\mu$ 处消失的所有多项式组成的集合记作 $\ker\mu=\mu^{-1}(0)$, $f\in\ker\mu$ 等价于说 $\mu(f)=0$, 而多项式 $f$ 的全体零点组成的集合则为 $\{\mu\in\operatorname{Hom}_{k\text{-}\mathsf{CAlg}}(k[X],k]\mid \mu(f)=0\}$.
 
 对于多项式代数的任何一个子集 $T\subseteq k[X]$, 定义
 
 $$
-Z(T)=\{\mu\in\Hom_{k\text{-}\mathsf{CAlg}}(k[X],k)\mid T\subseteq\mu^{-1}(0)\},
+Z(T)=\{\mu\in\operatorname{Hom}_{k\text{-}\mathsf{CAlg}}(k[X],k)\mid T\subseteq\mu^{-1}(0)\},
 $$
 
 称为 $T$ 的零点集, 即使得 $T$ 中每个多项式都消失的点. 对于仿射空间的子集 $Y$, 定义
@@ -871,14 +861,13 @@ $$
 设 $\mathsf{V}$ 是一个簇, $\mathbf{G}=(G,F)$ 是簇 $\mathsf{V}$ 中的一个对象, 构造一个新簇 $\mathsf{V}(\mathbf{G})$, 其中对象是簇 $\mathsf{V}$ 中存在满足如下条件的代数 $\mathbf{H}=(H,F')$: 若存在从 $\mathbf{G}$ 到 $\mathbf{H}$ 的同态 $h$, 则 $\mathbf{H}$ 是 $\mathsf{V}(\mathbf{G})$ 中的对象, 称 $\mathbf{H}$ 为 $\mathbf{G}$ 上的代数, 强调同态 $h$ 时常将 $\mathbf{H}$ 写作 $(\mathbf{H},h)$. $\mathsf{V}(\mathbf{G})$ 中两个对象 $(\mathbf{H},h)$ 和 $(\mathbf{H}',h')$ 间的态射是使如下图交换的同态 $\varphi$,
 
 $$
-\begin{CD}
-G @>{h}>> H \\
-@V{h'}V{\text{ }}V @V{\varphi}V{\text{ }}V \\
-H' @= H'
-\end{CD}
+\begin{tikzcd}
+G \arrow[r, "h"] \arrow[rd, "h'"'] & H \arrow[d, "\varphi"] \\
+                                   & H'                    
+\end{tikzcd}
 $$
 
-故 $\Hom_{\mathsf{V}(\mathbf{G})}(\mathbf{H},\mathbf{H}')$ 是 $\Hom_\mathsf{V}(\mathbf{H},\mathbf{H}')$ 的子集.
+故 $\operatorname{Hom}_{\mathsf{V}(\mathbf{G})}(\mathbf{H},\mathbf{H}')$ 是 $\operatorname{Hom}_\mathsf{V}(\mathbf{H},\mathbf{H}')$ 的子集.
 
 设簇 $\mathsf{V}$ 中的代数均为 $\mathcal{F}$ 型的, 则将 $G$ 中的元素作为 $0$ 元函数符号添加到 $\mathcal{F}$ 中, 对于 $\mathbf{G}$ 上的代数 $\mathbf{H}$, $h(g)$ 被看做 $\mathbf{H}$ 中的常数, 从而使得 $\mathsf{V}(\mathbf{G})$ 中的代数变为 $\mathcal{F}\cup G$ 型的代数, 显然 $\mathsf{V}(\mathbf{G})$ 是簇.
 
@@ -890,16 +879,16 @@ $$
 
 本节内容建立在一般的簇上, 所以对于带常数的簇也成立.
 
-给定簇 $\mathsf{V}$ 和有限变量集 $X$, 设 $\mathbf{F}(X)$ 为 $\mathsf{V}$ 中的自由代数, 定义 $\mathsf{V}$ 上的方程为二元有序对 $(p,q)$, $p,q\in F(X)$, 固定 $\mathsf{V}$ 中的一个代数 $\mathbf{H}$, 仿射空间定义为 $H^{|X|}\cong\Hom_{\mathsf{Set}}(X,H)\cong \Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$, 方程 $(p,q)$ 在仿射空间中的根定义为点 $\mu\in\Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 使得 $\mu(p)=\mu(q)$, 方程 $(p,q)$ 在仿射空间中的所有根定义为集合
+给定簇 $\mathsf{V}$ 和有限变量集 $X$, 设 $\mathbf{F}(X)$ 为 $\mathsf{V}$ 中的自由代数, 定义 $\mathsf{V}$ 上的方程为二元有序对 $(p,q)$, $p,q\in F(X)$, 固定 $\mathsf{V}$ 中的一个代数 $\mathbf{H}$, 仿射空间定义为 $H^{|X|}\cong\operatorname{Hom}_{\mathsf{Set}}(X,H)\cong \operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$, 方程 $(p,q)$ 在仿射空间中的根定义为点 $\mu\in\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 使得 $\mu(p)=\mu(q)$, 方程 $(p,q)$ 在仿射空间中的所有根定义为集合
 
 $$
-Z((p,q))=\{\mu\in\Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H})\mid \mu(p)=\mu(q)\}.
+Z((p,q))=\{\mu\in\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})\mid \mu(p)=\mu(q)\}.
 $$
 
 对于 $F(X)\times F(X)=F(X)^2$ 的任一子集 $T$, 定义其零点集
 
 $$
-Z(T)=\{\mu\in\Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H})\mid T\subseteq\ker\mu\},
+Z(T)=\{\mu\in\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})\mid T\subseteq\ker\mu\},
 $$
 
 其中 $\ker\mu$ 为之前定义的等价关系
@@ -908,7 +897,7 @@ $$
 \ker\mu = \{(p, q) \in F(X)^2 \mid \mu(p) = \mu(q)\}.
 $$
 
-对于 $\Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 的任一子集 $Y$, 定义其同余
+对于 $\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 的任一子集 $Y$, 定义其同余
 
 $$
 I(Y)=\bigcap_{\mu\in Y}\ker\mu,
@@ -916,7 +905,7 @@ $$
 
 因为同态核一定是同余, 同余的交一定是同余, 故 $I(Y)$ 确为同余.
 
-$Z(\cdot)$ 和 $T(\cdot)$ 给出仿射空间 $\Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 的幂集与 $F(X)^2$ 的幂集之间的伽罗瓦连接, 对于仿射空间的子集 $Y$, 如果存在 $F(X)^2$ 的子集 $T$ 使得 $Y=Z(T)$, 则称其为代数集, 对于 $F(X)^2$ 的子集 $T$, 如果存在仿射空间的子集 $Y$ 使得 $T=I(Y)$, 则称其为根同余. 易证 $I(Z(I(Y)))=I(Y)$, $Z(I(Z(T)))=Z(T)$, 故全体代数集与全体根同余一一对应.
+$Z(\cdot)$ 和 $T(\cdot)$ 给出仿射空间 $\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 的幂集与 $F(X)^2$ 的幂集之间的伽罗瓦连接, 对于仿射空间的子集 $Y$, 如果存在 $F(X)^2$ 的子集 $T$ 使得 $Y=Z(T)$, 则称其为代数集, 对于 $F(X)^2$ 的子集 $T$, 如果存在仿射空间的子集 $Y$ 使得 $T=I(Y)$, 则称其为根同余. 易证 $I(Z(I(Y)))=I(Y)$, $Z(I(Z(T)))=Z(T)$, 故全体代数集与全体根同余一一对应.
 
 #### 扎里斯基拓扑
 
@@ -924,7 +913,7 @@ $Z(\cdot)$ 和 $T(\cdot)$ 给出仿射空间 $\Hom_\mathsf{V}(\mathbf{F}(X),\mat
 
 <b>定理</b>
 
-设 $I$ 是指标集, $\{T_i\}_{i\in I}$ 是一族 $F(X)^2$ 的子集, $\{Y_i\}_{i\in I}$ 是一族 $\Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 的子集, 则以下关系成立:
+设 $I$ 是指标集, $\{T_i\}_{i\in I}$ 是一族 $F(X)^2$ 的子集, $\{Y_i\}_{i\in I}$ 是一族 $\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 的子集, 则以下关系成立:
 
 $\mathrm{(1)}$ 若 $T_i\subseteq T_j$, 则 $Z(T_i)\supseteq Z(T_j)$;
 
@@ -942,25 +931,25 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 这意味着代数集的任意交仍是代数集, 根同余的任意交仍是根同余, 但代数集的并未必是代数集, 根同余的并未必是根同余.
 
-显然, $\Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H})=Z(\Delta_{F(X)})$, $\emptyset=Z(\nabla_{F(X)})$, 其中 $\Delta_{F(X)}$ 和 $\nabla_{F(X)}$ 是之前定义的平凡同余, 即 $F(X)^2$ 的对角线集和 $F(X)^2$ 本身, 这说明全集和空集是代数集.
+显然, $\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})=Z(\Delta_{F(X)})$, $\emptyset=Z(\nabla_{F(X)})$, 其中 $\Delta_{F(X)}$ 和 $\nabla_{F(X)}$ 是之前定义的平凡同余, 即 $F(X)^2$ 的对角线集和 $F(X)^2$ 本身, 这说明全集和空集是代数集.
 
 <div style="border: 3px solid #000; padding: 10px;">
 
 <b>定义(扎里斯基拓扑)</b>
 
-仿射空间 $\Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 中的所有代数集和代数集的有限并组成 $\Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 里的闭集, 这样得到的拓扑称为扎里斯基拓扑.
+仿射空间 $\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 中的所有代数集和代数集的有限并组成 $\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 里的闭集, 这样得到的拓扑称为扎里斯基拓扑.
 
 </div><br>
 <div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理</b>
 
-设 $Y\subseteq\Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$, $\overline{Y}$ 是 $Y$ 在扎里斯基拓扑下的闭包, 则 $\overline{Y}\subseteq Z(I(Y))$.
+设 $Y\subseteq\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$, $\overline{Y}$ 是 $Y$ 在扎里斯基拓扑下的闭包, 则 $\overline{Y}\subseteq Z(I(Y))$.
 
 </div>
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof</b>
+<b>证明</b>
 
 显然 $Z(I(Y))$ 是代数集, 且它是包含 $Y$ 的最小代数集, 而 $\overline{Y}$ 未必是代数集, 故 $\overline{Y}\subseteq Z(I(Y))$.
 
@@ -969,12 +958,12 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 <b>定理</b>
 
-若 $Y\subseteq\Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 且 $Y$ 在扎里斯基拓扑下是不可约集, 则 $\overline{Y}=Z(I(Y))$, 特别的, 不可约闭集是代数集.
+若 $Y\subseteq\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 且 $Y$ 在扎里斯基拓扑下是不可约集, 则 $\overline{Y}=Z(I(Y))$, 特别的, 不可约闭集是代数集.
 
 </div>
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof</b>
+<b>证明</b>
 
 设 $\overline{Y}=\bigcap_{i\in I} Y_i$, 其中诸 $Y_i$ 是包含 $Y$ 的闭集, 设 $Y_i=\bigcup_{j\in J}Y_{i_j}$, 其中 $J$ 是有限指标集, 诸 $Y_{i_j}$ 是代数集, 故 $Y\subseteq\bigcup_{j\in J}Y_{i_j}$, 由于 $Y$ 不可约, 则存在某个 $j(i)\in J$, $Y\subseteq Y_{i_{j(i)}}$, 则 $\overline{Y}=\bigcap_{i\in I} Y_{i_{j(i)}}$, 故 $\overline{Y}$ 是代数集, 故 $\overline{Y}=Z(I(Y))$.
 
@@ -993,7 +982,7 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 <b>定义(整性)</b>
 
-对于簇 $\mathsf{V}$ 中的代数 $\mathbf{H}$, 设 $Y_1$ 和 $Y_2$ 是 $\Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 中任意两个代数集, 若 $Y_1\cup Y_2$ 仍为代数集, 则称代数 $\mathbf{H}$ 是整的.
+对于簇 $\mathsf{V}$ 中的代数 $\mathbf{H}$, 设 $Y_1$ 和 $Y_2$ 是 $\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 中任意两个代数集, 若 $Y_1\cup Y_2$ 仍为代数集, 则称代数 $\mathbf{H}$ 是整的.
 
 </div>
 
@@ -1005,7 +994,7 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 <b>定义(余整)</b>
 
-对于簇 $\mathsf{V}$ 中的代数 $\mathbf{H}$, 若 $\Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 中每个非空代数集在扎里斯基拓扑下都是不可约的, 则称代数 $\mathbf{H}$ 是余整的.
+对于簇 $\mathsf{V}$ 中的代数 $\mathbf{H}$, 若 $\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 中每个非空代数集在扎里斯基拓扑下都是不可约的, 则称代数 $\mathbf{H}$ 是余整的.
 
 </div>
 
@@ -1029,7 +1018,7 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 </div>
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof</b>
+<b>证明</b>
 
 若 $\mathbf{F}(X)$ 是诺特的, 则 $\mathbf{F}(X)$ 上任一同余 $T$ 都存在 $T$ 的有限子集 $S$ 生成 $T$, 因 $S\subseteq T$, 则 $Z(T)\subseteq Z(S)$, 故 $I(Z(T))\supseteq I(Z(S))$, 因 $I(Z(S))$ 是包含 $S$ 的最小根同余, 而 $T$ 是包含 $S$ 的最小同余, 故显然 $I(Z(T))=I(Z(S))$, 从而有 $Z(T)=Z(S)$.
 
@@ -1043,9 +1032,9 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 </div>
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof</b>
+<b>证明</b>
 
-若 $\mathbf{H}$ 是等式诺特的, 则 $\mathbf{F}(X)$ 上任一同余 $T$ 都存在 $T$ 的有限子集 $S$, 使得 $Z(T)=Z(S)$, 若 $\mathbf{H}'$ 是 $\mathbf{H}$ 的子代数, 而 $Z(T)\cap\Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H}')=Z(S)\cap\Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H}')$, 故 $\mathbf{H}'$ 是等式诺特的.
+若 $\mathbf{H}$ 是等式诺特的, 则 $\mathbf{F}(X)$ 上任一同余 $T$ 都存在 $T$ 的有限子集 $S$, 使得 $Z(T)=Z(S)$, 若 $\mathbf{H}'$ 是 $\mathbf{H}$ 的子代数, 而 $Z(T)\cap\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H}')=Z(S)\cap\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H}')$, 故 $\mathbf{H}'$ 是等式诺特的.
 
 </div>
 
@@ -1055,12 +1044,12 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 <b>定理</b>
 
-代数 $\mathbf{H}$ 是等式诺特的当且仅当对任意的有限变量集 $X$, $\Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 在扎里斯基拓扑下是诺特空间.
+代数 $\mathbf{H}$ 是等式诺特的当且仅当对任意的有限变量集 $X$, $\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 在扎里斯基拓扑下是诺特空间.
 
 </div>
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof</b>
+<b>证明</b>
 
 见[3]Lemma 4.11.
 
@@ -1069,12 +1058,12 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 <b>定理</b>
 
-若 $\mathbf{H}$ 是等式诺特的, 则 $\Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 中的代数集有唯一的不可约分解, 即若 $Y$ 是代数集且 $Y=\bigcup_{i=1}^n Y_i$, 诸 $Y_i$ 互不包含, 则这样的分解在不计诸 $Y_i$ 的顺序的意义下是唯一的.
+若 $\mathbf{H}$ 是等式诺特的, 则 $\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 中的代数集有唯一的不可约分解, 即若 $Y$ 是代数集且 $Y=\bigcup_{i=1}^n Y_i$, 诸 $Y_i$ 互不包含, 则这样的分解在不计诸 $Y_i$ 的顺序的意义下是唯一的.
 
 </div>
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof</b>
+<b>证明</b>
 
 见[3]Theorem 4.12.
 
@@ -1088,7 +1077,7 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 <b>定义(坐标代数)</b>
 
-若 $Y$ 是 $\Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 中的一个代数集, 则称 $\mathbf{F}(X)/I(Y)$ 为 $Y$ 的坐标代数, 记为 $A(Y)=\mathbf{F}(X)/I(Y)$ 为 $Y$ 的坐标代数.
+若 $Y$ 是 $\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 中的一个代数集, 则称 $\mathbf{F}(X)/I(Y)$ 为 $Y$ 的坐标代数, 记为 $A(Y)=\mathbf{F}(X)/I(Y)$ 为 $Y$ 的坐标代数.
 
 </div>
 
@@ -1110,12 +1099,12 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 <b>定理</b>
 
-若 $\mathbf{H}$ 是整的, 则 $\Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 中的代数集 $Y$ 是代数簇当且仅当 $I(Y)$ 是一个素同余, 亦即其坐标代数 $A(Y)$ 是整代数.
+若 $\mathbf{H}$ 是整的, 则 $\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 中的代数集 $Y$ 是代数簇当且仅当 $I(Y)$ 是一个素同余, 亦即其坐标代数 $A(Y)$ 是整代数.
 
 </div>
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof</b>
+<b>证明</b>
 
 见[5]THEOREM 2.10.
 
@@ -1144,7 +1133,7 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 </div>
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof</b>
+<b>证明</b>
 
 若 $\mathbf{H}$ 是等式诺特的, $T$ 是 $F(X)^2$ 的一个子集, 则存在 $T$ 的有限子集 $T'$ 使得 $Z(T)=Z(T')$, 故 $\left \langle X\mid T \right \rangle =\left \langle X\mid T' \right \rangle $.
 
@@ -1175,11 +1164,11 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 </div>
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof</b>
+<b>证明</b>
 
 对于任一 $\mu\in Z(T)$, 由 $Z(T)$ 的定义知 $T\subseteq \ker\mu$, 由第一同构定理知存在单射 $F(X)/\ker\mu\to H$, 故 $\ker\mu$ 即为包含 $T$ 且存在商代数到 $H$ 的单射的同余.
  
-而对于包含 $T$ 且存在单射 $\iota\colon F(X)/S\to H$ 的同余 $S$, 设 $\pi\colon F(X)\to F(X)/S$ 是自然同态, 取 $\mu=\iota\circ\pi\in\Hom_{\mathsf{V}}(\mathbf{F}(X),\mathbf{H})$, 则 $S=\ker(\iota\circ\pi)=\ker\mu$, 由 $T\subseteq S=\ker\mu$ 知 $\mu\in Z(T)$.
+而对于包含 $T$ 且存在单射 $\iota\colon F(X)/S\to H$ 的同余 $S$, 设 $\pi\colon F(X)\to F(X)/S$ 是自然同态, 取 $\mu=\iota\circ\pi\in\operatorname{Hom}_{\mathsf{V}}(\mathbf{F}(X),\mathbf{H})$, 则 $S=\ker(\iota\circ\pi)=\ker\mu$, 由 $T\subseteq S=\ker\mu$ 知 $\mu\in Z(T)$.
 
 </div><br>
 <div style="border: 3px solid #000; padding: 10px;">
@@ -1205,7 +1194,7 @@ $$
 </div>
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof</b>
+<b>证明</b>
 
 由 $I(\cdot)$ 的定义知
 
@@ -1228,14 +1217,14 @@ $$
 
 <b>定理</b>
 
-若 $T$ 是 $\mathbf{F}(X)$ 上的同余, 则存在 $Y\subseteq \Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$, 使得 $T=I(Y)$, 当且仅当 $T=\sqrt{T}$, 即 $T$ 是根同余当且仅当 $T=\sqrt{T}$.
+若 $T$ 是 $\mathbf{F}(X)$ 上的同余, 则存在 $Y\subseteq \operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$, 使得 $T=I(Y)$, 当且仅当 $T=\sqrt{T}$, 即 $T$ 是根同余当且仅当 $T=\sqrt{T}$.
 
 </div>
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof</b>
+<b>证明</b>
 
-若存在 $Y\subseteq \Hom_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$, 使得 $T=I(Y)$, 则由 $\sqrt{T}=I(Z(T))=I(Z(I(Y)))=I(Y)=T$ 得 $T=\sqrt{T}$. 反之, 若 $T=\sqrt{T}$, 则取 $Y=Z(T)$ 即可.
+若存在 $Y\subseteq \operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$, 使得 $T=I(Y)$, 则由 $\sqrt{T}=I(Z(T))=I(Z(I(Y)))=I(Y)=T$ 得 $T=\sqrt{T}$. 反之, 若 $T=\sqrt{T}$, 则取 $Y=Z(T)$ 即可.
 
 </div>
 
@@ -1250,7 +1239,7 @@ $$
 </div>
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof</b>
+<b>证明</b>
 
 见[14] Theorem 11.3.
 
@@ -1279,14 +1268,14 @@ $$
 
 <b>定理(希尔伯特零点定理)</b>
 
-若 $\mathbf{G}=(G,F)$ 是簇 $\mathsf{V}$ 中的一个对象, $(\mathbf{H},h)$ 是带常数的簇 $\mathsf{V}(\mathbf{G})$ 中的一个忠实代数, $\mathbf{F}(X)$ 是 $\mathsf{V}(\mathbf{G})$ 中自由代数, 若 $\mathbf{H}$ 是 $\mathbf{G}$-代数闭的, 则 $\Hom_{\mathsf{V}(\mathbf{G})}(\mathbf{F}(X),\mathbf{H})$ 中的点与 $\mathbf{F}(X)$ 的极大同余一一对应.
+若 $\mathbf{G}=(G,F)$ 是簇 $\mathsf{V}$ 中的一个对象, $(\mathbf{H},h)$ 是带常数的簇 $\mathsf{V}(\mathbf{G})$ 中的一个忠实代数, $\mathbf{F}(X)$ 是 $\mathsf{V}(\mathbf{G})$ 中自由代数, 若 $\mathbf{H}$ 是 $\mathbf{G}$-代数闭的, 则 $\operatorname{Hom}_{\mathsf{V}(\mathbf{G})}(\mathbf{F}(X),\mathbf{H})$ 中的点与 $\mathbf{F}(X)$ 的极大同余一一对应.
 
 </div>
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof</b>
+<b>证明</b>
 
-设 $\mu\in\Hom_{\mathsf{V}(\mathbf{G})}(\mathbf{F}(X),\mathbf{H})$, 设 $S$ 是包含 $I(\{\mu\})=\ker\mu$ 的同余, 则 $Z(S)$ 包含于 $Z(I(\{\mu\}))$, 考虑 $F(X)^2$ 的子集 $\{(x,\iota \circ h^{-1}\circ\mu(x))\}_{x\in X}$, 其中 $\iota\colon G\to F(X)$ 是自然嵌入, 由 $\mathbf{H}$ 和 $\mathbf{F}(X)$ 忠实性知 $\iota \circ h^{-1}\circ\mu(x)$ 是 $F(X)$ 中唯一确定的元素, 显然 $\{\mu\}=Z(\{(x,\iota \circ h^{-1}\circ\mu(x))\}_{x\in X})$, 故 $\{\mu\}$ 是代数集, 故 $Z(I(\{\mu\}))=\overline{\{\mu\}}=\{\mu\}$. 而又因为 $Z(S)$ 也是闭集, 则必有 $Z(S)=\emptyset$ 或 $Z(S)=\{\mu\}$, 若 $Z(S)=\emptyset$, 则由 $\mathbf{H}$ 的 $\mathbf{G}$-代数闭性知 $S$ 不是真同余, 则显然 $S=F(X)^2$, 故知 $I(\{\mu\})$ 是极大同余.
+设 $\mu\in\operatorname{Hom}_{\mathsf{V}(\mathbf{G})}(\mathbf{F}(X),\mathbf{H})$, 设 $S$ 是包含 $I(\{\mu\})=\ker\mu$ 的同余, 则 $Z(S)$ 包含于 $Z(I(\{\mu\}))$, 考虑 $F(X)^2$ 的子集 $\{(x,\iota \circ h^{-1}\circ\mu(x))\}_{x\in X}$, 其中 $\iota\colon G\to F(X)$ 是自然嵌入, 由 $\mathbf{H}$ 和 $\mathbf{F}(X)$ 忠实性知 $\iota \circ h^{-1}\circ\mu(x)$ 是 $F(X)$ 中唯一确定的元素, 显然 $\{\mu\}=Z(\{(x,\iota \circ h^{-1}\circ\mu(x))\}_{x\in X})$, 故 $\{\mu\}$ 是代数集, 故 $Z(I(\{\mu\}))=\overline{\{\mu\}}=\{\mu\}$. 而又因为 $Z(S)$ 也是闭集, 则必有 $Z(S)=\emptyset$ 或 $Z(S)=\{\mu\}$, 若 $Z(S)=\emptyset$, 则由 $\mathbf{H}$ 的 $\mathbf{G}$-代数闭性知 $S$ 不是真同余, 则显然 $S=F(X)^2$, 故知 $I(\{\mu\})$ 是极大同余.
 
 若 $\mathfrak{m}$ 是 $\mathbf{F}(X)$ 中的极大同余, 则 $Z(\mathfrak{m})$ 非空, 设 $\mu\in Z(\mathfrak{m})$, 则 $I(\{\mu\})$ 包含 $I(Z(\mathfrak{m}))=\sqrt{\mathfrak{m}}$, 因 $\mathfrak{m}$ 极大, 则必有 $\sqrt{\mathfrak{m}}=\mathfrak{m}$ 或 $\sqrt{\mathfrak{m}}=F(X)$, 若 $\sqrt{\mathfrak{m}}=F(X)$, 则与 $I(\{\mu\})$ 极大矛盾, 若 $\sqrt{\mathfrak{m}}=\mathfrak{m}$, 则由 $I(\{\mu\})$ 极大知 $I(\{\mu\})=\mathfrak{m}$, 故 $\{\mu\}=Z(I(\{\mu\}))=Z(\mathfrak{m})$.
 
@@ -1300,9 +1289,9 @@ $$
 </div>
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>proof</b>
+<b>证明</b>
 
-由 $\mathbf{H}$ 的忠实性和 $\mathbf{G}$-代数闭性知 $\mathbf{F}(X)$ 的极大同余与 $\Hom_{\mathsf{V}(\mathbf{G})}(\mathbf{F}(X),\mathbf{H})$ 中的点一一对应, 而 $\Hom_{\mathsf{V}(\mathbf{G})}(\mathbf{F}(X),\mathbf{H})$ 中的点显然都是不可约的, 上个定理的证明中已经说明这些单点集都是代数集, 则它们是代数簇, 由 $\mathbf{H}$ 的整性知它们对应的同余都是素同余, 故极大同余都是素同余.
+由 $\mathbf{H}$ 的忠实性和 $\mathbf{G}$-代数闭性知 $\mathbf{F}(X)$ 的极大同余与 $\operatorname{Hom}_{\mathsf{V}(\mathbf{G})}(\mathbf{F}(X),\mathbf{H})$ 中的点一一对应, 而 $\operatorname{Hom}_{\mathsf{V}(\mathbf{G})}(\mathbf{F}(X),\mathbf{H})$ 中的点显然都是不可约的, 上个定理的证明中已经说明这些单点集都是代数集, 则它们是代数簇, 由 $\mathbf{H}$ 的整性知它们对应的同余都是素同余, 故极大同余都是素同余.
 
 </div>
 
@@ -1316,7 +1305,7 @@ $$
 
 <b>定义(代数集的范畴)</b>
 
-设 $\mathbf{H}$ 是簇 $\mathsf{V}$ 中的一个代数, 定义代数集的范畴为 $\mathsf{K}_{\mathsf{V}}(\mathbf{H})$, 其中对象为有序对 $(X,A)$, 其中 $X$ 是任意有限集, $A$ 是 $\Hom_{\mathsf{V}}(\mathbf{F}(X),\mathbf{H})$ 中代数集. 对象间的态射也是一个有序对 $(f,f_*)\colon(X,A)\to(Y,B)$, 其中 $f$ 为满足如下条件的集合间映射 $X\to Y$: 由 $f$ 自然的诱导出自由代数间同态 $\bar f\colon F(X)\to F(Y)$, 对于 $A$ 中任一元素 $\mu\in A\subseteq\Hom_{\mathsf{V}}(\mathbf{F}(X),\mathbf{H})$, 有 $\bar f\circ\mu\in B\subseteq\Hom_{\mathsf{V}}(\mathbf{F}(Y),\mathbf{H})$. 由此诱导出代数间态射 $f_*\colon A\to B,\mu\mapsto \bar f\circ\mu$, 容易验证由此定义的 $\mathsf{K}_{\mathsf{V}}(\mathbf{H})$ 确为范畴.
+设 $\mathbf{H}$ 是簇 $\mathsf{V}$ 中的一个代数, 定义代数集的范畴为 $\mathsf{K}_{\mathsf{V}}(\mathbf{H})$, 其中对象为有序对 $(X,A)$, 其中 $X$ 是任意有限集, $A$ 是 $\operatorname{Hom}_{\mathsf{V}}(\mathbf{F}(X),\mathbf{H})$ 中代数集. 对象间的态射也是一个有序对 $(f,f_*)\colon(X,A)\to(Y,B)$, 其中 $f$ 为满足如下条件的集合间映射 $X\to Y$: 由 $f$ 自然的诱导出自由代数间同态 $\bar f\colon F(X)\to F(Y)$, 对于 $A$ 中任一元素 $\mu\in A\subseteq\operatorname{Hom}_{\mathsf{V}}(\mathbf{F}(X),\mathbf{H})$, 有 $\bar f\circ\mu\in B\subseteq\operatorname{Hom}_{\mathsf{V}}(\mathbf{F}(Y),\mathbf{H})$. 由此诱导出代数间态射 $f_*\colon A\to B,\mu\mapsto \bar f\circ\mu$, 容易验证由此定义的 $\mathsf{K}_{\mathsf{V}}(\mathbf{H})$ 确为范畴.
 
 </div>
 
