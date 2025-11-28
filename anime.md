@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "动漫"
-header-img: "img/post-bg-infinity.jpg"
+header-img: "img/anime.jpg"
 header-mask: 0.3
 hide-in-nav: true
 tags:
