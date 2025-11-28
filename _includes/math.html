@@ -1,6 +1,6 @@
 <script>
     MathJax = {
-      loader: {load: ['[tex]/ams']},
+      loader: {load: ['[tex]/ams', 'input/tex', 'output/chtml', '[tex]/xy']},
       tex: {
         autoload: {
           action: ['toggle', 'mathtip', 'texttip'],
@@ -22,7 +22,7 @@
         inlineMath: [['$', '$'],['\\(','\\)']],
         displayMath: [['$$', '$$'],['\\[','\\]']],
         processEscapes: true,
-        packages: {'[+]': ['ams', 'AMScd']}
+        packages: {'[+]': ['ams', 'AMScd', 'xy']}
         }
     };
 
