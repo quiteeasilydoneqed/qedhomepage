@@ -80,11 +80,11 @@ $$
 
 不存在一个函数 $\mu$ 满足以下所有性质:
 
-1, $\mu$ 是一个从 $\mathbb{R}$ 的幂集到 $[0, +\infty]$ 的函数;
+1. $\mu$ 是一个从 $\mathbb{R}$ 的幂集到 $[0, +\infty]$ 的函数;
 
-2, 对于 $\mathbb{R}$ 的每个开区间 $I$， $\mu(I) = m(I)$;
+2. 对于 $\mathbb{R}$ 的每个开区间 $I$， $\mu(I) = m(I)$;
 
-3, 对于 $\mathbb{R}$ 的每个无交子集列 $A_1, A_2, \ldots$, 有
+3. 对于 $\mathbb{R}$ 的每个无交子集列 $A_1, A_2, \ldots$, 有
 
 $$
 \mu\left(\bigcup_{k=1}^{\infty} A_k\right) = \sum_{k=1}^{\infty} \mu(A_k);
@@ -101,9 +101,9 @@ $$
 
 设 $\mathscr{R}$ 是以集合为元素的非空集族, 如果它满足以下条件, 则称它为一个集合环:
 
-1, 如果 $A,B\in\mathscr{R}$, 则 $A\cup B\in\mathscr{R}$;
+1. 如果 $A,B\in\mathscr{R}$, 则 $A\cup B\in\mathscr{R}$;
 
-2, 如果 $A,B\in\mathscr{R}$, 则 $A- B\in\mathscr{R}$.
+2. 如果 $A,B\in\mathscr{R}$, 则 $A- B\in\mathscr{R}$.
 
 </div>
 
@@ -114,18 +114,18 @@ $$
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义($\delta$-环)</b>
 
-设 $\mathscr{R}$ 是一个集合环, 如果它满足如下附加条件, 则称它是一个 $\delta$-环:
+设 $\mathscr{R}$ 是一个集合环, 如果它满足如下附加条件, 则称它是一个 $\delta$-环:<br>
 
-3, 设 $\{A_n\}_{n=1}^\infty$ 是一列集合, 如果 $A_n\in\mathscr{R}$, 则 $\bigcap_{n=1}^\infty A_n\in\mathscr{R}$.
+3. 设 $\{A_n\}_{n=1}^\infty$ 是一列集合, 如果 $A_n\in\mathscr{R}$, 则 $\bigcap_{n=1}^\infty A_n\in\mathscr{R}$.
 
 </div><br>
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义($\sigma$-环)</b>
 
-设 $\mathscr{R}$ 是一个集合环, 如果它满足如下附加条件, 则称它是一个 $\sigma$-环:
+设 $\mathscr{R}$ 是一个集合环, 如果它满足如下附加条件, 则称它是一个 $\sigma$-环:<br>
 
-3', 设 $\{A_n\}_{n=1}^\infty$ 是一列集合, 如果 $A_n\in\mathscr{R}$, 则 $\bigcup_{n=1}^\infty A_n\in\mathscr{R}$.
+3'. 设 $\{A_n\}_{n=1}^\infty$ 是一列集合, 如果 $A_n\in\mathscr{R}$, 则 $\bigcup_{n=1}^\infty A_n\in\mathscr{R}$.
 
 </div>
 
@@ -136,11 +136,11 @@ $\delta$ 和 $\sigma$ 分别来自德语中的交集和并集, 二者看似对�
 
 设 $X$ 是一个集合, $\mathscr{A}$ 是 $\mathscr{P}(X)$ 的子集, 如果它满足以下条件, 则称它为一个集合代数:
 
-1, $\emptyset\in\mathscr{A}$;
+1. $\emptyset\in\mathscr{A}$;
 
-2, 如果 $A\in\mathscr{A}$, 则 $X - A\in\mathscr{A}$;
+2. 如果 $A\in\mathscr{A}$, 则 $X - A\in\mathscr{A}$;
 
-3, 如果 $A,B\in\mathscr{A}$, 则 $A\cup B\in\mathscr{A}$.
+3. 如果 $A,B\in\mathscr{A}$, 则 $A\cup B\in\mathscr{A}$.
 
 </div>
 
@@ -149,7 +149,7 @@ $\delta$ 和 $\sigma$ 分别来自德语中的交集和并集, 二者看似对�
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义($\sigma$-代数)</b>
 
-设 $\mathscr{A}$ 是 $X$ 上的一个集合代数, 如果它满足如下附加条件, 则称它是一个 $\sigma$-代数:
+设 $\mathscr{A}$ 是 $X$ 上的一个集合代数, 如果它满足如下附加条件, 则称它是一个 $\sigma$-代数:<br>
 
 4, 设 $\{A_n\}_{n=1}^\infty$ 是一列集合, 如果 $A_n\in\mathscr{A}$, 则 $\bigcup_{n=1}^\infty A_n\in\mathscr{A}$.
 
