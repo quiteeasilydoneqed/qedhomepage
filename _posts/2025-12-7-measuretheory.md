@@ -1454,7 +1454,7 @@ $$
 \int \liminf_{m\to\infty} f_n \,\mathrm{d}\mu\le\liminf_{n\to\infty} \int f_n\,\mathrm{d}\mu.
 $$
 
-</div>
+</div><br>
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义(实函数的积分)</b>
