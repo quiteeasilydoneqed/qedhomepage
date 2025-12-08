@@ -1,4 +1,4 @@
----
+<img width="2520" height="1619" alt="image" src="https://github.com/user-attachments/assets/e1f3ef39-4e70-482e-9ce7-aba16f928cf1" />---
 layout: post
 title: "测度论"
 subtitle: ""
@@ -867,11 +867,11 @@ $$
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义(弱可测)</b>
 
-设 $(X,\mathscr{A},\mu)$ 是一个测度空间, $(V,\|\cdot\|)$ 是域 $k$ 上的一个巴拿赫空间, $f\colon X\to V$.
+设 $(X,\mathscr{A},\mu)$ 是一个测度空间, $(V,\|\cdot\|)$ 是域 $k$ 上的一个巴拿赫空间, $f\colon X\to V$.<br>
 
-如果对偶空间 $V^*$ 内的任一元素 $\varphi\colon V\to k$, 都有 $\varphi\circ f\colon X\to k$ 是通常的可测函数, 其中域 $k$ 上带博雷尔代数, 则称 $f$ 是弱可测的.
+如果对偶空间 $V^*$ 内的任一元素 $\varphi\colon V\to k$, 都有 $\varphi\circ f\colon X\to k$ 是通常的可测函数, 其中域 $k$ 上带博雷尔代数, 则称 $f$ 是弱可测的.<br>
 
-如果对于 $\varphi\in \Gamma\subseteq V^*$, 都有 $\varphi\circ f\colon X\to k$ 是可测函数, 则称 $f$ 是 $\Gamma$-弱可测的.
+如果对于 $\varphi\in \Gamma\subseteq V^*$, 都有 $\varphi\circ f\colon X\to k$ 是可测函数, 则称 $f$ 是 $\Gamma$-弱可测的.<br>
 
 将 $V$ 看做 $V^{**}$ 的子空间, 如果 $f\colon X\to V^*$ 是 $V$-弱可测的, 则称 $f$ 是弱 $\!^*$ 可测的.
 
@@ -938,7 +938,7 @@ $$
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义(盖尔方德积分)</b>
 
-设 $(X,\mathscr{A},\mu)$ 是一个测度空间, $(V,\|\cdot\|)$ 是域 $k$ 上的一个巴拿赫空间, $f\colon X\to V^*$ 是弱 $\!^*$-可测的, 并且对任意的 $\varphi\in V$, 如果 $\varphi\circ f\colon X\to k$ 是通常的可积函数, 且对于任意可测集 $E$, 存在 $I_E\in V^*$, 使得
+设 $(X,\mathscr{A},\mu)$ 是一个测度空间, $(V,\|\cdot\|)$ 是域 $k$ 上的一个巴拿赫空间, $f\colon X\to V^*$ 是弱 $\!^*$ 可测的, 并且对任意的 $\varphi\in V$, 如果 $\varphi\circ f\colon X\to k$ 是通常的可积函数, 且对于任意可测集 $E$, 存在 $I_E\in V^*$, 使得
 
 $$
 I_E(\varphi)=\int_E \varphi(f(x))\,\mathrm{d}\mu(x)
