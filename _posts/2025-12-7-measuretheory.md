@@ -1,4 +1,4 @@
-<img width="2520" height="1619" alt="image" src="https://github.com/user-attachments/assets/e1f3ef39-4e70-482e-9ce7-aba16f928cf1" />---
+---
 layout: post
 title: "测度论"
 subtitle: ""
