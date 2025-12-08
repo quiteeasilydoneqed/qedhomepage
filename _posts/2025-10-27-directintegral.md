@@ -6,7 +6,7 @@ header-img: "img/post-bg-infinity.jpg"
 header-mask: 0.3
 math: true
 tags:
-  - 泛函分析
+  - 分析
   - 抽象调和分析
 ---
 
