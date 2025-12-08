@@ -78,13 +78,13 @@ $$
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 
-不存在一个函数 $\mu$ 满足以下所有性质:
+不存在一个函数 $\mu$ 满足以下所有性质:<br>
 
-1. $\mu$ 是一个从 $\mathbb{R}$ 的幂集到 $[0, +\infty]$ 的函数;
+1, $\mu$ 是一个从 $\mathbb{R}$ 的幂集到 $[0, +\infty]$ 的函数;<br>
 
-2. 对于 $\mathbb{R}$ 的每个开区间 $I$， $\mu(I) = m(I)$;
+2, 对于 $\mathbb{R}$ 的每个开区间 $I$， $\mu(I) = m(I)$;<br>
 
-3. 对于 $\mathbb{R}$ 的每个无交子集列 $A_1, A_2, \ldots$, 有
+3, 对于 $\mathbb{R}$ 的每个无交子集列 $A_1, A_2, \ldots$, 有
 
 $$
 \mu\left(\bigcup_{k=1}^{\infty} A_k\right) = \sum_{k=1}^{\infty} \mu(A_k);
@@ -99,11 +99,11 @@ $$
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义(集合环)</b>
 
-设 $\mathscr{R}$ 是以集合为元素的非空集族, 如果它满足以下条件, 则称它为一个集合环:
+设 $\mathscr{R}$ 是以集合为元素的非空集族, 如果它满足以下条件, 则称它为一个集合环:<br>
 
-1. 如果 $A,B\in\mathscr{R}$, 则 $A\cup B\in\mathscr{R}$;
+1, 如果 $A,B\in\mathscr{R}$, 则 $A\cup B\in\mathscr{R}$;<br>
 
-2. 如果 $A,B\in\mathscr{R}$, 则 $A- B\in\mathscr{R}$.
+2, 如果 $A,B\in\mathscr{R}$, 则 $A- B\in\mathscr{R}$.
 
 </div>
 
@@ -116,7 +116,7 @@ $$
 
 设 $\mathscr{R}$ 是一个集合环, 如果它满足如下附加条件, 则称它是一个 $\delta$-环:<br>
 
-3. 设 $\{A_n\}_{n=1}^\infty$ 是一列集合, 如果 $A_n\in\mathscr{R}$, 则 $\bigcap_{n=1}^\infty A_n\in\mathscr{R}$.
+3, 设 $\{A_n\}_{n=1}^\infty$ 是一列集合, 如果 $A_n\in\mathscr{R}$, 则 $\bigcap_{n=1}^\infty A_n\in\mathscr{R}$.
 
 </div><br>
 
@@ -125,7 +125,7 @@ $$
 
 设 $\mathscr{R}$ 是一个集合环, 如果它满足如下附加条件, 则称它是一个 $\sigma$-环:<br>
 
-3'. 设 $\{A_n\}_{n=1}^\infty$ 是一列集合, 如果 $A_n\in\mathscr{R}$, 则 $\bigcup_{n=1}^\infty A_n\in\mathscr{R}$.
+3', 设 $\{A_n\}_{n=1}^\infty$ 是一列集合, 如果 $A_n\in\mathscr{R}$, 则 $\bigcup_{n=1}^\infty A_n\in\mathscr{R}$.
 
 </div>
 
@@ -134,13 +134,13 @@ $\delta$ 和 $\sigma$ 分别来自德语中的交集和并集, 二者看似对�
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义(集合代数)</b>
 
-设 $X$ 是一个集合, $\mathscr{A}$ 是 $\mathscr{P}(X)$ 的子集, 如果它满足以下条件, 则称它为一个集合代数:
+设 $X$ 是一个集合, $\mathscr{A}$ 是 $\mathscr{P}(X)$ 的子集, 如果它满足以下条件, 则称它为一个集合代数:<br>
 
-1. $\emptyset\in\mathscr{A}$;
+1, $\emptyset\in\mathscr{A}$;<br>
 
-2. 如果 $A\in\mathscr{A}$, 则 $X - A\in\mathscr{A}$;
+2, 如果 $A\in\mathscr{A}$, 则 $X - A\in\mathscr{A}$;<br>
 
-3. 如果 $A,B\in\mathscr{A}$, 则 $A\cup B\in\mathscr{A}$.
+3, 如果 $A,B\in\mathscr{A}$, 则 $A\cup B\in\mathscr{A}$.
 
 </div>
 
@@ -176,9 +176,9 @@ $\delta$ 和 $\sigma$ 分别来自德语中的交集和并集, 二者看似对�
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义(测度, 测度空间)</b>
 
-设 $X$ 是一个配备有 $\sigma$-代数 $\mathscr{A}$ 的集合. 在 $\mathscr{A}$ 上的测度 $\mu$ 是一个函数 $\mu\colon \mathscr{A} \to [0, +\infty]$ 使得:
+设 $X$ 是一个配备有 $\sigma$-代数 $\mathscr{A}$ 的集合. 在 $\mathscr{A}$ 上的测度 $\mu$ 是一个函数 $\mu\colon \mathscr{A} \to [0, +\infty]$ 使得:<br>
 
-1, $\mu(\emptyset) = 0,$
+1, $\mu(\emptyset) = 0,$<br>
 
 2, 如果 $\{E_i\}_{i=1}^{\infty}$ 是 $\mathscr{A}$ 中无交集合的一个序列, 那么
 
@@ -222,7 +222,7 @@ $$
 
 </div>
 
-设 $(X,\mathscr{A},\mu)$ 是测度空间, 则 $\mu$ 可以唯一的延拓到 $\overline{\mathscr{A}}=\{E\cup F\mid E\in \mathscr{A},F\subseteq N\in\mathscr{A},\mu(N)=0\}$ 上成为一个完备测度. 例如, 带博雷尔代数的实数集上的测度是不完备的, 其完备化后均为勒贝格可测集组成的 $\sigma$-代数 $\mathscr{L}$ 上的测度.
+设 $(X,\mathscr{A},\mu)$ 是测度空间, 则 $\mu$ 可以唯一的延拓到 $\overline{\mathscr{A}}=\\{E\cup F\mid E\in \mathscr{A},F\subseteq N\in\mathscr{A},\mu(N)=0\\}$ 上成为一个完备测度. 例如, 带博雷尔代数的实数集上的测度是不完备的, 其完备化后均为勒贝格可测集组成的 $\sigma$-代数 $\mathscr{L}$ 上的测度.
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义(乘积$\sigma$-代数)</b>
@@ -250,16 +250,16 @@ $$
 
 # 特殊测度
 
-## 外测度
+### 外测度
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义(外测度)</b>
 
-设 $X$ 是一个集合, 函数 $\mu^*\colon\mathscr{P}(X)\to[0,+\infty]$ 如果满足如下条件, 则称其为 $X$ 上的一个外测度:
+设 $X$ 是一个集合, 函数 $\mu^*\colon\mathscr{P}(X)\to[0,+\infty]$ 如果满足如下条件, 则称其为 $X$ 上的一个外测度:<br>
 
-1, $\mu^*(\emptyset)=0$;
+1, $\mu^*(\emptyset)=0$;<br>
 
-2, 如果 $A\subseteq B\subseteq X$, 则有 $\mu^*(A) \le \mu^*(B)$;
+2, 如果 $A\subseteq B\subseteq X$, 则有 $\mu^*(A) \le \mu^*(B)$;<br>
 
 3, 如果 $\{A\}_{n=1}^\infty\subseteq \mathscr{P}(X)$, 则有 $\mu^*\left(\bigcup_{n=1}^\infty A_n\right)\le \sum_{n=1}^\infty\mu^*(A_n)$.
 
@@ -283,9 +283,9 @@ $$
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义(预测度)</b>
 
-设 $X$ 是一个集合, $\mathscr{A}$ 是其上的代数, 函数 $\mu\colon\mathscr{A}\to[0,+\infty]$ 如果满足如下条件, 则称其为 $X$ 上的一个预测度:
+设 $X$ 是一个集合, $\mathscr{A}$ 是其上的代数, 函数 $\mu\colon\mathscr{A}\to[0,+\infty]$ 如果满足如下条件, 则称其为 $X$ 上的一个预测度:<br>
 
-1, $\mu(\emptyset)=0$;
+1, $\mu(\emptyset)=0$;<br>
 
 2, 如果 $\{A\}_{n=1}^\infty$ 是 $X$ 中一列无交集合列, 则有 $\mu\left(\bigcup_{n=1}^\infty A_n\right)= \sum_{n=1}^\infty\mu(A_n)$.
 
@@ -304,7 +304,7 @@ $$
 
 </div>
 
-## 博雷尔测度
+### 博雷尔测度
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义(博雷尔测度)</b>
@@ -342,7 +342,7 @@ $$
 
 当取 $F(x)=x$ 时, 对应的勒贝格-斯蒂尔切斯测度就是普通的勒贝格测度.
 
-## 拉东测度
+### 拉东测度
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义(正则性)</b>
@@ -408,7 +408,7 @@ $$
 
 </div>
 
-## 乘积测度
+### 乘积测度
 
 设 $(X,\mathscr{A}_1,\mu)$ 和 $(Y,\mathscr{A}_2,\nu)$ 是 $\sigma$-有限的测度空间, 则唯一存在一个测度, 记作 $\mu\times\nu$, 使得 $(\mu\times\nu)(A\times B)=\mu(A)\times\nu(B)$, 对任意 $A\in \mathscr{A}_1$ 和 $B\in\mathscr{A}_2$ 都成立, 由下式定义:
 
@@ -478,14 +478,14 @@ $$
 
 有限多个测度空间的积测度可递归的定义, 与以上步骤完全相同.
 
-## 符号测度
+### 符号测度
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义(符号测度)</b>
 
-$(X,\mathscr{A})$ 是一个可测空间, 其上的符号测度 $\mu$ 是一个函数 $\mu\colon \mathscr{A} \to [-\infty, +\infty]$ 使得:
+$(X,\mathscr{A})$ 是一个可测空间, 其上的符号测度 $\mu$ 是一个函数 $\mu\colon \mathscr{A} \to [-\infty, +\infty]$ 使得:<br>
 
-1, $\mu(\emptyset) = 0,$
+1, $\mu(\emptyset) = 0,$<br>
 
 2, 如果 $\{E_i\}_{i=1}^{\infty}$ 是 $\mathscr{A}$ 中无交集合的一个序列, 那么
 
@@ -586,14 +586,14 @@ $\lambda$-几乎处处成立.
 
 </div>
 
-## 复测度
+### 复测度
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义(复测度)</b>
 
-$(X,\mathscr{A})$ 是一个可测空间, 其上的复测度 $\mu$ 是一个函数 $\mu\colon \mathscr{A} \to \mathbb{C}$ 使得:
+$(X,\mathscr{A})$ 是一个可测空间, 其上的复测度 $\mu$ 是一个函数 $\mu\colon \mathscr{A} \to \mathbb{C}$ 使得:<br>
 
-1, $\mu(\emptyset) = 0,$
+1, $\mu(\emptyset) = 0,$<br>
 
 2, 如果 $\{E_i\}_{i=1}^{\infty}$ 是 $\mathscr{A}$ 中无交集合的一个序列, 那么
 
@@ -639,7 +639,7 @@ $$
 
 可以证明全变差测度确实是测度.
 
-设 $X$ 是局部紧豪斯多夫空间, $C_0(X)$ 为 $X$ 上满足对 $\forall\varepsilon>0$, $\{x\mid \lvert f(x)\rvert>\varepsilon\}$ 是紧集的连续函数(也称为在无穷远点消失的连续函数) $f$ 组成的线性空间, 它是 $C_c(X)$ 的一致闭包, 即 $C_0(X)$ 中的每个函数都是 $C_c(X)$ 中一个函数列在上确界范数(也叫一致范数或无穷范数)下的极限.
+设 $X$ 是局部紧豪斯多夫空间, $C_0(X)$ 为 $X$ 上满足对 $\forall\varepsilon>0$, $\\{x\mid \lvert f(x)\rvert>\varepsilon\\}$ 是紧集的连续函数(也称为在无穷远点消失的连续函数) $f$ 组成的线性空间, 它是 $C_c(X)$ 的一致闭包, 即 $C_0(X)$ 中的每个函数都是 $C_c(X)$ 中一个函数列在上确界范数(也叫一致范数或无穷范数)下的极限.
 
 符号拉东测度定义为正部和负部均为拉东测度的符号测度, 复拉东测度定义为实部和虚部均为符号拉东测度的复测度, 第二可数的局部紧豪斯多夫空间上的复测度都是复拉东测度.
 
@@ -658,7 +658,7 @@ $$
 
 若 $X$ 是紧豪斯多夫空间, 则 $M(X)\cong C(X)^*$.
 
-## 哈尔测度
+### 哈尔测度
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义(拓扑群)</b>
@@ -714,7 +714,7 @@ $$
 
 </div>
 
-由于 $\Delta(gh)\mu(E)=\mu(Egh)=\Delta(h)\mu(Eg)=\Delta(h)\Delta(g)\mu(E)=\Delta(g)\Delta(h)\mu(E)$, 所有 $\Delta$ 是从群 $G$ 到群 $(\mathbb{R}_{>0},\times)$ 的群同态. 对任意 $h\in G$, 有
+由于 $\Delta(gh)\mu(E)=\mu(Egh)=\Delta(h)\mu(Eg)=\Delta(h)\Delta(g)\mu(E)=\Delta(g)\Delta(h)\mu(E)$, 所以 $\Delta$ 是从群 $G$ 到群 $(\mathbb{R}_{>0},\times)$ 的群同态. 对任意 $h\in G$, 有
 
 $$
 \int_G f(gh)\,\mathrm{d}\mu(g)=\Delta(h^{-1})\int_G f(g)\,\mathrm{d}\mu(g),
@@ -724,7 +724,7 @@ $$
 
 交换群显然是酉模群, 可以证明, 如果 $G$ 商掉交换子子群得到的商群 $G/[G,G]$ 是有限群, 则群 $G$ 一定是酉模群. 如果群 $G$ 是紧群, 则它一定是酉模群.
 
-## 黎曼测度
+### 黎曼测度
 
 设 $(M,g)$ 为黎曼流形, 我们定义其上的测度, 使得关于测度的积分和流形上微分形式的积分相等.
 
@@ -779,7 +779,7 @@ $$
 
 </div>
 
-## 向量测度
+### 向量测度
 
 本节中巴拿赫空间 $V$ 都指实数域或复数域上的巴拿赫空间.
 
@@ -933,7 +933,7 @@ $$
 
 </div>
 
-佩蒂斯积分也是唯一的, 将 $V$ 典范的嵌入 $V^{**}$ 后, 有 $I_E^{**}(\varphi)=\varphi(I_E)$, 显然佩蒂斯可积当且仅当邓德福可积且积分值 $I_E\in V$. 如果 $V$ 是自反的, 则两种积分是完全等价的.
+佩蒂斯积分也是唯一的, 将 $V$ 典范的嵌入 $V^{\*\*}$ 后, 有 $I_E^{\*\*}(\varphi)=\varphi(I_E)$, 显然佩蒂斯可积当且仅当邓德福可积且积分值 $I_E\in V$. 如果 $V$ 是自反的, 则两种积分是完全等价的.
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义(盖尔方德积分)</b>
@@ -1007,9 +1007,9 @@ $$
 
 </div>
 
-## 豪斯多夫测度
+### 豪斯多夫测度
 
-以下使用度量空间理论中常见的记号, $d(A,B)=\inf\{d(a,b)\mid a\in A,b\in B\}$, $\mathrm{diam}(A)=\sup\{d(a,b)\mid a,b\in A\}$.
+以下使用度量空间理论中常见的记号, $d(A,B)=\inf\\{d(a,b)\mid a\in A,b\in B\\}$, $\mathrm{diam}(A)=\sup\\{d(a,b)\mid a,b\in A\\}$.
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义(度量外测度)</b>
@@ -1189,7 +1189,7 @@ $$
 
 即 $O_2$ 和 $O_3$ 分别为绕原点逆时针旋转 $\frac{\pi}{3}$ 和 $-\frac{\pi}{3}$, 它的分离集为以 $(0,0)$, $\left(\frac{1}{3},0\right)$, $\left(\frac{1}{2},\frac{\sqrt{3}}{6}\right)$, $\left(\frac{2}{3},0\right)$ 和 $(1,0)$ 为顶点的折线段的凸包的内部, 也就是以 $(0,0)$, $\left(\frac{1}{2},\frac{\sqrt{3}}{6}\right)$ 和 $(1,0)$ 为顶点的开三角形, 它的豪斯多夫维数为 $\log_3 4$.
 
-## 概率测度
+### 概率测度
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义(概率空间)</b>
@@ -1391,7 +1391,7 @@ $$
 
 </div>
 
-显然特征函数和简单函数都是可测的. 如果简单函数 $\phi$ 的值域是 $\{z_1,\dots,z_n\}$, $z_i\neq0$, 设 $E_i=\phi^{-1}(\{z_i\})$, 则有标准表示
+显然特征函数和简单函数都是可测的. 如果简单函数 $\phi$ 的值域是 $\\{z_1,\dots,z_n\\}$, $z_i\neq0$, 设 $E_i=\phi^{-1}(\{z_i\})$, 则有标准表示
 
 $$
 \phi=\sum_{i=1}^n z_i\chi_{E_i}.
@@ -1518,12 +1518,12 @@ $$
 
 设 $f$ 是区间 $[a,b]$ 上的有界实函数, 如果 $f$ 黎曼可积, 则一定也勒贝格可积, $f$ 黎曼可积当且仅当 $f$ 的不连续点组成一个零测集.
 
-</div>
+</div><br>
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义(几乎处处收敛, 沿测度收敛, 几乎一致收敛)</b>
 
-设 $\{f_n\}$ 是 $X$ 上一列函数.
+设 $\{f_n\}$ 是 $X$ 上一列函数.<br>
 
 如果对任意正数 $\varepsilon$,
 
@@ -1531,9 +1531,9 @@ $$
 \lim_{n\to\infty}\mu(\{x\mid  x\in X, \lvert f_n(x)-f(x)\rvert>\varepsilon\})\to0,
 $$
 
-则称其沿测度收敛到 $f$.
+则称其沿测度收敛到 $f$.<br>
 
-如果 $f_n\to f$ 在除一个零测集外逐点收敛到 $f$, 则称其几乎处处收敛到 $f$.
+如果 $f_n\to f$ 在除一个零测集外逐点收敛到 $f$, 则称其几乎处处收敛到 $f$.<br>
 
 如果 $f_n\to f$ 在除一个测度可以任意小的集合外一致收敛到 $f$, 则称其几乎一致收敛到 $f$.
 
