@@ -1562,3 +1562,14 @@ $$
 对 $a\in\mathbb{R}^n$ 几乎处处成立.
 
 </div>
+
+
+# 参考文献
+
+[1] Axler, Sheldon. Measure, Integration & Real Analysis. Graduate Texts in Mathematics, vol. 282. Cham, Switzerland: Springer International Publishing, 2020.
+
+[2] Diestel, Joe, and J. J. Jr. Uhl. Vector Measures. Mathematical Surveys and Monographs, vol. 15. Providence, RI: American Mathematical Society, 1977.
+
+[3] Folland, Gerald B. Real Analysis: Modern Techniques and Their Applications. Second edition. New York: Wiley-Interscience, 1999.
+
+[4] Rudin, Walter. Real and Complex Analysis. 3rd ed. New York: McGraw-Hill, 1987.
