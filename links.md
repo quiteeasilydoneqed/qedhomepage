@@ -35,7 +35,7 @@ Tikzcd交换图编辑器 [tikzcd-editor](https://tikzcd.yichuanshen.de/)
 
 数学百科 [香蕉空间](https://www.bananaspace.org/), [nLab](https://ncatlab.org/nlab/show/HomePage)
 
-点集拓扑速查 [$\pi$-Base](https://topology.pi-base.org/)
+点集拓扑速查 [π-Base](https://topology.pi-base.org/)
 
 fran的博客 [fran](https://zmx0142857.github.io/note/#math/example/editor)
 
@@ -91,6 +91,6 @@ Markdown速查 [Markdown官网](https://markdown.com.cn)
 
 百合论坛 [百合会](https://bbs.yamibo.com/)
 
-活动速查 [Eventernote](https://www.eventernote.com/
+活动速查 [Eventernote](https://www.eventernote.com/)
 
 ASMR [ASMR Online](https://asmr-200.com/works), [ASMR基佬中心](https://www.asmrgay.org/)
