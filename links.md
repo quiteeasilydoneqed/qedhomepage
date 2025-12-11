@@ -41,7 +41,7 @@ fran的博客 [fran](https://zmx0142857.github.io/note/#math/example/editor)
 
 Milne的博客 [Milne](https://www.jmilne.org/math/)
 
-陶哲轩的博客 [Tau](https://terrytao.wordpress.com/)
+陶哲轩的博客 [Tao](https://terrytao.wordpress.com/)
 
 
 
@@ -87,7 +87,7 @@ Markdown速查 [Markdown官网](https://markdown.com.cn)
 
 动漫下载 [蜜柑下载](https://mikanani.me/)
 
-动漫网站 [AGE](https://www.agedm.io/)
+动漫网站 [AGE动漫](https://www.agedm.io/)
 
 百合论坛 [百合会](https://bbs.yamibo.com/)
 
