@@ -37,6 +37,8 @@ Tikzcd交换图编辑器 [tikzcd-editor](https://tikzcd.yichuanshen.de/)
 
 点集拓扑速查 [π-Base](https://topology.pi-base.org/)
 
+整数序列查询 [OEIS](https://oeis.org/)
+
 fran的博客 [fran](https://zmx0142857.github.io/note/#math/example/editor)
 
 Milne的博客 [Milne](https://www.jmilne.org/math/)
