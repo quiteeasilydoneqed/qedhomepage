@@ -13,7 +13,7 @@ tags:
 
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>定义(definition)</b>
+<b>定义(魏尔斯特拉斯函数)</b>
 
     魏尔斯特拉斯函数定义为
 
@@ -37,7 +37,7 @@ tags:
 
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>证明(proof)</b>
+<b>证明</b>
 
     首先证明函数良定. 因为
 
@@ -45,7 +45,7 @@ tags:
     \sum_{n=0}^\infty \left|a^n\cos(b^n\pi x)\right|\le\sum_{n=0}^\infty a^n=\frac{1}{1-a},
     $$
 
-    由魏尔斯特拉斯判别法知级数一致收敛, 进而连续.
+    由魏尔斯特拉斯判别法知级数一致收敛, 进而连续.<br>
 
     再证明函数处处不可导. 任取一固定实数 $x\in\mathbb R$ , 对任意正整数 $m$ , 令
 
@@ -77,7 +77,7 @@ tags:
     \lim_{m\to\infty}\frac{W(x+h_m)-W(x)}{h_m}
     $$
 
-    不存在即可推出 $W$ 不可导.
+    不存在即可推出 $W$ 不可导.<br>
 
     因为
 
@@ -97,6 +97,8 @@ tags:
     $$
     \left|\sum_{n=0}^{m-1} a^n\frac{\cos(b^n\pi (x+h_m))-\cos(b^n\pi x)}{h_m}\right|\le\sum_{n=0}^{m-1}a^nb^n\pi=\frac{\pi (a^mb^m-1)}{ab-1}<\frac{\pi a^mb^m}{ab-1}.
     $$
+
+<br>
 
     对于第二项, 因为
 
@@ -137,6 +139,8 @@ tags:
     $$
     \left|\sum_{n=m}^\infty a^n\frac{\cos(b^n\pi (x+h_m))-\cos(b^n\pi x)}{h_m}\right|\ge\frac{a^m}{h_m}\ge\frac{2a^mb^m}{3}.
     $$
+    
+<br>
 
     综上,
 
@@ -157,7 +161,7 @@ tags:
     由 $ab>1+\frac{3\pi}{2}$ 知 $\frac{2}{3}-\frac{\pi}{ab-1}>0$ , 因此
 
     $$
-    \lim_{m\to\infty}\left|\frac{W(x+h_m)-W(x)}{h_m}\right|>\lim_{m\to\infty}\left(\frac{2}{3}-\frac{\pi}{ab-1}\right)a^mb^m=+\infty,
+    \lim_{m\to\infty}\left|\frac{W(x+h_m)-W(x)}{h_m}\right|\ge\lim_{m\to\infty}\left(\frac{2}{3}-\frac{\pi}{ab-1}\right)a^mb^m=+\infty,
     $$
 
     由于 $x$ 是任意取的, 则 $W(x)$ 在 $\mathbb R$ 上处处不可导.
@@ -212,8 +216,10 @@ $$
 
 取 $\phi(x)=\cos(2\pi x)$ 即为魏尔斯特拉斯函数, 其中 $K=b$ , 此时 $a\in\left(\frac{1}{b},1\right)$ , 所以 $\frac{\ln a}{\ln b}<0$ , 又因 $ab\ge1$ , 则 $\ln a+\ln b=\ln ab<\ln1=0$ , 即 $-1<\frac{\ln a}{\ln b}$ , 因此 $1<2+\frac{\ln a}{\ln b}<2$ , 即维数不为整数, 这也符合曼德博对分形的定义.
 
-= 参考文献
+# 参考文献
 
-[1] Hardy, G. H. (1916). Weierstrass's non-differentiable function. Transactions of the American Mathematical Society, 17(3), 301–325. https://doi.org/10.1090/S0002-9947-1916-1501044-1
+[1] Hardy, G. H. (1916). Weierstrass's non-differentiable function. Transactions of the American Mathematical Society, 17(3), 301–325. [https://doi.org/10.1090/S0002-9947-1916-1501044-1](https://doi.org/10.1090/S0002-9947-1916-1501044-1)
 
-[2] Shen, W. (2018). Hausdorff dimension of the graphs of the classical Weierstrass functions. Mathematische Zeitschrift, 289(1-2), 223–266. https://doi.org/10.1007/s00209-017-1949-1
+[2] Shen, W. (2018). Hausdorff dimension of the graphs of the classical Weierstrass functions. Mathematische Zeitschrift, 289(1-2), 223–266. [https://doi.org/10.1007/s00209-017-1949-1](https://doi.org/10.1007/s00209-017-1949-1)
+
+
