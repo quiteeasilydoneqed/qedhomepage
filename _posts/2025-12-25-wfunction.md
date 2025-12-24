@@ -23,7 +23,7 @@ tags:
 
     其中 $a\in(0,1)$ ,  $b$ 是正奇数, 并且满足 $ab>1+\frac{3\pi}{2}$ .
 
-</div><br>
+</div>
 
 魏尔斯特拉斯证明了该函数是良定的, 并且在实数轴上处处连续但处处不可导, 这种情况的证明比较容易.
 
@@ -81,9 +81,10 @@ tags:
 
     因为
 
-    $$
-    \displaylines{ \frac{W(x+h_m)-W(x)}{h_m}=\sum_{n=0}^\infty a^n\frac{\cos(b^n\pi (x+h_m))-\cos(b^n\pi x)}{h_m} \cr =\sum_{n=0}^{m-1} a^n\frac{\cos(b^n\pi (x+h_m))-\cos(b^n\pi x)}{h_m}+\sum_{n=m}^\infty a^n\frac{\cos(b^n\pi (x+h_m))-\cos(b^n\pi x)}{h_m}, }
-    $$
+    \begin{align*}
+        &\frac{W(x+h_m)-W(x)}{h_m}=\sum_{n=0}^\infty a^n\frac{\cos(b^n\pi (x+h_m))-\cos(b^n\pi x)}{h_m}\\
+        =&\sum_{n=0}^{m-1} a^n\frac{\cos(b^n\pi (x+h_m))-\cos(b^n\pi x)}{h_m}+\sum_{n=m}^\infty a^n\frac{\cos(b^n\pi (x+h_m))-\cos(b^n\pi x)}{h_m},
+    \end{align*}
 
     对于等式右边第一项, 由拉格朗日中值定理知存在 $\xi\in(0,h_m)$ , 
 
@@ -111,15 +112,19 @@ tags:
 
     又因为
 
-    $$
-    \displaylines{ \cos(b^n\pi x)=\cos(b^{n-m}\pi(\alpha_m+\varepsilon_m)) \cr =\cos(b^{n-m}\pi\alpha_m)\cos(b^{n-m}\pi\varepsilon_m)-\sin(b^{n-m}\pi\alpha_m)\sin(b^{n-m}\pi\varepsilon_m) \cr =(-1)^{\alpha_m}\cos(b^{n-m}\pi\varepsilon_m), }
-    $$
+    \begin{align*}
+        \cos(b^n\pi x)&=\cos(b^{n-m}\pi(\alpha_m+\varepsilon_m))\\
+        &=\cos(b^{n-m}\pi\alpha_m)\cos(b^{n-m}\pi\varepsilon_m)-\sin(b^{n-m}\pi\alpha_m)\sin(b^{n-m}\pi\varepsilon_m)\\
+        &=(-1)^{\alpha_m}\cos(b^{n-m}\pi\varepsilon_m),
+    \end{align*}
 
     则
 
-    $$
-    \displaylines{ \sum_{n=m}^\infty a^n\frac{\cos(b^n\pi (x+h_m))-\cos(b^n\pi x)}{h_m}=\sum_{n=m}^\infty a^n\frac{(-1)^{\alpha_m+1}-(-1)^{\alpha_m}\cos(b^{n-m}\pi\varepsilon_m)}{h_m} \cr =\sum_{n=m}^\infty a^n\frac{(-1)^{\alpha_m+1}(1+\cos(b^{n-m}\pi\varepsilon_m))}{h_m} \cr =\frac{(-1)^{\alpha_m+1}}{h_m}\sum_{n=m}^\infty a^n(1+\cos(b^{n-m}\pi\varepsilon_m)), }
-    $$
+    \begin{align*}
+        \sum_{n=m}^\infty a^n\frac{\cos(b^n\pi (x+h_m))-\cos(b^n\pi x)}{h_m}&=\sum_{n=m}^\infty a^n\frac{(-1)^{\alpha_m+1}-(-1)^{\alpha_m}\cos(b^{n-m}\pi\varepsilon_m)}{h_m}\\
+        &=\sum_{n=m}^\infty a^n\frac{(-1)^{\alpha_m+1}(1+\cos(b^{n-m}\pi\varepsilon_m))}{h_m}\\
+        &=\frac{(-1)^{\alpha_m+1}}{h_m}\sum_{n=m}^\infty a^n(1+\cos(b^{n-m}\pi\varepsilon_m)),
+    \end{align*}
 
     显然 $a^n(1+\cos(b^{n-m}\pi\varepsilon_m))\ge0$ , 因此
 
@@ -135,9 +140,13 @@ tags:
 
     综上,
 
-    $$
-    \displaylines{ \frac{2a^mb^m}{3}\le\left|\sum_{n=m}^\infty a^n\frac{\cos(b^n\pi (x+h_m))-\cos(b^n\pi x)}{h_m}\right| \cr =\left|\frac{W(x+h_m)-W(x)}{h_m}-\sum_{n=0}^{m-1} a^n\frac{\cos(b^n\pi (x+h_m))-\cos(b^n\pi x)}{h_m}\right| \cr  \cr \le\left|\frac{W(x+h_m)-W(x)}{h_m}\right|+\left|\sum_{n=m}^\infty a^n\frac{\cos(b^n\pi (x+h_m))-\cos(b^n\pi x)}{h_m}\right| \cr <\left|\frac{W(x+h_m)-W(x)}{h_m}\right|+\frac{\pi a^mb^m}{ab-1}, }
-    $$
+    \begin{align*}
+        \frac{2a^mb^m}{3}\le&\left|\sum_{n=m}^\infty a^n\frac{\cos(b^n\pi (x+h_m))-\cos(b^n\pi x)}{h_m}\right|\\
+        =&\left|\frac{W(x+h_m)-W(x)}{h_m}-\sum_{n=0}^{m-1} a^n\frac{\cos(b^n\pi (x+h_m))-\cos(b^n\pi x)}{h_m}\right|
+        &\\
+        \le&\left|\frac{W(x+h_m)-W(x)}{h_m}\right|+\left|\sum_{n=m}^\infty a^n\frac{\cos(b^n\pi (x+h_m))-\cos(b^n\pi x)}{h_m}\right|\\
+        <&\left|\frac{W(x+h_m)-W(x)}{h_m}\right|+\frac{\pi a^mb^m}{ab-1},
+    \end{align*}
 
     则
 
@@ -153,7 +162,7 @@ tags:
 
     由于 $x$ 是任意取的, 则 $W(x)$ 在 $\mathbb R$ 上处处不可导.
 
-</div><br>
+</div>
 
 哈代随后证明了, 只需要将条件放宽到 $ab\ge1$ , 其中 $a\in(0,1)$ ,  $b\in(1,+\infty)$ , 即可证明函数处处连续但处处不可导, 具体见\cite{hardy1916weierstrass}.
 
@@ -173,7 +182,7 @@ tags:
 
     均在 $\mathbb R$ 上处处连续 but 处处不可导.
 
-</div><br>
+</div>
 
 魏尔斯特拉斯函数的图像是一个分形, 简单验证即可得到函数方程
 
@@ -199,6 +208,6 @@ $$
     2+\frac{\ln a}{\ln b}.
     $$
 
-</div><br>
+</div>
 
 取 $\phi(x)=\cos(2\pi x)$ 即为魏尔斯特拉斯函数, 其中 $K=b$ , 此时 $a\in\left(\frac{1}{b},1\right)$ , 所以 $\frac{\ln a}{\ln b}<0$ , 又因 $ab\ge1$ , 则 $\ln a+\ln b=\ln ab<\ln1=0$ , 即 $-1<\frac{\ln a}{\ln b}$ , 因此 $1<2+\frac{\ln a}{\ln b}<2$ , 即维数不为整数, 这也符合曼德博对分形的定义.
