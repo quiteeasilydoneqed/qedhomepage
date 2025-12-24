@@ -220,6 +220,6 @@ $$
 
 [1] Hardy, G. H. (1916). Weierstrass's non-differentiable function. Transactions of the American Mathematical Society, 17(3), 301–325. [https://doi.org/10.1090/S0002-9947-1916-1501044-1](https://doi.org/10.1090/S0002-9947-1916-1501044-1)
 
-[2] Shen, W. (2018). Hausdorff dimension of the graphs of the classical Weierstrass functions. Mathematische Zeitschrift, 289(1-2), 223–266. [https://doi.org/10.1007/s00209-017-1949-1](https://doi.org/10.1007/s00209-017-1949-1)
+[2] Shen, W. (2018). Hausdorff dimension of the graphs of the classical Weierstrass functions. Mathematische Zeitschrift, 289(1-2), 223–266. [https://arxiv.org/pdf/1505.03986](https://arxiv.org/pdf/1505.03986)
 
 
