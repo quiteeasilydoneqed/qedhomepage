@@ -164,7 +164,7 @@ tags:
 
 </div>
 
-哈代随后证明了, 只需要将条件放宽到 $ab\ge1$ , 其中 $a\in(0,1)$ ,  $b\in(1,+\infty)$ , 即可证明函数处处连续但处处不可导, 具体见\cite{hardy1916weierstrass}.
+哈代随后证明了, 只需要将条件放宽到 $ab\ge1$ , 其中 $a\in(0,1)$ ,  $b\in(1,+\infty)$ , 即可证明函数处处连续但处处不可导, 具体见[1].
 
 <div style="border: 3px solid #000; padding: 10px;">
 
@@ -190,7 +190,7 @@ $$
 W(x)=\cos \pi x+aW(bx),
 $$
 
-说明了其图像的自相似性质. 沈维孝于2015年证明了魏尔斯特拉斯函数的豪斯多夫维数为 $2+\frac{\ln a}{\ln b}$ , 这可由以下定理推出\cite{shen2018hausdorff}.
+说明了其图像的自相似性质. 沈维孝于2015年证明了魏尔斯特拉斯函数的豪斯多夫维数为 $2+\frac{\ln a}{\ln b}$ , 这可由以下定理推出[2].
 
 <div style="border: 3px solid #000; padding: 10px;">
 
@@ -211,3 +211,9 @@ $$
 </div>
 
 取 $\phi(x)=\cos(2\pi x)$ 即为魏尔斯特拉斯函数, 其中 $K=b$ , 此时 $a\in\left(\frac{1}{b},1\right)$ , 所以 $\frac{\ln a}{\ln b}<0$ , 又因 $ab\ge1$ , 则 $\ln a+\ln b=\ln ab<\ln1=0$ , 即 $-1<\frac{\ln a}{\ln b}$ , 因此 $1<2+\frac{\ln a}{\ln b}<2$ , 即维数不为整数, 这也符合曼德博对分形的定义.
+
+= 参考文献
+
+[1] Hardy, G. H. (1916). Weierstrass's non-differentiable function. Transactions of the American Mathematical Society, 17(3), 301–325. https://doi.org/10.1090/S0002-9947-1916-1501044-1
+
+[2] Shen, W. (2018). Hausdorff dimension of the graphs of the classical Weierstrass functions. Mathematische Zeitschrift, 289(1-2), 223–266. https://doi.org/10.1007/s00209-017-1949-1
