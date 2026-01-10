@@ -39,6 +39,8 @@ Tikzcd交换图编辑器 [tikzcd-editor](https://tikzcd.yichuanshen.de/)
 
 整数序列查询 [OEIS](https://oeis.org/)
 
+cyb的香蕉空间 [cyb](https://www.bananaspace.org/wiki/%E7%94%A8%E6%88%B7:Cybcat)
+
 fran的博客 [fran](https://zmx0142857.github.io/note/#math/example/editor)
 
 Milne的博客 [Milne](https://www.jmilne.org/math/)
