@@ -261,14 +261,19 @@ $\mathsf{PerOrd}$ 与 $\mathsf{Alex}$ 范畴同构, $\mathsf{Pos}$ 与 $\mathsf{
 
 <b>定义</b>
 
-设 $P$ 是格,
+设 $P$ 是格,<br>
 
-* 若对任意的子集 $S\subseteq P$, $\bigwedge S$ 和 $\bigvee S$ 都存在, 则称 $P$ 为完备格;
-* 若对任意的 $a,b,c\in P$, $a \le c$ 均能推出 $a \vee (b \wedge c) = (a \vee b) \wedge c$, 则称 $P$ 为模格;
-* 若对任意的 $a,b,c\in P$, 都有 $a \wedge (b \vee c) = (a \wedge b) \vee (a \wedge c)$, 则称 $P$ 为分配格;
-* 若格中存在顶元和底元, 则称 $P$ 为有界格;
-* 若 $P$ 是有界格且对任意的 $a\in P$，存在 $a'\in P$ 使得 $a \vee a' = \top$ 且 $a \wedge a' = \bot$, 称 $a'$ 是 $a$ 的补元, $P$ 为有补格;
-* 若 $P$ 同时是有补格和分配格, 则称 $P$ 是布尔格或布尔代数.
+若对任意的子集 $S\subseteq P$, $\bigwedge S$ 和 $\bigvee S$ 都存在, 则称 $P$ 为完备格;<br>
+
+若对任意的 $a,b,c\in P$, $a \le c$ 均能推出 $a \vee (b \wedge c) = (a \vee b) \wedge c$, 则称 $P$ 为模格;<br>
+
+若对任意的 $a,b,c\in P$, 都有 $a \wedge (b \vee c) = (a \wedge b) \vee (a \wedge c)$, 则称 $P$ 为分配格;<br>
+
+若格中存在顶元和底元, 则称 $P$ 为有界格;<br>
+
+若 $P$ 是有界格且对任意的 $a\in P$，存在 $a'\in P$ 使得 $a \vee a' = \top$ 且 $a \wedge a' = \bot$, 称 $a'$ 是 $a$ 的补元, $P$ 为有补格;<br>
+
+若 $P$ 同时是有补格和分配格, 则称 $P$ 是布尔格或布尔代数.
 
 </div>
 
@@ -338,7 +343,7 @@ $\mathsf{BoolRing}$ 与 $\mathsf{BoolAlg}$ 范畴同构.
 
 </div>
 
-若滤子不是全集 $P$, 则称为真滤子, 形如 $\uparrow x=\{y\in P\mid x\le y\}$ 的集合称为 $x$ 生成的主滤子, 所有滤子组成的集合记为 $\mathrm{Fil}(P)$, 它在包含关系下显然构成偏序集.
+若滤子不是全集 $P$, 则称为真滤子, 形如 $\uparrow x=\\{y\in P\mid x\le y\\}$ 的集合称为 $x$ 生成的主滤子, 所有滤子组成的集合记为 $\mathrm{Fil}(P)$, 它在包含关系下显然构成偏序集.
 
 <div style="border: 3px solid #000; padding: 10px;">
 
@@ -378,7 +383,7 @@ $\mathsf{BoolRing}$ 与 $\mathsf{BoolAlg}$ 范畴同构.
 
 另一方面, 先前已知每个布尔格都是布尔环, 可以直接取其素谱, 仍记为 $\mathrm{Spec}(B)$, 其上拓扑取扎里斯基拓扑, 由交换代数容易证明它是斯通空间, 并且与 $S(B)$ 同胚.
 
-设 $\mathbf{2}$ 为二元集 $\{0,1\}$, 它显然是布尔格, 在 $\mathrm{Hom}_{\mathsf{BoolAlg}}(B,\mathbf{2})$ 上定义拓扑为由集族 $\{\{f \in \mathrm{Hom}_{\mathsf{BoolAlg}}(B,\mathbf{2}) \mid f(a) = 1\}\}_{a\in B}$ 生成的拓扑, 这使其同胚于 $S(B)$ 和 $\mathrm{Spec}(B)$. 也就是说, 从 $\mathsf{BoolAlg}$ 到 $\mathsf{Stone}^{op}$ 的三个函子 $S(\cdot)$, $\mathrm{Spec}(\cdot)$ 和 $\mathrm{Hom}_{\mathsf{BoolAlg}}(\cdot,\mathbf{2})$ 是三个同构的函子.
+设 $\mathbf{2}$ 为二元集 $\{0,1\}$, 它显然是布尔格, 在 $\mathrm{Hom}_{\mathsf{BoolAlg}}(B,\mathbf{2})$ 上定义拓扑为由集族 $\\{\\{f \in \mathrm{Hom}_{\mathsf{BoolAlg}}(B,\mathbf{2}) \mid f(a) = 1\\}\\}_{a\in B}$ 生成的拓扑, 这使其同胚于 $S(B)$ 和 $\mathrm{Spec}(B)$. 也就是说, 从 $\mathsf{BoolAlg}$ 到 $\mathsf{Stone}^{op}$ 的三个函子 $S(\cdot)$, $\mathrm{Spec}(\cdot)$ 和 $\mathrm{Hom}_{\mathsf{BoolAlg}}(\cdot,\mathbf{2})$ 是三个同构的函子.
 
 <div style="border: 3px solid #000; padding: 10px;">
 
@@ -436,7 +441,7 @@ $\mathsf{FDLat}$ 与 $\mathsf{FPos}^{op}$ 范畴等价.
 
 事实上, 普利斯特里分离公理可以直接推出豪斯多夫性和完全不连通性, 每个普利斯特里空间的底层拓扑都是斯通空间, 而每个斯通空间关于集合间包含关系都是普利斯特里空间, 然而, 存在一些并非包含关系的偏序仍是普利斯特里空间. 设所有普利斯特里空间连通保序连续映射组成的范畴为 $\mathsf{Pries}$, 则 $\mathsf{Stone}$ 可以看做 $\mathsf{Pries}$ 的子范畴.
 
-设 $P$ 是普利斯特里空间, 其所有既开又闭的上集关于集合的交和并组成一个有界分配格. 设 $L$ 是一个有界分配格, 所有形如 $\{ U\mid x\in U\},x\in L$ 的集合组成所有素滤子组成的集合上的一组拓扑基, 它生成的拓扑空间连同素滤子间包含关系组成一个普利斯特里空间.
+设 $P$ 是普利斯特里空间, 其所有既开又闭的上集关于集合的交和并组成一个有界分配格. 设 $L$ 是一个有界分配格, 所有形如 $\\{ U\mid x\in U\\},x\in L$ 的集合组成所有素滤子组成的集合上的一组拓扑基, 它生成的拓扑空间连同素滤子间包含关系组成一个普利斯特里空间.
 
 设所有有界分配格连同保界格同态组成的范畴为 $\mathsf{DLat}$.
 
@@ -510,9 +515,9 @@ $$
 
 设 $(X,\mathcal{T})$ 是一个拓扑空间, $\mathcal{T}$ 在集合的包含关系下构成一个完备格, 并且显然满足无限分配率, 因此是框架, 也是位象, 我们定义函子 $\Omega\colon \mathsf{Top}\to\mathsf{Loc},(X,\mathcal{T})\mapsto(\mathcal{T},\subseteq)$, 态射层面, 设 $f\colon (X,\mathcal{T}_x)\to (Y,\mathcal{T}_Y)$ 是连续函数, 则容易验证 $f^{-1}\colon (\mathcal{T}_Y,\subseteq)\to(\mathcal{T}_X,\subseteq)$ 是框架同态, 于是 $f$ 的像 $\Omega(f)=\mathcal{O}(f^{-1})$ 就是位象同态.
 
-另一方面, 设 $L$ 是一个位象, 定义 $pt(L)=\mathrm{Hom}_{\mathsf{Frm}}(L,\mathbf{2})$, 其中 $\mathbf{2}=\{0,1\}$ 是二元格, 在 $pt(L)$ 上定义拓扑如下, 对任意 $a\in L$, 定义 $U_a=\{p\in pt(L)\mid p(a)=1\}$, 可以验证 $\{U_a\}_{a\in L}$ 是一组拓扑基, 它生成的拓扑使 $pt(L)$ 成为拓扑空间, 另一方面, $pt$ 是一个 $\mathrm{Hom}$ 函子, 函子在态射层面的像由拉回映射给出, 并且它是从 $\mathsf{Frm}$ 到 $\mathsf{Top}$ 的反变函子, 于是也就是从 $\mathsf{Loc}$ 到 $\mathsf{Top}$ 的协变函子.
+另一方面, 设 $L$ 是一个位象, 定义 $pt(L)=\mathrm{Hom}_{\mathsf{Frm}}(L,\mathbf{2})$, 其中 $\mathbf{2}=\{0,1\}$ 是二元格, 在 $pt(L)$ 上定义拓扑如下, 对任意 $a\in L$, 定义 $U_a=\\{p\in pt(L)\mid p(a)=1\\}$, 可以验证 $\\{U_a\\}_{a\in L}$ 是一组拓扑基, 它生成的拓扑使 $pt(L)$ 成为拓扑空间, 另一方面, $pt$ 是一个 $\mathrm{Hom}$ 函子, 函子在态射层面的像由拉回映射给出, 并且它是从 $\mathsf{Frm}$ 到 $\mathsf{Top}$ 的反变函子, 于是也就是从 $\mathsf{Loc}$ 到 $\mathsf{Top}$ 的协变函子.
 
-一个事实是, 如果在 $\mathbf{2}$ 上取拓扑为 $\{\emptyset,\{1\},\{0,1\}\}$, 即谢尔宾斯基空间, 则 $pt(L)$ 是乘积空间 $\mathbf{2}^L$ 的子空间.
+一个事实是, 如果在 $\mathbf{2}$ 上取拓扑为 $\\{\emptyset,\\{1\\},\\{0,1\\}\\}$, 即谢尔宾斯基空间, 则 $pt(L)$ 是乘积空间 $\mathbf{2}^L$ 的子空间.
 
 <div style="border: 3px solid #000; padding: 10px;">
 
@@ -714,7 +719,7 @@ $(\mathrm{DM}(P),\subseteq)$ 是完备格, 若 $P$ 本身就是完备格, 则有
 
 </div>
 
-DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, 为扩展实数集 $\mathbb{R}\cup\{+\infty,-\infty\}$, 其中正负无穷分别对应 $\mathbb{Q}$ 自身和空集 $\emptyset$, 若忽略正负无穷, 就是通常的戴德金分割.
+DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, 为扩展实数集 $\mathbb{R}\cup\\{+\infty,-\infty\\}$, 其中正负无穷分别对应 $\mathbb{Q}$ 自身和空集 $\emptyset$, 若忽略正负无穷, 就是通常的戴德金分割.
 
 # 收敛理论
 
@@ -756,9 +761,9 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 </div>
 
-容易验证一致拓扑是良定的. 一致空间的基本想法是使用纯粹的拓扑语言严格化两个元素距离相近这一直观概念, 它是度量空间和拓扑群的共同推广, 首先, 设 $(X, d)$ 为度量空间, 定义 $U_\varepsilon = \{ (x, y) \in X \times X \mid d(x, y) \le \varepsilon \}$, $\mathcal{U} = \{ U \subseteq X \times X \mid \exists \varepsilon > 0, U_\varepsilon \subseteq U \}$ 就是满足要求的一致结构.
+容易验证一致拓扑是良定的. 一致空间的基本想法是使用纯粹的拓扑语言严格化两个元素距离相近这一直观概念, 它是度量空间和拓扑群的共同推广, 首先, 设 $(X, d)$ 为度量空间, 定义 $U_\varepsilon = \\{ (x, y) \in X \times X \mid d(x, y) \le \varepsilon \\}$, $\mathcal{U} = \\{ U \subseteq X \times X \mid \exists \varepsilon > 0, U_\varepsilon \subseteq U \\}$ 就是满足要求的一致结构.
 
-其次, 设 $G$ 是拓扑群, $e$ 为单位元, 记 $\mathfrak{N}_e$ 为 $e$ 点的邻域系, 设 $U_V = \{ (x, y) \mid x^{-1}y \in V \}$, 构造左一致结构为 $\mathcal{U} = \{ U \subseteq G \times G \mid \exists V \in \mathcal{N}_e, U_V \subseteq U \}$, 类似可构造右一致结构, 二者未必是相同的, 除非群是交换群.
+其次, 设 $G$ 是拓扑群, $e$ 为单位元, 记 $\mathfrak{N}_e$ 为 $e$ 点的邻域系, 设 $U_V = \\{ (x, y) \mid x^{-1}y \in V \\}$, 构造左一致结构为 $\mathcal{U} = \\{ U \subseteq G \times G \mid \exists V \in \mathcal{N}_e, U_V \subseteq U \\}$, 类似可构造右一致结构, 二者未必是相同的, 除非群是交换群.
 
 <div style="border: 3px solid #000; padding: 10px;">
 
@@ -854,7 +859,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 </div>
 
-滤子基自然能生成滤子, 对于滤子基 $\mathfrak{B}$, 只需定义 $\mathfrak{F}=\{F\subseteq X\mid \exists B\in\mathfrak{B},B\subseteq F\}$ 为 $\mathfrak{B}$ 生成的滤子, 对应的称 $\mathfrak{B}$ 为 $\mathfrak{F}$ 的基.
+滤子基自然能生成滤子, 对于滤子基 $\mathfrak{B}$, 只需定义 $\mathfrak{F}=\\{F\subseteq X\mid \exists B\in\mathfrak{B},B\subseteq F\\}$ 为 $\mathfrak{B}$ 生成的滤子, 对应的称 $\mathfrak{B}$ 为 $\mathfrak{F}$ 的基.
 
 作为例子, 设 $X$ 是拓扑空间, 对任意 $x\in X$, 邻域系 $\mathfrak{N}_x$ 就是 $X$ 上的一个滤子.
 
@@ -892,7 +897,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 <b>定理</b>
 
-设 $X$ 是一个一致空间, 则存在一个完备的豪斯多夫一致空间 $\hat{X}$ 和一致连续映射 $i\colon X\to\hat{X}$ 满足如下泛性质, 对于任何完备的豪斯多夫一致空间 $Y$ 以及任何一致连续映射 $f\colon X \to Y$, 存在唯一的一致连续映射 $\hat{f}\colon \hat{X} \to Y$, 使得$f=\hat{f}\cric i$.
+设 $X$ 是一个一致空间, 则存在一个完备的豪斯多夫一致空间 $\hat{X}$ 和一致连续映射 $i\colon X\to\hat{X}$ 满足如下泛性质, 对于任何完备的豪斯多夫一致空间 $Y$ 以及任何一致连续映射 $f\colon X \to Y$, 存在唯一的一致连续映射 $\hat{f}\colon \hat{X} \to Y$, 使得$f=\hat{f}\circ i$.
 
 </div>
 
