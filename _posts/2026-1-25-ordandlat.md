@@ -28,13 +28,13 @@ tags:
 
 <b>定义(序结构)</b>
 
-满足自反性和传递性的序结构称为预序集;
+满足自反性和传递性的序结构称为预序集;<br>
 
-满足自反性, 传递性和反称性的序结构称为偏序集;
+满足自反性, 传递性和反称性的序结构称为偏序集;<br>
 
-满足滤过性的预序集称为滤过预序集, 满足滤过性的偏序集称为滤过偏序集或有向集;
+满足滤过性的预序集称为滤过预序集, 满足滤过性的偏序集称为滤过偏序集或有向集;<br>
 
-满足线序性的偏序集称为全序集或线序集;
+满足线序性的偏序集称为全序集或线序集;<br>
 
 满足良基性的全序集称为良序集.
 
@@ -60,21 +60,21 @@ tags:
 
 <b>定义</b>
 
-设 $(P, \le)$ 为预序集, $S \subseteq P$.
+设 $(P, \le)$ 为预序集, $S \subseteq P$.<br>
 
-若元素 $a \in P$ 满足对任意 $x \in P$, $a \le x$ 均蕴含 $x \le a$, 则称 $a$ 为 $P$ 的极大元;
+若元素 $a \in P$ 满足对任意 $x \in P$, $a \le x$ 均蕴含 $x \le a$, 则称 $a$ 为 $P$ 的极大元;<br>
 
-若元素 $a \in P$ 满足对任意 $x \in P$, $x \le a$ 均蕴含 $a \le x$, 则称 $a$ 为 $P$ 的极小元;
+若元素 $a \in P$ 满足对任意 $x \in P$, $x \le a$ 均蕴含 $a \le x$, 则称 $a$ 为 $P$ 的极小元;<br>
 
-若元素 $a \in P$ 满足对任意 $x \in P$, 均有 $x \le a$, 则称 $a$ 为 $P$ 的最大元;
+若元素 $a \in P$ 满足对任意 $x \in P$, 均有 $x \le a$, 则称 $a$ 为 $P$ 的最大元;<br>
 
-若元素 $a \in P$ 满足对任意 $x \in P$, 均有 $a \le x$, 则称 $a$ 为 $P$ 的最小元;
+若元素 $a \in P$ 满足对任意 $x \in P$, 均有 $a \le x$, 则称 $a$ 为 $P$ 的最小元;<br>
 
-若元素 $u \in P$ 满足对所有 $s \in S$ 都有 $s \le u$, 则称 $u$ 为 $S$ 的上界;
+若元素 $u \in P$ 满足对所有 $s \in S$ 都有 $s \le u$, 则称 $u$ 为 $S$ 的上界;<br>
 
-若元素 $l \in P$ 满足对所有 $s \in S$ 都有 $l \le s$, 则称 $l$ 为 $S$ 的下界;
+若元素 $l \in P$ 满足对所有 $s \in S$ 都有 $l \le s$, 则称 $l$ 为 $S$ 的下界;<br>
 
-若存在 $u \in P$, 使得 $u$ 是 $S$ 的上界, 且对 $S$ 的任一上界 $x$ 都有 $u \le x$, 则称 $u$ 为 $S$ 的上确界;
+若存在 $u \in P$, 使得 $u$ 是 $S$ 的上界, 且对 $S$ 的任一上界 $x$ 都有 $u \le x$, 则称 $u$ 为 $S$ 的上确界;<br>
 
 若存在 $l \in P$, 使得 $l$ 是 $S$ 的下界, 且对 $S$ 的任一下界 $x$ 都有 $x \le l$, 则称 $l$ 为 $S$ 的下确界.
 
@@ -86,7 +86,7 @@ tags:
 
 <b>定义(链与反链)</b>
 
-设 $(P, \le)$ 为偏序集, $C \subseteq P$, 如果对 $\forall x, y \in C$, 都有 $x \le y$ 或 $y \le x$ 成立, 则称 $C$ 为 $P$ 的一条链, 即偏序集的全序子集称为链.
+设 $(P, \le)$ 为偏序集, $C \subseteq P$, 如果对 $\forall x, y \in C$, 都有 $x \le y$ 或 $y \le x$ 成立, 则称 $C$ 为 $P$ 的一条链, 即偏序集的全序子集称为链.<br>
 
 设 $A \subseteq P$, 如果 $\forall x, y \in A$ 且 $x \ne y$, $x \le y$ 与 $y \le x$ 均不成立, 则称 $A$ 为 $P$ 的一条反链.
 
@@ -116,11 +116,11 @@ tags:
 
 <b>定义(序拓扑)</b>
 
-设 $(P,\le)$ 是一个全序集, 则如下形式的集合组成其上的一组拓扑基, 其生成的拓扑称为 $P$ 上的序拓扑:
+设 $(P,\le)$ 是一个全序集, 则如下形式的集合组成其上的一组拓扑基, 其生成的拓扑称为 $P$ 上的序拓扑:<br>
 
-所有的开区间 $(a, b) = \{x \in P \mid a < x < b\}$, 其中 $a, b \in P$;
+所有的开区间 $(a, b) = \{x \in P \mid a < x < b\}$, 其中 $a, b \in P$;<br>
 
-若 $P$ 存在最小元 $a_0$, 则包含所有形如 $[a_0, b) = \{x \in P \mid a_0 \le x < b\}$ 的集合, 其中 $b \in P$;
+若 $P$ 存在最小元 $a_0$, 则包含所有形如 $[a_0, b) = \{x \in P \mid a_0 \le x < b\}$ 的集合, 其中 $b \in P$;<br>
 
 若 $P$ 存在最大元 $b_0$, 则包含所有形如 $(a, b_0] = \{x \in P \mid a < x \le b_0\}$ 的集合, 其中 $a \in P$.
 
@@ -158,7 +158,7 @@ tags:
 
 <b>证明</b>
 
-设 $f\colon X\to Y$ 保序, 若 $U$ 是 $Y$ 中开集, 设 $x\in f^{-1}(U)$, $x\le_X y$, 则 $f(x)\le_Y f(y)$, 因此 $f(y)\in U$, $y\in f^{-1}(U)$, 故 $f^{-1}(U)$ 是 $X$ 中开集, $f$ 连续.
+设 $f\colon X\to Y$ 保序, 若 $U$ 是 $Y$ 中开集, 设 $x\in f^{-1}(U)$, $x\le_X y$, 则 $f(x)\le_Y f(y)$, 因此 $f(y)\in U$, $y\in f^{-1}(U)$, 故 $f^{-1}(U)$ 是 $X$ 中开集, $f$ 连续.<br>
 
 设 $f$ 连续, $x,y\in X$, $x\le_X y$, 定义 $U=\{z\in Y\mid f(x)\le_Y z\}$, 显然它是 $Y$ 中开集, 故 $f^{-1}(U)$ 是 $X$ 中开集, 所以 $y\in f^{-1}(U)$, $f(y)\in U$, 由 $U$ 的定义知 $f(x)\le_Y f(y)$.
 
@@ -176,7 +176,7 @@ tags:
 
 <b>证明</b>
 
-设 $P$ 是预序集, 其上亚历山德罗夫拓扑满足 $T_0$, 设 $x,y\in P$, 且 $x\le y$, $y\le x$, 故包含 $x$ 的开集必包含 $y$, 反之亦然, 由 $T_0$ 性知只能有 $x=y$, 故 $P$ 是偏序集.
+设 $P$ 是预序集, 其上亚历山德罗夫拓扑满足 $T_0$, 设 $x,y\in P$, 且 $x\le y$, $y\le x$, 故包含 $x$ 的开集必包含 $y$, 反之亦然, 由 $T_0$ 性知只能有 $x=y$, 故 $P$ 是偏序集.<br>
 
 设 $P$ 是偏序集, $x,y\in P$ 是两个不同的点, 则 $x\le y$ 和 $y\le x$ 不能同时成立, 不妨设 $x\not\le y$, 定义 $U=\{z\in P\mid x\le z\}$, 则 $x\in U$, $y\notin U$, 于是亚历山德罗夫拓扑满足 $T_0$ 公理.
 
@@ -206,11 +206,11 @@ $\mathsf{PerOrd}$ 与 $\mathsf{Alex}$ 范畴同构, $\mathsf{Pos}$ 与 $\mathsf{
 
 <b>证明</b>
 
-只需证明前者, 后者即可由上一定理推出.
+只需证明前者, 后者即可由上一定理推出.<br>
 
-首先证明预序集上亚历山德罗夫拓扑构成一个亚历山德罗夫空间, 设 $\{U_i\}_{i\in I}$ 是一族以 $I$ 为指标集的开集, 任取 $x\in \bigcap_{i\in I}U_i$, 则对每个 $i$, 都有 $x\in U_i$, 于是对任意的 $y\ge x$ 都有 $y\in U_i$, 因此 $y\in\bigcap_{i\in I}U_i$, 故 $\bigcap_{i\in I}U_i$ 也是开集, 于是该拓扑空间是亚历山德罗夫空间.
+首先证明预序集上亚历山德罗夫拓扑构成一个亚历山德罗夫空间, 设 $\{U_i\}_{i\in I}$ 是一族以 $I$ 为指标集的开集, 任取 $x\in \bigcap_{i\in I}U_i$, 则对每个 $i$, 都有 $x\in U_i$, 于是对任意的 $y\ge x$ 都有 $y\in U_i$, 因此 $y\in\bigcap_{i\in I}U_i$, 故 $\bigcap_{i\in I}U_i$ 也是开集, 于是该拓扑空间是亚历山德罗夫空间.<br>
 
-其次, 我们将亚历山德罗夫空间做成一个预序集, 对于亚历山德罗夫空间 $P$ 中的每个点 $x$, 定义 $U_x=\{z\in P\mid x\le z\}$, 再定义 $x\le y\Longleftrightarrow U_x\subseteq U_y$, 该序的自反性和传递性由集合的包含关系保证, 因此是预序.
+其次, 我们将亚历山德罗夫空间做成一个预序集, 对于亚历山德罗夫空间 $P$ 中的每个点 $x$, 定义 $U_x=\{z\in P\mid x\le z\}$, 再定义 $x\le y\Longleftrightarrow U_x\subseteq U_y$, 该序的自反性和传递性由集合的包含关系保证, 因此是预序.<br>
 
 我们定义函子 $F\colon \mathsf{PerOrd}\to\mathsf{Alex}$ 将预序集映到它的亚历山德罗夫拓扑, 函子 $G\colon \mathsf{Alex}\to\mathsf{PerOrd}$ 将亚历山德罗夫空间映到其上的预序结构, 由以上讨论立刻知 $F\circ G=\mathrm{id}_\mathsf{Alex}$, $G\circ F=\mathrm{id}_\mathsf{PerOrd}$, 态射层面由连续当且仅当保序保证, 于是 $\mathsf{PerOrd}$ 与 $\mathsf{Alex}$ 范畴同构, $\mathsf{Pos}$ 与 $\mathsf{Alex_0}$ 范畴同构.
 
@@ -310,9 +310,9 @@ $\mathsf{BoolRing}$ 与 $\mathsf{BoolAlg}$ 范畴同构.
 
 <b>证明</b>
 
-设 $R$ 是布尔环, 在其上引入序关系 $x\le y\Longleftrightarrow x=xy$, 再定义格运算 $x\vee y=x+y+xy$, $x\wedge y=xy$, 底元为 $0$, 顶元为 $1$, 补元由 $a'=1-a$ 确定, 容易验证这确实是一个布尔格.
+设 $R$ 是布尔环, 在其上引入序关系 $x\le y\Longleftrightarrow x=xy$, 再定义格运算 $x\vee y=x+y+xy$, $x\wedge y=xy$, 底元为 $0$, 顶元为 $1$, 补元由 $a'=1-a$ 确定, 容易验证这确实是一个布尔格.<br>
 
-设 $L$ 是布尔格, 在其上引入环结构为 $x+y=(x\wedge y')\vee(x'\wedge y)$, $xy=x\wedge y$, 显然它构成一个布尔环.
+设 $L$ 是布尔格, 在其上引入环结构为 $x+y=(x\wedge y')\vee(x'\wedge y)$, $xy=x\wedge y$, 显然它构成一个布尔环.<br>
 
 按如上方法将布尔环结构映为布尔代数结构的函子是一个范畴同构, 此处省略验证.
 
@@ -326,13 +326,13 @@ $\mathsf{BoolRing}$ 与 $\mathsf{BoolAlg}$ 范畴同构.
 
 <b>定义(滤子)</b>
 
-设 $P$ 是一个偏序集, 非空子集 $F\subseteq P$ 如果满足以下条件:
+设 $P$ 是一个偏序集, 非空子集 $F\subseteq P$ 如果满足以下条件:<br>
 
-1, $F \neq \emptyset$;
+1, $F \neq \emptyset$;<br>
 
-2, 对于任意 $x \in F$ 和 $y \in P$, 如果 $x \le y$, 则 $y \in F$;
+2, 对于任意 $x \in F$ 和 $y \in P$, 如果 $x \le y$, 则 $y \in F$;<br>
 
-3, 对于任意 $x, y \in F$, 存在元素 $z\in F$ 使得 $z \le x$ 且 $z \le y$,
+3, 对于任意 $x, y \in F$, 存在元素 $z\in F$ 使得 $z \le x$ 且 $z \le y$,<br>
 
 则称 $F$ 是 $P$ 的一个滤子, 如果 $P$ 还是格, 则第三条等价于说 $x\wedge y\in F$.
 
@@ -566,7 +566,7 @@ $L$ 是一个空间式位象当且仅当 $L$ 中的每一个元素都可以表�
 
 $L$ 是一个空间式位象当且仅当它同构于某个拓扑空间在 $\Omega$ 函子下的像.
 
-</div>
+</div><br>
 
 <div style="border: 3px solid #000; padding: 10px;">
 
@@ -592,11 +592,11 @@ $\mathsf{SLoc}$ 有一个称为凝聚位象范畴的子范畴, 一般记为 $\ma
 
 <b>定义(伽罗瓦连接)</b>
 
-设 $(P_1,\le_1)$ 和 $(P_2,\le_2)$ 为两个偏序集, 设 $F\colon P_1\rightarrow P_2$ 和 $G\colon P_2\rightarrow P_1$ 为保序映射, 如果对 $\forall a\in P_1$, $b\in P_2$, 有
+设 $(P_1,\le_1)$ 和 $(P_2,\le_2)$ 为两个偏序集, 设 $F\colon P_1\rightarrow P_2$ 和 $G\colon P_2\rightarrow P_1$ 为保序映射, 如果对 $\forall a\in P_1$, $b\in P_2$, 有<br>
 
 $$
 \displaylines{F(a)\le_2 b\Longleftrightarrow a\le_1 G(b),}
-$$
+$$<br>
 
 则称 $F$ 和 $G$ 是 $P_1$ 和 $P_2$ 之间的一对的伽罗瓦连接, 称 $F$ 是 $G$ 的左伴随, $G$ 是 $F$ 的右伴随, 可记作 $F\dashv G$.
 
@@ -608,13 +608,13 @@ $$
 
 <b>定理</b>
 
-若 $F\colon P_1\rightarrow P_2$ 和 $G\colon P_2\rightarrow P_1$ 为偏序集间保序映射, 则以下条件等价:
+若 $F\colon P_1\rightarrow P_2$ 和 $G\colon P_2\rightarrow P_1$ 为偏序集间保序映射, 则以下条件等价:<br>
 
-1, $F\dashv G$;
+1, $F\dashv G$;<br>
 
-2, 对 $\forall a\in P_1$, $b\in P_2$, 有 $a\le_1 G(F(a))$ 且 $F(G(b))\le_2 b$;
+2, 对 $\forall a\in P_1$, $b\in P_2$, 有 $a\le_1 G(F(a))$ 且 $F(G(b))\le_2 b$;<br>
 
-3, 对 $\forall b\in P_2$, $G(b)=\max\{ a\in P_1\mid F(a)\le_2 b \}$;
+3, 对 $\forall b\in P_2$, $G(b)=\max\{ a\in P_1\mid F(a)\le_2 b \}$;<br>
 
 4, 对 $\forall a\in P_1$, $F(a)=\min\{ b\in P_2\mid a\le_1 G(b) \}$.
 
@@ -626,19 +626,19 @@ $$
 
 <b>定理</b>
 
-若 $F\colon P_1\rightarrow P_2$ 和 $G\colon P_2\rightarrow P_1$ 为偏序集间保序映射, $F\dashv G$, 则以下条件等价:
+若 $F\colon P_1\rightarrow P_2$ 和 $G\colon P_2\rightarrow P_1$ 为偏序集间保序映射, $F\dashv G$, 则以下条件等价:<br>
 
-1, $F$ 是单射;
+1, $F$ 是单射;<br>
 
-2, $G\circ F$ 是恒等映射;
+2, $G\circ F$ 是恒等映射;<br>
 
-3, $G$ 是满射.
+3, $G$ 是满射.<br>
 
-对偶的, 以下条件也等价:
+对偶的, 以下条件也等价:<br>
 
-1, $F$ 是满射;
+1, $F$ 是满射;<br>
 
-2, $F\circ G$ 是恒等映射;
+2, $F\circ G$ 是恒等映射;<br>
 
 3, $G$ 是单射.
 
@@ -650,11 +650,11 @@ $$
 
 <b>定理</b>
 
-设 $(L_1,\le_1,\wedge_1,\vee_1)$ 和 $(L_2,\le_2,\wedge_2,\vee_2)$ 都是完备格, $F\colon L_1\rightarrow L_2$ 和 $G\colon L_2\to L_1$ 是保序映射, 则如下条件等价:
+设 $(L_1,\le_1,\wedge_1,\vee_1)$ 和 $(L_2,\le_2,\wedge_2,\vee_2)$ 都是完备格, $F\colon L_1\rightarrow L_2$ 和 $G\colon L_2\to L_1$ 是保序映射, 则如下条件等价:<br>
 
-1, $F\dashv G$;
+1, $F\dashv G$;<br>
 
-2, 对 $\forall S\subseteq L_1$, $F(\bigvee_1 S)=\bigvee_2\{F(s)\mid s\in S\}$;
+2, 对 $\forall S\subseteq L_1$, $F(\bigvee_1 S)=\bigvee_2\{F(s)\mid s\in S\}$;<br>
 
 3, 对 $\forall S\subseteq L_2$, $G(\bigwedge_2 S)=\bigwedge_1\{G(s)\mid s\in S\}$.
 
@@ -740,17 +740,17 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 <b>定义(一致空间)</b>
 
-设 $X$ 是一个集合, 其对角线集为 $\Delta=\{(x,x)\mid x\in X\}$, 设 $\mathcal{U}\in\mathcal{P}(X\times X)$, 如果它满足如下条件:
+设 $X$ 是一个集合, 其对角线集为 $\Delta=\{(x,x)\mid x\in X\}$, 设 $\mathcal{U}\in\mathcal{P}(X\times X)$, 如果它满足如下条件:<br>
 
-1, 对任意的 $U \in \mathcal{U}$, 都有 $\Delta \subseteq U$;
+1, 对任意的 $U \in \mathcal{U}$, 都有 $\Delta \subseteq U$;<br>
 
-2, 若 $U \in \mathcal{U}$ 且 $U \subseteq V \subseteq X \times X$, 则 $V \in \mathcal{U}$;
+2, 若 $U \in \mathcal{U}$ 且 $U \subseteq V \subseteq X \times X$, 则 $V \in \mathcal{U}$;<br>
 
-3, 若 $U \in \mathcal{U}$ 且 $V \in \mathcal{U}$，则 $U \cap V \in \mathcal{U}$;
+3, 若 $U \in \mathcal{U}$ 且 $V \in \mathcal{U}$，则 $U \cap V \in \mathcal{U}$;<br>
 
-4, 对于任意 $U \in \mathcal{U}$, 定义其逆 $U^{-1} = \{(y, x) \mid (x, y) \in U\}$, 则有 $U^{-1}\in\mathcal{U}$;
+4, 对于任意 $U \in \mathcal{U}$, 定义其逆 $U^{-1} = \{(y, x) \mid (x, y) \in U\}$, 则有 $U^{-1}\in\mathcal{U}$;<br>
 
-5, 对于任意 $U \in \mathcal{U}$, 存在 $V \in \mathcal{U}$, 使得 $V \circ V \subseteq U$, 其中 $V \circ V = \{(x, z) \in X \times X \mid \exists y \in X, (x, y)\in V , (y, z) \in V\}$ 为 $V$ 和自身的复合,
+5, 对于任意 $U \in \mathcal{U}$, 存在 $V \in \mathcal{U}$, 使得 $V \circ V \subseteq U$, 其中 $V \circ V = \{(x, z) \in X \times X \mid \exists y \in X, (x, y)\in V , (y, z) \in V\}$ 为 $V$ 和自身的复合,<br>
 
 则称 $\mathcal{U}$ 是 $X$ 上的一个一致结构, 再定义 $U[x] = \{ y \in X \mid (x, y) \in U \}$, $\mathfrak{B}_x=\{U[x]\mid U\in\mathcal{U}\}$, 可以验证它满足邻域公理, 由此定义 $X$ 的子集 $O$ 是开集当且仅当对于其中的任一点 $x \in O$, 都有 $O \in \mathfrak{B}(x)$, 这样得到 $X$ 上的一个拓扑结构, 称为一致拓扑, 称二元组 $(X,\mathcal{U})$ 为一致空间.
 
@@ -806,7 +806,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 设 $X$ 是非空的拓扑空间, $x\colon I\to X$ 为网, 若存在 $a\in X$, 使得对 $a$ 的任意邻域 $U\in \mathfrak{N}_a$, 网 $x$ 都最终在 $U$ 中, 则称网 $x$ 收敛到 $a$, 记为 $\lim_{i\in I}x_i=a$
 
-</div><br>
+</div>
 
 收敛网未必只收敛到一个点, 但如果空间是豪斯多夫的, 则若收敛则一定收敛到唯一点.
 
@@ -866,7 +866,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 设 $\mathfrak{F}$ 是拓扑空间 $X$ 上的一个滤子, 如果存在 $x\in X$, 使得 $\mathfrak{N}_x\subseteq\mathfrak{F}$, 则称滤子 $\mathfrak{F}$ 收敛到 $x$, 记为 $\lim \mathfrak{F}=x$ 或 $\mathfrak{F}\to x$.
 
-</div><br>
+</div>
 
 收敛滤子只收敛到唯一一点当且仅当空间是豪斯多夫的.
 
@@ -948,7 +948,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 <div style="border: 3px solid #000; padding: 10px;">
 
-<b>证明()</b>
+<b>证明</b>
 
 $\lim \mathcal{F} = x \iff \mathfrak{N}_x \subset \mathcal{F} \iff \mathcal{F} \cup \mathfrak{N}_x = \mathcal{F} \iff \mathcal{F} = \bigcap_{\mathfrak{G} \in \mathsf{Fil}_x} \iota(\mathfrak{G}) \iff \varprojlim \iota = \mathcal{F}.$
 
