@@ -16,11 +16,11 @@ tags:
 
 <b>定义(二次型)</b>
 
- 设 $R$ 是一个交换环,  $M$ 是一个 $R$ -模, 映射 $q\colon M\to R$ 如果满足以下条件, 则称 $q$ 是 $M$ 上的一个二次型:
+ 设 $R$ 是一个交换环,  $M$ 是一个 $R$ -模, 映射 $q\colon M\to R$ 如果满足以下条件, 则称 $q$ 是 $M$ 上的一个二次型:<br>
     
-    1, $\forall x\in M$ ,  $r\in R$ , 都有 $q(rx)=r^2q(x)$ ;
+    1, $\forall x\in M$ ,  $r\in R$ , 都有 $q(rx)=r^2q(x)$ ;<br>
 
-    2, $\forall a,b,c\in M$ , 都有 $q(a+b+c)-q(a+b)-q(b+c)-q(c+a)+q(a)+q(b)+q(c)=0$ ;
+    2, $\forall a,b,c\in M$ , 都有 $q(a+b+c)-q(a+b)-q(b+c)-q(c+a)+q(a)+q(b)+q(c)=0$ ;<br>
 
     3, $\forall a,b\in M$ ,  $r\in R$ , 都有 $q(ra+b)-r^2q(a)-q(b)=rq(a+b)-rq(a)-rq(b)$ .
 
@@ -52,13 +52,13 @@ $$
 \displaylines{T(M)=\bigoplus_{n=0}^\infty T^n(M),}
 $$
 
-设 $I(M)$ 为 $\{ x\otimes x-q(x)\cdot1\mid x\in M\}$ 生成的理想, 则定义
+设 $I(M)$ 为 $\\{ x\otimes x-q(x)\cdot1\mid x\in M\\}$ 生成的理想, 定义
 
 $$
 \displaylines{\mathrm{Cl}(M,q)=T(M)/I(M),}
 $$
 
-若设自然的嵌入映射 $i\colon M\to T(M)$ 和商映射 $\pi\colon T(M)\to \mathrm{Cl}(M,q)$ , 则 $j=\pi\circ i$ 即为定义中的 $j$ . 如果 $R$ 是域, 则 $j$ 是单射, 此时将 $x$ 和 $j(x)$ 看做相同, 若 $\dim M=m$ , 则 $\dim\mathrm{Cl}(M,q)=2^m$ .
+若设自然的嵌入映射 $i\colon M\to T(M)$ 和商映射 $\pi\colon T(M)\to \mathrm{Cl}(M,q)$ , 则 $j=\pi\circ i$ 即为定义中的 $j$ . 如果 $R$ 是域, 则 $j$ 是单射, 此时将 $x$ 和 $j(x)$ 看做相同, 并且有$\dim\mathrm{Cl}(M,q)=2^{\dim M}$ .
 
 <div style="border: 3px solid #000; padding: 10px;">
 
@@ -68,7 +68,7 @@ $$
 
 </div>
 
-设 $R$ 的特征不为 $2$ , 定义 $R$ -模 $M$ 上的自同构 $a\colon M\to M$ ,  $a(x)=-x$ , 记 $j'=j\circ a$ , 于是 $j'(x)^2=(-x)^2=x^2=j(x)^2$ , 因此 $(\mathrm{Cl}(M,q),j')$ 满足泛性质的条件, 故存在自同构 $\mathrm{Cl}(M,q)\to\mathrm{Cl}(M,q)$ , 仍记为 $a$ , 满足 $a|_{j(M)}(x)=-x$ . 定义
+设 $R$ 的特征不为 $2$ , 定义 $R$ -模 $M$ 上的自同构 $a\colon M\to M$ ,  $a(x)=-x$ , 记 $j'=j\circ a$ , 于是 $j'(x)^2=(-x)^2=x^2=j(x)^2$ , 因此 $(\mathrm{Cl}(M,q),j')$ 满足泛性质的条件, 故存在自同构 $\mathrm{Cl}(M,q)\to\mathrm{Cl}(M,q)$ , 仍记为 $a$ , 满足 $a\mid_{j(M)}(x)=-x$ . 定义
 
 $$
 \displaylines{\mathrm{Cl}^+(M,q)=\{x\mid x\in\mathrm{Cl}(M,q),a(x)=x\},}
@@ -100,7 +100,7 @@ $$
 
 <b>例</b>
 
- 设 $V=\mathbb{R}$ , 于是 $T(\mathbb{R})=T^0(\mathbb{R})\oplus T^1(\mathbb{R})\oplus T^2(\mathbb{R})\oplus\cdots$ , 我们约定 $1\in \mathbb{R}=T^0(\mathbb{R})$ 和 $e\in T^1(\mathbb{R})$ 分别为第 $0$ 分次和第 $1$ 分次的基. 设 $q(x\cdot e)=-x^2$ , 于是 $j(e)^2=[e]^2=[e\otimes e]=[q(e)]=[-1]=-[1]$ , 我们记 $j(e)$ 为 $i$ , 记 $[1]$ 仍为 $1$ , 所以 $i^2=-1$ , 则 $\mathrm{Cl}(V,q)=\mathbb{C}$ 为复数集, 其中 $T^0(\mathbb{R})$ 的像为纯实数, $T^1(\mathbb{R})$ 的像为纯虚数.
+ 设 $V=\mathbb{R}$ , 于是 $T(\mathbb{R})=T^0(\mathbb{R})\oplus T^1(\mathbb{R})\oplus T^2(\mathbb{R})\oplus\cdots$ , 我们约定 $1\in \mathbb{R}=T^0(\mathbb{R})$ 和 $e\in T^1(\mathbb{R})$ 分别为第 $0$ 分次和第 $1$ 分次的基. 设 $q(x\cdot e)=-x^2$ , 于是 $j(e)^2=[e]^2=[e\otimes e]=[q(e)]=[-1]=-[1]$ , 我们记 $j(e)$ 为 $i$ , 记 $[1]$ 仍为 $1$ , 就有 $i^2=-1$ , 则 $\mathrm{Cl}(V,q)=\mathbb{C}$ 为复数集, 其中 $T^0(\mathbb{R})$ 的像为纯实数, $T^1(\mathbb{R})$ 的像为纯虚数.
 
 </div>
 
@@ -138,7 +138,7 @@ $$
 
  实数域上的二维代数在同构意义下只有复数, 双曲复数和对偶数, 它们都是可交换的.
 
-</div><br>
+</div>
 
 <div style="border: 3px solid #000; padding: 10px;">
 
@@ -202,7 +202,7 @@ $$
 
  $\mathbb{R}$ 上任何满足可除性的巴拿赫代数在同构意义下只有 $\mathbb{R}$ ,  $\mathbb{C}$ 和 $\mathbb{H}$ .
 
-</div><br>
+</div>
 
 克利福德代数有以下关系. 我们使用 $M_n(\mathbb{R})$ 表示元素均为实数的 $n$ 阶方阵代数.
 
@@ -210,19 +210,19 @@ $$
 
 <b>定理</b>
 
- 1, $\mathrm{Cl}_{1,1}(\mathbb{R})\cong M_2(\mathbb{R})$ ;
+ 1, $\mathrm{Cl}_{1,1}(\mathbb{R})\cong M_2(\mathbb{R})$ ;<br>
 
- 2, $\mathrm{Cl}_{p+1,q+1}(\mathbb{R})\cong \mathrm{Cl}_{p,q}(\mathbb{R})\otimes_{\mathbb{R}}\mathrm{Cl}_{1,1}(\mathbb{R})$ ;
+ 2, $\mathrm{Cl}_{p+1,q+1}(\mathbb{R})\cong \mathrm{Cl}_{p,q}(\mathbb{R})\otimes_{\mathbb{R}}\mathrm{Cl}_{1,1}(\mathbb{R})$ ;<br>
 
- 3, $M_n(\mathbb{R})\otimes_{\mathbb{R}} M_m(\mathbb{R})\cong M_{nm}(\mathbb{R})$ ;
+ 3, $M_n(\mathbb{R})\otimes_{\mathbb{R}} M_m(\mathbb{R})\cong M_{nm}(\mathbb{R})$ ;<br>
 
- 4, $\mathrm{Cl}_{n,n}(\mathbb{R})\cong M_{2^n}(\mathbb{R})$ ;
+ 4, $\mathrm{Cl}_{n,n}(\mathbb{R})\cong M_{2^n}(\mathbb{R})$ ;<br>
 
- 5, $\mathrm{Cl}_{q,p+2}(\mathbb{R})\cong\mathrm{Cl}_{p, q}(\mathbb{R}) \otimes_{\mathbb{R}} \mathrm{Cl}_{0, 2}(\mathbb{R})$ ;
+ 5, $\mathrm{Cl}_{q,p+2}(\mathbb{R})\cong\mathrm{Cl}_{p, q}(\mathbb{R}) \otimes_{\mathbb{R}} \mathrm{Cl}_{0, 2}(\mathbb{R})$ ;<br>
 
  6, $\mathrm{Cl}_{q+2,p}(\mathbb{R})\cong\mathrm{Cl}_{p, q}(\mathbb{R}) \otimes_{\mathbb{R}} \mathrm{Cl}_{2,0}(\mathbb{R})$ .
 
-</div><br>
+</div>
 
 由以上递推公式可以推出实克利福德代数的结构, 它只与 $p-q$ 有关.
 
@@ -231,6 +231,7 @@ $$
 <b>定理</b>
 
  设 $p$ 和 $q$ 是非负整数, 则下表完全分类了 $\mathrm{Cl}_{p, q}(\mathbb{R})$ .
+ </div>
         
 | $p - q\mod 8$ | $\mathrm{Cl}_{p, q}(\mathbb{R})$ | $d$ |
 | :---: | :---: | :---: |
@@ -243,7 +244,7 @@ $$
 | $6$ | $\mathrm{M}_d(\mathbb{R})$ | $2^{\frac{p+q}{2}}$ |
 | $7$ | $\mathrm{M}_d(\mathbb{R}) \times \mathrm{M}_d(\mathbb{R})$ | $2^{\frac{p+q-1}{2}}$ |
 
-</div>
+
 
 该定理与拓扑K理论中的Bott周期律相关.
 
