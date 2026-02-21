@@ -21,7 +21,7 @@ tags:
 
  $$\Gamma(z) = \int_0^{\infty} t^{z-1} e^{-t}\, \mathrm{d}t.$$ 
 
-</div><br>
+</div>
 
 该积分在右半平面内绝对收敛, 并且 $\Gamma(n+1)=n!$ , 利用函数方程 $\Gamma(z+1) = z\Gamma(z)$ 可将 $\Gamma(z)$ 解析延拓至整个复平面.
 
@@ -43,7 +43,7 @@ tags:
     
 则在 $(0, \infty)$ 上, 有 $f(x) \equiv \Gamma(x)$ .
 
-</div><br>
+</div>
 
 以下为一些常见公式.
 
@@ -111,7 +111,7 @@ Beta函数
     
  $$\zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}.$$ 
 
-</div><br>
+</div>
 
 上式在 $ s>1 $ 的右半平面内收敛, 通过公式
 
