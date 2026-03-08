@@ -10,4 +10,3 @@
 
 [音乐](https://quiteeasilydoneqed.github.io/qedhomepage/music)
 
-[设计](https://quiteeasilydoneqed.github.io/qedhomepage/design)
