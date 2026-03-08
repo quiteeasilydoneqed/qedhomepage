@@ -11,8 +11,6 @@ tags:
 
 Bilibili [证毕QED](https://space.bilibili.com/1850638679)
 
-Bilibili [q_official](https://space.bilibili.com/3546976641615898)
-
 X(Twitter) [QED](https://x.com/QEDDDDDDDDDDDD)
 
 SoundCloud [QED](https://soundcloud.com/qed-122156941)
