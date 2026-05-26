@@ -25,13 +25,13 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
-          bundler-cache: false # 必须关闭缓存，确保我们下面手动注入的修复生效
+          bundler-cache: false # 必须关闭缓存
 
-      # ✨ 核心完整修复：在执行 bundle install 前，强行在系统全局拦截并降级有 Bug 的组件
-      - name: Intercept and downgade buggy sass-embedded
+      # ✨ 终极核心修复：既然 bundle install 会自动解析到 1.100.0，
+      # 我们直接用 printf 在运行前强行把低版本的锁死追加进 Gemfile，斩断降级 Bug！
+      - name: Force Lock Dependency Version
         run: |
-          gem install sass-embedded -v 1.83.0
-          gem install jekyll-sass-converter -v 3.0.0
+          printf "\ngem 'sass-embedded', '~> 1.83.0'\ngem 'jekyll-sass-converter', '~> 3.0.0'\n" >> Gemfile
 
       - name: Install dependencies
         run: bundle install
