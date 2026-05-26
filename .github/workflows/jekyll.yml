@@ -27,6 +27,7 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: false
 
+      # 强制重构 Gemfile，死锁安全版本，彻底根除 1.100.0 的编译 Bug
       - name: Nuke and Rebuild Gemfile
         run: |
           rm -f Gemfile Gemfile.lock
