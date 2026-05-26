@@ -21,18 +21,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1.207.0
-        with:
-          ruby-version: '3.1'
-          bundler-cache: false
+      - name: Install Ruby via APT
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ruby-full build-essential zlib1g-dev
 
       - name: Force Lock Dependency Version
         run: |
           printf "\ngem 'sass-embedded', '~> 1.83.0'\ngem 'jekyll-sass-converter', '~> 3.0.0'\n" >> Gemfile
 
       - name: Install dependencies
-        run: bundle install
+        run: |
+          gem install bundler
+          bundle install
 
       - name: Setup Pages
         id: pages
