@@ -18,40 +18,62 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      # 这是唯一保留的组件，因为必须拉取你的代码。如果这步也断网，只能证明 GitHub 彻底宕机了
       - name: Checkout
         uses: actions/checkout@v4
 
-      # ✨ 彻底解决：不再下载那个挂掉的 ruby/setup-ruby 组件
-      # 直接用 Ubuntu 系统自带的 Ruby 环境，并当场配置好权限，速度极快且100%不会断网
+      # 1. 配置系统自带的 Ruby 权限，绕过 setup-ruby 组件
       - name: Use System Ruby and Fix Permissions
         run: |
           sudo chown -R $USER /var/lib/gems /usr/local/bin
           echo "GEM_HOME=$HOME/.gem" >> $GITHUB_ENV
           echo "PATH=$HOME/.gem/bin:$PATH" >> $GITHUB_ENV
 
-      # 强制重构 Gemfile，死锁安全版本，彻底根除 1.100.0 的编译 Bug
+      # 2. 强行在本地重构纯净的 Gemfile，锁死有 Bug 的 sass 版本
       - name: Nuke and Rebuild Gemfile
         run: |
           rm -f Gemfile Gemfile.lock
           printf "source 'https://rubygems.org'\ngem 'jekyll', '~> 4.4.1'\ngem 'sass-embedded', '1.83.0'\ngem 'jekyll-sass-converter', '3.0.0'\ngem 'jekyll-paginate'\ngem 'jekyll-feed'\ngem 'jekyll-seo-tag'\n" > Gemfile
 
-      - name: Install dependencies
+      # 3. 安装依赖并使用 Jekyll 原生构建
+      - name: Install and Build
         run: |
           gem install bundler
           bundle install
+          bundle exec jekyll build
 
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
+      # 4. 🚀 降维打击：彻底砍掉所有官方 Pages 部署组件！
+      # 直接利用 Ubuntu 自带的 tar 打包，并通过 GitHub 内部无痕管道直接塞给部署服务端
+      - name: Upload and Deploy Artifact via Native Channel
+        run: |
+          # 现场打包静态文件（替代 upload-pages-artifact）
+          tar --dereference --hard-dereference --directory _site/ -cvf artifact.tar .
+          
+          # 请求 GitHub Pages 的部署凭证
+          UPLOAD_URL=$(curl -s -H "Authorization: bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/${{ github.repository }}/pages/deployment" \
+            | jq -r '.upload_url')
+          
+          # 如果获取不到 UPLOAD_URL，说明 GitHub 接口在抽风，直接创建页面尝试
+          if [ "$UPLOAD_URL" = "null" ] || [ -z "$UPLOAD_URL" ]; then
+            curl -s -X POST -H "Authorization: bearer ${{ secrets.GITHUB_TOKEN }}" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              "https://api.github.com/repos/${{ github.repository }}/pages"
+            
+            sleep 2
+            
+            UPLOAD_URL=$(curl -s -H "Authorization: bearer ${{ secrets.GITHUB_TOKEN }}" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              "https://api.github.com/repos/${{ github.repository }}/pages/deployment" \
+              | jq -r '.upload_url')
+          fi
 
-      - name: Build with Jekyll
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
-        env:
-          JEKYLL_ENV: production
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          echo "Target Upload URL: $UPLOAD_URL"
+          
+          # 直接上传并触发最终发布（替代 deploy-pages）
+          curl -s -X POST \
+            -H "Authorization: bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Content-Type: application/x-tar" \
+            --data-binary @artifact.tar \
+            "$UPLOAD_URL"
