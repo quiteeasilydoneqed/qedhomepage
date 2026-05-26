@@ -21,22 +21,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 1. 速度的核心：开启官方高效缓存
+      # 1. 开启官方高效缓存，它会自动根据你本地的 Gemfile 安装依赖
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
-          bundler-cache: true # 👈 就是这行！只要有它，后续构建速度直接起飞
+          bundler-cache: true # 👈 有这行在，它会自动帮你执行 bundle install，不需要手动写了
 
-      # 2. 稳的核心：在内存里偷偷追加两行安全的依赖，不影响缓存读取速度
-      - name: Force Lock Dependency Version
-        run: |
-          printf "\ngem 'sass-embedded', '~> 1.83.0'\ngem 'jekyll-sass-converter', '~> 3.0.0'\n" >> Gemfile
-
-      # 3. 极其丝滑地安装与构建
-      - name: Install dependencies
-        run: bundle install
-
+      # 2. 极其丝滑地配置与构建（已经删除了原本“画蛇添足”的强加依赖步骤）
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
