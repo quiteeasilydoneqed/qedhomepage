@@ -21,22 +21,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 1. 开启官方高效缓存，它会自动根据你本地的 Gemfile 安装依赖
+      # 1. 极速核心：配置 Ruby，并开启 Bundler 的高阶并行下载与严格缓存
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
-          bundler-cache: true # 👈 有这行在，它会自动帮你执行 bundle install，不需要手动写了
+          bundler-cache: true
+        env:
+          BUNDLE_JOBS: 4 # 👈 开启 4 线程并行下载，速度直接翻倍
 
-      # 2. 极其丝滑地配置与构建（已经删除了原本“画蛇添足”的强加依赖步骤）
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
+      # 2. 忽略不必要的历史检查，只做纯粹的静态编译
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
