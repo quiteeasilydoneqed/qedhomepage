@@ -2,7 +2,7 @@ name: Deploy Jekyll site to Pages
 
 on:
   push:
-    branches: ["master", "main"] # 🛡️ 防御性升级：同时支持 master 和 main 分支，防止本地推错分支导致不触发
+    branches: ["master"]
   workflow_dispatch:
 
 permissions:
@@ -22,12 +22,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@v1.207.0
         with:
           ruby-version: '3.1'
-          bundler-cache: false # 必须关闭缓存
+          bundler-cache: false
 
-      # ✨ 你的终极核心修复：通过追加写入，强行把低版本的锁死进 Gemfile
       - name: Force Lock Dependency Version
         run: |
           printf "\ngem 'sass-embedded', '~> 1.83.0'\ngem 'jekyll-sass-converter', '~> 3.0.0'\n" >> Gemfile
