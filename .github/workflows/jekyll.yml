@@ -21,11 +21,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1'
-          bundler-cache: false
+      # ✨ 彻底解决：不再下载那个挂掉的 ruby/setup-ruby 组件
+      # 直接用 Ubuntu 系统自带的 Ruby 环境，并当场配置好权限，速度极快且100%不会断网
+      - name: Use System Ruby and Fix Permissions
+        run: |
+          sudo chown -R $USER /var/lib/gems /usr/local/bin
+          echo "GEM_HOME=$HOME/.gem" >> $GITHUB_ENV
+          echo "PATH=$HOME/.gem/bin:$PATH" >> $GITHUB_ENV
 
       # 强制重构 Gemfile，死锁安全版本，彻底根除 1.100.0 的编译 Bug
       - name: Nuke and Rebuild Gemfile
@@ -34,7 +36,9 @@ jobs:
           printf "source 'https://rubygems.org'\ngem 'jekyll', '~> 4.4.1'\ngem 'sass-embedded', '1.83.0'\ngem 'jekyll-sass-converter', '3.0.0'\ngem 'jekyll-paginate'\ngem 'jekyll-feed'\ngem 'jekyll-seo-tag'\n" > Gemfile
 
       - name: Install dependencies
-        run: bundle install
+        run: |
+          gem install bundler
+          bundle install
 
       - name: Setup Pages
         id: pages
