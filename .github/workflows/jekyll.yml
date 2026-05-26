@@ -2,7 +2,7 @@ name: Deploy Jekyll site to Pages
 
 on:
   push:
-    branches: ["master"]
+    branches: ["master", "main"] # 🛡️ 防御性升级：同时支持 master 和 main 分支，防止本地推错分支导致不触发
   workflow_dispatch:
 
 permissions:
@@ -27,8 +27,7 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: false # 必须关闭缓存
 
-      # ✨ 终极核心修复：既然 bundle install 会自动解析到 1.100.0，
-      # 我们直接用 printf 在运行前强行把低版本的锁死追加进 Gemfile，斩断降级 Bug！
+      # ✨ 你的终极核心修复：通过追加写入，强行把低版本的锁死进 Gemfile
       - name: Force Lock Dependency Version
         run: |
           printf "\ngem 'sass-embedded', '~> 1.83.0'\ngem 'jekyll-sass-converter', '~> 3.0.0'\n" >> Gemfile
