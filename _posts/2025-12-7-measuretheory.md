@@ -1324,6 +1324,109 @@ $$
 
 </div>
 
+### 高斯测度
+
+设 $ I=[0,1) $ , 对任意 $ x\in I $ , 记 $ x $ 的连分数为 $ [a_1(x),a_2(x),\dots,a_n(x),\dots] $ , 这样得到一列函数 $ a_i\colon I\to \mathbb{Z}_{>0}\cup\\{\infty\\} $ , 对于有限连分数 $ [a_1(x),\dots, a_n(x)] $ , 我们约定 $ a_i(x)=\infty $ , 其中 $ i>n $ . 再定义 $ T\colon I\to I $ ,
+
+$$
+
+T(x)=T^1(x)=\frac{1}{x}-\left[\frac{1}{x}\right],\quad T^n(x)=T(T^{n-1}(x)),n>1,
+
+$$
+
+
+其中当 $ x=0 $ 时, $ \infty-\infty $ 理解为 $ 0$ , 约定 $ T^0=\mathrm{id}_I $ , 它们之间有关系
+
+$$
+
+a_1(x)=\left[\frac{1}{x}\right],\quad a_n(x)=a_1(T^{n-1}(x)),
+
+$$
+
+对任意 $ x\in I $ 成立.
+
+容易看出诸 $ a_i $ 都是分段常值函数, 例如
+
+$$
+
+a_1(x)=
+\begin{cases}
+    \infty, & x=0,\\
+    1, & x\in\left(\frac{1}{2},1\right),\\
+    i, & x\in\left(\frac{1}{i+1},\frac{1}{i}\right],i\in\mathbb{Z}_{\ge2},
+\end{cases}
+
+$$
+
+$$
+
+a_2(x)=
+\begin{cases}
+    \infty, & x=0,\frac{1}{i},i\in\mathbb{Z}_{\ge2},\\
+    1, & x\in\bigcup_{i\in\mathbb{Z}_{\ge1}}\left(\frac{1}{i+1},\frac{1}{i+\frac{1}{2}}\right),\\
+    j, & x\in\bigcup_{i\in\mathbb{Z}_{\ge1}}\left[\frac{1}{i+\frac{1}{j}},\frac{1}{i+\frac{1}{j+1}}\right),j\in\mathbb{Z}_{\ge2},
+\end{cases}
+
+$$
+
+其图像颇有分形之态.
+
+记 $ s_n(x)=[a_{n+1}(x),a_{n+2}(x),\dots] $ , 考虑集合
+
+$$
+
+S_n(x)=\{\alpha\in I:s_n(\alpha)<x\},
+
+$$
+
+设 $ m $ 为 $ I $ 上的勒贝格测度, 记 $ F_n(x)=m(S_n(x)) $ 为该集合的勒贝格测度, 高斯证明了, 当 $ x\in I $ 时,
+
+$$
+
+\lim_{n\to\infty}F_n(x)=\frac{\ln(x+1)}{\ln2},
+
+$$
+
+所谓的高斯问题是指, 求误差
+
+$$
+
+F_n(x)-\frac{\ln(x+1)}{\ln2}
+
+$$
+
+的渐进估计, 该问题被库兹明解决, 库兹明证明了
+
+$$
+
+F_n(x)-\frac{\ln(x+1)}{\ln2}=O\left(e^{-\sqrt{n}}\right),
+
+$$
+
+该渐进逼近还能改进.
+
+设 $ A $ 是 $ I $ 的勒贝格可测子集, 所谓的高斯测度定义为
+
+$$
+
+\gamma(A)=\frac{1}{\ln2}\int_A\frac{\mathrm{d}x}{x+1},
+
+$$
+
+于是高斯的定理可以表示为
+
+$$
+
+\lim_{n\to\infty}m(S_n(x))=\gamma([0,x]), \quad x\in I.
+
+$$
+
+
+可以证明, 高斯测度满足$\gamma(T^{-1}(A))=\gamma(A)$对任意可测子集$A\subseteq I$都成立.
+
+
+
+
 # 积分理论
 
 <div style="border: 3px solid #000; padding: 10px;">
