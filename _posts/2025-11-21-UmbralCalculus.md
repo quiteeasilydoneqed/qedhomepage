@@ -11,7 +11,7 @@ tags:
 
 # 多项式列
 
-设 $\\{p_n(x)\\}_{n=0}^\infty$ 是一列 $\mathbb{C}[x]$ 中的多项式, 以后我们说的多项式列都要求有 $ \deg p_n=n $, 即第 $ n $ 个多项式的次数恰好为 $ n $, 其中当 $ n=0 $ 时解释为非零常函数 ( $ p(x)=0 $ 的次数通常定义为无穷小 ). 显然这样的一列多项式组成线性空间 $ \mathbb{C}[x] $ 的一组基.
+设 $\\{p_n(x)\\}_{n=0}^\infty$ 是一列 $\mathbb{C}[x]$ 中的多项式, 以后我们说的多项式列都要求有 $ \deg p_n=n $, 即第 $ n $ 个多项式的次数恰好为 $ n $, 其中当 $ n=0 $ 时解释为非零常函数 ($ p(x)=0 $ 的次数通常定义为负无穷). 显然这样的一列多项式组成线性空间 $ \mathbb{C}[x] $ 的一组基.
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义(二项式型多项式列)</b>
@@ -90,7 +90,7 @@ $$
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>定义(哑复合)</b>
-若 $\{p_n(x)\}_{n=0}^\infty$ 和 $\{p_n(x)\}_{n=0}^\infty$ 是两列谢弗多项式列, 设 $ p_n(x) = \sum_{k=0}^n a_{nk} x^k $, $ q_n(x) = \sum_{k=0}^n b_{nk} x^k $, $ a_{nk},b_{nk}\in\mathbb{C} $, 定义它们的哑复合为多项式列 $ \{(p\circ q)_n(x)\}_{n=0}^\infty $, 其中
+若 $\{p_n(x)\}_{n=0}^\infty$ 和 $\{q_n(x)\}_{n=0}^\infty$ 是两列谢弗多项式列, 设 $ p_n(x) = \sum_{k=0}^n a_{nk} x^k $, $ q_n(x) = \sum_{k=0}^n b_{nk} x^k $, $ a_{nk},b_{nk}\in\mathbb{C} $, 定义它们的哑复合为多项式列 $ \{(p\circ q)_n(x)\}_{n=0}^\infty $, 其中
 
 $$
 (p\circ q)_n(x)=\sum_{k=0}^n a_{nk}q_k(x)=\sum_{0\le l\le k\le n}a_{nk}b_{kl}x^l.
