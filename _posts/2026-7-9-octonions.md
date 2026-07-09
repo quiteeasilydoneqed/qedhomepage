@@ -13,7 +13,7 @@ tags:
 
 # Cayley-Dickson代数
 
-本节参考自 [li2022algebraic] 第七章习题5和6.
+本节参考自 [3] 第七章习题5和6.
 
 以下均设 $F$ 为域, $A$ 为有限维 $F$-模, $A$ 中交换群运算记为加法, 在 $A$ 上有一个未必交换也未必结合的乘法运算, 但满足分配律, 并且含有幺元, 则称 $A$ 是一个非结合代数, 以下将非结合代数简称为代数.
 
@@ -27,7 +27,7 @@ $$[x,y,z]=(xy)z-x(yz).$$
 
 </div>
 
-若 $[x,x,y]=[x,y,y]=0$ 恒成立, 则称 $A$ 是交错代数, 该恒等式称为交错律, Atin的一个定理指出, 一个代数交错当且仅当其中任意两个元素生成的子代数结合([schafer1995introduction]第三章). 若 $x\in A$, $(xx)x=x(xx)$ 且 $(xx)(xx)=((xx)x)x$, 则称 $A$ 是幂结合的, 这等价于说由 $x$ 生成的 $A$ 的子代数是结合的, 幂结合代数中可以自由的使用幂次符号 $x^n$.
+若 $[x,x,y]=[x,y,y]=0$ 恒成立, 则称 $A$ 是交错代数, 该恒等式称为交错律, Atin的一个定理指出, 一个代数交错当且仅当其中任意两个元素生成的子代数结合([2]第三章). 若 $x\in A$, $(xx)x=x(xx)$ 且 $(xx)(xx)=((xx)x)x$, 则称 $A$ 是幂结合的, 这等价于说由 $x$ 生成的 $A$ 的子代数是结合的, 幂结合代数中可以自由的使用幂次符号 $x^n$.
 
 一个代数是可除的当且仅当对任意 $x,y\in A$, 若 $xy=0$, 总有 $x=0$ 或 $y=0$. 当代数结合时, 该条件显然等价于任何非零元素都有乘法逆元(注意 $A$ 有限维这一条件是必须的), 但当代数非结合时则未必成立.
 
@@ -51,7 +51,7 @@ $$0=[x+y,x+y,z]=[x,x,z]+[x,y,z]+[y,x,z]+[y,y,z],$$
 
 </div>
 
-设映射 $(-)^*\in\operatorname{End}_F(A)$ 为自同态, 并且满足 $(xy)^*=y^*x^*$, $1_A^*=1_A$, $x^{**}=x$, 则称 $*$ 为 $A$ 上的对合, 带对合的代数称为 $*$-代数.
+设映射 $(-)^\*\in\operatorname{End}_F(A)$ 为自同态, 并且满足 $(xy)^\*=y^\*x^\*$, $1_A^\*=1_A$, $x^{\*\*}=x$, 则称 $\*$ 为 $A$ 上的对合, 带对合的代数称为 $\*$-代数.
 
 <div style="border: 3px solid #000; padding: 10px;">
 
@@ -87,7 +87,7 @@ $$0=[x+y,x+y,z]=[x,x,z]+[x,y,z]+[y,x,z]+[y,y,z],$$
 
 由于 $n(xy)=(xy)(xy)^*=(xy)(y^*x^*)=((xy)y^*)x^*-[xy,y^*,x^*]=n(x)n(y)-[xy,y^*,x^*]$, 我们只需证明 $[xy,y^*,x^*]=[x^*,xy,y^*]=0$, 这等价于说 $n(x)n(y)-n(x)n(y)=0$, 显然成立.
 
-</div>
+</div><br>
 
 <div style="border: 3px solid #000; padding: 10px;">
 
@@ -107,7 +107,7 @@ $$B(xy,z)=B(y,x^*z)=B(x,zy^*).$$
 
 <b>证明</b>
 
-$B(xy,xz)=n(xy+xz)-n(xy)-n(xz)=n(x)(n(y+z)-n(y)-n(z))=n(x)B(y,z)$, 由标量的交换性知亦有 $n(x)B(y,z)=B(yx,zx)$. 直接计算即可验证 $B(xz,wy)+B(xy,wz)=B(x,w)B(y,z)$.
+$B(xy,xz)=n(xy+xz)-n(xy)-n(xz)=n(x)(n(y+z)-n(y)-n(z))=n(x)B(y,z)$, 由标量的交换性知亦有 $n(x)B(y,z)=B(yx,zx)$. 直接计算即可验证 $B(xz,wy)+B(xy,wz)=B(x,w)B(y,z)$.<br>
 
 令 $w=1_A$ 得 $B(xz,y)+B(xy,z)=B(x,1_A)B(y,z)$, 而
 
@@ -159,7 +159,7 @@ $$(a,b)\cdot(a',b')=(aa'+\lambda b'b^*,a^*b'+a'b),$$
 
 验证乃例行公事.
 
-</div>
+</div><br>
 
 <div style="border: 3px solid #000; padding: 10px;">
 
@@ -173,9 +173,9 @@ $$(a,b)\cdot(a',b')=(aa'+\lambda b'b^*,a^*b'+a'b),$$
 
 <b>证明</b>
 
-假设 $x=a+vb$, 则 $T(x)=a+vb+a^*-vb=a+a^*=t(a)\in F\cdot 1_A$, 这里我们自然的将 $A$ 视为 $\operatorname{CD}(A,\lambda)$ 的子代数.
+假设 $x=a+vb$, 则 $T(x)=a+vb+a^*-vb=a+a^*=t(a)\in F\cdot 1_A$, 这里我们自然的将 $A$ 视为 $\operatorname{CD}(A,\lambda)$ 的子代数.<br>
 
-同理 $N(x)=n(a)-\lambda n(b)\in F\cdot 1$, $x\cdot\overline{x}=(a+vb)\cdot(a^*-vb)=aa^*-\lambda bb^*=N(x)$.
+同理 $N(x)=n(a)-\lambda n(b)\in F\cdot 1$, $x\cdot\overline{x}=(a+vb)\cdot(a^*-vb)=aa^*-\lambda bb^*=N(x)$.<br>
 
 设 $y=c+vd$, 则
 
@@ -231,7 +231,7 @@ $$B_n((ac)b,d)=B_n(ac,db^*)=B_n(cb,a^*d)=B_n(a(cb),d),$$
 
 $$B_n((ac)b-a(cb),d)=0,$$
 
-由于 $d$ 是任取的, $B_n$ 的非退化性导出 $(ac)b-a(cb)=0$, 这就是结合律.
+由于 $d$ 是任取的, $B_n$ 的非退化性导出 $(ac)b-a(cb)=0$, 这就是结合律.<br>
 
 设 $A$ 交换, 令 $x=a+vb$, $y=c+vd$,$z=e+vf\in\operatorname{CD}(A,\lambda)$, 计算
 
@@ -239,7 +239,7 @@ $$(x\cdot y)\cdot z = (ace + \lambda(dbe + fad + fcb)) + v(acf + dbf + ead + ecb
 
 $$x\cdot (y\cdot z) = (ace + \lambda(afd + cfb + edb)) + v(acf + aed + ceb + fdb),$$
 
-由 $A$ 的交换律得 $(x\cdot y)\cdot z=x\cdot(y\cdot z)$. 现设 $\operatorname{CD}(A,\lambda)$ 结合, 对任意的 $a,b\in A$, 由结合律得 $v\cdot(a\cdot b)=(v\cdot a)\cdot b$, 又 $(v\cdot a)\cdot b=(0+va)(b+v\cdot0)=v(ba)$, $v\cdot (a\cdot b)=v(ab)$, 故 $v(ab)=v(ba)$, 这相当于说 $(0,ab)=(0,ba)$, 比较第二分量得 $ab=ba$, 交换律得证.
+由 $A$ 的交换律得 $(x\cdot y)\cdot z=x\cdot(y\cdot z)$. 现设 $\operatorname{CD}(A,\lambda)$ 结合, 对任意的 $a,b\in A$, 由结合律得 $v\cdot(a\cdot b)=(v\cdot a)\cdot b$, 又 $(v\cdot a)\cdot b=(0+va)(b+v\cdot0)=v(ba)$, $v\cdot (a\cdot b)=v(ab)$, 故 $v(ab)=v(ba)$, 这相当于说 $(0,ab)=(0,ba)$, 比较第二分量得 $ab=ba$, 交换律得证.<br>
 
 设 $A=F$, 则必有 $a^*=a$, $\operatorname{CD}(A,\lambda)$ 中乘法退化为
 
@@ -268,7 +268,7 @@ $$\operatorname{CD}(\mathbb {H},-1)\cong\mathbb {O},$$
 
 其中 $\mathbb{C}$ 是复数域, $\mathbb{H}$ 是四元数代数, $\mathbb{O}$ 成为八元数代数. 由上节定理可知 $\mathbb{C}$ 交换且结合, $\mathbb{H}$ 非交换但结合, $\mathbb{O}$ 非交换且非结合, 但是是交错代数.
 
-除八元数外, 这些构造与克利福德代数中的构造是同构的, 区别是克利福德代数不处理非结合代数, 详见本网站克利福德代数的网页. 当 $\lambda$ 取 $1$ 或 $0$ 时也能构造出双曲复数和对偶数.
+除八元数外, 这些构造与克利福德代数中的构造是同构的, 区别是克利福德代数不处理非结合代数, 详见本网站关于克利福德代数的网页. 当 $\lambda$ 取 $1$ 或 $0$ 时也能构造出双曲复数和对偶数.
 
 <div style="border: 3px solid #000; padding: 10px;">
 
@@ -282,7 +282,7 @@ $$\operatorname{CD}(\mathbb {H},-1)\cong\mathbb {O},$$
 
 <b>证明</b>
 
-假设 $A$ 可除, 这等价于说任何非零元 $a$ 定义的左乘映射 $L_a$ 和右乘映射 $R_a$ 均为双射, 这等价于说任何非零元都有左逆和右逆, 设非零元 $a$ 的左逆为 $b$, 右逆为 $c$. 由交错律知 $a=a(ba)=(ab)a$, 于是 $(1_A-ab)a=0$, 由于 $a\neq0$, 于是 $1_A=ab$, 故 $b$ 也是右逆, 同理 $c$ 也是左逆, $b=c$.
+假设 $A$ 可除, 这等价于说任何非零元 $a$ 定义的左乘映射 $L_a$ 和右乘映射 $R_a$ 均为双射, 这等价于说任何非零元都有左逆和右逆, 设非零元 $a$ 的左逆为 $b$, 右逆为 $c$. 由交错律知 $a=a(ba)=(ab)a$, 于是 $(1_A-ab)a=0$, 由于 $a\neq0$, 于是 $1_A=ab$, 故 $b$ 也是右逆, 同理 $c$ 也是左逆, $b=c$.<br>
 
 假设 $A$ 中任意非零元均可逆, 取 $a\neq0$, 设其逆为 $a^{-1}$, 由于 $A$ 有限维, 不妨设 $n=\dim A$, 则 $1_A,a, a^2,\dots,a^n$ 线性相关, 故 $a$ 存在极小多项式 $x^m+c_{m-1}x^{m-1}+\cdots+c_1x+c_0$, 其中诸 $c_i\in F$. 现假设 $c_0=0$, 则有
 
@@ -320,7 +320,7 @@ $$a^{-1}(ab)=(a^{-1}a)b=b=0,$$
 
 所以 $A$ 是可除的.
 
-</div>
+</div><br>
 
 <div style="border: 3px solid #000; padding: 10px;">
 
@@ -338,7 +338,7 @@ $$a^{-1}(ab)=(a^{-1}a)b=b=0,$$
 
 $$x^{-1}=\frac{\overline{x}}{N(x)}.$$
 
-</div>
+</div><br>
 
 <div style="border: 3px solid #000; padding: 10px;">
 
@@ -442,7 +442,7 @@ $$(\overline{x_0},\dots, \overline{x_n})=(\overline{ay_0},\dots,\overline{ay_n})
 
 设 $M\in M_n(A)$, 定义其伴随矩阵为 $M^*$, 若 $M=(a_{ij})$, 则 $M^*=(\overline{a_{ji}})$, 即每个元素取对合后再转置.
 
-</div>
+</div><br>
 
 <div style="border: 3px solid #000; padding: 10px;">
 
@@ -559,7 +559,7 @@ c \\ d
 $
 当 $a\neq0$ 时, 令 $u=a^{-1}c$, 则 $au=c$. 由 $a\overline{a}=c\overline{c}=a(u\overline{u})\overline{a}$ 可知 $u\overline{u}=1$. 因为 $a\overline{b}=c\overline{d}=au\overline{d}$, 左乘 $a^{-1}$ 得 $\overline{b}=u\overline{d}$, 取对合得 $b=d\overline{u}$, 右乘 $u$ 得 $bu=d$, 故 $(a,b)u=(c,d)$, $(a,b)=(c,d)\overline{u}$. 当 $a=0$ 时, 绝不可能有 $b=0$, 对 $b$ 做相同的构造即可.
 
-</div>
+</div><br>
 
 <div style="border: 3px solid #000; padding: 10px;">
 
@@ -591,7 +591,7 @@ $$\varphi_2\circ\varphi_1^{-1}(z)=ba^{-1}=\left(ab^{-1}\right)^{-1}=z^{-1}$$
 
 # Hopf纤维化
 
-先前说道, $\mathbb{KP}^1$ 是 $\mathbb{K}^2$ 中满足 $n(a)+n(b)=1_\mathbb{K}$ 的元素 $(a,b)$ 组成的集合的商集, 考虑 $\mathbb{K}=\mathbb{R}$ 时, $n(a)+n(b)=1_\mathbb{K}$ 就是 $a^2+b^2=1$, 即单位圆 $S^1$, 当 $\mathbb{K}=\mathbb{C}$ 时, $n(a)+n(b)=1_\mathbb{K}$ 就是 $|a|^2+|b|^2=1$, 设 $a=x+iy$, $b=z+iw$, 就是 $x^2+y^2+z^2+w^2$, 即四维实空间中的球面 $S^3$, 同理, 由Cayley-Dickson代数的构造知, 该集合就是球面 $S^{2d-1}$, 其中 $d=1$ 或 $2$ 或 $4$ 或 $8$, 所以有商映射
+先前说道, $\mathbb{KP}^1$ 是 $\mathbb{K}^2$ 中满足 $n(a)+n(b)=1_\mathbb{K}$ 的元素 $(a,b)$ 组成的集合的商集, 考虑 $\mathbb{K}=\mathbb{R}$ 时, $n(a)+n(b)=1_\mathbb{K}$ 就是 $a^2+b^2=1$, 即单位圆 $S^1$, 当 $\mathbb{K}=\mathbb{C}$ 时, $n(a)+n(b)=1_\mathbb{K}$ 就是 $\|a\|^2+\|b\|^2=1$, 设 $a=x+iy$, $b=z+iw$, 就是 $x^2+y^2+z^2+w^2$, 即四维实空间中的球面 $S^3$, 同理, 由Cayley-Dickson代数的构造知, 该集合就是球面 $S^{2d-1}$, 其中 $d=1$ 或 $2$ 或 $4$ 或 $8$, 所以有商映射
 
 $$S^{2d-1}\to \mathbb{KP}^1=S^{d}.$$
 
@@ -666,7 +666,7 @@ Jordan代数满足幂结合律.
 
 设 $A$ 是一个Jordan代数, $I$ 是 $A$ 的 $F$-线性子空间, 若对任意的 $a\in A$ 和 $b\in I$, 都有 $a\circ b\in I$, 则称 $I$ 是 $A$ 的一个理想, 若 $A$ 无非平凡理想, 则称 $A$ 是单的.
 
-</div>
+</div><br>
 
 <div style="border: 3px solid #000; padding: 10px;">
 
@@ -678,7 +678,7 @@ $$a_1^2+\cdots+a_n^2=0\Longrightarrow a_1=0,\dots,a_n=0,$$
 
 则称 $A$ 是一个形式实Jordan代数.
 
-</div>
+</div><br>
 
 <div style="border: 3px solid #000; padding: 10px;">
 
@@ -710,6 +710,6 @@ $$
 
 Jordan代数与李群和李代数有一定联系.
 
-\bibliography{books}
-\addcontentsline{toc}{chapter}{参考文献}
-\nocite{*}
+[1] John C. Baez, The octonions, Bulletin of the American Mathematical Society 39 (2002), no. 2, 145–205.
+[2] Richard D. Schafer, An introduction to nonassociative algebras, Dover Publications, New York, 1995, Corrected reprint of the 1966 original.
+[3] 李文威, 代数学方法, 高等教育出版社, 北京, 2022
