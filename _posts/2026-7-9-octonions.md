@@ -430,7 +430,7 @@ $$(x_0:\cdots:x_{n})\mapsto(\overline{x_0}:\cdots:\overline{x_{n}}),$$
 
 $$(\overline{x_0},\dots, \overline{x_n})=(\overline{ay_0},\dots,\overline{ay_n})=(\overline{y_0},\dots,\overline{y_n})\overline{a},$$
 
-所以这样的映射是良定的双射, 因此我们可以不区分 $\mathbb{KP}^n$ 和 $\mathbb{KP}^n_1$. 特别的, 当 $\mathbb{K}=\mathbb{H}$ 时, 将 $\mathbb{KP}^n$ 和 $\mathbb{KP}^n_1$ 看做实流形, 它们还是微分拓扑的.
+所以这样的映射是良定的双射, 因此我们可以不区分 $\mathbb{KP}^n$ 和 $\mathbb{KP}^n_1$. 特别的, 当 $\mathbb{K}=\mathbb{H}$ 时, 将 $\mathbb{KP}^n$ 和 $\mathbb{KP}^n_1$ 看做实流形, 它们还是微分同胚的.
 
 对于射影直线, 显然 $\mathbb{RP}^1\cong S^1$, $\mathbb{CP}^1\cong S^2$, 可以证明 $\mathbb{HP}^1\cong S^4$. 因此我们期望对于非结合代数也可以定义某种射影直线, 尤其是 $\mathbb{OP}^1$, 并且它应该同胚于 $S^8$. 先前的构造方式对于非结合代数是不成立的, 因为关系 $\sim$ 是未必传递的, 若 $x=ay$, $y=bz$, 则只有 $x=a(bz)$, 未必有 $x=(ab)z$, 因此我们需要另一种构造方式.
 
@@ -711,5 +711,7 @@ $$
 Jordan代数与李群和李代数有一定联系.
 
 [1] John C. Baez, The octonions, Bulletin of the American Mathematical Society 39 (2002), no. 2, 145–205.
+
 [2] Richard D. Schafer, An introduction to nonassociative algebras, Dover Publications, New York, 1995, Corrected reprint of the 1966 original.
+
 [3] 李文威, 代数学方法, 高等教育出版社, 北京, 2022
