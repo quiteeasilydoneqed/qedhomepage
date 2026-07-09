@@ -418,7 +418,7 @@ $\mathbb{R}$ 上的有限维可除代数的维数只能是 $1$, $2$, $4$ 或 $8$
 
 # 射影空间
 
-域上的射影空间的定义是熟知的, 即 $\mathbb{KP}^n=(\mathbb{K}^{n+1}-\{0\})/\sim$, 其中等价关系 $\sim$ 为 $x\sim y\Longleftrightarrow x=a y$, $x,y\in\mathbb{K}^{n+1}-\{0\},a\in\mathbb{K}-\{0\}$.
+域上的射影空间的定义是熟知的, 即 $\mathbb{KP}^n=(\mathbb{K}^{n+1}-\\\{0\\\})/\sim$, 其中等价关系 $\sim$ 为 $x\sim y\Longleftrightarrow x=a y$, $x,y\in\mathbb{K}^{n+1}-\\\{0\\\},a\in\mathbb{K}-\\\{0\\\}$.
 
 对于带对合的可除结合代数, 例如 $\mathbb{H}$, 类似的定义也是可行的, 只是等价关系有两种定义方式, 即左乘 $x=ay$ 和右乘 $x=ya$, 不妨设这样定义出的两个空间为 $\mathbb{KP}^n$ 和 $\mathbb{KP}^n_1$, 我们定义映射
 
@@ -482,7 +482,7 @@ $$
 
 的形式, 其中 $(a,b)\in A^2$, $n(a)+n(b)=a\overline{a}+b\overline{b}=1_A$. 我们将这些矩阵组成的集合称为 $A$ 的射影直线, 即
 
-$$A\mathbb{P}^1=\{M\in\mathfrak{h}_2(A):M^2=M,M\neq0,1\},$$
+$$A\mathbb{P}^1=\\\{M\in\mathfrak{h}_2(A):M^2=M,M\neq0,1\\\},$$
 
 其中 $0$ 和 $1$ 分别为零矩阵和单位矩阵.
 
@@ -573,7 +573,7 @@ $
 
 <b>证明</b>
 
-对于 $A^2-\{0\}$ 中的元素 $(a,b)$, 均可标准化为
+对于 $A^2-\\\{0\\\}$ 中的元素 $(a,b)$, 均可标准化为
 
 $$\frac{1}{\sqrt{n(a)+n(b)}}(a,b),$$
 
@@ -583,7 +583,7 @@ $$\frac{1}{\sqrt{n(a)+n(b)}}(a,b),$$
 
 当 $F=\mathbb{R}$ 时, 可以为射影直线赋予实流形结构, 由Hurwitz定理知以上构造的射影直线只有 $\mathbb{RP}^1$, $\mathbb{CP}^1$, $\mathbb{HP}^1$ 和 $\mathbb{OP}^1$ 四种. 因此以下设 $\mathbb{K}=\mathbb{R}$ 或 $\mathbb{C}$ 或 $\mathbb{H}$ 或 $\mathbb{O}$, $d=\dim_\mathbb{R}\mathbb{K}=1$ 或 $2$ 或 $4$ 或 $8$.
 
-设 $(a,b)\in\mathbb{K}^2-\{0\}$, 以 $[(a,b)]$ 记 $(a,b)$ 的标准化所在的等价类. 设 $U_1=\{[(a,b)]:b\neq0\}$, $U_1=\{[(a,b)]:a\neq0\}$, 定义 $\varphi_1\colon U_1\to\mathbb{R}^d$, $[(a,b)]\mapsto ab^{-1}$, $\varphi_2\colon U_2\to\mathbb{R}^d$, $[(a,b)]\mapsto ba^{-1}$, 显然 $\varphi_1$ 和 $\varphi_2$ 是良定的光滑映射, 而在 $U_1\cap U_2$ 内, 令 $z=ab^{-1}$, 则
+设 $(a,b)\in\mathbb{K}^2-\\\{0\\\}$, 以 $[(a,b)]$ 记 $(a,b)$ 的标准化所在的等价类. 设 $U_1=\\\{[(a,b)]:b\neq0\\\}$, $U_1=\\\{[(a,b)]:a\neq0\\\}$, 定义 $\varphi_1\colon U_1\to\mathbb{R}^d$, $[(a,b)]\mapsto ab^{-1}$, $\varphi_2\colon U_2\to\mathbb{R}^d$, $[(a,b)]\mapsto ba^{-1}$, 显然 $\varphi_1$ 和 $\varphi_2$ 是良定的光滑映射, 而在 $U_1\cap U_2$ 内, 令 $z=ab^{-1}$, 则
 
 $$\varphi_2\circ\varphi_1^{-1}(z)=ba^{-1}=\left(ab^{-1}\right)^{-1}=z^{-1}$$
 
@@ -597,7 +597,7 @@ $$S^{2d-1}\to \mathbb{KP}^1=S^{d}.$$
 
 接下来考察等价关系, 先前说 $(a,b)\sim(c,d)$ 当且仅当存在 $u$ 使得 $(a,b)=(c,d)u$, 这里 $u\overline{u}=1$, 所以在选定一个点时, 该点所在的等价类由 $u$ 参数化, 而该参数空间就是
 
-$$\{u\in\mathbb{K}:u\overline{u}=1\}=S^{d-1},$$
+$$\\\{u\in\mathbb{K}:u\overline{u}=1\\\}=S^{d-1},$$
 
 这就给出了嵌入映射
 
