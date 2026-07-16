@@ -50,7 +50,7 @@ tags:
 8. $\forall a \, (F_\uparrow(a, 1) = a)$;<br>
 9. $\forall a \forall b \forall c \, (F_\uparrow(a, F_+(b, c)) = F_\cdot(F_\uparrow(a, b), F_\uparrow(a, c)))$;<br>
 10. $\forall a \forall b \forall c \, (F_\uparrow(F_\cdot(a, b), c) = F_\cdot(F_\uparrow(a, c), F_\uparrow(b, c)))$;<br>
-11. $\forall a \forall b \forall c \, (F_\uparrow(F_\uparrow(a, b), c) = F_\uparrow(a, F_\cdot(b, c)))$.<br>
+11. $\forall a \forall b \forall c \, (F_\uparrow(F_\uparrow(a, b), c) = F_\uparrow(a, F_\cdot(b, c)))$,<br>
     
     以上定义的一阶理论称为Tarski高中代数理论, 记为 $\mathrm{HSI}$ .
 </div>
@@ -158,9 +158,13 @@ $h\neq4$ .
 
 如果我们不考虑指数运算, 生活将会容易的多, HSI中的前六条公理足以完全刻画正整数中的加法和乘法运算.
 
-给定任意两个只包含加法和乘法的项 $t_1(x_1,\dots,x_n)$ 和 $t_2(x_1,\dots,x_n)$ , 其中 $x_i$ 为形式变元, 假设 $t_1(x_1,\dots,x_n)=t_2(x_1,\dots,x_n)$ 对任意正整数 $x_1,\dots,x_n$ 都成立. 由多项式理论知, 反复使用上述公理, 可以将它们分别展开为唯一的标准形式, 即
-$$\sum_{i=1}^n a_{i_1\cdots i_n} x_1^{k_{i_1}}\cdots x_n^{k_{i_n}}$$
-的形式, 其中每个系数 $a_i$ 都是由若干个 $1$ 相加得到的元素, 设 $t_1(x_1,\dots,x_n)$ 和 $t_2(x_1,\dots,x_n)$ 的标准多项式为 $P(x_1,\dots,x_n)$ 和 $Q(x_1,\dots,x_n)$ , 由归纳法可证, 若将 $x_1,\dots,x_n$ 代入任意正整数, $P=Q$ 成立, 则必然有 $P(x_1,\dots,x_n)=Q(x_1,\dots,x_n)$ 作为形式多项式成立, 因此有项 $t_1(x_1,\dots,x_n)=t_2(x_1,\dots,x_n)$ . 这说明正整数中成立的任何只关于加法和乘法的恒等式都可只使用前六条公理证明.
+给定任意两个只包含加法和乘法的项 $t_1(x_1,\dots,x_n)$ 和 $t_2(x_1,\dots,x_n)$, 其中 $x_i$ 为形式变元, 假设 $t_1(x_1,\dots,x_n)=t_2(x_1,\dots,x_n)$ 对任意正整数 $x_1,\dots,x_n$ 都成立. 由多项式理论知, 反复使用上述公理, 可以将它们分别展开为唯一的标准形式, 即
+
+$$
+\sum_{i=1}^n a_{i_1\cdots i_n} x_1^{k_{i_1}}\cdots x_n^{k_{i_n}}
+$$
+
+的形式, 其中每个系数 $a_i$ 都是由若干个 $1$ 相加得到的元素, 设 $t_1(x_1,\dots,x_n)$ 和 $t_2(x_1,\dots,x_n)$ 的标准多项式为 $P(x_1,\dots,x_n)$ 和 $Q(x_1,\dots,x_n)$, 由归纳法可证, 若将 $x_1,\dots,x_n$ 代入任意正整数, $P=Q$ 成立, 则必然有 $P(x_1,\dots,x_n)=Q(x_1,\dots,x_n)$ 作为形式多项式成立, 因此有项 $t_1(x_1,\dots,x_n)=t_2(x_1,\dots,x_n)$相等. 这说明正整数中成立的任何只关于加法和乘法的恒等式都可只使用前六条公理证明.
 
 [1] Stanley Burris and Simon Lee, Tarski’s high school identities, The American Mathematical Monthly 100 (1993), no. 3, 231–236.
 
