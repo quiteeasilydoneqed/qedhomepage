@@ -15,19 +15,19 @@ tags:
 
 <b>定义(Tarski高中代数,HSI-代数)</b>
 
-设 $A$ 是集合, 其上带三个二元运算, 分别记为 $+$ , $\cdot$ 和 $\uparrow$ , 它们按习惯分别写作 $+(a,b)=a+b$ , $\cdot(a,b)=a\cdot b$ , $\uparrow(a,b)=a^b$ , $A$ 中还存在一个记为 $1$ 的元素, 这些资料满足以下十一条运算律,
+设 $A$ 是集合, 其上带三个二元运算, 分别记为 $+$ , $\cdot$ 和 $\uparrow$ , 它们按习惯分别写作 $+(a,b)=a+b$ , $\cdot(a,b)=a\cdot b$ , $\uparrow(a,b)=a^b$ , $A$ 中还存在一个记为 $1$ 的元素, 这些资料满足以下十一条运算律,<br>
 
-1. $a+b=b+a$;
-2. $a+(b+c)=(a+b)+c$;
-3. $a\cdot1=a$;
-4. $a\cdot b=b\cdot a$;
-5. $a\cdot(b\cdot c)=(a\cdot b)\cdot c$;
-6. $a\cdot(b+c)=a\cdot b+a\cdot c$;
-7. $1^a=1$;
-8. $a^1=a$;
-9. $a^{b+c}=a^b\cdot a^c$;
-10. $(a\cdot b)^c=a^c\cdot b^c$;
-11. $\left(a^b\right)^c=a^{b\cdot c}$,
+1. $a+b=b+a$;<br>
+2. $a+(b+c)=(a+b)+c$;<br>
+3. $a\cdot1=a$;<br>
+4. $a\cdot b=b\cdot a$;<br>
+5. $a\cdot(b\cdot c)=(a\cdot b)\cdot c$;<br>
+6. $a\cdot(b+c)=a\cdot b+a\cdot c$;<br>
+7. $1^a=1$;<br>
+8. $a^1=a$;<br>
+9. $a^{b+c}=a^b\cdot a^c$;<br>
+10. $(a\cdot b)^c=a^c\cdot b^c$;<br>
+11. $\left(a^b\right)^c=a^{b\cdot c}$,<br>
     
     则称 $A$ 是一个 $\mathrm{HSI}$ -代数或Tarski高中代数.
 </div>
@@ -38,19 +38,19 @@ tags:
 
 <b>定义(Tarski高中代数理论)</b>
 
-设非逻辑符号集 $\mathcal{A} = \{ 1, F_+, F_\cdot, F_\uparrow \}$ , 其中 $1$ 为常元符号, $F_+, F_\cdot, F_\uparrow$ 为二元函数符号, 一阶语言 $\mathcal{L_A}$ 由 $\mathcal{A}$ 生成, 非逻辑公理为
+设非逻辑符号集 $\mathcal{A} = \{ 1, F_+, F_\cdot, F_\uparrow \}$ , 其中 $1$ 为常元符号, $F_+, F_\cdot, F_\uparrow$ 为二元函数符号, 一阶语言 $\mathcal{L_A}$ 由 $\mathcal{A}$ 生成, 非逻辑公理为<br>
 
-1. $\forall a \forall b \, (F_+(a, b) = F_+(b, a))$;
-2. $\forall a \forall b \forall c \, (F_+(a, F_+(b, c)) = F_+(F_+(a, b), c))$;
-3. $\forall a \, (F_\cdot(a, 1) = a)$;
-4. $\forall a \forall b \, (F_\cdot(a, b) = F_\cdot(b, a))$;
-5. $\forall a \forall b \forall c \, (F_\cdot(a, F_\cdot(b, c)) = F_\cdot(F_\cdot(a, b), c))$;
-6. $\forall a \forall b \forall c \, (F_\cdot(a, F_+(b, c)) = F_+(F_\cdot(a, b), F_\cdot(a, c)))$;
-7. $\forall a \, (F_\uparrow(1, a) = 1)$;
-8. $\forall a \, (F_\uparrow(a, 1) = a)$;
-9. $\forall a \forall b \forall c \, (F_\uparrow(a, F_+(b, c)) = F_\cdot(F_\uparrow(a, b), F_\uparrow(a, c)))$;
-10. $\forall a \forall b \forall c \, (F_\uparrow(F_\cdot(a, b), c) = F_\cdot(F_\uparrow(a, c), F_\uparrow(b, c)))$;
-11. $\forall a \forall b \forall c \, (F_\uparrow(F_\uparrow(a, b), c) = F_\uparrow(a, F_\cdot(b, c)))$.
+1. $\forall a \forall b \, (F_+(a, b) = F_+(b, a))$;<br>
+2. $\forall a \forall b \forall c \, (F_+(a, F_+(b, c)) = F_+(F_+(a, b), c))$;<br>
+3. $\forall a \, (F_\cdot(a, 1) = a)$;<br>
+4. $\forall a \forall b \, (F_\cdot(a, b) = F_\cdot(b, a))$;<br>
+5. $\forall a \forall b \forall c \, (F_\cdot(a, F_\cdot(b, c)) = F_\cdot(F_\cdot(a, b), c))$;<br>
+6. $\forall a \forall b \forall c \, (F_\cdot(a, F_+(b, c)) = F_+(F_\cdot(a, b), F_\cdot(a, c)))$;<br>
+7. $\forall a \, (F_\uparrow(1, a) = 1)$;<br>
+8. $\forall a \, (F_\uparrow(a, 1) = a)$;<br>
+9. $\forall a \forall b \forall c \, (F_\uparrow(a, F_+(b, c)) = F_\cdot(F_\uparrow(a, b), F_\uparrow(a, c)))$;<br>
+10. $\forall a \forall b \forall c \, (F_\uparrow(F_\cdot(a, b), c) = F_\cdot(F_\uparrow(a, c), F_\uparrow(b, c)))$;<br>
+11. $\forall a \forall b \forall c \, (F_\uparrow(F_\uparrow(a, b), c) = F_\uparrow(a, F_\cdot(b, c)))$.<br>
     
     以上定义的一阶理论称为Tarski高中代数理论, 记为 $\mathrm{HSI}$ .
 </div>
@@ -133,8 +133,7 @@ $$
 
 $$
 ((1+a)^e + (1+a+a^2)^e)^a \cdot ((1+a^3)^a + (1+a^2+a^4)^a)^e
-$$<br>
-
+$$
 $$
 =(2^e+3^e)^a\cdot(d^a+3^a)^e=3^a\cdot 3^e=h,
 $$<br>
@@ -143,8 +142,7 @@ $$<br>
 
 $$
 ((1+a)^a + (1+a+a^2)^a)^e \cdot ((1+a^3)^e + (1+a^2+a^4)^e)^a
-$$<br>
-
+$$
 $$
 =(2^a+3^a)^e\cdot(d^e+3^e)^a=4^e\cdot 4^a=4,
 $$<br>
