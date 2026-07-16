@@ -16,18 +16,19 @@ tags:
 <b>定义(Tarski高中代数,HSI-代数)</b>
 
 设 $A$ 是集合, 其上带三个二元运算, 分别记为 $+$ , $\cdot$ 和 $\uparrow$ , 它们按习惯分别写作 $+(a,b)=a+b$ , $\cdot(a,b)=a\cdot b$ , $\uparrow(a,b)=a^b$ , $A$ 中还存在一个记为 $1$ 的元素, 这些资料满足以下十一条运算律,
-    \begin{itemize}
-        \item[1.] $a+b=b+a$;
-        \item[2.] $a+(b+c)=(a+b)+c$;
-        \item[3.] $a\cdot1=a$;
-        \item[4.] $a\cdot b=b\cdot a$;
-        \item[5.] $a\cdot(b\cdot c)=(a\cdot b)\cdot c$;
-        \item[6.] $a\cdot(b+c)=a\cdot b+a\cdot c$;        \item[7.] $1^a=1$;
-        \item[8.] $a^1=a$;
-        \item[9.] $a^{b+c}=a^b\cdot a^c$;
-        \item[10.] $(a\cdot b)^c=a^c\cdot b^c$;
-        \item[11.] $\left(a^b\right)^c=a^{b\cdot c}$,
-    \end{itemize}
+
+1. $a+b=b+a$;
+2. $a+(b+c)=(a+b)+c$;
+3. $a\cdot1=a$;
+4. $a\cdot b=b\cdot a$;
+5. $a\cdot(b\cdot c)=(a\cdot b)\cdot c$;
+6. $a\cdot(b+c)=a\cdot b+a\cdot c$;
+7. $1^a=1$;
+8. $a^1=a$;
+9. $a^{b+c}=a^b\cdot a^c$;
+10. $(a\cdot b)^c=a^c\cdot b^c$;
+11. $\left(a^b\right)^c=a^{b\cdot c}$,
+    
     则称 $A$ 是一个 $\mathrm{HSI}$ -代数或Tarski高中代数.
 </div>
 
@@ -38,19 +39,19 @@ tags:
 <b>定义(Tarski高中代数理论)</b>
 
 设非逻辑符号集 $\mathcal{A} = \{ 1, F_+, F_\cdot, F_\uparrow \}$ , 其中 $1$ 为常元符号, $F_+, F_\cdot, F_\uparrow$ 为二元函数符号, 一阶语言 $\mathcal{L_A}$ 由 $\mathcal{A}$ 生成, 非逻辑公理为
-    \begin{itemize}
-    \item[1.] $\forall a \forall b \, (F_+(a, b) = F_+(b, a))$;
-    \item[2.] $\forall a \forall b \forall c \, (F_+(a, F_+(b, c)) = F_+(F_+(a, b), c))$;
-    \item[3.] $\forall a \, (F_\cdot(a, 1) = a)$;
-    \item[4.] $\forall a \forall b \, (F_\cdot(a, b) = F_\cdot(b, a))$;
-    \item[5.] $\forall a \forall b \forall c \, (F_\cdot(a, F_\cdot(b, c)) = F_\cdot(F_\cdot(a, b), c))$;
-    \item[6.] $\forall a \forall b \forall c \, (F_\cdot(a, F_+(b, c)) = F_+(F_\cdot(a, b), F_\cdot(a, c)))$;
-    \item[7.] $\forall a \, (F_\uparrow(1, a) = 1)$;
-    \item[8.] $\forall a \, (F_\uparrow(a, 1) = a)$;
-    \item[9.] $\forall a \forall b \forall c \, (F_\uparrow(a, F_+(b, c)) = F_\cdot(F_\uparrow(a, b), F_\uparrow(a, c)))$;
-    \item[10.] $\forall a \forall b \forall c \, (F_\uparrow(F_\cdot(a, b), c) = F_\cdot(F_\uparrow(a, c), F_\uparrow(b, c)))$;
-    \item[11.] $\forall a \forall b \forall c \, (F_\uparrow(F_\uparrow(a, b), c) = F_\uparrow(a, F_\cdot(b, c)))$,
-    \end{itemize}
+
+1. $\forall a \forall b \, (F_+(a, b) = F_+(b, a))$;
+2. $\forall a \forall b \forall c \, (F_+(a, F_+(b, c)) = F_+(F_+(a, b), c))$;
+3. $\forall a \, (F_\cdot(a, 1) = a)$;
+4. $\forall a \forall b \, (F_\cdot(a, b) = F_\cdot(b, a))$;
+5. $\forall a \forall b \forall c \, (F_\cdot(a, F_\cdot(b, c)) = F_\cdot(F_\cdot(a, b), c))$;
+6. $\forall a \forall b \forall c \, (F_\cdot(a, F_+(b, c)) = F_+(F_\cdot(a, b), F_\cdot(a, c)))$;
+7. $\forall a \, (F_\uparrow(1, a) = 1)$;
+8. $\forall a \, (F_\uparrow(a, 1) = a)$;
+9. $\forall a \forall b \forall c \, (F_\uparrow(a, F_+(b, c)) = F_\cdot(F_\uparrow(a, b), F_\uparrow(a, c)))$;
+10. $\forall a \forall b \forall c \, (F_\uparrow(F_\cdot(a, b), c) = F_\cdot(F_\uparrow(a, c), F_\uparrow(b, c)))$;
+11. $\forall a \forall b \forall c \, (F_\uparrow(F_\uparrow(a, b), c) = F_\uparrow(a, F_\cdot(b, c)))$.
+    
     以上定义的一阶理论称为Tarski高中代数理论, 记为 $\mathrm{HSI}$ .
 </div>
 
@@ -128,17 +129,45 @@ $$
 \begin{array}{c|cccccccccccc} \uparrow & 1 & 2 & 3 & 4 & a & b & c & d & e & f & g & h \\ \hline 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ 2 & 2 & 4 & 4 & 4 & 4 & 4 & 4 & 4 & f & 4 & 4 & 4 \\ 3 & 3 & 4 & 4 & 4 & e & 4 & 4 & 4 & g & 4 & e & h \\ 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4 \\ a & a & c & c & c & c & c & c & c & c & c & c & c \\ b & b & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4 \\ c & c & c & c & c & c & c & c & c & c & c & c & c \\ d & d & 4 & 4 & 4 & f & 4 & 4 & 4 & 4 & 4 & 4 & 4 \\ e & e & 4 & 4 & 4 & 4 & 4 & 4 & 4 & h & 4 & 4 & 4 \\ f & f & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4 \\ g & g & 4 & 4 & 4 & h & 4 & 4 & 4 & 4 & 4 & h & 4 \\ h & h & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4 
 \end{array}
 $$
-我们验证当 $(x,y)=(a,e)$ 时该式不成立, 左边 $((1+a)^e + (1+a+a^2)^e)^a \cdot ((1+a^3)^a + (1+a^2+a^4)^a)^e=(2^e+3^e)^a\cdot(d^a+3^a)^e=3^a\cdot 3^e=h$ , 右边 $((1+a)^a + (1+a+a^2)^a)^e \cdot ((1+a^3)^e + (1+a^2+a^4)^e)^a=(2^a+3^a)^e\cdot(d^e+3^e)^a=4^e\cdot 4^a=4$ , $h\neq4$ .
+我们验证当 $(x,y)=(a,e)$ 时该式不成立, 左边<br>
+
+$$
+((1+a)^e + (1+a+a^2)^e)^a \cdot ((1+a^3)^a + (1+a^2+a^4)^a)^e
+$$<br>
+
+$$
+=(2^e+3^e)^a\cdot(d^a+3^a)^e=3^a\cdot 3^e=h,
+$$<br>
+
+右边<br>
+
+$$
+((1+a)^a + (1+a+a^2)^a)^e \cdot ((1+a^3)^e + (1+a^2+a^4)^e)^a
+$$<br>
+
+$$
+=(2^a+3^a)^e\cdot(d^e+3^e)^a=4^e\cdot 4^a=4,
+$$<br>
+
+$h\neq4$ .
 </div>
 
 **猜想.** 上述HSI代数是使得Wilkie恒等式不成立的元数最小的HSI代数.
 
 另一方面, 这也说明HSI是不完备的, 我们说Wilkie恒等式是独立于HSI的, 这并不出乎意料, 因为恒等式 $x=y$ 在只含一个元素的平凡HSI代数中成立, 而在其他任何非平凡HSI代数中都不成立, 并且我们知道非平凡的HSI代数是存在的, 所以 $x=y$ 也独立于HSI.
 
-另一个方向是考虑在HSI中添加多少个公理, 才能使其完全刻画正整数上的加法, 乘法和指数运算, 该问题的答案是添加任意有限多条公理都不能, 具体的构造详见\cite{Gurevic1990}.
+另一个方向是考虑在HSI中添加多少个公理, 才能使其完全刻画正整数上的加法, 乘法和指数运算, 该问题的答案是添加任意有限多条公理都不能, 具体的构造详见[4].
 
 如果我们不考虑指数运算, 生活将会容易的多, HSI中的前六条公理足以完全刻画正整数中的加法和乘法运算.
 
 给定任意两个只包含加法和乘法的项 $t_1(x_1,\dots,x_n)$ 和 $t_2(x_1,\dots,x_n)$ , 其中 $x_i$ 为形式变元, 假设 $t_1(x_1,\dots,x_n)=t_2(x_1,\dots,x_n)$ 对任意正整数 $x_1,\dots,x_n$ 都成立. 由多项式理论知, 反复使用上述公理, 可以将它们分别展开为唯一的标准形式, 即
 $$\sum_{i=1}^n a_{i_1\cdots i_n} x_1^{k_{i_1}}\cdots x_n^{k_{i_n}}$$
 的形式, 其中每个系数 $a_i$ 都是由若干个 $1$ 相加得到的元素, 设 $t_1(x_1,\dots,x_n)$ 和 $t_2(x_1,\dots,x_n)$ 的标准多项式为 $P(x_1,\dots,x_n)$ 和 $Q(x_1,\dots,x_n)$ , 由归纳法可证, 若将 $x_1,\dots,x_n$ 代入任意正整数, $P=Q$ 成立, 则必然有 $P(x_1,\dots,x_n)=Q(x_1,\dots,x_n)$ 作为形式多项式成立, 因此有项 $t_1(x_1,\dots,x_n)=t_2(x_1,\dots,x_n)$ . 这说明正整数中成立的任何只关于加法和乘法的恒等式都可只使用前六条公理证明.
+
+[1] Stanley Burris and Simon Lee, Tarski’s high school identities, The American Mathematical Monthly 100 (1993), no. 3, 231–236.
+
+[2] Stanley Burris and Karen Yeats, The saga of the high school identities, Algebra Universalis 52 (2005), 325–342.
+
+[3] R. Gurevič, Equational theory of positive numbers with exponentiation, Proceedings of the American Mathematical Society 94 (1985), no. 1, 135–141.
+
+[4] R. Gurevič, Equational theory of positive numbers with exponentiation is not finitely axiomatizable, Annals of Pure and Applied Logic 49 (1990), no. 1, 1–30.
