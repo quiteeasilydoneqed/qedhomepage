@@ -710,6 +710,8 @@ $$
 
 Jordan代数与李群和李代数有一定联系.
 
+# 叉乘
+
 一个著名的论断是, 只有三维空间和七维空间中存在非平凡叉乘, 本节严格化这一论断, 首先要公理化叉乘这一概念.
 
 <div style="border: 3px solid #000; padding: 10px;">
@@ -757,7 +759,7 @@ $$
 
 </div>
 
-注意其中的 $\cdot$ 是通常的点乘, $|u|$ 定义为 $\sqrt{u\cdot u}$. 若对任意的 $u,v\in V$ 都有 $u\times v=0$, 则称该叉乘是平凡的, 否则就是非平凡的.
+注意其中的 $\cdot$ 是通常的点乘, $\|u\|$ 定义为 $\sqrt{u\cdot u}$. 若对任意的 $u,v\in V$ 都有 $u\times v=0$, 则称该叉乘是平凡的, 否则就是非平凡的.
 
 <div style="border: 3px solid #000; padding: 10px;">
 
