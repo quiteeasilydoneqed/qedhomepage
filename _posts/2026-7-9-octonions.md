@@ -710,6 +710,99 @@ $$
 
 Jordan代数与李群和李代数有一定联系.
 
+一个著名的论断是, 只有三维空间和七维空间中存在非平凡叉乘, 本节严格化这一论断, 首先要公理化叉乘这一概念.
+
+<div style="border: 3px solid #000; padding: 10px;">
+
+<b>定义(叉乘)</b>
+
+设 $V=\mathbb{R}^n$ 是 $n$ 维实线性空间, 在其上定义一个双线性的二元运算 $\times$, 若对任意的 $u,v\in V$, 都有
+
+$$
+u\cdot(u\times v)=v\cdot(u\times v)=0,
+$$
+
+$$
+|u\times v|^2=|u|^2|v|^2-(u\cdot v)^2,
+$$
+
+则称 $\times$ 是一个叉乘.
+
+</div>
+<br>
+
+<div style="border: 3px solid #000; padding: 10px;">
+
+<b>定理</b>
+
+设 $\times$ 是 $V$ 上的叉乘, 则对任意的 $u,v\in V$, 都有 $u\times u=0$ 和反对称性
+
+$$
+u\times v=-v\times u.
+$$
+
+</div>
+
+<div style="border: 3px solid #000; padding: 10px;">
+
+<b>证明</b>
+
+显然 $| u \times u |^2 = |u|^4 - |u|^4 = 0$, 故 $u \times u = 0$, 同理 $v \times v = 0$, $(u+v) \times (u+v) = 0$, 展开得
+
+$$
+(u+v) \times (u+v) = u \times u + u \times v + v \times u + v \times v=0
+$$
+
+因此 $u \times v + v \times u=0$, 这等价于反对称性.
+
+</div>
+
+注意其中的 $\cdot$ 是通常的点乘, $|u|$ 定义为 $\sqrt{u\cdot u}$. 若对任意的 $u,v\in V$ 都有 $u\times v=0$, 则称该叉乘是平凡的, 否则就是非平凡的.
+
+<div style="border: 3px solid #000; padding: 10px;">
+
+<b>定理</b>
+
+若 $V=\mathbb{R}^n$ 上存在非平凡叉乘, 则 $n=3$ 或 $7$.
+
+</div>
+
+<div style="border: 3px solid #000; padding: 10px;">
+
+<b>证明</b>
+
+设 $\mathbb{R}^{n+1}=\mathbb{R}\oplus V$, 在其上定义乘法
+
+$$
+(a,u)(b,v)=(ab-u\cdot v,av+bu+u\times v),
+$$
+
+容易验证它使得 $\mathbb{R}^{n+1}$ 成为一个可除的非结合代数, 幺元为 $(1,0)$, 逆元为
+
+$$
+\left(\frac{a}{a^2+|u|^2},-\frac{u}{a^2+|u|^2}\right).
+$$
+
+并且可以验证
+
+$$
+|(a,u)(b,v)|^2=|(a,u)|^2|(b,v)|^2,
+$$
+
+即 $\mathbb{R}^{n+1}$ 是一个可除赋范代数, 而由Hurwitz定理可知有限维实可除赋范代数的维数只能是 $1,2,4,8$, 因此必有 $n=0,1,3,7$, 而当 $n=0,1$ 时叉乘必然平凡, 因此只有 $n=3$ 或 $7$.
+
+</div>
+
+考虑四元数的三个虚数单位和八元数的七个虚数单位, 这些虚数单位分别构成 $\mathbb{R}^3$ 和 $\mathbb{R}^7$ 的一组基, 而四元数和八元数中的乘法则构成这些基向量之间的叉乘. 不同作者对这些基向量直接的叉乘运算可能有细微不同, 但只需更换基元素顺序或方向就能互相转换.
+
+此外, 三维叉乘满足雅可比恒等式
+
+$$
+u \times (v \times w) + v \times (w \times u) + w \times (u \times v) = 0,
+$$
+
+这说明 $(\mathbb{R}^3,\times)$ 是一个李代数, 而七维叉乘则不满足该恒等式.
+
 [1] John C. Baez, The octonions, Bulletin of the American Mathematical Society 39 (2002), no. 2, 145–205.
 
 [2] Richard D. Schafer, An introduction to nonassociative algebras, Dover Publications, New York, 1995, Corrected reprint of the 1966 original.
