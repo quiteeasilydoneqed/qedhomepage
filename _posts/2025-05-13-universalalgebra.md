@@ -7,6 +7,7 @@ header-mask: 0.3
 math: true
 tags:
   - 代数
+  - 泛代数
   - 代数几何
 ---
 
