@@ -17,7 +17,7 @@ tags:
 
 <div id="pdf-gallery" class="pdf-images"></div>
 <script>
-  const prefix = "img/格点__最密堆积__魔群以及顶点代数/格点__最密堆积__魔群以及顶点代数_page-";
+  const prefix = "{{ site.baseurl }}img/格点__最密堆积__魔群以及顶点代数/格点__最密堆积__魔群以及顶点代数_page-";
   const totalPages = 16;
   const container = document.getElementById('pdf-gallery');
   container.style.lineHeight = "0";
