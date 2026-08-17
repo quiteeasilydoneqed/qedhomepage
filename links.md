@@ -29,6 +29,8 @@ Tikzcd交换图编辑器 [tikzcd-editor](https://tikzcd.yichuanshen.de/)
 
 电子书及论文下载网站 [Anna's Achieve](https://annas-archive.org/)
 
+数学文献中文翻译 [Math translations](https://mathtranslations.org)
+
 数学论坛 [Mathematics Stack Exchange](https://math.stackexchange.com/), [MathOverflow](https://mathoverflow.net/)
 
 数学百科 [香蕉空间](https://www.bananaspace.org/), [nLab](https://ncatlab.org/nlab/show/HomePage)
