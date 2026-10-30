@@ -9,7 +9,11 @@ tags:
   - 解析数论
 ---
 
-pdf: <a href="{{ site.baseurl }}/pdf/圆法与筛法_以哥德巴赫猜想为例.pdf">圆法与筛法</a>.
+pdf: <a href="{{ site.baseurl }}/pdf/圆法与筛法_以哥德巴赫猜想为例.pdf">圆法与筛法</a>
 
-
-在线阅读(试运行): <a href="{{ site.baseurl }}/pdf/圆法与筛法.html">圆法与筛法</a>.
+<ifram>
+  src="https://mozilla.github.io/pdf.js/web/viewer.html?file=/pdf/圆法与筛法_以哥德巴赫猜想为例.pdf"
+  width="100%"
+  height="800"
+  style="border:0;">
+</iframe>
