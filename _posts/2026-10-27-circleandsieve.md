@@ -9,3 +9,4 @@ tags:
   - 解析数论
 ---
 
+pdf:<a href="{{ site.baseurl }}/pdf/圆法与筛法_以哥德巴赫猜想为例.pdf">圆法与筛法</a>.
