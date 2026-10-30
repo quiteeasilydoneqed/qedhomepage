@@ -12,7 +12,7 @@ tags:
 pdf: <a href="{{ site.baseurl }}/pdf/circleandsieve.pdf">圆法与筛法</a>
 
 <iframe
-  src="https://mozilla.github.io/pdf.js/web/viewer.html?file={{ site.baseurl }}/pdf/circleandsieve.pdf"
+  src="https://mozilla.github.io/pdf.js/web/viewer.html?file={{site.baseurl}}/pdf/circleandsieve.pdf"
   width="100%"
   height="800"
   style="border:0;">
