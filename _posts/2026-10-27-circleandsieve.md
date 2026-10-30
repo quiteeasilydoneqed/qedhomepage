@@ -12,7 +12,7 @@ tags:
 pdf: <a href="{{ site.baseurl }}/pdf/圆法与筛法_以哥德巴赫猜想为例.pdf">圆法与筛法</a>
 
 <ifram>
-  src="https://mozilla.github.io/pdf.js/web/viewer.html?file=/pdf/圆法与筛法_以哥德巴赫猜想为例.pdf"
+  src="https://mozilla.github.io/pdf.js/web/viewer.html?file=qedhomepage/pdf/圆法与筛法_以哥德巴赫猜想为例.pdf"
   width="100%"
   height="800"
   style="border:0;">
