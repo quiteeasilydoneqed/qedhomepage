@@ -16,10 +16,10 @@ concurrency:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04 # 👈 修改 1：固定使用旧版系统，解决 Ruby 找不到的问题
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5 # 👈 修改 2：升级版本，消除 Node.js 20 警告
 
       # 1. 极速核心：配置 Ruby，并开启 Bundler 的高阶并行下载与严格缓存
       - name: Setup Ruby
