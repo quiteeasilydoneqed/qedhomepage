@@ -9,10 +9,10 @@ tags:
   - 解析数论
 ---
 
-pdf: <a href="{{ site.baseurl }}/pdf/circleandsieve.pdf">圆法与筛法</a>
+pdf: <a href="{{ site.baseurl }}/pdf/圆法与筛法_以哥德巴赫猜想为例.pdf">圆法与筛法</a>
 
 <iframe
-  src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://quiteeasilydoneqed.github.io/qedhomepage/pdf/circleandsieve.pdf"
+  src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://quiteeasilydoneqed.github.io/qedhomepage/pdf/圆法与筛法_以哥德巴赫猜想为例.pdf"
   width="100%"
   height="800"
   style="border:0;">
