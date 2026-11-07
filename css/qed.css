@@ -114,42 +114,6 @@ hr {
     color: var(--muted);
 }
 
-/* 页面右侧留白里一枚很淡的方框，呼应「证毕」的符号，不参与布局 */
-.qed-backdrop {
-    display: none;
-}
-
-@media (min-width: 1440px) {
-    .qed-backdrop {
-        position: fixed;
-        inset: 0;
-        z-index: 0;
-        display: block;
-        overflow: hidden;
-        pointer-events: none;
-    }
-
-    .qed-backdrop::before {
-        content: "";
-        position: absolute;
-        top: 16vh;
-        right: -280px;
-        width: 380px;
-        height: 380px;
-        border: 1px solid rgba(32, 33, 29, 0.07);
-    }
-}
-
-#main {
-    position: relative;
-    z-index: 1;
-}
-
-footer {
-    position: relative;
-    z-index: 1;
-}
-
 /* ---------------------------------------------------------
    导航
    --------------------------------------------------------- */
@@ -198,7 +162,7 @@ footer {
     padding: 0;
     color: #fffdf7;
     font-family: var(--serif);
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
     line-height: 1;
     letter-spacing: 0.14em;
@@ -279,11 +243,11 @@ footer {
     position: relative;
     display: inline-block;
     padding: 8px 0;
-    color: rgba(255, 253, 247, 0.76);
-    font-size: 11px;
+    color: rgba(255, 253, 247, 0.78);
+    font-size: 12.5px;
     font-weight: 400;
     line-height: 1;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
     text-shadow: 0 1px 14px rgba(0, 0, 0, 0.26);
 }
@@ -358,7 +322,7 @@ footer {
     display: flex;
     align-items: flex-end;
     width: 100%;
-    min-height: clamp(360px, 46vh, 520px);
+    min-height: clamp(380px, 48vh, 540px);
     margin: 0 0 clamp(64px, 9vw, 116px);
     overflow: hidden;
     background-color: #2d2b26;
@@ -367,16 +331,20 @@ footer {
 }
 
 .intro-header--home {
-    min-height: clamp(460px, 62vh, 660px);
+    min-height: clamp(540px, 68vh, 760px);
 }
 
 .intro-header--post {
-    min-height: clamp(340px, 44vh, 470px);
+    min-height: clamp(400px, 50vh, 560px);
     margin-bottom: clamp(48px, 6vw, 76px);
 }
 
 .intro-header--page {
-    min-height: clamp(300px, 36vh, 400px);
+    min-height: clamp(360px, 42vh, 480px);
+}
+
+.qed-home-page .intro-header {
+    min-height: clamp(500px, 62vh, 700px);
 }
 
 .intro-header::before {
@@ -812,15 +780,15 @@ footer {
 /* 侧栏作者卡 */
 .qed-about-head {
     display: grid;
-    grid-template-columns: 52px minmax(0, 1fr);
-    gap: 16px;
-    align-items: start;
+    grid-template-columns: 68px minmax(0, 1fr);
+    gap: 18px;
+    align-items: center;
 }
 
 .qed-about-head img {
     display: block;
-    width: 52px;
-    height: 52px;
+    width: 68px;
+    height: 68px;
     object-fit: cover;
     border: 1px solid var(--line);
     border-radius: 2px;
@@ -829,7 +797,7 @@ footer {
 }
 
 .qed-about-head h5 {
-    margin: 2px 0 8px;
+    margin: 0 0 8px;
 }
 
 .qed-about-head p {
@@ -1160,7 +1128,7 @@ footer {
 
 /* 作者用内联黑框包起来的定义/定理：保留语义，改成纸色细框 */
 .post-container div[style*="border"] {
-    margin: 1.15em 0 !important;
+    margin: 1em 0 !important;
     padding: 22px 26px !important;
     border: 1px solid #ddd5c4 !important;
     border-radius: 2px;
@@ -1867,16 +1835,16 @@ footer .copyright a:focus {
     }
 
     .intro-header {
-        min-height: 380px;
+        min-height: 400px;
         margin-bottom: 72px;
     }
 
     .intro-header--home {
-        min-height: 480px;
+        min-height: 540px;
     }
 
     .intro-header--page {
-        min-height: 320px;
+        min-height: 360px;
     }
 }
 
@@ -1902,7 +1870,7 @@ footer .copyright a:focus {
     .navbar-custom .navbar-brand {
         order: 1;
         gap: 9px;
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .navbar-custom .navbar-brand::before {
@@ -1974,8 +1942,8 @@ footer .copyright a:focus {
         display: block;
         padding: 12px 0;
         color: var(--ink);
-        font-size: 11px;
-        letter-spacing: 0.16em;
+        font-size: 12.5px;
+        letter-spacing: 0.15em;
         text-shadow: none;
     }
 
@@ -1984,19 +1952,23 @@ footer .copyright a:focus {
     }
 
     #huxblog_navbar a {
-        font-size: 11px;
+        font-size: 12.5px;
         line-height: 1.4;
     }
 
     .intro-header,
     .intro-header--post,
     .intro-header--page {
-        min-height: 320px;
+        min-height: 360px;
         margin-bottom: 56px;
     }
 
     .intro-header--home {
-        min-height: 430px;
+        min-height: 480px;
+    }
+
+    .qed-home-page .intro-header {
+        min-height: 480px;
     }
 
     .intro-header .qed-shell {
