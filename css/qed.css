@@ -1164,7 +1164,7 @@ hr {
 
 .post-container div[style*="border"] + div[style*="border"]:not(.qed-box--proof),
 .post-container div[style*="border"] + br + div[style*="border"]:not(.qed-box--proof) {
-    margin-top: 10px !important;
+    margin-top: 5px !important;
 }
 
 /* 定理与紧随其后的证明拼成一整块，中间不留缝 */
