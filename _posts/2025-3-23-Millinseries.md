@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "米林级数"
-subtitle: "Millin’s series"
+subtitle: "Millin's series"
 header-img: "img/post-bg-infinity.jpg"
 header-mask: 0.3
 math: true
