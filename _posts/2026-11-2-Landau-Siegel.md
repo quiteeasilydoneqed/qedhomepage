@@ -7,6 +7,7 @@ header-mask: 0.3
 math: true
 tags:
   - 解析数论
+  - 数论
 ---
 
 pdf: <a href="{{ site.baseurl }}/pdf/Landau_Siegel零点不存在.pdf">Landau-Siegel零点不存在</a>
