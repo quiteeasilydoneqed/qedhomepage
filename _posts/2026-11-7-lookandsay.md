@@ -255,7 +255,7 @@ $$
 
 $ D $ 作用在92个常见元素上得到的可以看做这92个常见元素的线性组合, 这样 $ D $ 就相当于左乘一个 $ 92 $ 阶方阵, 记为 $ \mathcal{M} $, 见下图, 其中白色表示 $ 0 $, 黑色表示 $ 1 $, 红色表示 $ 2 $, $ 2 $ 只出现一次.
 
-<img src="{{ site.baseurl }}/img/lookandsay.svg" alt="矩阵 M" style="width: 50%; height: auto;">
+<img src="{{ site.baseurl }}/img/lookandsay.svg" alt="矩阵 M" style="width: 80%; height: auto;">
 
 <div style="border: 3px solid #000; padding: 10px;">
 
