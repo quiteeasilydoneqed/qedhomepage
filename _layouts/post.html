@@ -2,60 +2,43 @@
 layout: default
 ---
 
-<!-- Image to hack wechat -->
-<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
-
 <!-- Post Header -->
 {% include intro-header.html type='post' %}
 
 <!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
+<article class="qed-article">
+    <div class="qed-shell qed-shell--reading">
+        <div class="qed-post-grid{% if page.no-catalog %} qed-post-grid--no-catalog{% endif %}">
 
-    <!-- Post Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                post-container">
-
+            <!-- Post Container -->
+            <div class="post-container qed-prose">
                 <!-- Multi-Lingual -->
                 {% if page.multilingual %}
                     {% include multilingual-sel.html %}
                 {% endif %}
 
-				{{ content }}
+                {{ content }}
+            </div>
 
-            </div>  
-
-    <!-- Side Catalog Container -->
-        {% unless page.no-catalog %}
-            <div class="
-                col-lg-2 col-lg-offset-0
-                visible-lg-block
-                sidebar-container
-                catalog-container">
+            <!-- Side Catalog Container -->
+            {% unless page.no-catalog %}
+            <aside class="catalog-container" aria-label="文章目录">
                 <div class="side-catalog">
-                    <hr class="hidden-sm hidden-xs">
                     <h5>
-                        <a class="catalog-toggle" href="#">CATALOG</a>
+                        <a class="catalog-toggle" href="#">目录</a>
                     </h5>
                     <ul class="catalog-body"></ul>
                 </div>
-            </div>
-        {% endunless %}
+            </aside>
+            {% endunless %}
+        </div>
 
-    <!-- Sidebar Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                <!-- Featured Tags -->
+        <!-- Tags & Friends -->
+        <div class="post-colophon">
+            <div class="post-colophon-tags">
                 {% include featured-tags.html bottom=true %}
-
-                <!-- Friends Blog -->
+            </div>
+            <div class="post-colophon-friends">
                 {% include friends.html %}
             </div>
         </div>
@@ -87,7 +70,7 @@ layout: default
           placement: 'right',
           // icon: '#'
         };
-        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.post-colophon h5').remove('.side-catalog h5');
     })
 </script>
 <style>

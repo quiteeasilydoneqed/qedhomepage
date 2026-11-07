@@ -1,14 +1,15 @@
-<section class="visible-md visible-lg">
-  <hr>
-  <h5><a href="{{'/about/' | prepend: site.baseurl }}">证毕QED</a></h5>
-  <div class="short-about">
+<section class="qed-side-block qed-about">
+  <div class="qed-about-head">
     {% if site.sidebar-avatar %}
-    <img src="{{site.sidebar-avatar}}" />
+    <img src="{{ site.sidebar-avatar }}" alt="{{ site.title }}" loading="lazy" />
     {% endif %}
-    {% if site.sidebar-about-description %}
-    <p>{{site.sidebar-about-description}}</p>
-    {% endif %}
-    <!-- SNS Link -->
-    {% include sns-links.html %}
+    <div>
+      <h5><a href="{{ '/about/' | prepend: site.baseurl }}">{{ site.title }}</a></h5>
+      {% if site.sidebar-about-description %}
+      <p>{{ site.sidebar-about-description }}</p>
+      {% endif %}
+    </div>
   </div>
+  <!-- SNS Link -->
+  {% include sns-links.html %}
 </section>

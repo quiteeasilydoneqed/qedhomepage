@@ -4,11 +4,13 @@
 {% include head.html %}
 
 <!-- hack iOS CSS :active style -->
-<body ontouchstart="">
+<body class="qed-body {{ page.body-class }}" ontouchstart="">
 
     {% include nav.html %}
 
-    {{ content }}
+    <main id="main">
+        {{ content }}
+    </main>
 
     {% include footer.html %}
 

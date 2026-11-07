@@ -1,45 +1,77 @@
 ---
 layout: page
 description: ""
+header-kicker: "NOTES"
 ---
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {% if post.lang == 'en' %}
-                {{ post.content | strip_html | truncate:300 }}
-            {% else %}
-                {{ post.content | strip_html | truncate:200 }}
+<div class="qed-list-head">
+    <h2 class="qed-list-title">文章</h2>
+    <span class="qed-list-count">{{ paginator.total_posts }} 篇</span>
+</div>
+
+<div class="qed-post-list">
+    {% for post in paginator.posts %}
+    <article class="post-preview">
+        <div class="post-date">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+        </div>
+        <div class="post-body">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                <h2 class="post-title">{{ post.title }}</h2>
+                {% if post.subtitle and post.subtitle != '' %}
+                <p class="post-subtitle">{{ post.subtitle }}</p>
+                {% endif %}
+                {% assign raw_excerpt = post.content | strip_html %}
+                {% assign display_chunks = raw_excerpt | split: '$$' %}
+                {% assign no_display = '' %}
+                {% for chunk in display_chunks %}
+                    {% assign display_index = forloop.index0 | modulo: 2 %}
+                    {% if display_index == 0 %}
+                        {% assign no_display = no_display | append: chunk %}
+                    {% endif %}
+                {% endfor %}
+                {% assign inline_chunks = no_display | split: '\[' | first | split: '$' %}
+                {% assign excerpt_text = '' %}
+                {% for chunk in inline_chunks %}
+                    {% assign chunk_index = forloop.index0 | modulo: 2 %}
+                    {% if chunk_index == 0 %}
+                        {% assign excerpt_text = excerpt_text | append: chunk %}
+                    {% else %}
+                        {% assign math_chunk = chunk | strip %}
+                        {% if math_chunk contains '\' or math_chunk.size > 8 %}
+                            {% assign excerpt_text = excerpt_text | append: '⋯' %}
+                        {% else %}
+                            {% assign excerpt_text = excerpt_text | append: math_chunk %}
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+                {% assign excerpt_words = excerpt_text | split: ' ' %}
+                {% assign excerpt_text = excerpt_words | join: ' ' | strip | truncate: 160 %}
+                {% if excerpt_text != '' %}
+                <p class="post-excerpt">{{ excerpt_text }}</p>
+                {% endif %}
+            </a>
+            {% if post.tags.size > 0 %}
+            <p class="post-meta">
+                {% for tag in post.tags %}<span>{{ tag }}</span>{% unless forloop.last %}<i>·</i>{% endunless %}{% endfor %}
+            </p>
             {% endif %}
         </div>
-    </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
+    </article>
+    {% endfor %}
 </div>
-<hr>
-{% endfor %}
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
-<ul class="pager">
+<ul class="pager qed-pager">
     {% if paginator.previous_page %}
     <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="pager-arrow">&larr;</span> 较新</a>
     </li>
     {% endif %}
     {% if paginator.next_page %}
     <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">更早 <span class="pager-arrow">&rarr;</span></a>
     </li>
     {% endif %}
 </ul>

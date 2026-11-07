@@ -6,48 +6,27 @@ layout: default
 {% include intro-header.html type='page' %}
 
 <!-- Main Content -->
-<div class="container">
-  <div class="row">
-    {% if site.sidebar == false %}
-    <!-- NO SIDEBAR -->
-    <!-- PostList Container -->
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1
-      postlist-container">
+<div class="qed-shell">
+  <div class="qed-page-grid{% if site.sidebar == false %} qed-page-grid--solo{% endif %}">
+    <div class="qed-page-body{% unless page.url == '/' %} post-container{% endunless %}">
       {{ content }}
     </div>
-    <!-- Sidebar Container -->
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1
-      sidebar-container">
-      <!-- Featured Tags -->
-      {% include featured-tags.html %}
 
-      <!-- Friends Blog -->
-      {% include friends.html %}
-    </div>
-    {% else %}
-
-    <!-- USE SIDEBAR -->
-    <!-- PostList Container -->
-    <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12
-      col-xs-12 post-container">
-      {{ content }}
-    </div>
-    <!-- Sidebar Container -->
-    <div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-12
-      col-xs-12 sidebar-container">
-      <!-- Featured Tags -->
-      {% include featured-tags.html %}
-
-      <!-- Short About -->
+    {% unless site.sidebar == false %}
+    <aside class="qed-sidebar" aria-label="侧栏">
       {% include short-about.html %}
 
-      <!-- Friends Blog -->
-      {% include friends.html %}
+      <div class="qed-side-block">
+        {% include featured-tags.html %}
+      </div>
 
-      <!-- Ads -->
+      <div class="qed-side-block">
+        {% include friends.html %}
+      </div>
+
       {% include ads.html %}
-    </div>
-    {% endif %}
+    </aside>
+    {% endunless %}
   </div>
 </div>
 
@@ -76,7 +55,7 @@ layout: default
           placement: 'right',
           // icon: '#'
         };
-        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.qed-sidebar h5');
     })
 </script>
 <style>
