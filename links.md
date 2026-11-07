@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "导航"
-header-img: "img/math.png"
+header-img: "img/anime.png"
 header-mask: 0.3
 tags:
 ---
