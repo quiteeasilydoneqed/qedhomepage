@@ -356,9 +356,7 @@ hr {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: saturate(0.78) contrast(0.96) brightness(0.94);
-    transform: scale(1.015);
-    animation: qed-cover-settle 1.8s var(--ease) both;
+    filter: saturate(0.9) contrast(1.02) brightness(0.98);
 }
 
 .intro-header::after {
@@ -1768,12 +1766,14 @@ footer .copyright a:focus {
     }
 }
 
-@keyframes qed-cover-settle {
+@keyframes qed-list-in {
     from {
-        transform: scale(1.045);
+        opacity: 0;
+        transform: translateY(9px);
     }
     to {
-        transform: scale(1.015);
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
