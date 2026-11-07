@@ -56,6 +56,28 @@ layout: default
   {% include math.html %}
 {% endif %}
 
+<script>
+    // 让「定理」和紧跟其后的「证明」贴在一起，其他方框仍保留约 20px 间距。
+    (function () {
+        var boxes = document.querySelectorAll('.post-container div[style*="border"]');
+
+        Array.prototype.forEach.call(boxes, function (box) {
+            var label = box.querySelector('b, strong');
+            if (!label || label.textContent.trim().indexOf('证明') !== 0) return;
+
+            var previous = box.previousElementSibling;
+            while (previous && previous.tagName === 'BR') {
+                previous = previous.previousElementSibling;
+            }
+
+            if (previous && previous.matches('div[style*="border"]')) {
+                previous.classList.add('qed-box--paired');
+                box.classList.add('qed-box--proof');
+            }
+        });
+    })();
+</script>
+
 
 {% if site.anchorjs %}
 <!-- async load function -->

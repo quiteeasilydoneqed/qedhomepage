@@ -1,10 +1,14 @@
 <script>
-    function rep() 
-    {
-        document.body.innerHTML
-            = document.body.innerHTML
-            .replaceAll("<em>", "_").replaceAll("</em>", "_")
-        
-    }
-    rep()
+    // 有些公式里的 * 会被 Markdown 解析成 <em>。
+    // 只替换正文里的 em 节点，不重写整个 body，
+    // 否则导航、标签筛选等已经绑定好的事件会全部丢失。
+    (function () {
+        var container = document.querySelector('.post-container') || document.body;
+        var italics = container.querySelectorAll('em');
+
+        Array.prototype.forEach.call(italics, function (em) {
+            var replacement = document.createTextNode('_' + em.textContent + '_');
+            em.parentNode.replaceChild(replacement, em);
+        });
+    })();
 </script>

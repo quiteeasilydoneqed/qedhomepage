@@ -114,6 +114,42 @@ hr {
     color: var(--muted);
 }
 
+/* 页面右侧留白里一枚很淡的方框，呼应「证毕」的符号，不参与布局 */
+.qed-backdrop {
+    display: none;
+}
+
+@media (min-width: 1440px) {
+    .qed-backdrop {
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        display: block;
+        overflow: hidden;
+        pointer-events: none;
+    }
+
+    .qed-backdrop::before {
+        content: "";
+        position: absolute;
+        top: 16vh;
+        right: -280px;
+        width: 380px;
+        height: 380px;
+        border: 1px solid rgba(32, 33, 29, 0.07);
+    }
+}
+
+#main {
+    position: relative;
+    z-index: 1;
+}
+
+footer {
+    position: relative;
+    z-index: 1;
+}
+
 /* ---------------------------------------------------------
    导航
    --------------------------------------------------------- */
@@ -1158,9 +1194,18 @@ hr {
     display: none;
 }
 
-.post-container div[style*="border"] + div[style*="border"],
-.post-container div[style*="border"] + br + div[style*="border"] {
-    margin-top: 10px !important;
+/* 定理与紧随其后的证明拼成一整块，中间不留缝 */
+.post-container div.qed-box--paired {
+    margin-bottom: 0 !important;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.post-container div.qed-box--proof {
+    margin-top: 0 !important;
+    border-top: 0 !important;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 }
 
 /* 公式 */
@@ -1603,9 +1648,9 @@ footer {
 footer .copyright {
     margin: 0;
     color: var(--muted);
-    font-size: 10px;
+    font-size: 11px;
     line-height: 1.8;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.04em;
     text-align: left;
 }
 
