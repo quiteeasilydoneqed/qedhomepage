@@ -57,8 +57,17 @@ layout: default
 {% endif %}
 
 <script>
-    // 让「定理」和紧跟其后的「证明」贴在一起，其他方框仍保留约 20px 间距。
+    // Markdown 会把单独的 <br> 包成 <p><br></p>，它的段落边距才是大空隙的来源。
+    // 先删掉这种空段落，再处理方框贴合。
     (function () {
+        Array.prototype.forEach.call(document.querySelectorAll('.post-container p'), function (paragraph) {
+            if (paragraph.childElementCount === 1 &&
+                paragraph.firstElementChild.tagName === 'BR' &&
+                !paragraph.textContent.trim()) {
+                paragraph.remove();
+            }
+        });
+
         var boxes = document.querySelectorAll('.post-container div[style*="border"]');
 
         Array.prototype.forEach.call(boxes, function (box) {

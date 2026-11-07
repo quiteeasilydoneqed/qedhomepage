@@ -1167,6 +1167,11 @@ hr {
     margin-top: 5px !important;
 }
 
+/* Markdown 生成的空 <p><br></p> 是空隙的真正来源 */
+.post-container p:has(> br:only-child) {
+    display: none;
+}
+
 /* 定理与紧随其后的证明拼成一整块，中间不留缝 */
 .post-container div.qed-box--paired {
     margin-bottom: 0 !important;
@@ -1179,6 +1184,11 @@ hr {
     border-top: 0 !important;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
+}
+
+/* 证明后面如果紧跟另一个方框，底部也只留 5px */
+.post-container div.qed-box--proof:has(+ div[style*="border"]) {
+    margin-bottom: 5px !important;
 }
 
 /* 公式 */
