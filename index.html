@@ -11,7 +11,7 @@ header-kicker: "NOTES"
 
 <div class="qed-post-list">
     {% for post in paginator.posts %}
-    <article class="post-preview">
+    <article class="post-preview" style="--i: {{ forloop.index0 }}">
         <div class="post-date">
             <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
         </div>
