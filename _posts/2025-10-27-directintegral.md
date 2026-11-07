@@ -20,7 +20,7 @@ tags:
 
 <div style="border: 3px solid #000; padding: 10px;">
 <b>例</b>
-设 $\mathcal{H}$ 是一个可分希尔伯特空间, 对于集合 $X$ 中的任何元素 $x$, 都有 $\mathcal{H}_x=\mathcal{H}$, 它显然是一个可测希尔伯特空间场, 称为 **常值希尔伯特空间场** 或简称为 **常值场**.
+设 $\mathcal{H}$ 是一个可分希尔伯特空间, 对于集合 $X$ 中的任何元素 $x$, 都有 $\mathcal{H}_x=\mathcal{H}$, 它显然是一个可测希尔伯特空间场, 称为 <b>常值希尔伯特空间场</b> 或简称为  <b>常值场</b>.
 
 </div><br>
 
@@ -32,7 +32,7 @@ $$
 \int_X\|f(x)\|_x\mathrm{d}\mu(x)<\infty
 $$
 
-的可测向量场 $f$ 组成的复线性空间为 $\mathcal{H}_x$ 的 **直积分**
+的可测向量场 $f$ 组成的复线性空间为 $\mathcal{H}_x$ 的 <b>直积分</b>
     
 $$
 \int_X^\oplus \mathcal{H}_x\mathrm{d}\mu(x),
