@@ -340,7 +340,7 @@ hr {
 }
 
 .intro-header--page {
-    min-height: clamp(360px, 42vh, 480px);
+    min-height: clamp(420px, 46vh, 560px);
 }
 
 .qed-home-page .intro-header {
@@ -1160,6 +1160,11 @@ hr {
 /* 作者在两个框之间随手写的 <br>，会把间距再撑开一行 */
 .post-container div[style*="border"] + br {
     display: none;
+}
+
+.post-container div[style*="border"] + div[style*="border"]:not(.qed-box--proof),
+.post-container div[style*="border"] + br + div[style*="border"]:not(.qed-box--proof) {
+    margin-top: 10px !important;
 }
 
 /* 定理与紧随其后的证明拼成一整块，中间不留缝 */
