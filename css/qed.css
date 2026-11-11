@@ -1165,10 +1165,8 @@ hr {
     margin-top: 40px !important;
 }
 
-/* Markdown 生成的空 <p><br></p> 是空隙的真正来源 */
-.post-container p:has(> br:only-child) {
-    display: none;
-}
+/* 空 <p><br></p> 由文章页脚本精确删除，不能用 :has 一刀切，
+   否则会把“Q: ...<br>A: ...”这种只有 br 元素子节点的正文段落也隐藏掉。 */
 
 /* 定理与紧随其后的证明拼成一整块，中间不留缝 */
 .post-container div.qed-box--paired {
