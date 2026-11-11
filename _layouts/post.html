@@ -75,7 +75,7 @@ layout: default
             if (!label || label.textContent.trim().indexOf('证明') !== 0) return;
 
             var previous = box.previousElementSibling;
-            while (previous && previous.tagName === 'BR') {
+            while (previous && (previous.tagName === 'BR' || isBlankParagraph(previous))) {
                 previous = previous.previousElementSibling;
             }
 
@@ -84,6 +84,10 @@ layout: default
                 box.classList.add('qed-box--proof');
             }
         });
+
+        function isBlankParagraph(node) {
+            return node.tagName === 'P' && !node.textContent.trim() && !node.querySelector('img, iframe');
+        }
     })();
 </script>
 
