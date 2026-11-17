@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "数域上的 Fourier 分析"
-subtitle: "Tate 博士论文中文译本"
+title: "Tate's thesis: 数域上的Fourier分析与Hecke的zeta函数"
+subtitle: "Tate 的博士论文中文翻译"
 header-img: "img/post-bg-infinity.jpg"
 header-mask: 0.3
 math: true
@@ -1458,7 +1458,8 @@ $$
 
 <div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
 
-**定理 4.1.4.** $k^\ast  = k$, 即对一切 $\xi$ 有 $\Lambda(\mathfrak{x}\xi)=0\Leftrightarrow \mathfrak{x}\in k$. (注: 此处 $k^\ast $ 是 $k$ 的对偶, 不是 $k$ 的乘法群 (!).)
+**定理 4.1.4.** $k^\ast  = k$, 即对一切 $\xi$ 有 $\Lambda(\mathfrak{x}\xi)=0\Leftrightarrow \mathfrak{x}\in k$.
+ (注: 此处 $k^\ast $ 是 $k$ 的对偶, 不是 $k$ 的乘法群 (!).)
 
 </div>
 
@@ -2319,4 +2320,4 @@ Siegel 关于二次型的工作近年在激励着大量的 adele 式分析 (adel
 </tbody>
 </table>
 
-pdf:<a href="{{ site.baseurl }}/pdf/tate-thesis-zh-full.pdf">数域上的 Fourier 分析</a>.
+pdf: <a href="{{ site.baseurl }}/pdf/tate-thesis-zh-full.pdf">数域上的Fourier分析与Hecke的zeta函数</a>.
