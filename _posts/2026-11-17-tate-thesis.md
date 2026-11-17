@@ -14,13 +14,17 @@ tags:
 
 **摘要.** 我们把与数域相联系, 取值于赋值向量群和伊代尔群中的抽象分析奠立在坚实的基础上. 这使我们可以把 $\zeta$ 函数按经典方式下的定义, 也就是某一类理想特征在整理想上的求和, 换成一个与之对应的, 对伊代尔群的定义, 即在一个相当一般的权函数上乘以一个在域元素上平凡地取值的伊代尔特征, 再沿伊代尔群积分. Hecke 那套为经典数论中 $n$ 维空间格上的 theta 函数所构造的, 繁复的 theta 公式, 它的地位可以由一个简单的 Poisson 公式来代替, 后者是说: 取值于赋值向量的一般函数, 沿域元素这个离散子群求和. 有了这个 Poisson 公式, 一方面它本身极为重要, 因为它正是 Riemann--Roch 定理在数论上的类比, 另一方面, 一切推广的 $\zeta$ 函数都可以一举得到解析延拓, 并且可以为它们建立一条形式简洁的函数方程. 把这些结果翻译回经典的语言, 就得到 Hecke 的函数方程, 同时还得到其中那个繁复因子的一种解释: 它是若干局部因子的乘积, 这些局部因子来自 Archimedean 素点与导子的素点. 局部 $\zeta$ 函数这个概念正是为了给出这些因子的局部定义而引进的, 并且已经算出了它们的一张表.
 
+> **重印说明**：原文标题为 *Fourier Analysis in Number Fields and Hecke's Zeta-Functions*。这是 Tate 博士论文（Princeton, 1950 年 5 月）未经改动的重印。会议的多位参加者都敦促编者把这篇文章收入论文集，因为它虽然被广泛引用，却从未发表过。编者感谢 Tate 允许重印，并感谢他对近年文献的评注。
+>
+> **译本说明**：本文译自 Cassels–Fröhlich 所编的 *Algebraic Number Theory* 第 15 章，由 DeepSeek V4.1 flash 模型翻译，并由人类校对，但仍可能有部分错误。本译本对原文一些难以用 LaTeX 打出的符号作了修改。
+
 ## 1 引言
 
 ### 1.1. 相关历史
 
-Hecke 是第一个证明**任意**代数数域的 Dedekind $\zeta$ 函数可以整平面解析延拓, 并且满足一条简单函数方程的人. 他随即意识到, 他的方法不仅可以用于 Dedekind $\zeta$ 函数与 L 级数, 而且可以用于由一种新型理想特征作出的 $\zeta$ 函数, 这种理想特征对主理想而言, 不仅依赖于该数模"导子"所在的剩余类, 而且依赖于该数在复域中的共轭所处的位置. 克服了相当不寻常的技术上的复杂性之后, 他证明了 (1918 年与 1920 年) 这些"Hecke 型"的 $\zeta$ 函数满足与 Dedekind $\zeta$ 函数同一类型的函数方程, 只是其中的因子要繁复得多.
+Hecke 是第一个证明任意代数数域的 Dedekind $\zeta$ 函数可以整平面解析延拓, 并且满足一条简单函数方程的人. 他随即意识到, 他的方法不仅可以用于 Dedekind $\zeta$ 函数与 L 级数, 而且可以用于由一种新型理想特征作出的 $\zeta$ 函数, 这种理想特征对主理想而言, 不仅依赖于该数模"导子"所在的剩余类, 而且依赖于该数在复域中的共轭所处的位置. 克服了相当不寻常的技术上的复杂性之后, 他证明了 (1918 年与 1920 年) 这些"Hecke 型"的 $\zeta$ 函数满足与 Dedekind $\zeta$ 函数同一类型的函数方程, 只是其中的因子要繁复得多.
 
-在一项工作中 (Chevalley, 1940), 其主要目的在于把分析从类域论里**移出去**, Chevalley 引进了伊代尔群这个极好的概念, 以之作为理想群的精细化. 在伊代尔里, Chevalley 找到的不仅是通往类域论的最佳途径, 而且也是通往一般代数数论的最佳途径. 这一点由 Artin 与 Whaples (1945) 的工作显示出来. 他们把赋值向量定义为与伊代尔相对应的加法概念, 并由这些概念出发, 从简单的公理推导出代数数论的全部基本命题.
+在一项工作中 (Chevalley, 1940), 其主要目的在于把分析从类域论里移出去, Chevalley 引进了伊代尔群这个极好的概念, 以之作为理想群的精细化. 在伊代尔里, Chevalley 找到的不仅是通往类域论的最佳途径, 而且也是通往一般代数数论的最佳途径. 这一点由 Artin 与 Whaples (1945) 的工作显示出来. 他们把赋值向量定义为与伊代尔相对应的加法概念, 并由这些概念出发, 从简单的公理推导出代数数论的全部基本命题.
 
 Matchett 是 Artin 的学生, 她作了第一次尝试 (1946) 去推进这一纲领, 用伊代尔与向量来做解析数论. 她成功地把经典 $\zeta$ 函数用伊代尔群上的积分重新定义, 并且把 Hecke 的特征解释为恰是那些可以由伊代尔特征导出的理想群特征. 但是在证明函数方程时她遵循的是 Hecke 的途径.
 
@@ -822,7 +826,7 @@ $$
 
 ### 3.1. 引言
 
-设 $\{\mathfrak p\}$ 是一族指标. 设对每个 $\mathfrak p$ 给定一个局部紧交换群 $G\_{\mathfrak p}$, 并且对几乎所有的 $\mathfrak p$ (意思是除有限多个 $\mathfrak p$ 之外), 给定一个固定子群 $H\_{\mathfrak p}\subset G\_{\mathfrak p}$, 它是**开而且紧**的.
+设 $\{\mathfrak p\}$ 是一族指标. 设对每个 $\mathfrak p$ 给定一个局部紧交换群 $G\_{\mathfrak p}$, 并且对几乎所有的 $\mathfrak p$ (意思是除有限多个 $\mathfrak p$ 之外), 给定一个固定子群 $H\_{\mathfrak p}\subset G\_{\mathfrak p}$, 它是开而且紧的.
 
 于是我们可以作一个新的抽象群 $G$, 它的元素 $a=(\ldots,a\_{\mathfrak p},\ldots)$ 是"向量", 对每个 $\mathfrak p$ 有一个 分量 $a\_{\mathfrak p}\in G\_{\mathfrak p}$, 并且对几乎所有 $\mathfrak p$ 有 $a\_{\mathfrak p}\in H\_{\mathfrak p}$. 乘法按分量定义.
 
@@ -844,7 +848,7 @@ $$
 
 显然 $G\_S$ 在 $G$ 中是开的, 且作为 $G$ 的子空间在 $G\_S$ 上诱导的拓扑, 与起初 我们在 $G\_S$ 上赋予的乘积拓扑相同. 因此 $G\_S$ 中 $1$ 的紧邻域也是 $G$ 中 $1$ 的紧邻域. 由此可见 $G$ 是局部紧的.
 
-**定义 3.1.1.** 我们称 $G$ (作为一个局部紧交换群) 为诸群 $G\_{\mathfrak p}$ 相对于诸子群 $H\_{\mathfrak p}$ 的**受限直积**.
+**定义 3.1.1.** 我们称 $G$ (作为一个局部紧交换群) 为诸群 $G\_{\mathfrak p}$ 相对于诸子群 $H\_{\mathfrak p}$ 的受限直积.
 
 当然, 把基本群 $G\_{\mathfrak p}$ 与 $G$ 中由一切除第 $\mathfrak p$ 个分量外 其余分量均为 $1$ 的元素 $a\_{\mathfrak p}=(1,1,\ldots,a\_{\mathfrak p},\ldots)$ 所成的子群等同起来是方便的. 因为这个子群无论在拓扑上还是在代数上都自然地与 $G\_{\mathfrak p}$ 同构.
 
@@ -1429,7 +1433,7 @@ $$
 
 
 
-**定义 4.3.2.** 设 $h$ 是 $k$ 的类数, 并选取伊代尔 $b^{(1)},\ldots,b^{(h)}\in J$, 使对应的理想 $\varphi(b^{(1)}),\ldots,\varphi(b^{(h)})$ 代表不同的理想类. 设 $w$ 是 $k$ 中单位根的个数. 设 $E\_0$ 是一切满足 $0\le\arg b\_{\mathfrak p\_0}<\dfrac{2\pi}{w}$ 的 $b\in l^{-1}(P)$ (见前一个引理) 所成的子集. 我们定义 $J\ \mathrm{mod}\ k^\ast $ 的**乘法基本域** $E$ 为 
+**定义 4.3.2.** 设 $h$ 是 $k$ 的类数, 并选取伊代尔 $b^{(1)},\ldots,b^{(h)}\in J$, 使对应的理想 $\varphi(b^{(1)}),\ldots,\varphi(b^{(h)})$ 代表不同的理想类. 设 $w$ 是 $k$ 中单位根的个数. 设 $E\_0$ 是一切满足 $0\le\arg b\_{\mathfrak p\_0}<\dfrac{2\pi}{w}$ 的 $b\in l^{-1}(P)$ (见前一个引理) 所成的子集. 我们定义 $J\ \mathrm{mod}\ k^\ast $ 的乘法基本域 $E$ 为 
 
 $$
 E = E\_0b^{(1)}\cup E\_0b^{(2)}\cup\ldots\cup E\_0b^{(h)}.
@@ -1705,7 +1709,7 @@ $$
 (\tilde\varepsilon\_{v\mathfrak p})\right),\qquad 1\le v\le m,
 $$
 
- 其中右端的对数取**某一组**值. 现在我们取定这些对数的一组值, 并取定一组解此方程的实数 $t\_{\mathfrak p}$. 由于众所周知矩阵 $(\log\vert \varepsilon\_v\vert \_{\mathfrak p})$ 的秩为 $m$, 这样的 $t\_{\mathfrak p}$ 总是存在的. 又因为对一切 $v$ 有 $\sum\_{\mathfrak p\in S}\log\vert \varepsilon\_v\vert \_{\mathfrak p}=0$, 故通解为 $t\_{\mathfrak p}=t\_{\mathfrak p}^{(0)}+t$, 其中 $t$ 任意. 既然谈到 $t\_{\mathfrak p}$ 的存在性与唯一性, 我们可以提醒读者: 若 $\mathfrak p$ 是 Archimedean 的, 不同的 $t\_{\mathfrak p}$ 给出不同的局部特征 $c\_{\mathfrak p}=\tilde c\_{\mathfrak p}\vert \,\vert \_{\mathfrak p}^{it\_{\mathfrak p}}$; 但若 $\mathfrak p$ 是离散的, 则相差 $2\pi/\log N\mathfrak p$ 的整数倍的 $t\_{\mathfrak p}$ 给出相同的局部 $c\_{\mathfrak p}$.
+ 其中右端的对数取某一组值. 现在我们取定这些对数的一组值, 并取定一组解此方程的实数 $t\_{\mathfrak p}$. 由于众所周知矩阵 $(\log\vert \varepsilon\_v\vert \_{\mathfrak p})$ 的秩为 $m$, 这样的 $t\_{\mathfrak p}$ 总是存在的. 又因为对一切 $v$ 有 $\sum\_{\mathfrak p\in S}\log\vert \varepsilon\_v\vert \_{\mathfrak p}=0$, 故通解为 $t\_{\mathfrak p}=t\_{\mathfrak p}^{(0)}+t$, 其中 $t$ 任意. 既然谈到 $t\_{\mathfrak p}$ 的存在性与唯一性, 我们可以提醒读者: 若 $\mathfrak p$ 是 Archimedean 的, 不同的 $t\_{\mathfrak p}$ 给出不同的局部特征 $c\_{\mathfrak p}=\tilde c\_{\mathfrak p}\vert \,\vert \_{\mathfrak p}^{it\_{\mathfrak p}}$; 但若 $\mathfrak p$ 是离散的, 则相差 $2\pi/\log N\mathfrak p$ 的整数倍的 $t\_{\mathfrak p}$ 给出相同的局部 $c\_{\mathfrak p}$.
 
 选定了 $\tilde c\_{\mathfrak p}$ 与 $t\_{\mathfrak p}$ 之后, 理想特征 $\chi$ 还剩下多少自由度? 不多. 要求对一切 $\alpha\in k^\ast $ 有 $c(\alpha)=1$, 意思是 $\chi$ 必须满足条件 
 
@@ -1919,8 +1923,6 @@ Siegel 关于二次型的工作近年在激励着大量的 adele 式分析 (adel
 <tr><td>$N\mathfrak a$</td><td>理想 $\mathfrak a$ 的绝对范数</td><td>2.1</td></tr>
 </tbody>
 </table>
----
 
-**译本说明**：原文为 *Fourier Analysis in Number Fields and Hecke's Zeta-Functions*，译自 Cassels–Fröhlich 编 *Algebraic Number Theory* 第 15 章，J. T. Tate 1950 年在 Princeton 的博士论文。本译本由 DeepSeek 翻译并经人工校对，仍可能存在错误；引用时请以原文为准。
+pdf:<a href="{{ site.baseurl }}/pdf/tate-thesis-zh-full.pdf">数域上的 Fourier 分析</a>.
 
-**PDF 下载**：[完整版（含英文原文影印，22 MB）]({{ site.baseurl }}/pdf/tate-thesis-zh-full.pdf) ｜ [纯译文版（45 页，397 KB）]({{ site.baseurl }}/pdf/tate-thesis-zh.pdf)

@@ -1089,6 +1089,10 @@ hr {
     font-size: 14px;
 }
 
+.post-container table.tate-table {
+    margin-top: 0.25em;
+}
+
 .post-container table.table > tbody th,
 .post-container table.table > thead th,
 .post-container table.table > tbody td,
