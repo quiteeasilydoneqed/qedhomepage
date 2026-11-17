@@ -2262,7 +2262,7 @@ Lang 的书“Algebraic Numbers”(Addison-Wesley, 1964) 中有一篇关于上�
 
 Siegel 关于二次型的工作近年在激励着大量的 adele 式分析 (adele 是赋值向量的现代名称). 关于这一方向的一些关键结果与文献目录, 见 Weil 在“Acta Mathematica”1964 年与 1965 年的论文.
 
-## REFERENCES
+## 参考文献
 
 Artin, E. and Whaples, G. (1945). Axiomatic characterization of fields by the product formula for valuations. *Bull. Am. math. Soc.* **51**, 469--492.
 
