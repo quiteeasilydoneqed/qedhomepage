@@ -13,14 +13,14 @@ tags:
 
 米林级数是指:
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理(Millin, Good)</b>
 $$
 \sum_{n=0}^\infty\frac{1}{F_{2^n}}=\frac{7-\sqrt{5}}{2}.
 $$
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>引理1</b>
 $$
 F_{n+1}F_{n-1}-F_{n}^2=(-1)^n.
@@ -34,7 +34,7 @@ $$
 F_{2^k+1}F_{2^k-1}-1=F_{2^k}^2.
 $$
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>引理2</b>
 $$
 F_{m+n}=F_{m-1} F_n+F_m F_{n+1}.
@@ -47,7 +47,7 @@ $$
 F_{2^{k+1}}=F_{2^k-1}F_{2^k}+F_{2^k} F_{2^k+1}.
 $$
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>引理3</b>
 $$
 F_{m+n-1}=F_{m} F_n+F_{m-1}F_{n-1}.
@@ -61,7 +61,7 @@ $$
 F_{2^{k+1}-1}=F_{2^k}^2+F_{2^k-1}^2.
 $$
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>引理4</b>
 
 $$
@@ -69,7 +69,7 @@ $$
 $$
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>米林级数的证明</b>
 先证

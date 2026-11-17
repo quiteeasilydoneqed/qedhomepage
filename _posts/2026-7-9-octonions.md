@@ -17,7 +17,7 @@ tags:
 
 以下均设 $F$ 为域, $A$ 为有限维 $F$-模, $A$ 中交换群运算记为加法, 在 $A$ 上有一个未必交换也未必结合的乘法运算, 但满足分配律, 并且含有幺元, 则称 $A$ 是一个非结合代数, 以下将非结合代数简称为代数.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定义(结合子)</b>
 
@@ -31,7 +31,7 @@ $$[x,y,z]=(xy)z-x(yz).$$
 
 一个代数是可除的当且仅当对任意 $x,y\in A$, 若 $xy=0$, 总有 $x=0$ 或 $y=0$. 当代数结合时, 该条件显然等价于任何非零元素都有乘法逆元(注意 $A$ 有限维这一条件是必须的), 但当代数非结合时则未必成立.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>引理</b>
 
@@ -39,7 +39,7 @@ $$[x,y,z]=(xy)z-x(yz).$$
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 
@@ -53,7 +53,7 @@ $$0=[x+y,x+y,z]=[x,x,z]+[x,y,z]+[y,x,z]+[y,y,z],$$
 
 设映射 $(-)^\*\in\operatorname{End}_F(A)$ 为自同态, 并且满足 $(xy)^\*=y^\*x^\*$, $1_A^\*=1_A$, $x^{\*\*}=x$, 则称 $\*$ 为 $A$ 上的对合, 带对合的代数称为 $\*$-代数.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>引理</b>
 
@@ -61,7 +61,7 @@ $$0=[x+y,x+y,z]=[x,x,z]+[x,y,z]+[y,x,z]+[y,y,z],$$
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 
@@ -71,7 +71,7 @@ $$0=[x+y,x+y,z]=[x,x,z]+[x,y,z]+[y,x,z]+[y,y,z],$$
 
 此后均要求对合满足该条件.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>引理</b>
 
@@ -79,7 +79,7 @@ $$0=[x+y,x+y,z]=[x,x,z]+[x,y,z]+[y,x,z]+[y,y,z],$$
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 
@@ -89,7 +89,7 @@ $$0=[x+y,x+y,z]=[x,x,z]+[x,y,z]+[y,x,z]+[y,y,z],$$
 
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>引理</b>
 
@@ -103,7 +103,7 @@ $$B(xy,z)=B(y,x^*z)=B(x,zy^*).$$
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 
@@ -127,7 +127,7 @@ $$B(x,-)=0\Longleftrightarrow x=0\Longleftrightarrow B(-,x)=0$$
 
 对 $\forall x\in A$ 均成立.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定义(Cayley-Dickson代数)</b>
 
@@ -145,7 +145,7 @@ $$(a,b)\cdot(a',b')=(aa'+\lambda b'b^*,a^*b'+a'b),$$
 
 注意我们使用点乘 $x\cdot y$ 表示 $\operatorname{CD}(A,\lambda)$ 中的乘法, 而并置 $ab$ 表示 $A$ 中的乘法. 容易验证 $a\cdot b=ab$, $v\cdot a=(0,a)=va$, 其中 $a,b\in A$, 这说明了我们符号的正当性.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理</b>
 
@@ -153,7 +153,7 @@ $$(a,b)\cdot(a',b')=(aa'+\lambda b'b^*,a^*b'+a'b),$$
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 
@@ -161,7 +161,7 @@ $$(a,b)\cdot(a',b')=(aa'+\lambda b'b^*,a^*b'+a'b),$$
 
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理</b>
 
@@ -169,7 +169,7 @@ $$(a,b)\cdot(a',b')=(aa'+\lambda b'b^*,a^*b'+a'b),$$
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 
@@ -187,7 +187,7 @@ $$B_N(x,y)=B_n(a,c)-\lambda B_n(b,d),$$
 
 该定理说明当 $\lambda\neq0$ 时, 若一个代数有Cayley-Dickson代数, 则其Cayley-Dickson代数也有Cayley-Dickson代数.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理</b>
 
@@ -195,7 +195,7 @@ $A$ 结合等价于 $\operatorname{CD}(A,\lambda)$ 交错, $A$ 交换等价于 $
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 
@@ -270,7 +270,7 @@ $$\operatorname{CD}(\mathbb {H},-1)\cong\mathbb {O},$$
 
 除八元数外, 这些构造与克利福德代数中的构造是同构的, 区别是克利福德代数不处理非结合代数, 详见本网站关于克利福德代数的网页. 当 $\lambda$ 取 $1$ 或 $0$ 时也能构造出双曲复数和对偶数.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>引理</b>
 
@@ -278,7 +278,7 @@ $$\operatorname{CD}(\mathbb {H},-1)\cong\mathbb {O},$$
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 
@@ -322,7 +322,7 @@ $$a^{-1}(ab)=(a^{-1}a)b=b=0,$$
 
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>引理</b>
 
@@ -330,7 +330,7 @@ $$a^{-1}(ab)=(a^{-1}a)b=b=0,$$
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 
@@ -340,7 +340,7 @@ $$x^{-1}=\frac{\overline{x}}{N(x)}.$$
 
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理</b>
 
@@ -348,7 +348,7 @@ $$x^{-1}=\frac{\overline{x}}{N(x)}.$$
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 
@@ -388,7 +388,7 @@ $$
 - 若 $e_ie_j=e_k$, 则 $e_{i+1}e_{j+1}=e_{k+1}$, 其中下标模 $7$ 计算;
 - 若 $e_ie_j=e_k$, 则 $e_{2i}e_{2j}=e_{2k}$, 其中下标模 $7$ 计算.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理(Hurwitz定理)</b>
 
@@ -398,7 +398,7 @@ $\mathbb{R}$ 上的有限维赋范可除代数只有 $\mathbb{R}$, $\mathbb{C}$,
 
 <br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理(Zorn定理)</b>
 
@@ -408,7 +408,7 @@ $\mathbb{R}$ 上的有限维可除交错代数只有 $\mathbb{R}$, $\mathbb{C}$,
 
 <br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理(Bott-Milnor-Kervaire定理)</b>
 
@@ -436,7 +436,7 @@ $$(\overline{x_0},\dots, \overline{x_n})=(\overline{ay_0},\dots,\overline{ay_n})
 
 以下设 $A$ 是一个有限维未必结合的 $F$-代数, $F$ 的特征不为 $2$, 带有对合 $\overline{(-)}$, 设 $M_n(A)$ 为 $A$ 上的 $n$ 阶矩阵代数, 注意矩阵乘法未必结合.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定义</b>
 
@@ -444,7 +444,7 @@ $$(\overline{x_0},\dots, \overline{x_n})=(\overline{ay_0},\dots,\overline{ay_n})
 
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定义(Hermite矩阵)</b>
 
@@ -504,7 +504,7 @@ $$
 
 当 $A$ 上带拓扑时可以赋予其商拓扑, 我们来证明这与之前的构造是相同的.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>引理</b>
 
@@ -512,7 +512,7 @@ $$
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 
@@ -561,7 +561,7 @@ $
 
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>引理</b>
 
@@ -569,7 +569,7 @@ $
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 
@@ -622,7 +622,7 @@ Hopf纤维化是微分几何和代数拓扑中的重要例子, 相关的概念�
 
 # Jordan代数
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定义(Jordan岩浆)</b>
 
@@ -636,7 +636,7 @@ $$(a\circ b)\circ (a\circ a)=a\circ (b\circ (a\circ a)),$$
 
 Jordan恒等式相当于说 $[a,b,a^2]=0$, 这比交错律更弱. Jordan岩浆显然是泛代数, 但疑似基本没人研究这玩意.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定义(Jordan代数)</b>
 
@@ -648,7 +648,7 @@ Jordan代数不是泛代数, 因为泛代数中无法刻画域结构.
 
 先前已经说明过Hermite矩阵 $\mathfrak{h}_n(A)$ 是Jordan代数.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理</b>
 
@@ -660,7 +660,7 @@ Jordan代数满足幂结合律.
 
 以下皆假设域 $F=\mathbb{R}$.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定义(理想)</b>
 
@@ -668,7 +668,7 @@ Jordan代数满足幂结合律.
 
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定义(形式实Jordan代数)</b>
 
@@ -680,7 +680,7 @@ $$a_1^2+\cdots+a_n^2=0\Longrightarrow a_1=0,\dots,a_n=0,$$
 
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理(Jordan, von Neumann, Wigner 1934)</b>
 
@@ -714,7 +714,7 @@ Jordan代数与李群和李代数有一定联系.
 
 一个著名的论断是, 只有三维空间和七维空间中存在非平凡叉乘, 本节严格化这一论断, 首先要公理化叉乘这一概念.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定义(叉乘)</b>
 
@@ -733,7 +733,7 @@ $$
 </div>
 <br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理</b>
 
@@ -745,7 +745,7 @@ $$
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 
@@ -761,7 +761,7 @@ $$
 
 注意其中的 $\cdot$ 是通常的点乘, $\|u\|$ 定义为 $\sqrt{u\cdot u}$. 若对任意的 $u,v\in V$ 都有 $u\times v=0$, 则称该叉乘是平凡的, 否则就是非平凡的.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理</b>
 
@@ -769,7 +769,7 @@ $$
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 

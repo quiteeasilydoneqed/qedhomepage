@@ -21,7 +21,7 @@ $$
 
 这个数列的OEIS号为 [A005150](https://oeis.org/A005150).
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定义</b>
 
@@ -33,7 +33,7 @@ $$
 
 我们将 $ D^n(W) $ 中的字称为第 $ n $ 天的字, 显然 $ W\supset D(W)\supset D^2(W)\supset D^3(W)\supset\cdots $.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理(一天定理)</b>
 
@@ -41,7 +41,7 @@ $$
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 
@@ -51,7 +51,7 @@ $$
 
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理(两天定理)</b>
 
@@ -59,7 +59,7 @@ $$
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 
@@ -71,7 +71,7 @@ $$
 
 作为推论, 若 $ w $ 中不包含大于 $ 3 $ 的数且任何一个数不会连续出现大于 $ 3 $ 次, 则在 $ D^n(w) $ 中也不包含大于 $ 3 $ 的数, $ n\ge1 $, 特别的, [A005150](https://oeis.org/A005150) 中不会出现大于 $ 3 $ 的数.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理(起首定理)</b>
 
@@ -92,7 +92,7 @@ $$
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 
@@ -104,7 +104,7 @@ $$
 
 ## 分裂
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定义</b>
 
@@ -112,7 +112,7 @@ $$
 
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定义</b>
 
@@ -124,7 +124,7 @@ $$
 
 注意元素本身也是一个元素的化合物, 元素的并置也可能是元素, 例如 $ 1 $ 和 $ 2 $ 和 $ 12 $ 都是元素, 但 $ 1 $ 和 $ 2 $ 并置不是分裂并置.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理</b>
 
@@ -132,7 +132,7 @@ $$
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 
@@ -140,7 +140,7 @@ $$
 
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理(分裂定理)</b>
 
@@ -157,7 +157,7 @@ $ D^2(w) $ 分裂为 $ lr $ 的充要条件是 $ l $ 和 $ r $ 满足如下三�
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 
@@ -167,7 +167,7 @@ $ D^2(w) $ 分裂为 $ lr $ 的充要条件是 $ l $ 和 $ r $ 满足如下三�
 
 ## 化学定理
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定义(常见元素)</b>
 
@@ -177,7 +177,7 @@ $ D^2(w) $ 分裂为 $ lr $ 的充要条件是 $ l $ 和 $ r $ 满足如下三�
 
 下面的化学定理说明常见元素恰好 $ 92 $ 种, 使用 $ E_i $ 表示, $ 1\le i\le 92 $, 见附录的常见元素周期表. 常见元素的化合物称为常见化合物.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定义(超铀元素)</b>
 
@@ -197,7 +197,7 @@ $$
 D(\mathrm{Pu}_n)=\mathrm{Np}_n,\qquad D(\mathrm{Np}_n)=\mathrm{Hf}\ \mathrm{Pa}\ \mathrm{H}\ \mathrm{Ca}\ \mathrm{Pu}_n.
 $$
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定义(丰度)</b>
 
@@ -211,7 +211,7 @@ $$
 
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理(化学定理)</b>
 
@@ -219,7 +219,7 @@ $$
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 
@@ -229,7 +229,7 @@ $$
 
 ## 宇宙学定理
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理(宇宙学定理)</b>
 
@@ -257,7 +257,7 @@ $ D $ 作用在92个常见元素上得到的可以看做这92个常见元素的�
 
 <img src="{{ site.baseurl }}/img/lookandsay.svg" alt="矩阵 M" style="width: 80%; height: auto;">
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理(Perron–Frobenius定理)</b>
 
@@ -265,7 +265,7 @@ $ D $ 作用在92个常见元素上得到的可以看做这92个常见元素的�
 
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理(算术定理)</b>
 
@@ -285,7 +285,7 @@ $$
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 
@@ -331,7 +331,7 @@ $$
 
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>定理</b>
 
@@ -339,7 +339,7 @@ $$
 
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 
 <b>证明</b>
 

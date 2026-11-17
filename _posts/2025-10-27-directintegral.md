@@ -18,13 +18,13 @@ tags:
 
 设 $f\in F$ 是一个向量场, 如果对任意一个正整数 $i$, 映射 $x\mapsto (f(x),e_i(x))_x$ 都是可测的, 则称向量场 $f$ 是 **可测向量场** 或 **可测截面**. 可以证明, 向量场的可测性与基本可测向量场的选取无关, 并且如果 $f$ 和 $g$ 都是可测向量场, 那么映射 $x\mapsto(f(x),g(x))_x$ 是可测的, 所以 $x\mapsto\|f(x)\|_x=\sqrt{(f(x),f(x))_x}$ 也是可测的.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>例</b>
 设 $\mathcal{H}$ 是一个可分希尔伯特空间, 对于集合 $X$ 中的任何元素 $x$, 都有 $\mathcal{H}_x=\mathcal{H}$, 它显然是一个可测希尔伯特空间场, 称为 <b>常值希尔伯特空间场</b> 或简称为  <b>常值场</b>.
 
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定义(直积分)</b>
 设 $\mathcal{H}_x$ 是 $X$ 上的一个可测希尔伯特空间场, 则定义, 所有满足
     
@@ -51,7 +51,7 @@ $$
 $$
 事实上, 可以证明这个内积使其成为一个希尔伯特空间.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>例</b>
 如果 $\mathcal{H}_x=\mathcal{H}$ 是常值场, 则直积分简记为
 
@@ -68,7 +68,7 @@ $$
 
 以下是几个简单的性质.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>性质</b>
 如果 $X=\bigsqcup_{k=1}^\infty X_k$ 且各个 $X_k$ 都是可测集, 那么有
 
@@ -120,7 +120,7 @@ L^2(G)\cong L^2(\hat{G})=\int_{\hat{G}}^\oplus\mathbb C\mathrm{d}\mu(\chi),
 $$
 
 从元素上来说, 这就是说 $L^2(G)$ 中的元素 $f$ 可以分解为在各酉特征标上的分量之和, 即傅里叶逆变换. 显然, 由对偶性知还有
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 设 $G$ 是局部紧阿贝尔群, $\hat{G}$ 是其对偶群, 则有
 

@@ -11,7 +11,7 @@ tags:
 
 # 基础定义和性质
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定义(伯努利数)</b>
 伯努利数定义为以函数
 
@@ -30,7 +30,7 @@ $$
 
 $ B_0 = 1 $, $ B_1 = -\frac{1}{2} $, $ B_2 = \frac{1}{6} $, $ B_3 = 0 $, $ B_4 = -\frac{1}{30} $.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定义(伯努利多项式)</b>
 在形式幂级数环 $ \mathbb{Q}[x][[z]] $ 中, 生成函数
 
@@ -43,7 +43,7 @@ $$
 
 伯努利数有递推公式.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 当 $ n $ 是大于 $ 1 $ 的正整数时,
 
@@ -58,7 +58,7 @@ B_n = -\frac{1}{n+1} \sum_{k=0}^{n-1} \binom{n+1}{k} B_k.
 $$
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>证明</b>
 展开生成函数的分母为幂级数,
 
@@ -76,7 +76,7 @@ $$
 对比 $ z^n $ 的系数即可得证.
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 当 $ n $ 是大于 $ 1 $ 的正整数时,
 
@@ -85,7 +85,7 @@ B_{2n-1} = 0.
 $$
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>证明</b>
 定义
 
@@ -96,7 +96,7 @@ $$
 容易验证有$ f(z)=f(-z) $, 展开后对比系数即得$ B_{2n-1} = 0 $.
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 当 $ n $ 是大于 $ 1 $ 的正整数时,
 
@@ -113,7 +113,7 @@ $$
 $$
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>证明</b>
 在生成函数中令 $ x $ 为 $ 1 $, 有
 
@@ -164,7 +164,7 @@ $$
 
 事实上, 只有 $ n=1 $ 时 $ B_n(0)\neq B_n(1) $, 其中 $ B_1(0)=-\frac{1}{2} $, $ B_1(1)=\frac{1}{2} $, 有时也有 $ B_n^+=B_n(1) $ 和 $ B_n^-=B_n(0) $ 的记法.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 对任意非负整数 $ n $, 有
 
@@ -173,7 +173,7 @@ B_n(x) = \sum_{k=0}^{n} \binom{n}{k} B_k x^{n-k}.
 $$
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>证明</b>
 将
 
@@ -212,14 +212,14 @@ $$
 
 一般的, 有:
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理(等幂求和)</b>
 $$
 S_m(n)=\frac{1}{m+1}\sum_{k=0}^m\binom{m+1}{k}B_k^+ n^{m+1-k}.
 $$
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>证明</b>
 考虑 $ S_m(n) $ 的生成函数
 
@@ -311,7 +311,7 @@ $$
 
 因此当 $ u $ 取整数时, 就有 $ b_n(u)=\frac{B_n}{n!} $.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理(欧拉-麦克劳林求和公式)</b>
 设 $ f(u) $ 在区间 $ [u_1,u_2] $ 上 $ n $ 阶连续可导, 则有
 
@@ -384,7 +384,7 @@ $$
 
 欧拉常数也是欧拉-麦克劳林求和公式的推论之一.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 设 $ k $ 是正整数, 当 $ x\ge2 $ 时, 有
 
@@ -399,7 +399,7 @@ $$
 $$
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>证明</b>
 由欧拉-麦克劳林求和公式得
 
@@ -424,7 +424,7 @@ $$
 
 欧拉常数可以在某种意义下看做 $\gamma=\gamma_0$, 所有的 $\gamma_k$ 统称为斯蒂尔杰斯常数.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 设$\gamma$是欧拉常数, $ B_k $是伯努利数, 则
 
@@ -433,7 +433,7 @@ $$
 $$
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>证明</b>
 由欧拉-麦克劳林求和公式得
 
@@ -454,7 +454,7 @@ $$
 
 # 黎曼$\zeta$函数
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定义(黎曼 $ \zeta $ 函数)</b>
 黎曼 $ \zeta $ 函数是定义在右半平面 $ \mathrm{Re}(s)>1 $ 上的函数
 
@@ -473,7 +473,7 @@ $$
 
 与伯努利数相关的是 $ \zeta $ 函数在正偶数和负整数处的值, 有:
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 设 $  n  $ 是正整数, 则
 
@@ -482,7 +482,7 @@ $$
 $$
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>证明</b>
 由傅里叶分析知有无穷乘积
 
@@ -540,7 +540,7 @@ $$
 定理得证.
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 设 $  n  $ 是非负整数, 则
 

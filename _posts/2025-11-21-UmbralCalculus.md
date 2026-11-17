@@ -13,7 +13,7 @@ tags:
 
 设 $\\{p_n(x)\\}_{n=0}^\infty$ 是一列 $\mathbb{C}[x]$ 中的多项式, 以后我们说的多项式列都要求有 $ \deg p_n=n $, 即第 $ n $ 个多项式的次数恰好为 $ n $, 其中当 $ n=0 $ 时解释为非零常函数 ($ p(x)=0 $ 的次数通常定义为负无穷). 显然这样的一列多项式组成线性空间 $ \mathbb{C}[x] $ 的一组基.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定义(二项式型多项式列)</b>
 设 $\{p_n(x)\}_{n=0}^\infty$ 是一列多项式, 如果它们满足以下条件, 则称其为二项式型多项式列:
 
@@ -34,7 +34,7 @@ $$
 
 则有函数方程 $ G(x+y,t)=G(x,t)G(y,t) $, 可以证明以下定理:
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 多项式列 $\{p_n(x)\}_{n=0}^\infty$ 是二项式型多项式列当且仅当其指数型生成函数为
 
@@ -45,7 +45,7 @@ $$
 的形式, 其中 $ B(t)=\sum_{k=1}^\infty B_kt^k=B_1t+B_2t^2+\cdots $, $ B_k\in \mathbb{C} $ 且 $ B_1\neq0 $.
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定义(阿佩尔多项式列)</b>
 设 $\{p_n(x)\}_{n=0}^\infty$ 是一列多项式, 如果它们满足以下条件, 则称其为阿佩尔多项式列:
 
@@ -56,7 +56,7 @@ $$
 
 设其指数型生成函数是 $ G(x,t) $, 则有微分方程 $ \frac{\mathrm{d}}{\mathrm{d}x}G(x,t)=tG(x,t) $, 于是有
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 多项式列 $\{p_n(x)\}_{n=0}^\infty$ 是阿佩尔多项式列当且仅当其指数型生成函数为
 
@@ -75,7 +75,7 @@ $$
 
 阿佩尔多项式的例子有: $ x^n $, 伯努利多项式, 赫尔米特多项式, 欧拉多项式等.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定义(谢弗多项式列)</b>
 设 $\{p_n(x)\}_{n=0}^\infty$ 是一列多项式, 如果它的生成函数有如下形式, 则称其为谢弗多项式列:
 
@@ -88,7 +88,7 @@ $$
 
 显然二项式型多项式列和阿佩尔多项式列均为特殊的谢弗多项式列.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定义(哑复合)</b>
 若 $\{p_n(x)\}_{n=0}^\infty$ 和 $\{q_n(x)\}_{n=0}^\infty$ 是两列谢弗多项式列, 设 $ p_n(x) = \sum_{k=0}^n a_{nk} x^k $, $ q_n(x) = \sum_{k=0}^n b_{nk} x^k $, $ a_{nk},b_{nk}\in\mathbb{C} $, 定义它们的哑复合为多项式列 $ \{(p\circ q)_n(x)\}_{n=0}^\infty $, 其中
 
@@ -148,7 +148,7 @@ $$
 
 由前面的讨论知该映射是双射, 并且显然保持线性空间的结构, 因此它是从 $ P^* $ 到 $ \mathbb{C}[[t]] $ 的线性同构, 此后将两者看做同一. 先来看一些简单的性质.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 以下设 $ f_k\in\mathbb{C}[[t]] $, $ p\in P $, $ o(f) $ 为幂级数 $ f $ 的系数 $ a_k $ 中不为 $ 0 $ 的最小 $ k $, 约定 $ o(0)=\infty $.
 
@@ -183,7 +183,7 @@ $$
 
 接下来举几个例子.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>例</b>
 取 $ f(t)=1 $, 则 $ \langle 1 \mid x^n \rangle=\delta_{0,n} $ 为克罗内克符号, 从而有 $ \langle 1 \mid p(x) \rangle=p(0) $.<br>
 
@@ -232,7 +232,7 @@ $$
 
 如果 $ P $ 上的线性变换将 $ n $ 次多项式映为 $ n $ 次多项式, 则它显然是线性同构, 如果它还由 $ f_L(t) $ 生成, 则显然有 $ L_0=f_L(0)\neq0 $.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>例</b>
 设 $ f(t)=e^{yt}=\sum_{k=0}^{\infty} \frac{y^k}{k!} t^k $, 故它在 $ x^n $ 上的左乘作用就是
 
@@ -287,12 +287,12 @@ $$
 为欧拉多项式.
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 设 $ T $ 是 $ P $ 上一个将 $ n $ 次多项式映为 $ n $ 次多项式的线性变换, 则 $ T $ 可以由级数 $ f_L(t) $ 生成当且仅当 $ T $ 把 $ x^n $ 映为阿佩尔多项式列.
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>证明</b>
 设 $ T $ 由幂级数 $ f_L(t) $ 生成, 则 $ T(x^n) $ 是指数型生成函数就是
 
@@ -359,7 +359,7 @@ $$
 
 接下来介绍谢弗多项式列的另一种定义.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 对任意幂级数 $ f(t),g(t) $, 满足 $ o(f(t))=1,o(g(t))=0 $ $ ($这等价于说 $ f(t) $ 有复合逆, $ g(t) $ 有逆 $ ) $, 则方程
 
@@ -370,7 +370,7 @@ $$
 有唯一解 $ \{p_n(x)\} $.
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 $ \{p_n(x)\} $ 是谢弗多项式列当且仅当存在唯一的幂级数对 $ \left(f(t),g(t)\right) $, 满足 $ o(f(t))=1,o(g(t))=0 $, 并且有
 
@@ -389,7 +389,7 @@ $$
 
 其中 $ f(\bar{f}(t))=\bar{f}(f(t))=t. $
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 $ \{p_n(x)\} $ 是阿佩尔多项式列当且仅当存在唯一幂级数 $ g(t) $, 满足 $ o(g(t))=0 $, 并且有
 
@@ -400,7 +400,7 @@ $$
 对任意非负整数 $ n $ 和 $ k $ 成立.
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 $ \{p_n(x)\} $ 是二项式型多项式列当且仅当存在唯一幂级数对任意幂级数 $ f(t) $, 如果满足 $ o(f(t))=1 $, 那么满足
 
@@ -415,7 +415,7 @@ $$
 
 # 算子与伴随算子
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定义(哑算子, 谢弗算子)</b>
 设 $ \{q_n(x)\} $ 是二项式型多项式列, 如果线性算子 $ \lambda: P\to P $ 满足条件
 
@@ -434,7 +434,7 @@ $$
 则称其为谢弗算子.
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定义(哑移位, 谢弗移位)</b>
 设 $ \{q_n(x)\} $ 是二项式型多项式列, 如果线性算子 $ \lambda: P\to P $ 满足条件
 
@@ -453,7 +453,7 @@ $$
 则称其为谢弗移位.
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定义(连续)</b>
 设 $ T $ 是 $ P^* \cong\mathbb{C}[[t]] $ 上的线性算子, 如果对于 $ P^* $ 中一列满足
 
@@ -470,7 +470,7 @@ $$
 其中 $ a_k\in\mathbb{C} $, 则称算子 $ T $ 是连续的.
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 $ P^* $ 上的算子 $ T $ 是连续的当且仅当对任意满足
 
@@ -487,7 +487,7 @@ $$
 
 举两个例子.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>例(自同构算子, 导数算子)</b>
 如果 $ T $ 是 $ P^* $ 上的代数自同构, 则可以证明一定有 $ o(T(f))=o(f) $, 进而是连续的, $ T $ 称为自同构算子.
 
@@ -502,7 +502,7 @@ $$
 
 伴随算子的定义与通常泛函分析中相同.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定义(伴随)</b>
 设 $ \tau\in L(P) $ 是 $ P $ 上的线性变换, 定义其伴随 $ \tau^\times:P^*\to P^* $ 为满足
 
@@ -517,7 +517,7 @@ $$
 $$
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 伴随有如下性质:
 <br>
@@ -530,12 +530,12 @@ $ (\tau\sigma)^\times = \sigma^\times\tau^\times, $
 若 $ \tau $ 可逆, $ (\tau^{-1})^\times = (\tau^\times)^{-1} . $
 </div><br>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 幂级数 $ f(t) $ 以左乘作用在 $ P $ 上时, 为 $ P $ 上的线性变换, 它的伴随 $ f(t)^\times $ 作用在 $ g(t) $ 上是幂级数的乘法 $ f(t)^\times (g(t))=f(t)g(t) $.
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>证明</b>
 只需证明当 $ f(t),g(t)\in P^* $ 时,
 
@@ -596,7 +596,7 @@ $$
 
 这就是伯努利数的递推公式.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 $ P^* $ 上的算子 $ T $ 是 $ P $ 上中某个算子的伴随当且仅当 $ T $ 连续, 也就是说, 线性同态
 
@@ -617,12 +617,12 @@ $$
 
 对任意非负整数 $ n $ 和 $ k $ 成立, 此后将明确了 $ f $ 的哑算子 $ \lambda $ 记为 $ \lambda_f $.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 算子 $ \lambda\in L(P) $ 是哑算子当且仅当其伴随 $ \lambda^\times $ 是 $ P^* $ 上自同构算子.
 </div>
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>证明</b>
 假设 $ \lambda=\lambda_f $ 将 $ x^n $ 映为 $ p_n(x) $, 则有
 
@@ -701,7 +701,7 @@ $$
 
 与之类似, 可以证明如下定理:
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 算子 $ \theta\in L(P) $ 是哑移位当且仅当其伴随 $ \lambda^\times $ 是 $ P^* $ 上满的导数算子.
 </div>
@@ -720,7 +720,7 @@ $$
 
 伴随 $ \times $ 将所有哑移位组成的集合映为所有满导数算子组成的集合, 一般记 $ \theta_f^\times=D_f $.
 
-<div class="qed-box">
+<div style="border: 3px solid #000; padding: 10px;">
 <b>定理</b>
 若 $ \theta\in L(P) $ 是哑移位, 那么对任意 $ f(t)\in P^* $, 有
 
