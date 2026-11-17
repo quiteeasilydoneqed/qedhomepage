@@ -62,13 +62,13 @@ $$
 
 用 $k^+$ 表示 $k$ 的加法群, 视其为一个局部紧交换群, 并用 $\xi$ 表示它的一般元素. 我们想确定 $k^+$ 的特征群, 而令人高兴的是, 这件事基本上由下面的事实完成:
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 2.2.1.** 若 $\xi\to \chi(\xi)$ 是 $k^+$ 的一个非平凡特征, 则对每个 $\eta\in k^+$, $\xi\to \chi(\eta\xi)$ 也是一个特征. 对应关系 $\eta\leftrightarrow \chi(\eta\xi)$ 给出 $k^+$ 与其特征群之间的一个同构, 既在拓扑上也在代数上成立.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** (1) 对任意固定的 $\eta$, $\chi(\eta\xi)$ 是一个特征, 因为映射 $\xi\to\eta\xi$ 是 $k^+$ 到自身的连续同态.
 
@@ -104,13 +104,13 @@ $$
 
 (要找这样的 $\lambda(x)$, 令 $p^v x$ 为整数, 并选取普通整数 $n$ 使 $n\equiv p^v x\ (\mathrm{mod}\ p^v)$. 然后令 $\lambda(x)=n/p^v$; 显然 $\lambda(x)$ 在模 $1$ 之下是唯一确定的.)
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 2.2.2.** $x\to\lambda(x)$ 是 $R$ 到模 $1$ 实数群中的一个非平凡连续加法映射.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 情形 1 是平凡的. 在情形 2 中我们验证数 $\lambda(x)+\lambda(y)$ 对 $x+y$ 满足性质 (a) 与 (b), 故该映射是加性的. 它在 $0$ 处连续, 然而并非平凡, 因为显然有: $\lambda(x)=0 \Leftrightarrow x$ 是 $p$ 进整数.
 
@@ -118,19 +118,19 @@ $$
 
 现在对 $\xi\in k^+$ 定义 $\Lambda(\xi)=\lambda(S\_{k/R}\,\xi)$. 注意 $S\_{k/R}$ 是 $k$ 到 $R$ 上的加法连续映射, 于是 $\xi\to e^{2\pi i\Lambda(\xi)}$ 是 $k^+$ 的一个非平凡特征. 我们已证得:
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **定理 2.2.1.** 若把特征 $\xi\to e^{2\pi i\Lambda(\eta\xi)}$ 与元素 $\eta\in k^+$ 等同起来, 则 $k^+$ 自然地就是它自己的特征群.
 
 </div>
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 2.2.3.** 若 $\mathfrak p$ 是离散的, 则与 $\eta$ 相联系的特征 $e^{2\pi i\Lambda(\eta\xi)}$ 在 $\mathfrak o$ 上平凡当且仅当 $\eta\in\mathfrak d^{-1}$, 其中 $\mathfrak d$ 表示 $k$ 的绝对差积.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 
 
@@ -147,25 +147,25 @@ $$
 
 现在设 $\mu$ 是 $k^+$ 的一个 Haar 测度.
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 2.2.4.** 若对 $\alpha\ne 0\in k$ 及 $k^+$ 中的可测集 $M$ 定义 $\mu\_1(M)=\mu(\alpha M)$, 则 $\mu\_1$ 是一个 Haar 测度, 从而存在一个数 $\varphi(\alpha)>0$ 使 $\mu\_1=\varphi(\alpha)\mu$.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** $\xi\to\alpha\xi$ 是 $k^+$ 的自同构, 既在拓扑上也在代数上成立. Haar 测度由 $k^+$ 的拓扑与代数结构在相差一个正常数的意义下唯一确定.
 
 </div>
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 2.2.5.** 前一个引理中的常数 $\varphi(\alpha)$ 就是 $\vert \alpha\vert $, 亦即 $\mu(\alpha M)=\vert \alpha\vert \mu(M)$.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 若 $k$ 是实域, 这是明显的. 若 $k$ 是复域, 同样明显, 因为这时我们选取的 $\vert \alpha\vert $ 是通常绝对值的平方. 若 $k$ 是 $\mathfrak p$ 进的, 注意 $\mathfrak o$ 既紧又开, $0<\mu(\mathfrak o)<\infty$, 因此只需比较 $\mathfrak o$ 与 $\alpha\mathfrak o$ 的大小. 对整的 $\alpha$, $\mathfrak o$ 中 $\alpha\mathfrak o$ 的陪集共有 $N(\alpha\mathfrak o)$ 个, 故 $\mu(\alpha\mathfrak o)=(N(\alpha\mathfrak o))^{-1}\mu(\mathfrak o)=\vert \alpha\vert \mu(\mathfrak o)$. 对非整的 $\alpha$, 用 $\alpha^{-1}$ 代替 $\alpha$ 即可.
 
@@ -199,7 +199,7 @@ $$
 
 
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **定理 2.2.2.** 若对函数 $f\in L\_1(k^+)$ 如下定义 Fourier 变换 $\widehat f$: 
 
@@ -218,7 +218,7 @@ $$
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 我们只需对一个非平凡函数建立反演公式, 因为由抽象 Fourier 分析我们知道它成立, 至多相差一个常数因子. 对实域 $k$, 可以取 $f(\xi)=e^{-\pi\vert \xi\vert ^2}$; 对复域 $k$, 取 $f(\xi)=e^{-2\pi\vert \xi\vert }$; 对 $\mathfrak p$ 进域 $k$, 例如取 $f(\xi)$ 为 $\mathfrak o$ 的特征函数. 计算细节请读者参看下文第 2.6 节.
 
@@ -232,13 +232,13 @@ $$
 
 若一个拟特征在 $u$ 上平凡, 我们称它为非分歧的, 先来确定非分歧的拟特征.
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 2.3.1.** 非分歧的拟特征就是形如 $c(\alpha)=\vert \alpha\vert ^s\equiv e^{s\log\vert \alpha\vert }$ 的映射, 其中 $s$ 是任意复数. 若 $\mathfrak p$ 是 Archimedean 的, $s$ 由 $c$ 唯一确定; 而对离散的 $\mathfrak p$, $s$ 只在模 $2\pi i/\log N\mathfrak p$ 的意义下由 $c$ 确定.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 对任意 $s$, $\vert \alpha\vert ^s$ 显然是非分歧的拟特征. 另一方面, 任何非分歧的拟特征只依赖于 $\vert \alpha\vert $, 而作为 $\vert \alpha\vert $ 的函数, 它是 $k$ 的值群的一个拟特征. 这个值群或者是一切正实数所成的乘法群, 或者是一切 $N\mathfrak p$ 的幂所成的乘法群, 依 $\mathfrak p$ 是 Archimedean 的还是离散的而定; 众所周知, 这些群的拟特征就是上面所述的那些.
 
@@ -246,13 +246,13 @@ $$
 
 若 $\mathfrak p$ 是 Archimedean 的, 我们可以把一般元素 $\alpha\in k^\ast $ 唯一地写成 $\alpha=\tilde\alpha\rho$, 其中 $\tilde\alpha\in u$, $\rho>0$. 对离散的 $\mathfrak p$, 我们必须选取一个阶数为 $1$ 的固定元素 $\pi$, 才能同样唯一地写 $\alpha=\tilde\alpha\rho$, 其中 $\tilde\alpha\in u$, 而这一次 $\rho$ 是 $\pi$ 的一个幂. 两种情形下, 映射 $\alpha\to\tilde\alpha$ 都是 $k^\ast $ 到 $u$ 上的连续同态, 且在 $u$ 上是恒等映射.
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **定理 2.3.1.** $k^\ast $ 的拟特征就是形如 $\alpha\to c(\alpha)=\tilde c(\tilde\alpha)\vert \alpha\vert ^s$ 的映射, 其中 $\tilde c$ 是 $u$ 的任意特征. $\tilde c$ 由 $c$ 唯一确定. $s$ 按前一个引理的方式确定.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 形如所给类型的映射显然是拟特征. 反之, 若 $c$ 是给定的拟特征, 我们定义 $\tilde c$ 为 $c$ 在 $u$ 上的限制, 则 $\tilde c$ 是 $u$ 的拟特征, 因此由于 $u$ 紧, 它是 $u$ 的特征. 而 $\alpha\to c(\alpha)/\tilde c(\tilde\alpha)$ 是非分歧的拟特征, 故按前一个引理它具有 $\vert \alpha\vert ^s$ 的形式.
 
@@ -282,7 +282,7 @@ $$
 
  显然, 对应关系 $g(\alpha)\leftrightarrow g(\xi)\vert \xi\vert ^{-1}$ 是 $L(k^\ast )$ 与 $L(k^+-0)$ 之间的一一对应. 把 $L\_1(k^\ast )$ 与 $L\_1(k^+-0)$ 中的函数看作这些基本函数的极限, 我们得到:
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 2.3.2.** $g(\alpha)\in L\_1(k^\ast ) \Leftrightarrow g(\xi)\vert \xi\vert ^{-1}\in L\_1(k^+-0)$, 并且对这些函数有 
 
@@ -310,7 +310,7 @@ $$
 
 
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 2.3.3.** 若 $\mathfrak p$ 是离散的, 则 
 
@@ -322,7 +322,7 @@ $$
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 
 
@@ -353,7 +353,7 @@ $f(\xi)$ 与 $\widehat f(\xi)$ 连续, 属于 $L\_1(k^+)$, 即 $f(\xi)\in\mathfr
 
 所谓 $k$ 的 $\zeta$ 函数, 就是函数 $f\in\mathfrak z$ 的某种可称之为乘法拟 Fourier 变换的东西. 我们确切的意思陈述在
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **定义 2.4.1.** 对每个 $f\in\mathfrak z$, 我们引进一个与拟特征 $c$ 相联系的函数 $\zeta(f,c)$, 它对一切指数大于 $0$ 的拟特征定义, 由 
 
@@ -367,13 +367,13 @@ $$
 
 若两个拟特征的商是非分歧拟特征, 就称它们等价. 按引理 2.3.1, 一个拟特征的等价类由一切形如 $c(\alpha)=c\_0(\alpha)\vert \alpha\vert ^s$ 的拟特征组成, 其中 $c\_0(\alpha)$ 是该类的一个固定代表, $s$ 是复变量. 显然, 通过引进复参数 $s$, 我们可以把一个拟特征的等价类看成一个 Riemann 曲面. 若 $\mathfrak p$ 是 Archimedean 的, $s$ 由 $c$ 唯一确定, 这个曲面将同构于复平面. 若 $\mathfrak p$ 是离散的, $s$ 只在模 $2\pi i/\log N\mathfrak p$ 的意义下确定, 于是这个曲面同构于一个复平面, 其中相差 $2\pi i/\log N\mathfrak p$ 的整数倍的点被等同起来, 这正是真正定义单周期函数的那种曲面. 把全部拟特征的整体看成一族 Riemann 曲面, 当我们谈论拟特征的函数在某点或某区域处的正则性, 或谈论奇点时, 意思就清楚了. 我们也可以考虑这种函数的解析延拓问题, 当然这必须在每个曲面 (拟特征的等价类) 上分别进行.
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 2.4.1.** $\zeta$ 函数在“一切指数大于 $0$ 的拟特征”这个域中是正则的.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 我们必须证明, 对每个指数 $>0$ 的 $c$, 积分 $\int f(\alpha)c(\alpha)\vert \alpha\vert ^s \mathrm{d}\alpha$ 在 $s$ 接近 $0$ 时表示 $s$ 的一个正则函数. 利用该积分在 $s$ 接近 $0$ 时绝对收敛这一事实作估计, 证明这个函数在 $s$ 接近 $0$ 时有导数就是例行公事. 事实上, 这个导数可以通过“在积分号下求导”算出来.
 
@@ -381,7 +381,7 @@ $$
 
 我们的目的是证明, 借助一条简单的函数方程, $\zeta$ 函数可以单值亚纯地解析延拓到全部拟特征的域上. 我们从下面出发:
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 2.4.2.** 设 $c$ 位于 $0<$ $c$ 的指数 $<1$ 的域中, 且 $\widehat c(\alpha)=\vert \alpha\vert c^{-1}(\alpha)$, 则对任意两个函数 $f,g\in\mathfrak z$ 有 
 
@@ -393,7 +393,7 @@ $$
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 在我们所考虑的区域内, $\zeta(f,c)\zeta(\widehat g,\widehat c)=\int f(\alpha)c(\alpha)\,\mathrm{d}\alpha\cdot\int \widehat g(\beta)c^{-1}(\beta)\vert \beta\vert \,\mathrm{d}\beta$, 两个积分都绝对收敛. 我们可以把它写成 $k^\ast $ 与自身直积 $k^\ast \times k^\ast $ 上的一个绝对收敛的“二重积分”: 
 
@@ -438,7 +438,7 @@ $$
 
 现在可以宣布局部理论的主要定理了.
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **定理 2.4.1.** $\zeta$ 函数可以解析延拓到全部拟特征的域上, 并由一条如下类型的函数方程给出: 
 
@@ -450,7 +450,7 @@ $$
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 在下一节中, 我们将对拟特征的每个等价类 $C$ 具体给出一个函数 $f\_C\in\mathfrak z$, 使得函数 
 
@@ -478,7 +478,7 @@ $$
 
 在进入下一节的计算 (这些计算将为整个理论奠定坚实基础) 之前, 我们还可以证明函数方程中因子 $\rho(c)$ 的一些简单性质, 它们直接由函数方程本身推出.
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 2.4.3.**
 
@@ -488,7 +488,7 @@ $$
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.**
 
@@ -513,13 +513,13 @@ $$
 
 </div>
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **推论 2.4.1.** 对指数为 $\tfrac12$ 的 $c$ 有 $\vert \rho(c)\vert =1$.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** (指数 $c=\tfrac12 \Rightarrow c(\alpha)\bar c(\alpha)=\vert c(\alpha)\vert ^2=\vert \alpha\vert =c(\alpha)\widehat c(\alpha)\Rightarrow \bar c(\alpha)=\widehat c(\alpha)$.) 把前一个引理中 $\rho(\bar c)$ 与 $\rho(\widehat c)$ 的两个表达式等同起来, 即得 $\rho(c)\overline{\rho(c)}=1$.
 
@@ -787,7 +787,7 @@ $$
 
 
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 
 
@@ -852,7 +852,7 @@ $$
 
 
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 情形 1. $v\ge -d$. 这时 $A\_v\subset\mathfrak d^{-1}$, 故在 $A\_v$ 上 $e^{2\pi i\Lambda(\alpha)}=1$, 积分为 
 
@@ -966,13 +966,13 @@ $$
 H\_{\mathfrak p}$ 的元素 $a\in G$ 构成 $G$ 的一个子群, 我们记作 $G\_S$. $G\_S$ 自然地同构于局部紧群的直积 $\prod\_{\mathfrak p\in S}G\_{\mathfrak p}\times
 \prod\_{\mathfrak p\notin S}H\_{\mathfrak p}$, 其中几乎所有的群都紧, 因此它按 乘积拓扑是局部紧群. 我们在 $G$ 中如下定义拓扑: 取 $G\_S$ 中 $1$ 的邻域组作为 $G$ 中 $1$ 的基本邻域组. 由此得到的 $G$ 中的拓扑不依赖于我们所选取的指标集 $S$. 这可由以下事实看出:
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 3.1.1.** 一切形如 $N=\prod\_{\mathfrak p}N\_{\mathfrak p}$ 的“平行体”的全体构成 $G$ 中 $1$ 的基本邻域组, 其中对一切 $\mathfrak p$, $N\_{\mathfrak p}$ 是 $G\_{\mathfrak p}$ 中 $1$ 的邻域, 并且对几乎所有 $\mathfrak p$, $N\_{\mathfrak p}=H\_{\mathfrak p}$ (回忆一下, 按假设 $H\_{\mathfrak p}$ 是开的).
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 按乘积拓扑的定义, $G\_S$ 中 $1$ 的邻域含有所述类型的平行体. 另一方面, 因为对 几乎所有 $\mathfrak p$ 有 $N\_{\mathfrak p}=H\_{\mathfrak p}$, 交集 
 
@@ -988,7 +988,7 @@ $$
 
 显然 $G\_S$ 在 $G$ 中是开的, 且作为 $G$ 的子空间在 $G\_S$ 上诱导的拓扑, 与起初 我们在 $G\_S$ 上赋予的乘积拓扑相同. 因此 $G\_S$ 中 $1$ 的紧邻域也是 $G$ 中 $1$ 的紧邻域. 由此可见 $G$ 是局部紧的.
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **定义 3.1.1.** 我们称 $G$ (作为一个局部紧交换群) 为诸群 $G\_{\mathfrak p}$ 相对于诸子群 $H\_{\mathfrak p}$ 的受限直积.
 
@@ -1002,13 +1002,13 @@ $$
 
 我们以下面的引理结束关于受限直积的引言:
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 3.1.2.** 子集 $C\subset G$ 相对紧 (即其闭包紧), 当且仅当它含于一个形如 $\prod\_{\mathfrak p}B\_{\mathfrak p}$ 的平行体中, 其中对一切 $\mathfrak p$, $B\_{\mathfrak p}$ 是 $G\_{\mathfrak p}$ 的紧子集, 并且对几乎所有 $\mathfrak p$, $B\_{\mathfrak p}=H\_{\mathfrak p}$.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** $G$ 的任一紧子集含于某个 $G\_S$ 中, 因为诸 $G\_S$ 是覆盖 $G$ 的开集族, 而有限 多个子群 $G\_S$ 的并仍是 $G\_S$. $G\_S$ 的任一紧子集含于所述类型的平行体中, 因为它含于它在各分量群 $G\_{\mathfrak p}$ 上的“投影”的笛卡儿积中. 这些投影 是紧的, 因为它们是连续像; 并且当 $\mathfrak p\notin S$ 时它们含于 $H\_{\mathfrak p}$ 中.
 
@@ -1021,7 +1021,7 @@ $$
 设 $c(a)$ 是 $G$ 的一个拟特征, 即 $G$ 到复数中的一个连续乘法映射. 用 $c\_{\mathfrak p}$ 表示 $c$ 在 $G\_{\mathfrak p}$ 上的限制, 即对 $a\_{\mathfrak p}\in G\_{\mathfrak p}$ 有 $c\_{\mathfrak p}(a\_{\mathfrak p})
 = c(a\_{\mathfrak p}) = c(1,1,\ldots,a\_{\mathfrak p},\ldots)$. 显然 $c\_{\mathfrak p}$ 是 $G\_{\mathfrak p}$ 的拟特征.
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 3.2.1.** 对几乎所有 $\mathfrak p$, $c\_{\mathfrak p}$ 在 $H\_{\mathfrak p}$ 上平凡; 并且对任意 $a\in G$ 有 
 
@@ -1033,7 +1033,7 @@ $$
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 设 $U$ 是复数中 $1$ 的一个邻域, 除 $\{1\}$ 之外不含任何乘法子群. 设 $N=\prod\_{\mathfrak p}N\_{\mathfrak p}$ 是 $G$ 中 $1$ 的一个邻域, 使得 $c(N)\subset U$. 选取 $S$ 包含一切使 $N\_{\mathfrak p}\ne H\_{\mathfrak p}$ 的 $\mathfrak p$. 那么 $G^S\subset N\Rightarrow c(G^S)\subset U\Rightarrow
 c(G^S)=1\Rightarrow$ 对 $\mathfrak p\notin S$ 有 $c(H\_{\mathfrak p})=1$. 若 $a$ 是 $G$ 的一个固定元素, 我们对 $S$ 再加一个条件: $a\in G\_S$, 并写 $a=\prod\_{\mathfrak p\in S}a\_{\mathfrak p}\cdot a^S$, 其中 $a^S\in G^S$. 于是 
@@ -1048,14 +1048,14 @@ $$
 
 </div>
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 3.2.2.** 设对每个 $\mathfrak p$ 给定 $G\_{\mathfrak p}$ 的一个拟特征 $c\_{\mathfrak p}$, 且对几乎所有 $\mathfrak p$, $c\_{\mathfrak p}$ 在 $H\_{\mathfrak p}$ 上平凡. 那么若定义 $c(a)=\prod\_{\mathfrak p}
 c\_{\mathfrak p}(a\_{\mathfrak p})$, 我们就得到 $G$ 的一个拟特征.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 显然 $c(a)$ 是乘性的. 为看出它连续, 选取 $S$ 包含一切使 $c\_{\mathfrak p}(H\_{\mathfrak p})\ne 1$ 的 $\mathfrak p$. 设 $s$ 是 $S$ 中 $\mathfrak p$ 的个数. 给定复数中 $1$ 的一个邻域 $U$, 选取邻域 $V$ 使 $V^s\subset U$. 对 $\mathfrak p\in S$, 设 $N\_{\mathfrak p}$ 是 $G\_{\mathfrak p}$ 中 $1$ 的邻域, 使 $c\_{\mathfrak p}(N\_{\mathfrak p})\subset V$; 对 $\mathfrak p\notin S$, 令 $N\_{\mathfrak p}=H\_{\mathfrak p}$. 那么 
 
@@ -1074,13 +1074,13 @@ H\_{\mathfrak p}^\ast $ 开, 而 $H\_{\mathfrak p}$ 开 $\Rightarrow
 G\_{\mathfrak p}/H\_{\mathfrak p}$ 离散 $\Rightarrow
 \widehat{G\_{\mathfrak p}/H\_{\mathfrak p}}\cong H\_{\mathfrak p}^\ast $ 紧.
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **定理 3.2.1.** 诸群 $\widehat G\_{\mathfrak p}$ 相对于诸子群 $H\_{\mathfrak p}^\ast $ 的受限直积, 自然地与 $G$ 的特征群 $\widehat G$ 同构, 无论在拓扑上还是在代数上都是如此.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 当然, 我们的意思是指把 $c=(\ldots,c\_{\mathfrak p},\ldots)$ 与特征 $c(a)=\prod\_{\mathfrak p}c\_{\mathfrak p}(a\_{\mathfrak p})$ 等同起来. 把前面 两个引理用于特征, 表明这是两个群之间的代数同构. 我们只需检验拓扑相同. 为此 我们如下推理: $c=(\ldots,c\_{\mathfrak p},\ldots)$ 作为特征接近 $1$ $\Leftrightarrow$ 对某个大的紧集 $B\subset G$, $c(B)$ 接近 $1$ $\Leftrightarrow$ 当 $B\_{\mathfrak p}\subset G\_{\mathfrak p}$ 紧且对几乎所有 $\mathfrak p$ 有 $B\_{\mathfrak p}=H\_{\mathfrak p}$ 时, $c\left(\prod\_{\mathfrak p}B\_{\mathfrak p}\right)$ 接近 $1$ $\Leftrightarrow$ 凡是 $B\_{\mathfrak p}\ne H\_{\mathfrak p}$ 之处 $c\_{\mathfrak p}(B\_{\mathfrak p})$ 接近 $1$, 而在其余 $\mathfrak p$ 处 $c\_{\mathfrak p}(B\_{\mathfrak p})=c\_{\mathfrak p}(H\_{\mathfrak p})=1$ (因为 $H\_{\mathfrak p}$ 是子群, 只有当 $c\_{\mathfrak p}(H\_{\mathfrak p})=1$ 时 $c\_{\mathfrak p}(H\_{\mathfrak p})$ 才可能接近 $1$) $\Leftrightarrow$ 对有限 多个 $\mathfrak p$, $c\_{\mathfrak p}$ 在 $\widehat G\_{\mathfrak p}$ 中接近 $1$, 而在其余 $\mathfrak p$ 处 $c\_{\mathfrak p}\in H\_{\mathfrak p}^\ast $ $\Leftrightarrow$ $c$ 在诸 $\widehat G\_{\mathfrak p}$ 的受限直积中接近 $1$.
 
@@ -1104,7 +1104,7 @@ $$
 
 若 $\varphi(S)$ 是有限指标集 $S$ 的任一函数, 取值于一个拓扑空间, 则我们用 记号 $\lim\_S\varphi(S)=\varphi\_0$ 表示如下陈述: 给定 $\varphi\_0$ 的任一邻域 $V$, 存在集合 $S(V)$ 使得 $S\supset S(V)\Rightarrow \varphi(S)\in V$. 直观地说, $\lim\_S\varphi(S)$ 就是当 $S$ 变得越来越大时 $\varphi(S)$ 的极限.
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 3.3.1.** 若 $f(a)$ 是 $G$ 上的函数, 则 
 
@@ -1116,13 +1116,13 @@ $$
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 无论情形 (1) 还是 (2), $\int f(a)\,\mathrm{d}a$ 都是 $\int\_B f(a)\,\mathrm{d}a$ 当紧集 $B\subset G$ 越来越大时的极限. 由于任一紧集 $B$ 含于某个 $G\_S$ 中, 命题得证.
 
 </div>
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 3.3.2.** 设对每个 $\mathfrak p$ 给定连续函数 $f\_{\mathfrak p}\in L\_1(G\_{\mathfrak p})$, 使得对几乎所有 $\mathfrak p$ 在 $H\_{\mathfrak p}$ 上 $f\_{\mathfrak p}(a\_{\mathfrak p})=1$. 在 $G$ 上定义函数 $f(a)=\prod\_{\mathfrak p}f\_{\mathfrak p}(a\_{\mathfrak p})$ (这实际上是有限 乘积), 我们断言:
 
@@ -1139,7 +1139,7 @@ $$
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** (1) 任一 $G\_S$ 上 $f(a)$ 显然连续, 从而在 $G$ 上连续.
 
@@ -1162,7 +1162,7 @@ $$
 
 </div>
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **定理 3.3.1.** 若 $f\_{\mathfrak p}(a\_{\mathfrak p})$ 与 $f(a)$ 是前一个引理中的函数, 并且 还有 
 
@@ -1184,7 +1184,7 @@ $$
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 把前一个引理与再前一个引理合起来用; 先对函数 $\vert f(a)\vert =\prod\_{\mathfrak p}\vert f\_{\mathfrak p}(a\_{\mathfrak p})\vert $ 用, 看出 $f(a)\in L\_1(G)$; 再对 $f(a)$ 本身用, 算出 $\int f(a)\,\mathrm{d}a$.
 
@@ -1201,26 +1201,26 @@ $$
 
  因此对几乎所有 $\mathfrak p$ 有 $\int\_{H\_{\mathfrak p}^\ast }\mathrm{d}c\_{\mathfrak p}=1$, 于是可令 $\mathrm{d}c=\prod\_{\mathfrak p}\mathrm{d}c\_{\mathfrak p}$.
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 3.3.3.** 若对一切 $\mathfrak p$ 有 $f\_{\mathfrak p}(a\_{\mathfrak p})\in\mathfrak B\_1(G\_{\mathfrak p})$, 且对 几乎所有 $\mathfrak p$, $f\_{\mathfrak p}(a\_{\mathfrak p})$ 是 $H\_{\mathfrak p}$ 的特征函数, 则函数 $f(a)=\prod\_{\mathfrak p}f\_{\mathfrak p}(a\_{\mathfrak p})$ 的 Fourier 变换 为 $\widehat f(c)=\prod\_{\mathfrak p}\widehat f\_{\mathfrak p}(c\_{\mathfrak p})$, 并且 $f(a)\in\mathfrak B\_1(G)$.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 对函数 $f(a)\overline{c(a)}=\prod\_{\mathfrak p}
 f\_{\mathfrak p}(a\_{\mathfrak p})\overline{c\_{\mathfrak p}(a\_{\mathfrak p})}$ 应用定理 3.3.1, 可知乘积的 Fourier 变换是 Fourier 变换的乘积. 由于 $f\_{\mathfrak p}(a\_{\mathfrak p})\in\mathfrak B\_1(G\_{\mathfrak p})$, 对一切 $\mathfrak p$ 有 $\widehat f\_{\mathfrak p}(c\_{\mathfrak p})\in L\_1(\widehat G\_{\mathfrak p})$. 对 几乎所有 $\mathfrak p$, 按上面的说明 $\widehat f\_{\mathfrak p}(c\_{\mathfrak p})$ 是 $H\_{\mathfrak p}^\ast $ 的特征函数. 由此看出 $\widehat f(c)\in L\_1(\widehat G)$, 从而 $f(a)\in\mathfrak B\_1(G)$.
 
 </div>
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **推论 3.3.1.** 测度 $\mathrm{d}c=\prod\_{\mathfrak p}\mathrm{d}c\_{\mathfrak p}$ 与 $\mathrm{d}a=\prod\_{\mathfrak p}\mathrm{d}a\_{\mathfrak p}$ 对偶.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 把前一个引理应用于群 $\widehat G$ 与测度 $\mathrm{d}c$, 我们对这些“乘积”函数得到 反演公式 
 
@@ -1238,7 +1238,7 @@ $$
 
 本章中, $k$ 表示一个有限代数数域, $\mathfrak p$ 表示 $k$ 的一般素除子. 今后 $k$ 在素除子 $\mathfrak p$ 处的完备化记作 $k\_{\mathfrak p}$, 而第 2 章中为局部域 $k\_{\mathfrak p}$ 定义的一切符号 $\mathfrak o$, $\Lambda$, $\mathfrak d$, $\vert \,\vert $, $c$ 等等, 也都在下标上标明 $\mathfrak p$, 即 $\mathfrak o\_{\mathfrak p}$, $\Lambda\_{\mathfrak p}$, $\mathfrak d\_{\mathfrak p}$, $\vert \,\vert \_{\mathfrak p}$, $c\_{\mathfrak p}$, 等等.
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **定义 4.1.1.** $k$ 的赋值向量加法群 $V$ 是一切素除子 $\mathfrak p$ 上诸群 $k\_{\mathfrak p}^+$ 相对于诸子群 $\mathfrak o\_{\mathfrak p}$ 的受限直和.
 
@@ -1268,7 +1268,7 @@ $$
 
  以便能简洁地断言:
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **定理 4.1.1.** 若把元素 $\eta\in V$ 与 $V$ 的特征 $\mathfrak{x}\to e^{2\pi i\Lambda(\eta\mathfrak{x})}$ 等同起来, 则 $V$ 自然地就是它自己的特征群.
 
@@ -1276,7 +1276,7 @@ $$
 
 当然, 我们在 $V$ 上取第 3.3 节中所述的测度 $d\mathfrak{x}=\prod\_{\mathfrak p}d\mathfrak{x}\_{\mathfrak p}$, 其中 $d\mathfrak{x}\_{\mathfrak p}$ 是第 2.2 节中定义的局部加法测度. 由于这些局部测度 $d\mathfrak{x}\_{\mathfrak p}$ 的选取使它们各自对偶于自身, 按推论 3.3.1, $d\mathfrak{x}$ 也一样. 我们把这一事实正式陈述为
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **定理 4.1.2.** 若对函数 $f(\mathfrak{x})\in L\_1(V)$ 如下定义 Fourier 变换 
 
@@ -1296,7 +1296,7 @@ $$
 
 局部引理 2.2.4 与 2.2.5, 即对 $\alpha\in k^\ast $ 的陈述 $d(\alpha\xi)=\vert \alpha\vert \,d\xi$, 在大范围中的类比是什么? 在那个局部考虑中, $\alpha$ 起着 $k\_{\mathfrak p}^+$ 的自同构的作用, 即自同构 $\xi\to\alpha\xi$. 这就引导我们去考察如下问题: 对什么样的 $a\in V$, $x\to ax$ 是 $V$ 的自同构? 我们首先注意到, 对任意 $a\in V$, $x\to ax$ 是 $V$ 到 $V$ 的连续同态. 它成为自同构的必要条件是存在 $b\in V$ 使 $ab=1=(1,1,\ldots)$. 但这个条件也是充分的, 因为有了这个 $b$, 我们就得到同一形式的逆映射 $x\to bx$. 现在要让这样的 $b$ 作为一个“无限制的”向量存在, 就需要对一切 $\mathfrak p$ 有 $a\_{\mathfrak p}\ne 0$, 于是 $b\_{\mathfrak p}=a\_{\mathfrak p}^{-1}$. 进一步的条件 $b\in V$ 意味着对几乎所有 $\mathfrak p$ 有 $a\_{\mathfrak p}^{-1}\in\mathfrak o\_{\mathfrak p}$, 从而对几乎所有 $\mathfrak p$ 有 $\vert a\_{\mathfrak p}\vert \_{\mathfrak p}=1$. 这两个条件合起来正好说明 $a$ 是 Chevalley 意义下的伊代尔. 我们已证得
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 4.1.1.** 映射 $x\to ax$ 是 $V$ 的自同构, 当且仅当 $a$ 是伊代尔.
 
@@ -1306,7 +1306,7 @@ $$
 
 为回答关于这些自同构下测度变换的原始问题, 我们陈述
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 4.1.2.** 对伊代尔 $a$, 
 
@@ -1324,7 +1324,7 @@ $$
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 若 $N=\prod\_{\mathfrak p}N\_{\mathfrak p}$ 是 $V$ 中 $0$ 的紧邻域, 则由定理 3.3.1 与引理 2.2.5 有 
 
@@ -1342,13 +1342,13 @@ $$
 
 我们在关于 $V$ 的初步讨论中必须做的最后一件, 也是最重要的一件事, 是看出域 $k$ 怎样嵌入 $V$. 我们把元素 $\xi\in k$ 与各分量都等于 $\xi$ 的赋值向量 $\xi=(\xi,\xi,\ldots,\xi,\ldots)$ 等同起来, 并把 $k$ 看作 $V$ 的子群. 它是怎样一种子群?
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 4.1.3.** 若 $S\_{\infty}$ 表示 $k$ 的 Archimedean 素点的集合, 则 (1) $k\cap V\_{S\_{\infty}}=\mathfrak o$, 即 $k$ 中代数整数所成的环; (2) $k+V\_{S\_{\infty}}=V$.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** (1) 这不过是说, 元素 $\xi\in k$ 是代数整数当且仅当它在一切有限素点处是整数.
 
@@ -1358,13 +1358,13 @@ $$
 
 现在用 $\overset{\infty}{V}$ 表示 $V$ 的“无穷部分”, 即 $k$ 的各 Archimedean 完备化的笛卡儿积 $\prod\_{\mathfrak p\in S\_{\infty}}k\_{\mathfrak p}$. 若 $k$ 在有理域上的一个生成方程有 $r\_1$ 个实根和 $r\_2$ 对共轭复根, 则 $\overset{\infty}{V}$ 是 $r\_1$ 条实直线与 $r\_2$ 个复平面的乘积. 作为这样的东西, 它自然是实数域上的向量空间, 维数为 $n=r\_1+2r\_2$, 即 $k$ 的绝对次数. 对任意 $\mathfrak{x}\in V$, 用 $\overset{\infty}{\mathfrak{x}}$ 表示 $\mathfrak{x}$ 在 $\overset{\infty}{V}$ 上的投影 $\overset{\infty}{\mathfrak{x}}=(\ldots,\mathfrak{x}\_{\mathfrak p},\ldots)\_{\mathfrak p\in S\_{\infty}}$.
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 4.1.4.** 若 $\{\omega\_1,\omega\_2,\ldots,\omega\_n\}$ 是 $k$ 的整数环 $\mathfrak o$ 在有理整数环上的极小基, 则 $\{\overset{\infty}{\omega}\_1,\overset{\infty}{\omega}\_2,\ldots, \overset{\infty}{\omega}\_n\}$ 是向量空间 $\overset{\infty}{V}$ 在实数域上的基. 由这一基张成的平行体 $\overset{\infty}{D}$ (即满足 $0\le x\_v<1$ 的一切 $\overset{\infty}{\mathfrak{x}}\equiv\sum\_{v=1}^{n} x\_v\overset{\infty}{\omega}\_v$ 所成的集合) 在我们这套设置中自然的测度 $d\overset{\infty}{\mathfrak{x}}=\prod\_{\mathfrak p\in S\_{\infty}} d\mathfrak{x}\_{\mathfrak p}$ 之下具有体积 $\sqrt{\vert d\vert }$, 其中 $d=(\det(\omega\_i^{(j)}))^2$ 是 $k$ 的绝对判别式.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** $k$ 到 $\overset{\infty}{V}$ 的投影 $\xi\to\overset{\infty}{\xi}$ 正是经典地把数域嵌入 $n$ 维空间的办法. 读者会记得经典的论证, 它这样说: 
 
@@ -1378,13 +1378,13 @@ $$
 
 </div>
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **定义 4.1.2.** 加法基本域 $D\subset V$ 是一切满足 $\mathfrak{x}\in V\_{S\_{\infty}}$ 且 $\overset{\infty}{\mathfrak{x}}\in\overset{\infty}{D}$ 的 $\mathfrak{x}$ 所成的集合.
 
 </div>
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **定理 4.1.3.**
 
@@ -1394,7 +1394,7 @@ $$
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** (1) 从任意 $\mathfrak{x}\in V$ 出发, 通过加上一个模 $\mathfrak o$ 唯一的域元素 (引理 4.1.3), 我们可以把它变到 $V\_{S\_{\infty}}$ 中. 一旦进了 $V\_{S\_{\infty}}$, 我们可以找到一个唯一的 $\mathfrak o$ 中元素, 加上它之后仍然留在 $V\_{S\_{\infty}}$ 中, 并把各无穷分量调整到落在 $\overset{\infty}{D}$ 内 (引理 4.1.4).
 
@@ -1414,25 +1414,25 @@ $$
 
 </div>
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **推论 4.1.1.** $k$ 是 $V$ 的离散子群. 商群 $V\ \mathrm{mod}\ k$ 紧.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** $k$ 是离散的, 因为 $D$ 有内点. $V\ \mathrm{mod}\ k$ 是紧的, 因为 $D$ 相对紧.
 
 </div>
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 4.1.5.** 对一切 $\xi\in k$ 有 $\Lambda(\xi)=0$.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 
 
@@ -1456,14 +1456,14 @@ $$
 
 </div>
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **定理 4.1.4.** $k^\ast  = k$, 即对一切 $\xi$ 有 $\Lambda(\mathfrak{x}\xi)=0\Leftrightarrow \mathfrak{x}\in k$.
  (注: 此处 $k^\ast $ 是 $k$ 的对偶, 不是 $k$ 的乘法群 (!).)
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 由于 $k^\ast $ 是紧商群 $V\ \mathrm{mod}\ k$ 的特征群, $k^\ast $ 离散. 按前一个引理, $k^\ast $ 包含 $k$, 因此我们可以考虑商群 $k^\ast \ \mathrm{mod}\ k$. 作为紧群 $V\ \mathrm{mod}\ k$ 的离散子群, $k^\ast \ \mathrm{mod}\ k$ 是有限群. 但先验地显然 $k^\ast $ 是 $k$ 上的向量空间, 而 $k$ 不是有限域, 故指数 $(k^\ast :k)$ 不可能有限, 除非它等于 $1$.
 
@@ -1473,7 +1473,7 @@ $$
 
 若对一切 $\xi\in k$ 有 $\varphi(\mathfrak{x}+\xi)=\varphi(\mathfrak{x})$, 就称函数 $\varphi(\mathfrak{x})$ 是周期的. 周期函数以自然的方式表示紧商群 $V\ \mathrm{mod}\ k$ 上的一切函数. $\varphi(\mathfrak{x})$ 表示 $V\ \mathrm{mod}\ k$ 上的连续函数, 当且仅当它在 $V$ 上自身连续.
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 4.2.1.** 若 $\varphi(\mathfrak{x})$ 连续并且周期, 则 $\int\_D\varphi(\mathfrak{x})\,d\mathfrak{x}$ 等于:
 
@@ -1481,7 +1481,7 @@ $$
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 定义 $I(\varphi)=\int\_D\varphi(\mathfrak{x})\,d\mathfrak{x}$, 并把它看成 $L(V\ \mathrm{mod}\ k)$ 上的泛函. 注意它具有刻画 Haar 积分的那些性质. (要检验平移不变性, 只需把 $D$ 拆成它与自身若干平移的交集的不交并.) 该泛函已归一化为 $1$, 因为 $\int\_D d\mathfrak{x}=1$.
 
@@ -1495,7 +1495,7 @@ $$
 
 
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 4.2.2.** 若 $\varphi(\mathfrak{x})$ 连续并且周期, 且 $\sum\_{\xi\in k} \vert \widehat\varphi(\xi)\vert <\infty$, 则 
 
@@ -1507,19 +1507,19 @@ $$
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 假设 $\sum\_{\xi\in k}\vert \widehat\varphi(\xi)\vert <\infty$ 意味着 Fourier 变换 $\widehat\varphi(\xi)$ 在 $k$ 上可和, 这保证反演公式成立. 所断言的等式不过是把反演公式显式写出来.
 
 </div>
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 4.2.3.** 若 $f(\mathfrak{x})$ 连续, 属于 $L\_1(V)$, 并且 $\sum\_{\eta\in k}f(\mathfrak{x}+\eta)$ 对 $\mathfrak{x}\in D$ 一致收敛 (因为 $k$ 没有以任何方式排序, 这里的收敛指绝对收敛), 则由它们得到的连续周期函数 $\varphi(\mathfrak{x})=\sum\_{\eta\in k}f(\mathfrak{x}+\eta)$ 满足 $\widehat\varphi(\xi)=\widehat f(\xi)$.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 
 
@@ -1556,7 +1556,7 @@ $$
 
 把最后两个引理 4.2.2 与 4.2.3 结合起来, 并在引理 4.2.2 的断言中令 $\mathfrak{x}=0$, 我们得到
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 4.2.4.** (Poisson 公式.) 若 $f(\mathfrak{x})$ 满足条件:
 
@@ -1578,7 +1578,7 @@ $$
 
 若把 $f(\mathfrak{x})$ 换成 $f(a\mathfrak{x})$ ($a$ 为伊代尔), 我们得到一个可以看作 Riemann--Roch 定理在数论上的类比的定理.
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **定理 4.2.1.** (Riemann--Roch 定理.) 若 $f(\mathfrak{x})$ 满足条件:
 
@@ -1598,7 +1598,7 @@ $$
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 函数 $g(\mathfrak{x})=f(a\mathfrak{x})$ 满足前一个引理的条件, 因为 
 
@@ -1643,7 +1643,7 @@ $$
 
 本节中我们讨论伊代尔乘法群的基本特征.
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **定义 4.3.1.** 伊代尔的乘法群 $I$ 是诸群 $k\_{\mathfrak p}^\ast $ 相对于诸子群 $u\_{\mathfrak p}$ 的受限直积.
 
@@ -1657,13 +1657,13 @@ $$
 
 在把 $k$ 的乘法群 $k^\ast $ 嵌入伊代尔群之前, 我们对伊代尔群做不了任何真正有意义的事情, 嵌入的办法是把元素 $\alpha\in k^\ast $ 与伊代尔 $\alpha=(\alpha,\alpha,\ldots,\alpha,\ldots)$ 等同起来. 本节余下的讨论都围绕 $I$ 相对于子群 $k^\ast $ 的结构进行. 首先要注意到的事实是: 与伊代尔 $\alpha\in k^\ast $ 相联系的理想 $\varphi(\alpha)$ 就是 $\alpha$ 生成的主理想 $\alpha\mathfrak o$, 这是理所当然的. 其次我们有对元素 $\alpha\in k^\ast $ 的“乘积公式”. 虽然这是熟知的, 我们还是把它正式陈述为一条定理, 以便给出一个有趣的证明.
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **定理 4.3.1.** 对 $\alpha\in k^\ast $ 有 $\vert \alpha\vert \ \left(=\prod\_{\mathfrak p}\vert \alpha\vert \_{\mathfrak p}\right)=1$.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 按引理 4.1.2, $\alpha D$ 的 (加法) 测度是 $D$ 的测度的 $\vert \alpha\vert $ 倍. 由于 $\alpha k^+=k^+$, $\alpha D$ 与 $D$ 一样可以作为加法基本域. 由此直观上清楚 $\alpha D$ 与 $D$ 的测度相同, 从而 $\vert \alpha\vert =1$. 要作形式证明, 只需把 $D$ 与 $\alpha D$ 分别剖分成一些同余的片段, 其形状分别为 $D\cap(\xi+\alpha D)$ 与 $(-\xi+D)\cap\alpha D$, 其中 $\xi$ 取遍 $k$.
 
@@ -1694,7 +1694,7 @@ $$
 
  其中实数 $x\_v$ 唯一. 用 $P$ 表示由向量 $l(\varepsilon\_i)$ 在 $r$ 空间中张成的平行体, 即满足 $0\le x\_v<1$ 的一切向量 $\sum\_{v=1}^{r}x\_v l(\varepsilon\_v)$ 所成的集合. 用 $Q$ 表示 $r$ 空间中的“单位立方体”, 即满足 $0\le x\_{\mathfrak p}<1$ 的一切向量 $(\ldots,x\_{\mathfrak p},\ldots)\_{\mathfrak p\in S'\_{\infty}}$ 所成的集合.
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 4.3.1.** 
 
@@ -1713,7 +1713,7 @@ $$
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 因为 $l$ 是同态, 
 
@@ -1782,7 +1782,7 @@ $$
 
 </div>
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **定义 4.3.2.** 设 $h$ 是 $k$ 的类数, 并选取伊代尔 $b^{(1)},\ldots,b^{(h)}\in J$, 使对应的理想 $\varphi(b^{(1)}),\ldots,\varphi(b^{(h)})$ 代表不同的理想类. 设 $w$ 是 $k$ 中单位根的个数. 设 $E\_0$ 是一切满足 $0\le\arg b\_{\mathfrak p\_0}<\dfrac{2\pi}{w}$ 的 $b\in l^{-1}(P)$ (见前一个引理) 所成的子集. 我们定义 $J\ \mathrm{mod}\ k^\ast $ 的乘法基本域 $E$ 为 
 
@@ -1794,7 +1794,7 @@ $$
 
 </div>
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **定理 4.3.2.**
 
@@ -1804,7 +1804,7 @@ $$
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** (1) 从任意伊代尔 $b\in J$ 出发, 把它除以一个唯一确定的 $b^{(i)}$, 就可以把它变成一个表示主理想的伊代尔. 若这个主理想是 $\alpha\mathfrak o$ ($\alpha$ 模单位唯一确定), 则乘以 $\alpha^{-1}$ 就把我们带到表示理想 $\mathfrak o$ 的 $J$ 中伊代尔, 从而进入 $J\_{S\_{\infty}}$. 一旦进了 $J\_{S\_{\infty}}$, 我们可以找到基本单位 $\varepsilon\_i$ 的唯一的幂积, 把我们带到 $l^{-1}(P)$ 中, 此时手中只有一个单位根 $\zeta$. 这个 $\zeta$ 正是我们所需要的, 用来把 $\mathfrak p\_0$ 分量的辐角调整到区间 $\left(0,\frac{2\pi}{w}\right)$ 内. 于是我们就落在 $E\_0$ 中了! 对原来的伊代尔 $b$, 我们找到了唯一的 $\beta\in k^\ast $ 和唯一的 $b^{(i)}$, 使 $b\in\beta b^{(i)}E\_0$.
 
@@ -1819,13 +1819,13 @@ $$
 
 </div>
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **推论 4.3.1.** $k^\ast $ 是 $J$ (从而也是 $I$) 的离散子群. $J\ \mathrm{mod}\ k^\ast $ 紧.
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 容易看出 $E$ 在 $J$ 中有内点. 另一方面, $E$ 含于一个紧集之中.
 
@@ -1854,7 +1854,7 @@ $f(\mathfrak{x})$ 与 $\widehat f(\mathfrak{x})$ 连续, 属于 $L\_1(V)$, 即 $
 
 鉴于 $(\mathfrak z\_1)$ 与 $(\mathfrak z\_2)$, Riemann--Roch 定理对 $\mathfrak z$ 中的函数成立. $(\mathfrak z\_3)$ 的用处在于使我们能用它们定义 $\zeta$ 函数:
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **定义 4.4.1.** 对每个 $f\in\mathfrak z$, 我们引进一个与拟特征相联系的函数 $\zeta(f,c)$, 它对一切指数大于 $1$ 的拟特征 $c$ 定义, 由 
 
@@ -1868,7 +1868,7 @@ $$
 
 记住我们现在只考虑那些在 $k^\ast $ 上平凡的拟特征. 这些已在上一节末尾讨论过, 那里解释了“指数”这个概念. 若两个拟特征在 $J$ 上一致, 就称它们等价; 那么一个拟特征的等价类由一切形如 $c(a)=c\_0(a)\vert a\vert ^s$ 的拟特征组成, 其中 $c\_0(a)$ 是该类的一个固定代表, $s$ 是由 $c$ 唯一确定的复数. 用复变量 $s$ 作这样的参数化, 使我们能把拟特征的一个等价类看成一个 Riemann 曲面, 正如我们在局部理论中所做的那样 (参看第 2.4 节). 由 $\zeta$ 函数作为积分的定义显然可知, 它们在一切指数大于 $1$ 的拟特征的域中是正则的 (参看相应的局部引理). 至于解析延拓呢????
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **主要定理 4.4.1.** [(解析延拓与 $\zeta$ 函数的函数方程.)]{.upright}  通过解析延拓, 我们可以把任一 $\zeta$ 函数 $\zeta(f,c)$ 的定义扩充到全部拟特征的域上. 扩充后的函数单值而且正则, 除 $c(a)=1$ 与 $c(a)=\vert a\vert $ 两处之外; 在这两处它有单极点, 留数分别为 $-\kappa f(0)$ 与 $+\kappa\widehat f(0)$, 其中 $\kappa=2^{r\_1}(2\pi)^{r\_2}hR/(\sqrt{\vert d\vert }w)$ 是乘法基本域的体积. $\zeta(f,c)$ 满足函数方程 
 
@@ -1880,7 +1880,7 @@ $$
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 对指数大于 $1$ 的 $c$ 我们有 
 
@@ -1900,7 +1900,7 @@ $$
 
 </div>
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 A.** 对一切拟特征 $c$ 有 
 
@@ -1913,7 +1913,7 @@ $$
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 
 
@@ -1958,7 +1958,7 @@ $$
 
 把步骤倒过来就完成了证明.
 
-<div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-result qed-box" markdown="1">
 
 **引理 B.** 
 
@@ -1973,7 +1973,7 @@ $$
 
 </div>
 
-<div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
+<div class="tate-proof qed-box" markdown="1">
 
 **证明.** 
 
