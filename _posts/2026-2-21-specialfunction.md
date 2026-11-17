@@ -15,7 +15,7 @@ tags:
 
  $\Gamma$ 函数起源于阶乘的推广.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(Gamma函数)</b>
 
@@ -29,7 +29,7 @@ tags:
 
 以下定理说明 $\Gamma$ 是阶乘在某种意义下唯一好的延拓.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(波尔-莫勒鲁普定理)</b>
 
@@ -103,7 +103,7 @@ Beta函数
 
 # Zeta函数
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(Zeta函数)</b>
 

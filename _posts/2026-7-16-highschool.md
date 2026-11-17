@@ -11,7 +11,7 @@ tags:
 ---
 
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(Tarski高中代数,HSI-代数)</b>
 
@@ -34,7 +34,7 @@ tags:
 
 这十一条运算律均为高中代数中熟知的运算律, 因此得名, HSI是High School Identities的首字母缩写. HSI-代数显然是泛代数, 并且每个HSI-代数都可以看作一个一阶理论的模型.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(Tarski高中代数理论)</b>
 
@@ -57,7 +57,7 @@ tags:
 
 显然正整数连同其上通常运算构成HSI-代数, 于是是HSI的一个模型.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -90,7 +90,7 @@ $$
 
 Tarski问, HSI是否可以推出正整数中所有为真的公式, 该问题称为Tarski高中代数问题, 回答是否定的, Wilkie给出了一个反例.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -99,7 +99,7 @@ $$\begin{aligned} &((1+x)^y + (1+x+x^2)^y)^x \cdot ((1+x^3)^x + (1+x^2+x^4)^x)^y
 在正整数成立, 但存在 $\mathrm{HSI}$ 的模型 $M$ , 在 $M$ 中该恒等式不成立, 即 $\mathrm{HSI}$ 不能推出该恒等式. 注意该公式中的 $2,3,4$ 分别解释为 $1+1,1+1+1,1+1+1+1$ , 此处由结合律省略括号.
 </div>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 

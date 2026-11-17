@@ -11,7 +11,7 @@ tags:
 
 由高中时笔记修改而来.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(魏尔斯特拉斯函数)</b>
 
@@ -27,7 +27,7 @@ tags:
 
 魏尔斯特拉斯证明了该函数是良定的, 并且在实数轴上处处连续但处处不可导, 这种情况的证明比较容易.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(魏尔斯特拉斯)</b>
 
@@ -35,7 +35,7 @@ tags:
 
 </div>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
@@ -170,7 +170,7 @@ tags:
 
 哈代随后证明了, 只需要将条件放宽到 $ab\ge1$ , 其中 $a\in(0,1)$ ,  $b\in(1,+\infty)$ , 即可证明函数处处连续但处处不可导, 具体见[1].
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(哈代)</b>
 
@@ -196,7 +196,7 @@ $$
 
 说明了其图像的自相似性质. 沈维孝于2015年证明了魏尔斯特拉斯函数的豪斯多夫维数为 $2+\frac{\ln a}{\ln b}$ , 这可由以下定理推出[2].
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(沈维孝)</b>
 

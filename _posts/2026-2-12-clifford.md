@@ -12,7 +12,7 @@ tags:
 
 # 定义
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(二次型)</b>
 
@@ -28,7 +28,7 @@ tags:
 
 条件中等价于说 $B(x,y)=q(x+y)-q(x)-q(y)$ 是一个 $R$ -对称双线性型, 事实上, 如果 $R$ 的特征不为 $2$ 时, 所有的二次型与所有的对称双线性型一一对应, 反向的对应由 $q(x)=\frac{1}{2}B(x,x)$ 给出.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(二次空间)</b>
 
@@ -36,7 +36,7 @@ tags:
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(克利福德代数)</b>
 
@@ -60,7 +60,7 @@ $$
 
 若设自然的嵌入映射 $i\colon M\to T(M)$ 和商映射 $\pi\colon T(M)\to \mathrm{Cl}(M,q)$ , 则 $j=\pi\circ i$ 即为定义中的 $j$ . 如果 $R$ 是域, 则 $j$ 是单射, 此时将 $x$ 和 $j(x)$ 看做相同, 并且有$\dim\mathrm{Cl}(M,q)=2^{\dim M}$ .
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>例</b>
 
@@ -96,7 +96,7 @@ $$
 
 以下均设 $R=\mathbb{R}$ 为实数域,  $V$ 是实向量空间.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>例</b>
 
@@ -106,7 +106,7 @@ $$
 
 通常的复数也叫圆复数.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>例</b>
 
@@ -124,7 +124,7 @@ $$
 
 如果 $r=0$ , 则简记为 $\mathrm{Cl}_{p,q}(\mathbb{R})$ , 而符号 $\mathrm{Cl}_{n}(\mathbb{R})$ 通常指代 $\mathrm{Cl}_{n,0}(\mathbb{R})$ 或 $\mathrm{Cl}_{0,n}(\mathbb{R})$ , 我们不使用这种可能引起混淆的符号. 按照这种记号, 则 $\mathrm{Cl}_{0,1}(\mathbb{R})$ 即为复数集,  $\mathrm{Cl}_{1,0}(\mathbb{R})$ 为双曲复数.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>例</b>
 
@@ -132,7 +132,7 @@ $$
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -140,7 +140,7 @@ $$
 
 </div>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
@@ -168,7 +168,7 @@ $$
 
 从克利福德代数的角度来看, 二维实克利福德代数一定是一维空间 $V=\mathbb{R}$ 的克利福德代数, 即 $\mathrm{Cl}_{p,q,r}(\mathbb{R})$ , 其中 $p+q+r=1$ , 所以可能只有三种情况,  $\mathrm{Cl}_{1,0,0}(\mathbb{R})$ ,  $\mathrm{Cl}_{0,1,0}(\mathbb{R})$ 和 $\mathrm{Cl}_{0,0,1}(\mathbb{R})$ .
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>例</b>
 
@@ -176,7 +176,7 @@ $$
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(弗罗贝尼乌斯定理)</b>
 
@@ -186,7 +186,7 @@ $$
 
 该定理的证明比较复杂且深刻, 顺带一提, 若放弃结合性, 有如下定理.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(胡尔维兹定理)</b>
 
@@ -196,7 +196,7 @@ $$
 
 若放弃有限维的条件, 则需要添加其他更强的条件.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(Gelfand-Mazur 定理)</b>
 
@@ -206,7 +206,7 @@ $$
 
 克利福德代数有以下关系. 我们使用 $M_n(\mathbb{R})$ 表示元素均为实数的 $n$ 阶方阵代数.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -226,7 +226,7 @@ $$
 
 由以上递推公式可以推出实克利福德代数的结构, 它只与 $p-q$ 有关.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -264,7 +264,7 @@ $$
 
 的形状, 我们记 $\mathrm{Cl}_n(\mathbb{C})=\mathrm{Cl}(\mathbb{C},q)$ .
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 

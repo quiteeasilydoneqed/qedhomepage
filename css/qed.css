@@ -1128,8 +1128,8 @@ hr {
     text-align: center;
 }
 
-/* 作者用内联黑框包起来的定义/定理：保留语义，改成纸色细框 */
-.post-container div[style*="border"] {
+/* 定理/定义/证明方框: 用样式类, 不再依赖内联兜底框 */
+.post-container div.qed-box {
     margin: 1em 0 !important;
     padding: 22px 26px !important;
     border: 1px solid #ddd5c4 !important;
@@ -1140,8 +1140,8 @@ hr {
     box-shadow: none;
 }
 
-.post-container div[style*="border"] > b:first-child,
-.post-container div[style*="border"] > strong:first-child {
+.post-container div.qed-box > b:first-child,
+.post-container div.qed-box > strong:first-child {
     display: block;
     margin-bottom: 0.5em;
     color: var(--ink);
@@ -1151,21 +1151,21 @@ hr {
     letter-spacing: 0.04em;
 }
 
-.post-container div[style*="border"] p {
+.post-container div.qed-box p {
     margin: 0.55em 0;
 }
 
-.post-container div[style*="border"] mjx-container[display="true"] {
+.post-container div.qed-box mjx-container[display="true"] {
     margin: 1.05em 0 !important;
 }
 
 /* 作者在两个框之间随手写的 <br>，会把间距再撑开一行 */
-.post-container div[style*="border"] + br {
+.post-container div.qed-box + br {
     display: none;
 }
 
-.post-container div[style*="border"] + div[style*="border"]:not(.qed-box--proof),
-.post-container div[style*="border"] + br + div[style*="border"]:not(.qed-box--proof) {
+.post-container div.qed-box + div.qed-box:not(.qed-box--proof),
+.post-container div.qed-box + br + div.qed-box:not(.qed-box--proof) {
     margin-top: 40px !important;
 }
 
@@ -1187,7 +1187,7 @@ hr {
 }
 
 /* 证明后面如果紧跟另一个方框，底部留 40px */
-.post-container div.qed-box--proof:has(+ div[style*="border"]) {
+.post-container div.qed-box--proof:has(+ div.qed-box) {
     margin-bottom: 40px !important;
 }
 
@@ -2096,7 +2096,7 @@ footer .copyright a:focus {
         font-size: 20px;
     }
 
-    .post-container div[style*="border"] {
+    .post-container div.qed-box {
         margin: 1.8em 0 !important;
         padding: 18px 18px !important;
     }

@@ -26,11 +26,11 @@ $[x]$为取整函数或高斯函数, 即小于等于$x$的最大整数.
 
 我们知道, Euler曾试图使用函数$f(n)=n^2+n+41$生成素数, 当$n$小于40时, $f(n)$都是素数, 否则则不一定. 事实上, 我们可以证明任何一个多项式都不可能是素数通项公式, 更进一步的, 任何一个非常数多项式在正整数处的值不可能都为素数.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理</b>
 任何一个非常数多项式在正整数处的值不可能都为素数.
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>证明</b>
 若存在多项式 $P(x)$, 使得 $P(n)=p_i$ 为素数, 那么显然 $P(n)\equiv 0\mod p_i$, 从而 $P(n+p_i)\equiv 0\mod p_i$, 故 $P(n+p_i)$ 要么不是素数, 要么等于 $p_i$.
 </div>
@@ -45,14 +45,14 @@ $[x]$为取整函数或高斯函数, 即小于等于$x$的最大整数.
 
 我们需要Bertrand's postulate, 也叫Bertrand–Chebyshev定理.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>引理(Bertrand–Chebyshev定理)</b>
 对于所有大于$1$的整数$n$, 至少存在一个质数$p$, 满足$n < p < 2n$.
 </div>
 
  Dylan Fridman等人给出了一种构造方法.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Fridman公式)</b>
 令$f_1=2.920050977316\cdots$, 且有递推公式
 
@@ -69,7 +69,7 @@ $$
 $$
 </div>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>证明</b>
 首先证明$f_1$收敛, 由Bertrand–Chebyshev定理可知, $p_{n-1}<p_{n}<2p_{n-1}-1$, 从而
 
@@ -119,7 +119,7 @@ $$
 
 1952年, Sierpiński提出,
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Sierpiński公式)</b>
 设$A=0.02030005000000070\cdots$, 则有
 
@@ -134,7 +134,7 @@ $$
 $$
 </div>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>证明</b>
 $A$显然收敛, 因为$p_m<2^{2^m}=4^{2^{m-1}}$, 故有
 
@@ -168,7 +168,7 @@ $$
 
 1950年, Moser提出,
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Moser公式)</b>
 设$\gamma= 0.203005000700011\cdots$, 则有
 
@@ -185,7 +185,7 @@ $$
 
 1952年, Bang提出,
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Bang公式)</b>
 设
 
@@ -202,7 +202,7 @@ $$
 
 Hardy和Wright提出,
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Hardy-Wright公式)</b>
 对于任意大于$1$的整数$r$, 设
 
@@ -219,7 +219,7 @@ $$
 
 Knopfmacher给出了另一种不同的方法.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Knopfmacher公式)</b>
 $$
 \displaylines{p_n=\left[1-\log_y\left(1-\dfrac{A_y}{(1-y^{-2})(1-y^{-3})\cdots(1-y^{-p_{n-1}})}\right)\right],y>3},
@@ -262,7 +262,7 @@ $$
 
 首先来看基于 Wilson 定理的公式.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>引理(Wilson定理)</b>
 $n$ 是素数当且仅当
 $$(n-1)!\equiv -1\mod n.$$
@@ -270,7 +270,7 @@ $$(n-1)!\equiv -1\mod n.$$
 
 我们先推导著名的 Willans 公式.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Willans公式)</b>
 $$
 p_n=1+\sum_{m=1}^{2^n}\left[\begin{pmatrix}\dfrac{n}{\sum\limits_{k=1}^m\left[\cos^2\pi\dfrac{(k-1)!+1}{k}\right]}\end{pmatrix}^{\frac{1}{n}}\right].
@@ -313,7 +313,7 @@ $$
 
 James P.Jones 给出了一个类似的公式.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Jones公式)</b>
 
 $$
@@ -356,7 +356,7 @@ $$
 
 顺便一提, 1992 年, Tsangaris 和 Jones 合作又给出了另一个公式, 但这个公式并不是使用 Wilson 定理得到的, 证明见[24].
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Tsangaris-Jones公式)</b>
   
 $$
@@ -366,7 +366,7 @@ $$
 
 Willans 在自己的文章中还给出了几条素数通项公式.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Willans公式2)</b>
 $$
 p_n=\sum_{m=1}^{2^n}\left(m\left[\cos^2\pi\dfrac{(n-1)!+1}{n}\right]\left[2^{-\lvert \pi(m)-n\rvert}\right]\right).
@@ -382,7 +382,7 @@ B_n(a)=\left[2^{-\lvert a-n\rvert}\right]=\begin{cases}
 $$
 即可.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Willans公式3)</b>
 $$
 p_n=2+\sum_{m=2}^{2^n}C_n\left(\sum_{k=2}^m\dfrac{\sin^2\pi\dfrac{(k-1)!^2}{k}}{\sin^2\dfrac{\pi}{k}}\right),
@@ -415,7 +415,7 @@ $$
 
 Hardy 和 Wright 给出了另一种基于 Wilson 公式的素数通项公式.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Hardy-Wright公式)</b>
 $$
 p_n=1+\sum_{j=1}^{2^n}f\left(n,2+\sum_{k=5}^j\left((k-2)!-k\left[\dfrac{(k-2)!}{k}\right]\right)\right),n>4,
@@ -452,7 +452,7 @@ $$
 
 还有其它的构造方法, 仅罗列如下:
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>Willans公式4:</b>
 
@@ -501,14 +501,14 @@ $$
 
 这些公式都可以用 Wilson 定理证明, 且过程完全类似. 接下来我们介绍基于 Fermat 小定理得到的素数通项公式.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>引理(Fermat小定理)</b>
 若 $p$ 是素数, $a$ 和 $p$ 互素, 则有
 $$
 a^{p-1}\equiv 1\mod p.
 $$
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Harris公式)</b>
 $$
 \chi(n)=\prod_{2\le p\le \sqrt{n}}\dfrac{1-\cos\left(2n^{p-1}\dfrac{\pi}{p}\right)}{1-\cos\left(\dfrac{2\pi}{p}\right)},n\ge 4,p\text{是素数}.
@@ -521,7 +521,7 @@ $$
 
 接下来介绍的是 Stephen Regimbal 基于取整函数的性质得出的素数通项公式.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Regimbal公式)</b>
 $$
 p_k=\sum_{m=2}^{2^k}m\begin{bmatrix}
@@ -585,7 +585,7 @@ $$
 
 下面的公式是 Sebastián Martín Ruiz 基于除数函数 $d(n)$ 的性质构造出来的.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Ruiz公式)</b>
 $$
 p_n=1+\sum_{k=1}^{2([n\ln n]+1)}
@@ -681,7 +681,7 @@ $$
 $$
 
 基于 Euler $\varphi$ 函数的性质也可给出一个素数通项公式.
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Vassilev公式)</b>
 $$
 \chi(n)=\begin{bmatrix}
@@ -716,13 +716,13 @@ $$
 
 再把 $\chi(n)$ 按照之前的方法转化成 $p_n$ 即可得到素数通项公式， 通过这个公式计算第 $n$ 个素数时， 需要提前知道小于等于 $n$ 的所有素数.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Ortega Costa公式)</b>
 $$
 \pi(n)=n-\dfrac{1}{2\pi}\int_0^{2\pi}\sum_{m=1}^n\cos\left(x\prod_{1\le j,k\le m-1}(jk-m)\right)\mathrm{d} x.
 $$
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>证明</b>
 注意到 $m$ 为合数时 $\prod\limits_{1\le j,k\le m-1}(jk-m)=0$， $m$ 为素数时， $\prod\limits_{1\le j,k\le m-1}(jk-m)$ 等于一个整数， 故
 $$
@@ -737,7 +737,7 @@ $$
 
 一个类似的公式是 Wormell 公式.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Wormell公式)</b>
 $$
 \pi(n)=\sum_{m=2}^n\dfrac{1+(-1)^{2^{B(m)}}}{2},
@@ -747,7 +747,7 @@ $$
 
 1953 年, Sierpiński 提出下面这个包含极限的公式, 但这里的极限也可以设法用取整函数代替.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Sierpiński公式)</b>
 $$
 \pi(n)=1+\sum_{k=3}^n \left(
@@ -757,7 +757,7 @@ $$
 \right),n\ge3.
 $$
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>证明</b>
 对于 $j=2,3,\cdots,k-1$， 当 $k$ 为素数时， $\dfrac{k}{j}$ 都不是整数， 故 $\prod\limits_{j=2}^{k-1}\sin^2\left(\dfrac{k\pi}{j}\right)$ 中每一项都不为 $0$， $\left(1-\prod\limits_{j=2}^{k-1}\sin^2\left(\dfrac{k\pi}{j}\right)\right)\in(0,1)$. 当 $k$ 不为素数时， 存在 $j$ 使得 $\dfrac{k}{j}$ 是整数， 故 $\prod\limits_{j=2}^{k-1}\sin^2\left(\dfrac{k\pi}{j}\right)=0$， 从而有
 $$
@@ -777,7 +777,7 @@ $$
 
 2012 年, Kaddoura 和 Abdul-Nabi 基于模 $6$ 的筛法给出下面这个公式.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Kaddoura-Abdul-Nabi公式)</b>
 $$
 p_{n}=3+2[n\ln n]-\sum_{x=7}^{2([n\ln n]+1)}\left(\left[\frac{1}{n}\left(4+\left(\sum_{j=1}^{\left[\frac{x-1}{6} \right] }\left[S(6 j+1)\right ]+\sum_{j=1}^{\left[\frac{x+1}{6}\right]}\left[ S(6 j-1)\right]\right)\right)\right]\right),
@@ -875,7 +875,7 @@ $$
 $$
 
 从而有
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Gandhi公式)</b>
 
 $$
@@ -887,7 +887,7 @@ $$
 
 Golomb 在 1976 年得到了一个定理, 这个定理的一种特殊情况可以直接推出 Gandhi 的不等式, 这个定理也将以下四个公式作为其特殊情况, 详细证明见[29].
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Golomb公式)</b>
 
 $$
@@ -975,7 +975,7 @@ $$
 
 所以我们有:
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Lambert公式)</b>
 
 $$
@@ -987,7 +987,7 @@ $$
 
 1955 年, Teuffel 利用 Riemann $\zeta$ 函数给出了一个素数通项公式.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Teuffel公式)</b>
 
 $$
@@ -1025,7 +1025,7 @@ $$
 
 1979 年, Knopfmacher 使用类似的方法给出公式:
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Knopfmacher公式)</b>
 
 $$

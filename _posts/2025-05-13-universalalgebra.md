@@ -17,7 +17,7 @@ tags:
 
 ### 基础构造
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(笛卡尔积)</b>
 
@@ -32,7 +32,7 @@ $$
 当 $A=A_i=A_j, i,j\in I$ 时, 笛卡尔积记作 $A^I$, 若 $|I|=n$, 也记作 $A^n$.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(二元关系)</b>
 
@@ -42,7 +42,7 @@ $$
 
 #### 泛代数
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(n元函数)</b>
 
@@ -54,14 +54,14 @@ $$
 
 一些特殊的函数在书写时按照通常的习惯书写, 例如二元函数加法 $+(a,b)$ 可写作 $a+b$, 一元函数取逆 $^{-1}(a)$ 可写作 $a^{-1}$, 零元函数单位元 $1(\emptyset)$ 则直接写作 $1$.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(型)</b>
 
 一个型或标签或语言, 是一个函数符号的集合 $\mathcal{F}$, 其中每个 $\mathcal{F}$ 的元素 $f$ 都关联一个非负整数 $n$, 称为 $f$ 的元数, 则 $f$ 称为一个 $n$ 元函数符号, $\mathcal{F}$ 中 $n$ 元函数符号组成的子集用 $\mathcal{F}_n$ 表示.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(代数)</b>
 
@@ -73,7 +73,7 @@ $$
 
 当论域 $A$ 为单元集时, 称 $\mathbf{A}$ 为平凡代数.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>例(群)</b>
 
@@ -92,7 +92,7 @@ $\mathrm{(3)}$ $x \cdot x^{-1} \approx x^{-1} \cdot x \approx 1.$
 
 在一些抽象代数课本中通常不将取逆 $^{-1}$ 当作一个运算, 而是将上述定义中的第三条公式换成含量词的公理: 对任意的 $x\in G$, 存在元素 $y$ 使得 $x \cdot y \approx y \cdot x \approx 1$. 我们不采用这种定义方式, 因为如果这样定义, 在后续定义的子代数中, 群的子代数可能只是半群而不一定是群.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>例(环)</b>
 
@@ -110,7 +110,7 @@ R-模即环 R 作用到交换群上得到的结构, 其上有无穷多个一元�
 
 设 $\mathbf{A}=(A,F)$ 和 $\mathbf{B}=(B,F')$ 是 $\mathcal{F}$ 型的两个代数, 则 $F$ 和 $F'$ 有一一对应 $f^{\mathbf{A}}\mapsto f^{\mathbf{B}}$.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(同态)</b>
 
@@ -123,7 +123,7 @@ $$
 则称 $\alpha$ 是 $\mathbf{A}$ 到 $\mathbf{B}$ 的同态.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(同构)</b>
 
@@ -137,7 +137,7 @@ $$
 
 容易验证, 同态的复合仍是同态, 若一对同态互逆, 则它们是同构.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(核)</b>
 
@@ -151,14 +151,14 @@ $$
 
 #### 子代数
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(子代数)</b>
 
 设 $\mathbf{A}=(A,F)$ 和 $\mathbf{B}=(B,F')$ 是 $\mathcal{F}$ 型的两个代数, 如果 $B \subseteq A$ 并且 $\mathbf{B}$ 中的每个运算都是 $\mathbf{A}$ 中相应运算的限制, 即如果 $f^{\mathbf{A}}$ 是 $\mathbf{A}$ 中的一个 $n$ 元运算, 并且 $a_1, \cdots, a_n \in B$, 那么 $f^{\mathbf{B}}(a_1, \ldots, a_n) \in B$, 则称 $B$ 是 $\mathbf{A}$ 的一个子论域, $\mathbf{B}$ 是 $\mathbf{A}$ 的一个子代数, 记作 $\mathbf{B} \le \mathbf{A}$.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(嵌入)</b>
 
@@ -168,7 +168,7 @@ $$
 
 若 $\alpha$ 是 $\mathbf{A}$ 到 $\mathbf{B}$ 的嵌入, 则 $\alpha(A)$ 是 $\mathbf{B}$ 的子论域, 若记 $\alpha(\mathbf{A})=(\alpha(A),F')$, 则 $\alpha(\mathbf{A})$ 是 $\mathbf{B}$ 的子代数.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(生成)</b>
 
@@ -186,7 +186,7 @@ $$
 
 #### 积代数
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(直积)</b>
 
@@ -199,7 +199,7 @@ $$
 空积 $\prod_{i \in \emptyset} \mathbf{A}_i$ 是论域为 $\{\emptyset\}$ 的平凡代数.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(投影)</b>
 
@@ -213,7 +213,7 @@ a &\mapsto a(j).
 $$
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(直积的交换约束和结合约束)</b>
 
@@ -223,7 +223,7 @@ $$
 
 显然交换约束和结合约束可以推广到任意积, 此处省略.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(不可直积分解)</b>
 
@@ -233,14 +233,14 @@ $$
 
 #### 同余与商代数
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(等价关系集)</b>
 
 集合 $A$ 上所有等价关系组成的集合记作 $\operatorname{Eq}(A)$.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(同余关系)</b>
 
@@ -255,14 +255,14 @@ $$
 $\mathbf{A}$ 上的所有同余关系组成的集合记作 $\operatorname{Con}(\mathbf{A})$.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(同余的任意交仍是同余)</b>
 
 设 $S$ 是代数 $\mathbf{A}$ 上的任意一族同余关系, 即 $S\subseteq\operatorname{Con}(\mathbf{A})$, 则 $\cap S$ 仍是同余.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(生成同余)</b>
 
@@ -275,7 +275,7 @@ $\mathbf{A}$ 上的所有同余关系组成的集合记作 $\operatorname{Con}(\
 
 显然主同余在环论中对应环的主理想, 例如整数环中 $\operatorname{Cg}^{\mathbf{A}}(3,5)$ 即为主理想 $(2)$.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(生成同余的构造)</b>
 
@@ -301,7 +301,7 @@ $$
 $$
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(诺特代数)</b>
 
@@ -311,14 +311,14 @@ $$
 
 使用与环论中相同的方法可以证明, 代数 $\mathbf{A}$ 是诺特代数当且仅当 $\operatorname{Con}(\mathbf{A})$ 中不存在无限长的严格同余升链.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
 设 $\mathbf{A}=(A,F)$ 和 $\mathbf{B}=(B,F')$ 是同型的两个代数, 设 $\alpha$ 是 $\mathbf{A}$ 到 $\mathbf{B}$ 的同态, 那么 $\alpha$ 的核 $\ker(\alpha)$, 是 $\mathbf{A}$ 上的一个同余关系.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(商代数)</b>
 
@@ -342,7 +342,7 @@ $$
 
 定义的二元关系便是一个同余关系, 且显然有 $[1]=N$. 同理, 环中的 $[0]$ 便对应理想.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(自然同态)</b>
 
@@ -359,21 +359,21 @@ $$
 
 #### 同态基本定理
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(第一同构定理)</b>
 
 设 $\mathbf{A}=(A,F)$ 和 $\mathbf{B}=(B,F')$ 是同型的两个代数, 设 $\alpha$ 是 $\mathbf{A}$ 到 $\mathbf{B}$ 的同态, 则 $\mathbf{A}/\ker(\alpha)\cong \alpha(\mathbf{A})$.
 
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
 设 $A \to A/\ker(\alpha)$ 的自然同态为 $\pi$, 设映射 $\beta\colon A/\ker(\alpha)\to \alpha(A)$ 由 $\alpha=\beta\circ\pi$ 确定, 则 $\beta$ 即为所求的同构映射.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义</b>
 
@@ -392,7 +392,7 @@ $$
 设 $\mathbf{B}^\equiv$ 为 $B^\equiv$ 生成的 $\mathbf{A}$ 的子代数.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(第二同构定理)</b>
 
@@ -400,14 +400,14 @@ $$
 $ \mathbf{B}/\equiv\mid_B\cong\mathbf{B}^\equiv/\equiv\mid_{B^\equiv}$.
 
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
 同构由 $[b]_{\equiv\mid_B}\mapsto[b]_{\equiv\mid_{B^{\equiv}}}$ 给出.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义</b>
 
@@ -418,14 +418,14 @@ $$
 $$
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(第三同构定理)</b>
 
 设 $\mathbf{A}=(A,F)$ 是一个代数, 若 $\equiv_1,\equiv_2\in \operatorname{Con}(\mathbf{A})$, 且 $\equiv_1\subseteq\equiv_2$, 则 $\equiv_2/\equiv_1$ 是 $\mathbf{A}/\equiv_1$ 上的同余关系, 且 $(\mathbf{A}/\equiv_1)/(\equiv_2/\equiv_1)\cong \mathbf{A}/\equiv_2$.
 
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
@@ -441,14 +441,14 @@ $$
 
 最大元即为 $A\times A$ 本身, 我们对偶的将它记作 $\nabla_A=A\times A$.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(平凡同余和真同余)</b>
 
 代数 $\mathbf{A}=(A,F)$ 中的同余 $\Delta_A=\{(a,a)\mid a\in A\}$ 和 $\nabla_A=A\times A$ 称为 $\mathbf{A}$ 的平凡同余, 除此之外的同余称为真同余.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(偏序集的闭区间)</b>
 
@@ -462,42 +462,42 @@ $$
 
 显然偏序集的闭区间是子偏序集, 下面叙述泛代数的对应定理, 有时也称为第四同构定理.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(对应定理)</b>
 
 设 $\mathbf{A}=(A,F)$ 是一个代数, $\equiv\in\operatorname{Con}(\mathbf{A})$, 则 $[\equiv,\nabla_A]\cong \operatorname{Con}(\mathbf{A}/\equiv)$ 是序同构.
 
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
 序同构由 $\equiv'\mapsto\equiv'/\equiv$ 给出.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(单代数)</b>
 
 设 $\mathbf{A}$ 是一个代数, 若 $\operatorname{Con}(\mathbf{A})=\{\Delta_A,\nabla_A\}$, 则称 $\mathbf{A}$ 是单代数, 若 $\mathbf{A}$ 的论域是有限集, 则称 $\mathbf{A}$ 为有限单代数.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(极大同余)</b>
 
 设 $\mathbf{A}$ 是一个代数, $\equiv\in\operatorname{Con}(\mathbf{A})$ 且 $\equiv\neq\nabla_A$, 若 $[\equiv,\nabla_A]=\{\equiv,\nabla_A\}$, 则称 $\equiv$ 是 $\mathbf{A}$ 的极大同余.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
 设 $\mathbf{A}$ 是一个代数, $\equiv\in\operatorname{Con}(\mathbf{A})$, $\mathbf{A}/\equiv$ 是一个单代数当且仅当 $\equiv$ 是极大同余.
 
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
@@ -512,7 +512,7 @@ $$
 
 #### 项代数
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(项)</b>
 
@@ -530,7 +530,7 @@ $T(X)$ 中元素称为项.
 
 对于一个项 $p$, 易知 $p$ 中含有的变元只有有限个, 比如 $p$ 含有的变元在 $x_1,\cdots,x_n$ 之中, 那么可将 $p$ 记作 $p(x_1,\cdots,x_n)$.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(项代数)</b>
 
@@ -549,7 +549,7 @@ $$
 
 项代数也称为绝对自由代数.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(项函数)</b>
 
@@ -575,7 +575,7 @@ $$
 
 #### 簇
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(等式)</b>
 
@@ -591,7 +591,7 @@ $$
 $\operatorname{Id}_{\mathcal{F}}(X)$ 的子集称为等式集或理论, 通常用 $\Sigma$ 表示, 即 $\Sigma\subseteq\operatorname{Id}_{\mathcal{F}}(X). $
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(满足)</b>
 
@@ -610,21 +610,21 @@ $$
 
 约定使用无衬线字体表示范畴, 多数泛代数教材中使用了类的概念, 但为避免集合论的麻烦, 这里使用范畴语言叙述.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(簇)</b>
 
 给定型 $\mathcal{F}$, 集合 $X$ 及其上等式集 $\Sigma$, 一个簇是一个范畴 $\mathsf{V}$, 其对象为 $\Sigma$ 的全体 $\mathcal{F}$ 型模型, 态射为代数间同态, 这个簇记作 $\mathsf{V}=\operatorname{Mod}(\Sigma)$.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>例</b>
 
 群范畴 $\mathsf{Grp}$ 是一个簇, 环范畴 $\mathsf{Rng}$ 是一个簇, 幺环范畴 $\mathsf{Ring}$ 是一个簇, 交换幺环范畴 $\mathsf{CRing}$ 是一个簇, 交换幺环 $R$ 上的模范畴 $R-\mathsf{Mod}$ 是一个簇.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(演绎闭包)</b>
 
@@ -640,7 +640,7 @@ $$
 
 设 $\mathsf{C}$ 是一个范畴, 其中对象为 $\mathcal{F}$ 型代数的范畴 $\mathsf{A}$, 态射为各对象自身的对象集 $\operatorname{Ob}(\mathsf{A})$ 之间的包含映射给出的范畴间的函子. 再设 $\mathsf{E}=\mathscr{P}(\operatorname{Id}_{\mathcal{F}}(X))$ 为 $\operatorname{Id}_{\mathcal{F}}(X)$ 的幂集, 它关于集合间包含关系构成一个偏序集, 可以将其做成一个范畴, 对象为所有等式集, 态射为包含映射. 这样, $\operatorname{Id}(\cdot)$ 和 $\operatorname{Mod}(\cdot)$ 即为 $\mathsf{C}$ 和 $\mathsf{E}$ 之间的一对伴随函子. 设 $\mathsf{V}$ 是所有簇组成的范畴, 它是 $\mathsf{C}$ 的子范畴, 设 $\mathsf{D}$ 是所有演绎闭的等式集组成的范畴, 它是 $\mathsf{E}$ 的子范畴, 则 $\operatorname{Id}(\cdot)$ 和 $\operatorname{Mod}(\cdot)$ 为 $\mathsf{V}$ 和 $\mathsf{D}$ 之间的范畴同构.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>例</b>
 
@@ -650,7 +650,7 @@ $$
 
 #### 自由代数
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(自由代数)</b>
 
@@ -660,14 +660,14 @@ $$
 
 自由代数常简写为 $\mathbf{F}(X)$, 论域简写为 $F(X)$.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>例</b>
 
 在所有岩浆组成的簇中, 自由代数与项代数是相同的, 因为岩浆满足的等式集为空集. 在自由岩浆中 $(a\cdot a)\cdot a$ 和 $a\cdot(a\cdot a)$ 是两个不同的元素.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(自由代数的泛性质)</b>
 
@@ -693,7 +693,7 @@ $P(\mathsf{C})$ 为包含 $\mathsf{C}$ 的最小范畴, 使得 $\mathsf{C}$ 中�
 
 若算子 $O_1$ 和 $O_2$ 是以上任意算子或其复合, 则 $O_1\le O_2$ 意味着 $O_1(\mathsf{C})\subseteq O_2(\mathsf{C})$, 并且算子的复合通常省略括号或复合符号.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -703,27 +703,27 @@ $SH\le HS$, $PS\le SP$, $PH\le HP$.
 
 关于这三种闭包算子之间的强度关系, 有如下图表:
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <img src="{{ site.baseurl }}/img/ua/2.png" alt="2" style="width: 50%; height: auto;">
 </div>
 
 如图, $HSP$ 位于该图的最顶端, 实际上, 有以下定理.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
 对于一个由一些同型代数连同代数间同态组成的范畴 $\mathsf{C}$, 包含它的最小的在取同态像, 取子代数, 取积代数下封闭的范畴正是 $H(S(P(\mathsf{C})))$.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
 $\operatorname{Id}(\mathsf{C})=\operatorname{Id}(H(\mathsf{C}))=\operatorname{Id}(S(\mathsf{C}))=\operatorname{Id}(P(\mathsf{C}))=\operatorname{Id}(HSP(\mathsf{C}))$.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -734,14 +734,14 @@ $$
 $$
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
 若一个由一些同型代数连同代数间同态组成的范畴 $\mathsf{C}$ 在取同态像, 取子代数, 取积代数下封闭, 即 $\mathsf{C}=HSP(\mathsf{C})$, 则有 $\mathsf{C}=\operatorname{Mod}(\operatorname{Id}(\mathsf{C))}$.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(HSP定理)</b>
 
@@ -751,7 +751,7 @@ $$
 
 HSP定理中的 H 指同态像 Homomorphic image, S 指子代数 Subalgebra, P 指积代数 Product.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>HSP定理的证明</b>
 
@@ -772,14 +772,14 @@ HSP定理中的 H 指同态像 Homomorphic image, S 指子代数 Subalgebra, P �
 
 之前已经提到, 在泛代数的观点下, 域并不是一个代数, 而只能看做特殊的交换幺环.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
 对于固定的交换幺环 $R$, 给定变量集 $X$, 以 $X$ 为变量 $R$ 上的多项式代数 $R[X]$ 定义为 $R$-交换代数范畴 $R$-$\mathsf{CAlg}$ 中的自由对象, 它同构于交换幺环范畴 $\mathsf{CRing}$ 中环 $R$ 与 $X$ 上的自由对象 $F(X)$ 的余积 $R\coprod F(X)$.
 
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
@@ -877,7 +877,7 @@ $Z(\cdot)$ 和 $T(\cdot)$ 给出仿射空间 $\operatorname{Hom}_\mathsf{V}(\mat
 
 #### 扎里斯基拓扑
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -901,42 +901,42 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 显然, $\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})=Z(\Delta_{F(X)})$, $\emptyset=Z(\nabla_{F(X)})$, 其中 $\Delta_{F(X)}$ 和 $\nabla_{F(X)}$ 是之前定义的平凡同余, 即 $F(X)^2$ 的对角线集和 $F(X)^2$ 本身, 这说明全集和空集是代数集.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(扎里斯基拓扑)</b>
 
 仿射空间 $\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 中的所有代数集和代数集的有限并组成 $\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 里的闭集, 这样得到的拓扑称为扎里斯基拓扑.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
 设 $Y\subseteq\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$, $\overline{Y}$ 是 $Y$ 在扎里斯基拓扑下的闭包, 则 $\overline{Y}\subseteq Z(I(Y))$.
 
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
 显然 $Z(I(Y))$ 是代数集, 且它是包含 $Y$ 的最小代数集, 而 $\overline{Y}$ 未必是代数集, 故 $\overline{Y}\subseteq Z(I(Y))$.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
 若 $Y\subseteq\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 且 $Y$ 在扎里斯基拓扑下是不可约集, 则 $\overline{Y}=Z(I(Y))$, 特别的, 不可约闭集是代数集.
 
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
 设 $\overline{Y}=\bigcap_{i\in I} Y_i$, 其中诸 $Y_i$ 是包含 $Y$ 的闭集, 设 $Y_i=\bigcup_{j\in J}Y_{i_j}$, 其中 $J$ 是有限指标集, 诸 $Y_{i_j}$ 是代数集, 故 $Y\subseteq\bigcup_{j\in J}Y_{i_j}$, 由于 $Y$ 不可约, 则存在某个 $j(i)\in J$, $Y\subseteq Y_{i_{j(i)}}$, 则 $\overline{Y}=\bigcap_{i\in I} Y_{i_{j(i)}}$, 故 $\overline{Y}$ 是代数集, 故 $\overline{Y}=Z(I(Y))$.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(代数簇)</b>
 
@@ -946,7 +946,7 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 古典代数几何中代数集的有限并仍是代数集, 这是一个非常特殊的性质, 我们称之为整性.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(整性)</b>
 
@@ -958,7 +958,7 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 显然代数集不一定是不可约的, 若代数集均可约, 则称代数 $\mathbf{H}$ 是余整的.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(余整)</b>
 
@@ -970,35 +970,35 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 #### 诺特性
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(等式诺特)</b>
 
 对于代数 $\mathbf{H}$, 若 $\mathbf{F}(X)$ 上任一同余 $T$ 都存在 $T$ 的有限子集 $S$, 使得 $Z(T)=Z(S)$, 则称 $\mathbf{H}$ 是等式诺特的.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
 若簇 $\mathsf{V}$ 中自由代数 $\mathbf{F}(X)$ 是诺特代数, 则 $\mathsf{V}$ 中任意代数是等式诺特的.
 
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
 若 $\mathbf{F}(X)$ 是诺特的, 则 $\mathbf{F}(X)$ 上任一同余 $T$ 都存在 $T$ 的有限子集 $S$ 生成 $T$, 因 $S\subseteq T$, 则 $Z(T)\subseteq Z(S)$, 故 $I(Z(T))\supseteq I(Z(S))$, 因 $I(Z(S))$ 是包含 $S$ 的最小根同余, 而 $T$ 是包含 $S$ 的最小同余, 故显然 $I(Z(T))=I(Z(S))$, 从而有 $Z(T)=Z(S)$.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
 等式诺特代数的子代数是等式诺特的.
 
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
@@ -1008,28 +1008,28 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 回忆诺特空间的定义为满足闭集降链条件的空间, 可以证明关于等式诺特有以下定理.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
 代数 $\mathbf{H}$ 是等式诺特的当且仅当对任意的有限变量集 $X$, $\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 在扎里斯基拓扑下是诺特空间.
 
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
 见[3]Lemma 4.11.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
 若 $\mathbf{H}$ 是等式诺特的, 则 $\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 中的代数集有唯一的不可约分解, 即若 $Y$ 是代数集且 $Y=\bigcup_{i=1}^n Y_i$, 诸 $Y_i$ 互不包含, 则这样的分解在不计诸 $Y_i$ 的顺序的意义下是唯一的.
 
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
@@ -1041,7 +1041,7 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 #### 坐标代数
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(坐标代数)</b>
 
@@ -1053,7 +1053,7 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 使用整性可以定义素同余.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(素同余)</b>
 
@@ -1063,14 +1063,14 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 古典代数几何中素理想与代数簇一一对应, 下面是这个对应在泛代数几何中的版本.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
 若 $\mathbf{H}$ 是整的, 则 $\operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$ 中的代数集 $Y$ 是代数簇当且仅当 $I(Y)$ 是一个素同余, 亦即其坐标代数 $A(Y)$ 是整代数.
 
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
@@ -1080,7 +1080,7 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 坐标代数的另一作用是代数的展示.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义</b>
 
@@ -1092,14 +1092,14 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 当 $X$ 是有限集时, 展示 $\left \langle X\mid T \right \rangle $ 即为 $\mathbf{F}(X)/I(Z(T))$, 它是坐标代数 $A(Z(T))$, 而当 $Y$ 是代数集时, $A(Y)=\mathbf{F}(X)/I(Y)=\left \langle X\mid I(Y) \right \rangle$, 即坐标代数必有展示.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
 若 $X$ 是有限变量集, $\mathbf{H}$ 是等式诺特的, 则任意有展示的代数都有有限展示.
 
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
@@ -1111,7 +1111,7 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 最后给出一个代数是坐标代数的充要条件.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -1123,14 +1123,14 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 在交换代数中, 理想的根可以定义为包含它的所有素理想的交, 希尔伯特零点定理告诉我们, 多项式环的一个理想 $T$ 的根也等于包含它的所有极大理想的交, 而这些极大理想又与 $Z(T)$ 中的点一一对应. 而在一般的簇中, $Z(T)$ 中的点并不和 $F(X)$ 的极大同余有一一对应关系, 我们在定义同余的根的时候应该寻找能与 $Z(T)$ 中的点建立一一对应的包含 $T$ 的某些同余, 而将 $T$ 的根定义为这些同余的交.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
 若 $T$ 是 $\mathbf{F}(X)$ 上的同余, 则 $Z(T)$ 中的点与满足以下条件的同余 $S$ 一一对应: $T\subseteq S$ 且存在商代数 $\mathbf{F}(X)/S$ 到 $\mathbf{H}$ 的单射 $F(X)/S\to H$.
 
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
@@ -1139,7 +1139,7 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 而对于包含 $T$ 且存在单射 $\iota\colon F(X)/S\to H$ 的同余 $S$, 设 $\pi\colon F(X)\to F(X)/S$ 是自然同态, 取 $\mu=\iota\circ\pi\in\operatorname{Hom}_{\mathsf{V}}(\mathbf{F}(X),\mathbf{H})$, 则 $S=\ker(\iota\circ\pi)=\ker\mu$, 由 $T\subseteq S=\ker\mu$ 知 $\mu\in Z(T)$.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(同余的根)</b>
 
@@ -1149,7 +1149,7 @@ $\mathrm{(6)}$ $\bigcup_{i\in I} I(Y_i)\subseteq I\left(\bigcap Y_j\right)$.
 
 由同余的任意交仍是同余知 $\sqrt{T}$ 是同余, 且有 $T\subseteq\sqrt{T}$.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -1160,7 +1160,7 @@ I(Z(T))=\sqrt{T}.
 $$
 
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
@@ -1181,14 +1181,14 @@ $$
 结合两式便可得证.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
 若 $T$ 是 $\mathbf{F}(X)$ 上的同余, 则存在 $Y\subseteq \operatorname{Hom}_\mathsf{V}(\mathbf{F}(X),\mathbf{H})$, 使得 $T=I(Y)$, 当且仅当 $T=\sqrt{T}$, 即 $T$ 是根同余当且仅当 $T=\sqrt{T}$.
 
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
@@ -1198,14 +1198,14 @@ $$
 
 上述定理看似与希尔伯特零点定理形式类似, 但实际上, 将上述定理翻译到以代数闭域为常数的交换幺环簇上, 对应的版本是不依赖希尔伯特零点定理的, 但要说明这里定义的理想的根和根理想与古典代数几何中的一致需要希尔伯特零点定理. 在某些特定条件下有更好的性质.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
 若 $\mathsf{V}$ 中任一有限生成代数的论域都是有限集, 设 $\mathbf{H}$ 是 $\mathsf{V}$ 中一个固定的代数, $\mathsf{V}$ 中某个代数集是代数簇当且仅当这个代数集的坐标代数可以嵌入到 $\mathbf{H}$ 中.
 
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
@@ -1215,7 +1215,7 @@ $$
 
 设 $T$ 是 $F(X)$ 上的同余, 则 $Z(T)$ 是一个代数集, 设含于 $Z(T)$ 的代数簇为 $\{Y_i\}_{i\in I}$, 则 $I(Y_i)$ 是包含 $T$ 的同余, 其坐标代数为 $\mathbf{F}(X)/I(Y_i)$, 因此在上述定理的条件下, 一定存在单射 $F(X)/I(Y_i)\to H$. 反之, 每个包含 $T$ 且存在商代数到 $\mathbf{H}$ 的单射的同余都与含于 $Z(T)$ 的代数簇相对应. 如果 $\mathbf{H}$ 是整的, 则包含于 $Z(T)$ 的代数簇与包含 $T$ 的素同余一一对应, 故有以下定理.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -1225,21 +1225,21 @@ $$
 
 显然上述定理中的条件不是最优的, 但姑且给出了交换代数中理想的根的性质的泛代数几何版本. 接下来转向含常数的簇, 通过推广代数闭的概念, 可以得到类似希尔伯特零点定理的定理, 即仿射空间中单点集与自由代数的极大理想的一一对应.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(代数闭)</b>
 
 若 $\mathbf{G}=(G,F)$ 是簇 $\mathsf{V}$ 中的一个对象, 设 $\mathbf{H}$ 是簇 $\mathsf{V}(\mathbf{G})$ 中的一个忠实代数, 若对任意有限变量集 $X$ 和 $\mathsf{V}(\mathbf{G})$ 中的自由代数 $\mathbf{F}(X)$ 的真同余 $T$, 对应的 $Z(T)$ 非空, 则称 $\mathbf{H}$ 是 $\mathbf{G}$-代数闭的.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(希尔伯特零点定理)</b>
 
 若 $\mathbf{G}=(G,F)$ 是簇 $\mathsf{V}$ 中的一个对象, $(\mathbf{H},h)$ 是带常数的簇 $\mathsf{V}(\mathbf{G})$ 中的一个忠实代数, $\mathbf{F}(X)$ 是 $\mathsf{V}(\mathbf{G})$ 中自由代数, 若 $\mathbf{H}$ 是 $\mathbf{G}$-代数闭的, 则 $\operatorname{Hom}_{\mathsf{V}(\mathbf{G})}(\mathbf{F}(X),\mathbf{H})$ 中的点与 $\mathbf{F}(X)$ 的极大同余一一对应.
 
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
@@ -1248,14 +1248,14 @@ $$
 若 $\mathfrak{m}$ 是 $\mathbf{F}(X)$ 中的极大同余, 则 $Z(\mathfrak{m})$ 非空, 设 $\mu\in Z(\mathfrak{m})$, 则 $I(\{\mu\})$ 包含 $I(Z(\mathfrak{m}))=\sqrt{\mathfrak{m}}$, 因 $\mathfrak{m}$ 极大, 则必有 $\sqrt{\mathfrak{m}}=\mathfrak{m}$ 或 $\sqrt{\mathfrak{m}}=F(X)$, 若 $\sqrt{\mathfrak{m}}=F(X)$, 则与 $I(\{\mu\})$ 极大矛盾, 若 $\sqrt{\mathfrak{m}}=\mathfrak{m}$, 则由 $I(\{\mu\})$ 极大知 $I(\{\mu\})=\mathfrak{m}$, 故 $\{\mu\}=Z(I(\{\mu\}))=Z(\mathfrak{m})$.
 
 </div><br>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
 若 $\mathbf{G}$ 是簇 $\mathsf{V}$ 中的一个对象, $\mathbf{H}$ 是带常数的簇 $\mathsf{V}(\mathbf{G})$ 中的一个忠实 $\mathbf{G}$-代数闭整代数, $\mathbf{F}(X)$ 是 $\mathsf{V}(\mathbf{G})$ 中自由代数, 则 $\mathbf{F}(X)$ 的极大同余都是素同余.
 
 </div>
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
@@ -1269,7 +1269,7 @@ $$
 
 将古典代数几何中的更多概念, 定理或性质翻译为泛代数几何的版本固然是一个研究方向, 但泛代数几何并不局限于此, 而是在其发展的过程中产生了许多新问题, 本节叙述这些新问题.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(代数集的范畴)</b>
 

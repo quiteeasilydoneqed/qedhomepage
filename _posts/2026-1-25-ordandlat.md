@@ -24,7 +24,7 @@ tags:
 * 线序性: $\forall x,y\in X$, $x\le y$ 与 $y\le x$ 二者至少成立一个;
 * 良基性: $X$ 中任意非空子集 $S$, 都存在 $s\in S$, 使得对 $\forall x\in S$, 若 $x\le s$, 则 $x=s$, 即任意非空子集 $S$ 均有极小元 $s$.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(序结构)</b>
 
@@ -42,7 +42,7 @@ tags:
 
 对任意序结构 $(X,\le)$, 定义 $x<y$ 意为 $x\le y$ 且 $x\neq y$, 这是一个二元关系, 称 $(X,<)$ 为严格预序集, 严格偏序集或严格全序集.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(态射)</b>
 
@@ -56,7 +56,7 @@ tags:
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义</b>
 
@@ -82,7 +82,7 @@ tags:
 
 对于偏序集, 上下确界若存在则必唯一, 分别记为 $\sup S$ 和 $\inf S$.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(链与反链)</b>
 
@@ -92,7 +92,7 @@ tags:
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(佐恩引理)</b>
 
@@ -100,7 +100,7 @@ tags:
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(良序定理)</b>
 
@@ -112,7 +112,7 @@ tags:
 
 由序结构可以得到一些其他结构.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(序拓扑)</b>
 
@@ -126,7 +126,7 @@ tags:
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(序作为范畴)</b>
 
@@ -136,7 +136,7 @@ tags:
 
 ### 亚历山德罗夫拓扑
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(亚历山德罗夫拓扑)</b>
 
@@ -146,7 +146,7 @@ tags:
 
 容易验证亚历山德罗夫拓扑确实是拓扑.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -154,7 +154,7 @@ tags:
 
 </div>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
@@ -164,7 +164,7 @@ tags:
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -172,7 +172,7 @@ tags:
 
 </div>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
@@ -184,7 +184,7 @@ tags:
 
 设预序集连同保序映射组成的范畴为 $\mathsf{PerOrd}$, 其中偏序集组成的全子范畴为 $\mathsf{Pos}$.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(亚历山德罗夫空间)</b>
 
@@ -194,7 +194,7 @@ tags:
 
 设带亚历山德罗夫空间连同连续映射组成的范畴为 $\mathsf{Alex}$, 其中满足 $T_0$ 公理的空间组成的全子范畴为 $\mathsf{Alex_0}$.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -202,7 +202,7 @@ $\mathsf{PerOrd}$ 与 $\mathsf{Alex}$ 范畴同构, $\mathsf{Pos}$ 与 $\mathsf{
 
 </div>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
@@ -222,7 +222,7 @@ $\mathsf{PerOrd}$ 与 $\mathsf{Alex}$ 范畴同构, $\mathsf{Pos}$ 与 $\mathsf{
 
 格是满足特殊条件的偏序集.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(并与交)</b>
 
@@ -230,7 +230,7 @@ $\mathsf{PerOrd}$ 与 $\mathsf{Alex}$ 范畴同构, $\mathsf{Pos}$ 与 $\mathsf{
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(格)</b>
 
@@ -245,7 +245,7 @@ $\mathsf{PerOrd}$ 与 $\mathsf{Alex}$ 范畴同构, $\mathsf{Pos}$ 与 $\mathsf{
 * 结合律: $a \vee (b \vee c) = (a \vee b) \vee c$, $a \wedge (b \wedge c) = (a \wedge b) \wedge c$;
 * 吸收律: $a \vee (a \wedge b) = a$, $a \wedge (a \vee b) = a$.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(顶与底)</b>
 
@@ -257,7 +257,7 @@ $\mathsf{PerOrd}$ 与 $\mathsf{Alex}$ 范畴同构, $\mathsf{Pos}$ 与 $\mathsf{
 
 格 $P$ 可能满足以下性质中的若干个.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义</b>
 
@@ -285,7 +285,7 @@ $\mathsf{PerOrd}$ 与 $\mathsf{Alex}$ 范畴同构, $\mathsf{Pos}$ 与 $\mathsf{
 
 ### 布尔环
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(布尔环)</b>
 
@@ -303,7 +303,7 @@ $$
 
 设所有布尔环连同环同态组成的范畴为 $\mathsf{BoolRing}$, 布尔代数连同布尔代数同态组成的范畴为 $\mathsf{BoolAlg}$, 这里布尔代数同态的意思是保持交, 并, 顶元以及底元的映射.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -311,7 +311,7 @@ $\mathsf{BoolRing}$ 与 $\mathsf{BoolAlg}$ 范畴同构.
 
 </div>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 
@@ -327,7 +327,7 @@ $\mathsf{BoolRing}$ 与 $\mathsf{BoolAlg}$ 范畴同构.
 
 此处讲的是格论意义下的滤子, 集合意义下的滤子实际上是包含关系下的特殊情况, 滤子的对偶有时也称为理想, 此处只叙述滤子的情况, 取对偶即可得到关于理想的叙述.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(滤子)</b>
 
@@ -345,7 +345,7 @@ $\mathsf{BoolRing}$ 与 $\mathsf{BoolAlg}$ 范畴同构.
 
 若滤子不是全集 $P$, 则称为真滤子, 形如 $\uparrow x=\\{y\in P\mid x\le y\\}$ 的集合称为 $x$ 生成的主滤子, 所有滤子组成的集合记为 $\mathrm{Fil}(P)$, 它在包含关系下显然构成偏序集.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(超滤子)</b>
 
@@ -355,7 +355,7 @@ $\mathsf{BoolRing}$ 与 $\mathsf{BoolAlg}$ 范畴同构.
 
 可以证明任何滤子都一定包含在某个超滤子中, 但该证明需要选择公理.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义</b>
 
@@ -367,7 +367,7 @@ $\mathsf{BoolRing}$ 与 $\mathsf{BoolAlg}$ 范畴同构.
 
 ### 斯通表示定理
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(斯通空间)</b>
 
@@ -385,7 +385,7 @@ $\mathsf{BoolRing}$ 与 $\mathsf{BoolAlg}$ 范畴同构.
 
 设 $\mathbf{2}$ 为二元集 $\{0,1\}$, 它显然是布尔格, 在 $\mathrm{Hom}_{\mathsf{BoolAlg}}(B,\mathbf{2})$ 上定义拓扑为由集族 $\\{\\{f \in \mathrm{Hom}_{\mathsf{BoolAlg}}(B,\mathbf{2}) \mid f(a) = 1\\}\\}_{a\in B}$ 生成的拓扑, 这使其同胚于 $S(B)$ 和 $\mathrm{Spec}(B)$. 也就是说, 从 $\mathsf{BoolAlg}$ 到 $\mathsf{Stone}^{op}$ 的三个函子 $S(\cdot)$, $\mathrm{Spec}(\cdot)$ 和 $\mathrm{Hom}_{\mathsf{BoolAlg}}(\cdot,\mathbf{2})$ 是三个同构的函子.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(斯通表示定理)</b>
 
@@ -403,7 +403,7 @@ $\mathsf{BoolAlg}$ 与 $\mathsf{Stone}^{op}$ 范畴等价.
 
 伯克霍夫表示定理针对有限分配格, 即具有有限个元素的分配格.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(并不可约元)</b>
 
@@ -419,7 +419,7 @@ $\mathsf{BoolAlg}$ 与 $\mathsf{Stone}^{op}$ 范畴等价.
 
 可以证明, 如果 $L$ 是有限分配格, $P$ 是有限偏序集时, $O(J(L))\cong L$, $J(O(P))\cong P$.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(伯克霍夫表示定理)</b>
 
@@ -431,7 +431,7 @@ $\mathsf{FDLat}$ 与 $\mathsf{FPos}^{op}$ 范畴等价.
 
 普利斯特里对偶定理针对的是任意有界分配格, 它是斯通表示定理和伯克霍夫表示定理的推广.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(普利斯特里空间)</b>
 
@@ -445,7 +445,7 @@ $\mathsf{FDLat}$ 与 $\mathsf{FPos}^{op}$ 范畴等价.
 
 设所有有界分配格连同保界格同态组成的范畴为 $\mathsf{DLat}$.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(普利斯特里对偶定理)</b>
 
@@ -455,7 +455,7 @@ $\mathsf{DLat}$ 与 $\mathsf{Pries}^{op}$ 范畴等价.
 
 #### 埃萨基亚对偶
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(海廷代数)</b>
 
@@ -467,7 +467,7 @@ $\mathsf{DLat}$ 与 $\mathsf{Pries}^{op}$ 范畴等价.
 
 设所有海廷代数和海廷代数同态组成的范畴为 $\mathsf{HA}$.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(埃萨基亚空间)</b>
 
@@ -477,7 +477,7 @@ $\mathsf{DLat}$ 与 $\mathsf{Pries}^{op}$ 范畴等价.
 
 埃萨基亚同态指保持埃萨基亚空间结构的映射, 设所有埃萨基亚空间和埃萨基亚同态组成的范畴为 $\mathsf{Esa}$.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理(埃萨基亚对偶定理)</b>
 
@@ -489,7 +489,7 @@ $\mathsf{HA}$ 与 $\mathsf{Esa}^{op}$ 范畴等价.
 
 无点拓扑的宗旨是不研究拓扑空间中具体的点, 而是研究开集族构成的格, 使得一些依赖于选择公理的拓扑学定理在翻译至无点拓扑语言后不依赖选择公理, 于是与直觉主义逻辑有深入联系. 无点拓扑也与拓扑斯理论有很多联系.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(框架)</b>
 
@@ -505,7 +505,7 @@ $$
 
 框架间的同态是保持任意并的格同态. 框架范畴记为 $\mathsf{Frm}$.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(位象)</b>
 
@@ -519,7 +519,7 @@ $$
 
 一个事实是, 如果在 $\mathbf{2}$ 上取拓扑为 $\\{\emptyset,\\{1\\},\\{0,1\\}\\}$, 即谢尔宾斯基空间, 则 $pt(L)$ 是乘积空间 $\mathbf{2}^L$ 的子空间.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -533,7 +533,7 @@ $$
 
 接下来将这两个函子限制在子范畴上构成两个子范畴的等价.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(清晰空间)</b>
 
@@ -543,7 +543,7 @@ $$
 
 清晰空间英文为 Sober, 这并非人名, 因此此处选择直译为清晰, 也有人译为索伯空间. 显然 $\mathsf{Sob}$ 是 $\mathsf{Top}$ 的全子范畴.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -551,7 +551,7 @@ $$
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(空间式位象)</b>
 
@@ -561,7 +561,7 @@ $$
 
 不妨设 $p(a)=1$, 则称 $p$ 是 $a$ 中的一个点
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -573,7 +573,7 @@ $L$ 是一个空间式位象当且仅当它同构于某个拓扑空间在 $\Omeg
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -593,7 +593,7 @@ $\mathsf{SLoc}$ 有一个称为凝聚位象范畴的子范畴, 一般记为 $\ma
 
 ### 伽罗瓦连接
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(伽罗瓦连接)</b>
 
@@ -609,7 +609,7 @@ $$<br>
 
 若将偏序集看做范畴, 则伽罗瓦连接无非是伴随函子. 也有人将左伴随称为下伴随, 右伴随称为上伴随, 这与序是对应的. 伽罗瓦连接的例子极多, 而最经典的例子由伽罗瓦理论基本定理给出.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -627,7 +627,7 @@ $$<br>
 
 这说明一个函数的左或右伴随若存在则唯一, 并且伽罗瓦连接之间可以互相确定. 伽罗瓦连接关于单满性也有很好的对偶性质.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -651,7 +651,7 @@ $$<br>
 
 完备格之间的伽罗瓦连接具有更好的结构.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -687,7 +687,7 @@ $$
 
 直接验证即可知道, 在 $u\circ l\circ u=u$, $l\circ u\circ l=l$, 我们设 $\mathcal{P}(P)$ 是 $P$ 的幂集, 其上序为包含关系, $\mathcal{P}(P)^{op}$ 表示反序集, 设 $u\colon \mathcal{P}(P)\to\mathcal{P}(P)^{op}$, $l\colon \mathcal{P}(P)^{op}\to\mathcal{P}(P)$, 则有 $u\dashv l$.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(Dedekind–MacNeille完备化)</b>
 
@@ -703,7 +703,7 @@ $$
 
 有时也称满足 $u(A)=B$, $l(B)=A$ 的集合对为 $P$ 的一个分割.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -711,7 +711,7 @@ $$
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -725,7 +725,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 ### 一致空间
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(邻域系)</b>
 
@@ -733,7 +733,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(开邻域系)</b>
 
@@ -741,7 +741,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(一致空间)</b>
 
@@ -765,7 +765,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 其次, 设 $G$ 是拓扑群, $e$ 为单位元, 记 $\mathfrak{N}_e$ 为 $e$ 点的邻域系, 设 $U_V = \\{ (x, y) \mid x^{-1}y \in V \\}$, 构造左一致结构为 $\mathcal{U} = \\{ U \subseteq G \times G \mid \exists V \in \mathcal{N}_e, U_V \subseteq U \\}$, 类似可构造右一致结构, 二者未必是相同的, 除非群是交换群.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(一致连续)</b>
 
@@ -781,7 +781,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 回忆有向集就是滤过的偏序集.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(网)</b>
 
@@ -789,7 +789,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(最终在)</b>
 
@@ -797,7 +797,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(超网)</b>
 
@@ -805,7 +805,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(收敛)</b>
 
@@ -815,7 +815,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 收敛网未必只收敛到一个点, 但如果空间是豪斯多夫的, 则若收敛则一定收敛到唯一点.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(柯西网)</b>
 
@@ -829,7 +829,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 ### 滤子
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(滤子基)</b>
 
@@ -843,7 +843,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(滤子)</b>
 
@@ -865,7 +865,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 集合的滤子无非是其幂集格上的滤子, 于是也有超滤子和素滤子的概念, 由于幂集一定是布尔格, 于是集合的超滤子和素滤子是等价的.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(收敛)</b>
 
@@ -875,7 +875,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 收敛滤子只收敛到唯一一点当且仅当空间是豪斯多夫的.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(柯西滤子)</b>
 
@@ -885,7 +885,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 容易验证收敛滤子一定是柯西滤子.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(完备空间)</b>
 
@@ -893,7 +893,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -905,7 +905,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 ### 网与滤子
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(导出网)</b>
 
@@ -913,7 +913,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定义(导出滤子)</b>
 
@@ -921,7 +921,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 </div><br>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -931,7 +931,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 该定理说明, 任何滤子都是某个网的导出滤子, 而未必所有网都是某个滤子的导出网, 所以直观而言网是比滤子更多的, 二者在各类实践中各有优势, 而以下定理表明二者在收敛性上本质是等价的.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -943,7 +943,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 设 $X$ 上的所有滤子组成的集合为 $\mathsf{Fil}$, 它关于包含关系构成一个偏序集, 于是也构成范畴, 对于 $X$ 上的一个滤子 $\mathfrak{F}$, $\forall x\in X$, 定义 $\mathsf{Fil}_x$ 为所有包含 $\mathfrak{F}\cap\mathfrak{N}_x$ 的滤子组成的集合, 它关于包含关系也构成偏序集, 它是 $\mathsf{Fil}$ 的全子范畴, 于是有包含函子 $\iota\colon \mathsf{Fil}_x\to\mathsf{Fil}$.
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>定理</b>
 
@@ -951,7 +951,7 @@ DM完备化的最基础例子是有理数集 $(\mathbb{Q},\le)$ 的完备化, �
 
 </div>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 
 <b>证明</b>
 

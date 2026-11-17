@@ -12,7 +12,7 @@ tags:
 
 Cayley定理是说:
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理</b>
 
 任意一个群 $ G $, 都同构于置换群 $ S_n $ 的子群, 其中 $ n=\left|G\right| $.
@@ -24,7 +24,7 @@ Cayley定理是说:
 
 Yoneda引理是说:
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理(Yoneda引理)</b>
 
 对于 $ S, T\in \mathrm{Ob}(C) $, 有
@@ -36,13 +36,13 @@ $$
 
 Yoneda引理证明Cayley定理的关键是, 将每一个群看做只有一个对象的群胚, 其中群胚(或广群)的定义是所有态射均可逆的范畴. 对于群胚 $ C $, 若设 $ \mathrm{Ob}(C)=\{\mathrm1\} $, 则 $ \mathrm{Mor}(C) $ 中的元素都是从 $ \mathrm{1} $ 到自身的态射,  $ \mathrm{Mor}(C) $ 关于态射的复合构成一个群. 对于任意一个群 $ G $, 都可以找到一个只有一个对象的群胚 $ C $, 使得 $ G\cong \mathrm{Mor}(C). $ 
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>定理</b>
 
 Yoneda引理 $ \Longrightarrow $ Cayley定理.
 </div>
 
-<div style="border: 3px solid #000; padding: 10px;">
+<div class="qed-box">
 <b>证明</b>
 
 设范畴 $ C $ 是只有一个对象的群胚, 使得 $ G\cong \mathrm{Mor}(C). $ 
