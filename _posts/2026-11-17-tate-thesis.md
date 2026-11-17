@@ -22,7 +22,7 @@ tags:
 
 ### 1.1. 相关历史
 
-Hecke 是第一个证明任意代数数域的 Dedekind $\zeta$ 函数可以整平面解析延拓, 并且满足一条简单函数方程的人. 他随即意识到, 他的方法不仅可以用于 Dedekind $\zeta$ 函数与 L 级数, 而且可以用于由一种新型理想特征作出的 $\zeta$ 函数, 这种理想特征对主理想而言, 不仅依赖于该数模"导子"所在的剩余类, 而且依赖于该数在复域中的共轭所处的位置. 克服了相当不寻常的技术上的复杂性之后, 他证明了 (1918 年与 1920 年) 这些"Hecke 型"的 $\zeta$ 函数满足与 Dedekind $\zeta$ 函数同一类型的函数方程, 只是其中的因子要繁复得多.
+Hecke 是第一个证明任意代数数域的 Dedekind $\zeta$ 函数可以整平面解析延拓, 并且满足一条简单函数方程的人. 他随即意识到, 他的方法不仅可以用于 Dedekind $\zeta$ 函数与 L 级数, 而且可以用于由一种新型理想特征作出的 $\zeta$ 函数, 这种理想特征对主理想而言, 不仅依赖于该数模\"导子\"所在的剩余类, 而且依赖于该数在复域中的共轭所处的位置. 克服了相当不寻常的技术上的复杂性之后, 他证明了 (1918 年与 1920 年) 这些\"Hecke 型\"的 $\zeta$ 函数满足与 Dedekind $\zeta$ 函数同一类型的函数方程, 只是其中的因子要繁复得多.
 
 在一项工作中 (Chevalley, 1940), 其主要目的在于把分析从类域论里移出去, Chevalley 引进了伊代尔群这个极好的概念, 以之作为理想群的精细化. 在伊代尔里, Chevalley 找到的不仅是通往类域论的最佳途径, 而且也是通往一般代数数论的最佳途径. 这一点由 Artin 与 Whaples (1945) 的工作显示出来. 他们把赋值向量定义为与伊代尔相对应的加法概念, 并由这些概念出发, 从简单的公理推导出代数数论的全部基本命题.
 
@@ -34,7 +34,7 @@ Artin 向我指出了这种可能性: 把 $\zeta$ 函数的概念加以推广, �
 
 我谨向 Artin 表示深切的谢意, 既感谢他向我提示了这个题目, 也感谢他在我工作过程中不断给予的鼓励.
 
-### 1.3. "预备知识"
+### 1.3. \"预备知识\"
 
 在数论方面, 我们只假定读者知道经典的代数数论, 以及它与局部理论的联系. 不需要预先知道伊代尔与赋值向量的观点, 因为为了在伊代尔群与向量群上引入抽象分析, 我们重新定义它们, 并详细讨论它们的结构.
 
@@ -44,7 +44,7 @@ Artin 向我指出了这种可能性: 把 $\zeta$ 函数的概念加以推广, �
 
 ### 2.1. 引言
 
-本节中, $k$ 表示一个代数数域对某个素除子 $\mathfrak p$ 作完备化所得的域. 因此若 $\mathfrak p$ 是 Archimedean 素除子, $k$ 就是实域或复域; 若 $\mathfrak p$ 是离散的, $k$ 就是一个"$\mathfrak p$ 进"域. 在后一种情形, $k$ 包含一个整数环 $\mathfrak o$, 它只有一个素理想 $\mathfrak p$, 剩余类域 $\mathfrak o/\mathfrak p$ 有 $N\mathfrak p$ 个元素. 两种情形下, $k$ 在与素除子 $\mathfrak p$ 相联系的拓扑之下都是一个完备拓扑域.
+本节中, $k$ 表示一个代数数域对某个素除子 $\mathfrak p$ 作完备化所得的域. 因此若 $\mathfrak p$ 是 Archimedean 素除子, $k$ 就是实域或复域; 若 $\mathfrak p$ 是离散的, $k$ 就是一个\"$\mathfrak p$ 进\"域. 在后一种情形, $k$ 包含一个整数环 $\mathfrak o$, 它只有一个素理想 $\mathfrak p$, 剩余类域 $\mathfrak o/\mathfrak p$ 有 $N\mathfrak p$ 个元素. 两种情形下, $k$ 在与素除子 $\mathfrak p$ 相联系的拓扑之下都是一个完备拓扑域.
 
 从属于 $\mathfrak p$ 的 $k$ 的无穷多个等价赋值中, 我们选取如下的规范赋值: 
 
@@ -56,7 +56,7 @@ $$
 \end{array}
 $$
 
- 我们知道 $k$ 是局部紧的. 可以证明的更精确的陈述是: 子集 $B\subset k$ 相对紧 (即其闭包紧) 当且仅当它在绝对值下有界. 事实上, 若 $k$ 是实域或复域, 这对直线或平面中的子集是众所周知的事实; 若 $k$ 是 $\mathfrak p$ 进域, 可以用一个涉及剩余类域有限性的"抽屉论证"以类似的方式证明之.
+ 我们知道 $k$ 是局部紧的. 可以证明的更精确的陈述是: 子集 $B\subset k$ 相对紧 (即其闭包紧) 当且仅当它在绝对值下有界. 事实上, 若 $k$ 是实域或复域, 这对直线或平面中的子集是众所周知的事实; 若 $k$ 是 $\mathfrak p$ 进域, 可以用一个涉及剩余类域有限性的\"抽屉论证\"以类似的方式证明之.
 
 ### 2.2. 加法特征与测度
 
@@ -171,7 +171,7 @@ $$
 
 </div>
 
-现在我们有了另一个理由称此规范赋值为自然的. $\vert \alpha\vert $ 可以解释为加法群 $k^+$ 在变换 $\xi\to\alpha\xi$ 之下被"拉伸"的倍数.
+现在我们有了另一个理由称此规范赋值为自然的. $\vert \alpha\vert $ 可以解释为加法群 $k^+$ 在变换 $\xi\to\alpha\xi$ 之下被\"拉伸\"的倍数.
 
 对积分而言, 前一个引理的意义显然是: 
 
@@ -228,7 +228,7 @@ $$
 
 我们对 $k$ 的乘法群 $k^\ast $ 的结构的第一点认识, 来自连续同态 $\alpha\to\vert \alpha\vert $, 它是 $k^\ast $ 到正实数乘法群中的映射. 这个同态的核, 即一切满足 $\vert \alpha\vert =1$ 的 $\alpha$ 所成的子群, 显然将起重要作用. 我们用 $u$ 记它. 一切情形下 $u$ 都紧; 若 $k$ 是 $\mathfrak p$ 进的, $u$ 也是开的.
 
-关于 $k^\ast $ 的特征, 情况与 $k^+$ 不同. 首先, 我们关心的是 $k^\ast $ 到复数中的一切连续乘法映射 $\alpha\to c(\alpha)$, 而不只是有界的那些, 这样的映射我们将称为拟特征, 而把 "特征" 这个词留给通常那种绝对值为 $1$ 的特征. 其次, 我们将找不到拟特征群的模型, 甚至也找不到特征群的模型, 尽管这样的模型会具有极大的重要性.
+关于 $k^\ast $ 的特征, 情况与 $k^+$ 不同. 首先, 我们关心的是 $k^\ast $ 到复数中的一切连续乘法映射 $\alpha\to c(\alpha)$, 而不只是有界的那些, 这样的映射我们将称为拟特征, 而把 \"特征\" 这个词留给通常那种绝对值为 $1$ 的特征. 其次, 我们将找不到拟特征群的模型, 甚至也找不到特征群的模型, 尽管这样的模型会具有极大的重要性.
 
 若一个拟特征在 $u$ 上平凡, 我们称它为非分歧的, 先来确定非分歧的拟特征.
 
@@ -369,13 +369,13 @@ $$
 
 <div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
 
-**引理 2.4.1.** $\zeta$ 函数在"一切指数大于 $0$ 的拟特征"这个域中是正则的.
+**引理 2.4.1.** $\zeta$ 函数在\"一切指数大于 $0$ 的拟特征\"这个域中是正则的.
 
 </div>
 
 <div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
 
-**证明.** 我们必须证明, 对每个指数 $>0$ 的 $c$, 积分 $\int f(\alpha)c(\alpha)\vert \alpha\vert ^s \mathrm{d}\alpha$ 在 $s$ 接近 $0$ 时表示 $s$ 的一个正则函数. 利用该积分在 $s$ 接近 $0$ 时绝对收敛这一事实作估计, 证明这个函数在 $s$ 接近 $0$ 时有导数就是例行公事. 事实上, 这个导数可以通过"在积分号下求导"算出来.
+**证明.** 我们必须证明, 对每个指数 $>0$ 的 $c$, 积分 $\int f(\alpha)c(\alpha)\vert \alpha\vert ^s \mathrm{d}\alpha$ 在 $s$ 接近 $0$ 时表示 $s$ 的一个正则函数. 利用该积分在 $s$ 接近 $0$ 时绝对收敛这一事实作估计, 证明这个函数在 $s$ 接近 $0$ 时有导数就是例行公事. 事实上, 这个导数可以通过\"在积分号下求导\"算出来.
 
 </div>
 
@@ -395,13 +395,13 @@ $$
 
 <div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
 
-**证明.** 在我们所考虑的区域内, $\zeta(f,c)\zeta(\widehat g,\widehat c)=\int f(\alpha)c(\alpha)\,\mathrm{d}\alpha\cdot\int \widehat g(\beta)c^{-1}(\beta)\vert \beta\vert \,\mathrm{d}\beta$, 两个积分都绝对收敛. 我们可以把它写成 $k^\ast $ 与自身直积 $k^\ast \times k^\ast $ 上的一个绝对收敛的"二重积分": 
+**证明.** 在我们所考虑的区域内, $\zeta(f,c)\zeta(\widehat g,\widehat c)=\int f(\alpha)c(\alpha)\,\mathrm{d}\alpha\cdot\int \widehat g(\beta)c^{-1}(\beta)\vert \beta\vert \,\mathrm{d}\beta$, 两个积分都绝对收敛. 我们可以把它写成 $k^\ast $ 与自身直积 $k^\ast \times k^\ast $ 上的一个绝对收敛的\"二重积分\": 
 
 $$
 \iint f(\alpha)\,\widehat g(\beta)\, c(\alpha\beta^{-1})\,\vert \beta\vert \, d(\alpha,\beta).
 $$
 
- 对 $k^\ast \times k^\ast $ 施以"剪切"自同构 $(\alpha,\beta)\to(\alpha,\alpha\beta)$, 在这一自同构下测度 $d(\alpha,\beta)$ 不变, 于是得到 
+ 对 $k^\ast \times k^\ast $ 施以\"剪切\"自同构 $(\alpha,\beta)\to(\alpha,\alpha\beta)$, 在这一自同构下测度 $d(\alpha,\beta)$ 不变, 于是得到 
 
 $$
 \iint f(\alpha)\,\widehat g(\alpha\beta)\, c(\beta^{-1})\,\vert \alpha\beta\vert \, d(\alpha,\beta).
@@ -807,7 +807,7 @@ $$
 \zeta(f_0,\vert \,\vert ^s) = \int_{\mathfrak d^{-1}} \vert \alpha\vert ^s\, \mathrm{d}\alpha .
 $$
 
- 用 $A_v$ 表示阶数为 $v$ 的元素所成的"环带", 并令 $\mathfrak d=\mathfrak p^d$. 则 $\mathfrak d^{-1}=\bigcup_{v=-d}^{\infty}A_v$ 是不交并, 并且 
+ 用 $A_v$ 表示阶数为 $v$ 的元素所成的\"环带\", 并令 $\mathfrak d=\mathfrak p^d$. 则 $\mathfrak d^{-1}=\bigcup_{v=-d}^{\infty}A_v$ 是不交并, 并且 
 
 $$
 \begin{aligned}
@@ -863,7 +863,7 @@ $$
 
  因为 $c_n(\alpha)$ 是分歧的, 从而在子群 $u$ 上不平凡.
 
-情形 2. $-d>v>-d-n$. (只在有"高阶分歧"时才出现, 即 $n>1$ 时.) 为处理这一情形, 我们把 $A_v$ 分成一些互不相交的集合, 其类型为 $\alpha_0+\mathfrak d^{-1}=\alpha_0+\mathfrak p^{-d}=\alpha_0(1+\mathfrak p^{-d-v})$. 在这样的集合上 $\Lambda$ 为常数 $=\Lambda(\alpha_0)$, 而 
+情形 2. $-d>v>-d-n$. (只在有\"高阶分歧\"时才出现, 即 $n>1$ 时.) 为处理这一情形, 我们把 $A_v$ 分成一些互不相交的集合, 其类型为 $\alpha_0+\mathfrak d^{-1}=\alpha_0+\mathfrak p^{-d}=\alpha_0(1+\mathfrak p^{-d-v})$. 在这样的集合上 $\Lambda$ 为常数 $=\Lambda(\alpha_0)$, 而 
 
 $$
 \int_{\alpha_0+\mathfrak d^{-1}} e^{2\pi i\Lambda(\alpha)}\, c_n(\alpha)\,
@@ -960,7 +960,7 @@ $$
 
 设 $\{\mathfrak p\}$ 是一族指标. 设对每个 $\mathfrak p$ 给定一个局部紧交换群 $G_{\mathfrak p}$, 并且对几乎所有的 $\mathfrak p$ (意思是除有限多个 $\mathfrak p$ 之外), 给定一个固定子群 $H_{\mathfrak p}\subset G_{\mathfrak p}$, 它是开而且紧的.
 
-于是我们可以作一个新的抽象群 $G$, 它的元素 $a=(\ldots,a_{\mathfrak p},\ldots)$ 是"向量", 对每个 $\mathfrak p$ 有一个 分量 $a_{\mathfrak p}\in G_{\mathfrak p}$, 并且对几乎所有 $\mathfrak p$ 有 $a_{\mathfrak p}\in H_{\mathfrak p}$. 乘法按分量定义.
+于是我们可以作一个新的抽象群 $G$, 它的元素 $a=(\ldots,a_{\mathfrak p},\ldots)$ 是\"向量\", 对每个 $\mathfrak p$ 有一个 分量 $a_{\mathfrak p}\in G_{\mathfrak p}$, 并且对几乎所有 $\mathfrak p$ 有 $a_{\mathfrak p}\in H_{\mathfrak p}$. 乘法按分量定义.
 
 设 $S$ 是一个有限的指标集, 至少包含一切使 $H_{\mathfrak p}$ 未定义的 $\mathfrak p$. 满足当 $\mathfrak p\notin S$ 时 $a_{\mathfrak p}\in
 H_{\mathfrak p}$ 的元素 $a\in G$ 构成 $G$ 的一个子群, 我们记作 $G_S$. $G_S$ 自然地同构于局部紧群的直积 $\prod_{\mathfrak p\in S}G_{\mathfrak p}\times
@@ -968,7 +968,7 @@ H_{\mathfrak p}$ 的元素 $a\in G$ 构成 $G$ 的一个子群, 我们记作 $G_
 
 <div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
 
-**引理 3.1.1.** 一切形如 $N=\prod_{\mathfrak p}N_{\mathfrak p}$ 的"平行体"的全体构成 $G$ 中 $1$ 的基本邻域组, 其中对一切 $\mathfrak p$, $N_{\mathfrak p}$ 是 $G_{\mathfrak p}$ 中 $1$ 的邻域, 并且对几乎所有 $\mathfrak p$, $N_{\mathfrak p}=H_{\mathfrak p}$ (回忆一下, 按假设 $H_{\mathfrak p}$ 是开的).
+**引理 3.1.1.** 一切形如 $N=\prod_{\mathfrak p}N_{\mathfrak p}$ 的\"平行体\"的全体构成 $G$ 中 $1$ 的基本邻域组, 其中对一切 $\mathfrak p$, $N_{\mathfrak p}$ 是 $G_{\mathfrak p}$ 中 $1$ 的邻域, 并且对几乎所有 $\mathfrak p$, $N_{\mathfrak p}=H_{\mathfrak p}$ (回忆一下, 按假设 $H_{\mathfrak p}$ 是开的).
 
 </div>
 
@@ -1010,7 +1010,7 @@ $$
 
 <div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
 
-**证明.** $G$ 的任一紧子集含于某个 $G_S$ 中, 因为诸 $G_S$ 是覆盖 $G$ 的开集族, 而有限 多个子群 $G_S$ 的并仍是 $G_S$. $G_S$ 的任一紧子集含于所述类型的平行体中, 因为它含于它在各分量群 $G_{\mathfrak p}$ 上的"投影"的笛卡儿积中. 这些投影 是紧的, 因为它们是连续像; 并且当 $\mathfrak p\notin S$ 时它们含于 $H_{\mathfrak p}$ 中.
+**证明.** $G$ 的任一紧子集含于某个 $G_S$ 中, 因为诸 $G_S$ 是覆盖 $G$ 的开集族, 而有限 多个子群 $G_S$ 的并仍是 $G_S$. $G_S$ 的任一紧子集含于所述类型的平行体中, 因为它含于它在各分量群 $G_{\mathfrak p}$ 上的\"投影\"的笛卡儿积中. 这些投影 是紧的, 因为它们是连续像; 并且当 $\mathfrak p\notin S$ 时它们含于 $H_{\mathfrak p}$ 中.
 
 另一方面, 任一平行体 $\prod_{\mathfrak p}B_{\mathfrak p}$ 显然是某个 $G_S$ 的 紧子集, 从而是 $G$ 的紧子集.
 
@@ -1222,7 +1222,7 @@ f_{\mathfrak p}(a_{\mathfrak p})\overline{c_{\mathfrak p}(a_{\mathfrak p})}$ 应
 
 <div class="tate-proof" style="border: 3px solid #000; padding: 10px;" markdown="1">
 
-**证明.** 把前一个引理应用于群 $\widehat G$ 与测度 $\mathrm{d}c$, 我们对这些"乘积"函数得到 反演公式 
+**证明.** 把前一个引理应用于群 $\widehat G$ 与测度 $\mathrm{d}c$, 我们对这些\"乘积\"函数得到 反演公式 
 
 $$
 f(a) = \int \widehat f(c)\,c(a)\,\mathrm{d}c,
@@ -1294,7 +1294,7 @@ $$
 
 </div>
 
-局部引理 2.2.4 与 2.2.5, 即对 $\alpha\in k^\ast $ 的陈述 $d(\alpha\xi)=\vert \alpha\vert \,d\xi$, 在大范围中的类比是什么? 在那个局部考虑中, $\alpha$ 起着 $k_{\mathfrak p}^+$ 的自同构的作用, 即自同构 $\xi\to\alpha\xi$. 这就引导我们去考察如下问题: 对什么样的 $a\in V$, $x\to ax$ 是 $V$ 的自同构? 我们首先注意到, 对任意 $a\in V$, $x\to ax$ 是 $V$ 到 $V$ 的连续同态. 它成为自同构的必要条件是存在 $b\in V$ 使 $ab=1=(1,1,\ldots)$. 但这个条件也是充分的, 因为有了这个 $b$, 我们就得到同一形式的逆映射 $x\to bx$. 现在要让这样的 $b$ 作为一个"无限制的"向量存在, 就需要对一切 $\mathfrak p$ 有 $a_{\mathfrak p}\ne 0$, 于是 $b_{\mathfrak p}=a_{\mathfrak p}^{-1}$. 进一步的条件 $b\in V$ 意味着对几乎所有 $\mathfrak p$ 有 $a_{\mathfrak p}^{-1}\in\mathfrak o_{\mathfrak p}$, 从而对几乎所有 $\mathfrak p$ 有 $\vert a_{\mathfrak p}\vert _{\mathfrak p}=1$. 这两个条件合起来正好说明 $a$ 是 Chevalley 意义下的伊代尔. 我们已证得
+局部引理 2.2.4 与 2.2.5, 即对 $\alpha\in k^\ast $ 的陈述 $d(\alpha\xi)=\vert \alpha\vert \,d\xi$, 在大范围中的类比是什么? 在那个局部考虑中, $\alpha$ 起着 $k_{\mathfrak p}^+$ 的自同构的作用, 即自同构 $\xi\to\alpha\xi$. 这就引导我们去考察如下问题: 对什么样的 $a\in V$, $x\to ax$ 是 $V$ 的自同构? 我们首先注意到, 对任意 $a\in V$, $x\to ax$ 是 $V$ 到 $V$ 的连续同态. 它成为自同构的必要条件是存在 $b\in V$ 使 $ab=1=(1,1,\ldots)$. 但这个条件也是充分的, 因为有了这个 $b$, 我们就得到同一形式的逆映射 $x\to bx$. 现在要让这样的 $b$ 作为一个\"无限制的\"向量存在, 就需要对一切 $\mathfrak p$ 有 $a_{\mathfrak p}\ne 0$, 于是 $b_{\mathfrak p}=a_{\mathfrak p}^{-1}$. 进一步的条件 $b\in V$ 意味着对几乎所有 $\mathfrak p$ 有 $a_{\mathfrak p}^{-1}\in\mathfrak o_{\mathfrak p}$, 从而对几乎所有 $\mathfrak p$ 有 $\vert a_{\mathfrak p}\vert _{\mathfrak p}=1$. 这两个条件合起来正好说明 $a$ 是 Chevalley 意义下的伊代尔. 我们已证得
 
 <div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
 
@@ -1356,7 +1356,7 @@ $$
 
 </div>
 
-现在用 $\overset{\infty}{V}$ 表示 $V$ 的"无穷部分", 即 $k$ 的各 Archimedean 完备化的笛卡儿积 $\prod_{\mathfrak p\in S_{\infty}}k_{\mathfrak p}$. 若 $k$ 在有理域上的一个生成方程有 $r_1$ 个实根和 $r_2$ 对共轭复根, 则 $\overset{\infty}{V}$ 是 $r_1$ 条实直线与 $r_2$ 个复平面的乘积. 作为这样的东西, 它自然是实数域上的向量空间, 维数为 $n=r_1+2r_2$, 即 $k$ 的绝对次数. 对任意 $\mathfrak{x}\in V$, 用 $\overset{\infty}{\mathfrak{x}}$ 表示 $\mathfrak{x}$ 在 $\overset{\infty}{V}$ 上的投影 $\overset{\infty}{\mathfrak{x}}=(\ldots,\mathfrak{x}_{\mathfrak p},\ldots)_{\mathfrak p\in S_{\infty}}$.
+现在用 $\overset{\infty}{V}$ 表示 $V$ 的\"无穷部分\", 即 $k$ 的各 Archimedean 完备化的笛卡儿积 $\prod_{\mathfrak p\in S_{\infty}}k_{\mathfrak p}$. 若 $k$ 在有理域上的一个生成方程有 $r_1$ 个实根和 $r_2$ 对共轭复根, 则 $\overset{\infty}{V}$ 是 $r_1$ 条实直线与 $r_2$ 个复平面的乘积. 作为这样的东西, 它自然是实数域上的向量空间, 维数为 $n=r_1+2r_2$, 即 $k$ 的绝对次数. 对任意 $\mathfrak{x}\in V$, 用 $\overset{\infty}{\mathfrak{x}}$ 表示 $\mathfrak{x}$ 在 $\overset{\infty}{V}$ 上的投影 $\overset{\infty}{\mathfrak{x}}=(\ldots,\mathfrak{x}_{\mathfrak p},\ldots)_{\mathfrak p\in S_{\infty}}$.
 
 <div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
 
@@ -1443,7 +1443,7 @@ $$
 = \sum_{p}\lambda_{p}(S(\xi)),
 $$
 
- 因为"迹是各局部迹之和". 由于 $S(\xi)$ 是有理数, 问题归结为证明对有理 $x$ 有 $\sum_{p}\lambda_{p}(x)\equiv 0\ (\mathrm{mod}\ 1)$. 为此我们注意, 有理数 $\sum_{p}\lambda_{p}(x)$ 关于每个固定的有理素数 $q$ 都是整的. 即 
+ 因为\"迹是各局部迹之和\". 由于 $S(\xi)$ 是有理数, 问题归结为证明对有理 $x$ 有 $\sum_{p}\lambda_{p}(x)\equiv 0\ (\mathrm{mod}\ 1)$. 为此我们注意, 有理数 $\sum_{p}\lambda_{p}(x)$ 关于每个固定的有理素数 $q$ 都是整的. 即 
 
 $$
 \sum_{p}\lambda_{p}(x) = \left(\sum_{p\ne q,\,
@@ -1655,7 +1655,7 @@ $$
 
 至于 $I$ 上的测度 $\mathrm{d}a$, 我们当然选取 $\mathrm{d}a=\prod_{\mathfrak p}\mathrm{d}a_{\mathfrak p}$, 其中 $\mathrm{d}a_{\mathfrak p}$ 是第 2.3 节中定义的局部乘法测度.
 
-在把 $k$ 的乘法群 $k^\ast $ 嵌入伊代尔群之前, 我们对伊代尔群做不了任何真正有意义的事情, 嵌入的办法是把元素 $\alpha\in k^\ast $ 与伊代尔 $\alpha=(\alpha,\alpha,\ldots,\alpha,\ldots)$ 等同起来. 本节余下的讨论都围绕 $I$ 相对于子群 $k^\ast $ 的结构进行. 首先要注意到的事实是: 与伊代尔 $\alpha\in k^\ast $ 相联系的理想 $\varphi(\alpha)$ 就是 $\alpha$ 生成的主理想 $\alpha\mathfrak o$, 这是理所当然的. 其次我们有对元素 $\alpha\in k^\ast $ 的"乘积公式". 虽然这是熟知的, 我们还是把它正式陈述为一条定理, 以便给出一个有趣的证明.
+在把 $k$ 的乘法群 $k^\ast $ 嵌入伊代尔群之前, 我们对伊代尔群做不了任何真正有意义的事情, 嵌入的办法是把元素 $\alpha\in k^\ast $ 与伊代尔 $\alpha=(\alpha,\alpha,\ldots,\alpha,\ldots)$ 等同起来. 本节余下的讨论都围绕 $I$ 相对于子群 $k^\ast $ 的结构进行. 首先要注意到的事实是: 与伊代尔 $\alpha\in k^\ast $ 相联系的理想 $\varphi(\alpha)$ 就是 $\alpha$ 生成的主理想 $\alpha\mathfrak o$, 这是理所当然的. 其次我们有对元素 $\alpha\in k^\ast $ 的\"乘积公式\". 虽然这是熟知的, 我们还是把它正式陈述为一条定理, 以便给出一个有趣的证明.
 
 <div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
 
@@ -1682,7 +1682,7 @@ $$
 
  对可和的伊代尔函数 $f(a)$ 成立.
 
-乘积公式意味着 $k^\ast \subset J$, 我们现在想描述 $J\ \mathrm{mod}\ k^\ast $ 的一个"基本域". 把伊代尔映到理想的映射使我们能下降到子群 $J_{S_{\infty}}=J\cap I_{S_{\infty}}$. 为研究 $J_{S_{\infty}}$, 我们把伊代尔 $b\in J_{S_{\infty}}$ 映到向量 $l(b)=(\ldots,\log\vert b\vert _{\mathfrak p},\ldots)_{\mathfrak p\in S'_{\infty}}$, 它除 $\mathfrak p_0$ 外对每个 Archimedean 素点有一个分量 $\log\vert b\vert _{\mathfrak p}$. (这 $r=r_1+r_2-1$ 个素点所成的集合记作 $S'_{\infty}$.) 显然映射 $b\to l(b)$ 是 $J_{S_{\infty}}$ 到欧氏 $r$ 空间的加法群上的连续同态. 满射性来自如下事实: 虽然伊代尔 $b\in J_{S_{\infty}}$ 的无穷分量受条件 $\prod_{\mathfrak p}\vert b\vert _{\mathfrak p}=\prod_{\mathfrak p\in S_{\infty}} \vert b\vert _{\mathfrak p}=1$ 的约束, 它们在集合 $S'_{\infty}$ 中却是完全自由的, 因为我们可以调整 $\mathfrak p_0$ 分量.
+乘积公式意味着 $k^\ast \subset J$, 我们现在想描述 $J\ \mathrm{mod}\ k^\ast $ 的一个\"基本域\". 把伊代尔映到理想的映射使我们能下降到子群 $J_{S_{\infty}}=J\cap I_{S_{\infty}}$. 为研究 $J_{S_{\infty}}$, 我们把伊代尔 $b\in J_{S_{\infty}}$ 映到向量 $l(b)=(\ldots,\log\vert b\vert _{\mathfrak p},\ldots)_{\mathfrak p\in S'_{\infty}}$, 它除 $\mathfrak p_0$ 外对每个 Archimedean 素点有一个分量 $\log\vert b\vert _{\mathfrak p}$. (这 $r=r_1+r_2-1$ 个素点所成的集合记作 $S'_{\infty}$.) 显然映射 $b\to l(b)$ 是 $J_{S_{\infty}}$ 到欧氏 $r$ 空间的加法群上的连续同态. 满射性来自如下事实: 虽然伊代尔 $b\in J_{S_{\infty}}$ 的无穷分量受条件 $\prod_{\mathfrak p}\vert b\vert _{\mathfrak p}=\prod_{\mathfrak p\in S_{\infty}} \vert b\vert _{\mathfrak p}=1$ 的约束, 它们在集合 $S'_{\infty}$ 中却是完全自由的, 因为我们可以调整 $\mathfrak p_0$ 分量.
 
 $k^\ast \cap J_{S_{\infty}}$ 是一切在有限素点处为单位的元素 $\varepsilon\in k^\ast $ 所成的群, 即在环 $\mathfrak o$ 中为单位的那些元素. 满足 $l(\zeta)=0$ 的单位 $\zeta$ 是 $k$ 中的单位根, 构成一个有限循环群. 经典地证明了: 单位 $\varepsilon$ 所成的群模去单位根 $\zeta$ 所成的群之后, 是秩为 $r$ 的自由阿贝尔群. 这个证明是通过如下方式完成的: 证明单位的像 $l(\varepsilon)$ 在 $r$ 空间中构成一个最高维的格.
 
@@ -1692,7 +1692,7 @@ $$
 l(b) = \sum_{v=1}^{r}x_v\, l(\varepsilon_v),
 $$
 
- 其中实数 $x_v$ 唯一. 用 $P$ 表示由向量 $l(\varepsilon_i)$ 在 $r$ 空间中张成的平行体, 即满足 $0\le x_v<1$ 的一切向量 $\sum_{v=1}^{r}x_v l(\varepsilon_v)$ 所成的集合. 用 $Q$ 表示 $r$ 空间中的"单位立方体", 即满足 $0\le x_{\mathfrak p}<1$ 的一切向量 $(\ldots,x_{\mathfrak p},\ldots)_{\mathfrak p\in S'_{\infty}}$ 所成的集合.
+ 其中实数 $x_v$ 唯一. 用 $P$ 表示由向量 $l(\varepsilon_i)$ 在 $r$ 空间中张成的平行体, 即满足 $0\le x_v<1$ 的一切向量 $\sum_{v=1}^{r}x_v l(\varepsilon_v)$ 所成的集合. 用 $Q$ 表示 $r$ 空间中的\"单位立方体\", 即满足 $0\le x_{\mathfrak p}<1$ 的一切向量 $(\ldots,x_{\mathfrak p},\ldots)_{\mathfrak p\in S'_{\infty}}$ 所成的集合.
 
 <div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
 
@@ -1831,7 +1831,7 @@ $$
 
 </div>
 
-我们真正关心的并不是 $I$ 的全部拟特征, 而只是那些在 $k^\ast $ 上平凡的拟特征. 今后我们说"拟特征"时, 指的总是这一类. 我们以关于这些拟特征的几点说明来结束对伊代尔群的介绍.
+我们真正关心的并不是 $I$ 的全部拟特征, 而只是那些在 $k^\ast $ 上平凡的拟特征. 今后我们说\"拟特征\"时, 指的总是这一类. 我们以关于这些拟特征的几点说明来结束对伊代尔群的介绍.
 
 首先要注意到的是: 在子群 $J$ 上, 拟特征就是特征, 即对一切 $b\in J$ 有 $\vert c(b)\vert =1$, 因为 $J\ \mathrm{mod}\ k^\ast $ 紧.
 
@@ -1866,7 +1866,7 @@ $$
 
 </div>
 
-记住我们现在只考虑那些在 $k^\ast $ 上平凡的拟特征. 这些已在上一节末尾讨论过, 那里解释了"指数"这个概念. 若两个拟特征在 $J$ 上一致, 就称它们等价; 那么一个拟特征的等价类由一切形如 $c(a)=c_0(a)\vert a\vert ^s$ 的拟特征组成, 其中 $c_0(a)$ 是该类的一个固定代表, $s$ 是由 $c$ 唯一确定的复数. 用复变量 $s$ 作这样的参数化, 使我们能把拟特征的一个等价类看成一个 Riemann 曲面, 正如我们在局部理论中所做的那样 (参看第 2.4 节). 由 $\zeta$ 函数作为积分的定义显然可知, 它们在一切指数大于 $1$ 的拟特征的域中是正则的 (参看相应的局部引理). 至于解析延拓呢????
+记住我们现在只考虑那些在 $k^\ast $ 上平凡的拟特征. 这些已在上一节末尾讨论过, 那里解释了\"指数\"这个概念. 若两个拟特征在 $J$ 上一致, 就称它们等价; 那么一个拟特征的等价类由一切形如 $c(a)=c_0(a)\vert a\vert ^s$ 的拟特征组成, 其中 $c_0(a)$ 是该类的一个固定代表, $s$ 是由 $c$ 唯一确定的复数. 用复变量 $s$ 作这样的参数化, 使我们能把拟特征的一个等价类看成一个 Riemann 曲面, 正如我们在局部理论中所做的那样 (参看第 2.4 节). 由 $\zeta$ 函数作为积分的定义显然可知, 它们在一切指数大于 $1$ 的拟特征的域中是正则的 (参看相应的局部引理). 至于解析延拓呢????
 
 <div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
 
@@ -2156,7 +2156,7 @@ $$
 \prod_{\mathfrak p\notin S_{\infty}}\frac{1}{1-(N\mathfrak p)^{-\sigma}}
 $$
 
- 在 $\sigma>1$ 时收敛. 不管这个事实多么众所周知, 仍应强调它是整个理论的基石. 我们的 $\zeta$ 函数的存在性, 正如经典函数的存在性一样, 都以此为基础. 它的证明可以直接下降到有理数基本域来做 (例如见 E. Landau, "Algebraische Zahlen", 第 2 版, 第 55 与 56 页). 由于 $\widehat f(\mathfrak{x})$ 与 $f(\mathfrak{x})$ 是同一类型的函数, 我们看到 $\vert \widehat f(a)\vert \,\vert a\vert ^\sigma$ 在 $\sigma>1$ 时也可和. 因此 $f(\mathfrak{x})$ 满足公理 $(\mathfrak z_3)$.
+ 在 $\sigma>1$ 时收敛. 不管这个事实多么众所周知, 仍应强调它是整个理论的基石. 我们的 $\zeta$ 函数的存在性, 正如经典函数的存在性一样, 都以此为基础. 它的证明可以直接下降到有理数基本域来做 (例如见 E. Landau, \"Algebraische Zahlen\", 第 2 版, 第 55 与 56 页). 由于 $\widehat f(\mathfrak{x})$ 与 $f(\mathfrak{x})$ 是同一类型的函数, 我们看到 $\vert \widehat f(a)\vert \,\vert a\vert ^\sigma$ 在 $\sigma>1$ 时也可和. 因此 $f(\mathfrak{x})$ 满足公理 $(\mathfrak z_3)$.
 
 确立了可和性之后, 我们也可以用定理 3.3.1 把 $\zeta$ 函数表示成局部 $\zeta$ 函数的乘积. 即对任一指大于 $1$ 的拟特征 $c=\prod_{\mathfrak p}c_{\mathfrak p}$ 有 
 
@@ -2250,17 +2250,17 @@ $$
 
  局部函数 $\rho_{\mathfrak p}$ 的显式表达式列在第 2.5 节中. $\tilde c_{\mathfrak p}$ 与 $t_{\mathfrak p}$ 的意义, 以及它们与理想特征 $\chi$ 的关系, 已在本节第一段中讨论过.
 
-这些由伊代尔特征构造出来的理想特征 $\chi$, 正是 Hecke 为了定义他的"新型 $\zeta$ 函数"而引进的那些特征. $\zeta(s,\chi)$ 就是那个 $\zeta$ 函数; 而我们刚才写下的函数方程, 就是 Hecke 为它所证明的函数方程.
+这些由伊代尔特征构造出来的理想特征 $\chi$, 正是 Hecke 为了定义他的\"新型 $\zeta$ 函数\"而引进的那些特征. $\zeta(s,\chi)$ 就是那个 $\zeta$ 函数; 而我们刚才写下的函数方程, 就是 Hecke 为它所证明的函数方程.
 
 ## 关于近年相关文献的几点评论
 
 \[1967 年 1 月补加\]
 
-Lang 的书"Algebraic Numbers"(Addison-Wesley, 1964) 中有一篇关于上述理论的综述, 其中把大范围的结果重新归一化, 使之与经典理论更相符合, 也更便于应用. 该书还处理了在素数密度, Brauer--Siegel 定理与"显式公式"上的应用. Lang 敦促我指出: 在关于素数等分布的定理 (同书第 6 定理, 第 130 页) 中, 必须假设 $\sigma(J_k^0)=G$, 而不只是 $\sigma(J_k)=G$; 因此紧接该定理之后的第一个应用, 即关于 $\log p$ 的等分布, 并不成立.
+Lang 的书\"Algebraic Numbers\"(Addison-Wesley, 1964) 中有一篇关于上述理论的综述, 其中把大范围的结果重新归一化, 使之与经典理论更相符合, 也更便于应用. 该书还处理了在素数密度, Brauer--Siegel 定理与\"显式公式\"上的应用. Lang 敦促我指出: 在关于素数等分布的定理 (同书第 6 定理, 第 130 页) 中, 必须假设 $\sigma(J_k^0)=G$, 而不只是 $\sigma(J_k)=G$; 因此紧接该定理之后的第一个应用, 即关于 $\log p$ 的等分布, 并不成立.
 
-关于上文所给函数方程证明的另一种解释, 见 Weil,"Fonction zéta et distributions", Séminaire Bourbaki, 第 312 号, 1966 年 6 月.
+关于上文所给函数方程证明的另一种解释, 见 Weil,\"Fonction zéta et distributions\", Séminaire Bourbaki, 第 312 号, 1966 年 6 月.
 
-Siegel 关于二次型的工作近年在激励着大量的 adele 式分析 (adele 是赋值向量的现代名称). 关于这一方向的一些关键结果与文献目录, 见 Weil 在"Acta Mathematica"1964 年与 1965 年的论文.
+Siegel 关于二次型的工作近年在激励着大量的 adele 式分析 (adele 是赋值向量的现代名称). 关于这一方向的一些关键结果与文献目录, 见 Weil 在\"Acta Mathematica\"1964 年与 1965 年的论文.
 
 ## 参考文献
 
@@ -2270,7 +2270,7 @@ Siegel 关于二次型的工作近年在激励着大量的 adele 式分析 (adel
 
 - Chevalley, C. (1940). La théorie du corps de classes. *Ann. Math.* **41**, 394--418.
 
-- Hecke, E. Über eine neue Art von Zetafunktionen und ihre Beziehungen zur Verteilung der Primzahlen. *Math. Z.* **1** (1918), 357--376; **4** (1920), 11--21. 重印于 "Mathematische Werke", Vandenhoeck und Ruprecht, Göttingen, 1959.
+- Hecke, E. Über eine neue Art von Zetafunktionen und ihre Beziehungen zur Verteilung der Primzahlen. *Math. Z.* **1** (1918), 357--376; **4** (1920), 11--21. 重印于 \"Mathematische Werke\", Vandenhoeck und Ruprecht, Göttingen, 1959.
 
 - Matchett, M. *Thesis*, Indiana University (1946), 未出版.
 
