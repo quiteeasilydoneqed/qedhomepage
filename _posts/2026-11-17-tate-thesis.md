@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tate’s thesis: 数域上的Fourier分析与Hecke的zeta函数"
+title: "Tate's thesis: 数域上的Fourier分析与Hecke的zeta函数"
 subtitle: "Tate 的博士论文中文翻译"
 header-img: "img/post-bg-infinity.jpg"
 header-mask: 0.3
