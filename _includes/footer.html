@@ -260,6 +260,25 @@
 {% endif %}
 
 {% if page.math %}  
-    {% include replace.html %}
+    {% if page.no-em-replace != true %}
+        {% include replace.html %}
+    {% endif %}
+    {% if page.no-em-replace == true %}
+    <script>
+        // 数学里的下划线先写成 \_，避免 Kramdown 把它解析成斜体；
+        // 在 MathJax 读取之前再还原成真正的下标符。
+        (function () {
+            var root = document.querySelector('.post-container');
+            if (!root) return;
+            var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+            var node;
+            while ((node = walker.nextNode())) {
+                if (node.nodeValue.indexOf('\\_') !== -1) {
+                    node.nodeValue = node.nodeValue.replace(/\\_/g, '_');
+                }
+            }
+        })();
+    </script>
+    {% endif %}
     {% include math.html %} 
 {% endif %}
