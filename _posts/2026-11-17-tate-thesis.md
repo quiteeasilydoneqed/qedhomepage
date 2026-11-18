@@ -1870,7 +1870,7 @@ $$
 
 <div class="tate-result" style="border: 3px solid #000; padding: 10px;" markdown="1">
 
-**主要定理 4.4.1.** [(解析延拓与 $\zeta$ 函数的函数方程.)]{.upright}  通过解析延拓, 我们可以把任一 $\zeta$ 函数 $\zeta(f,c)$ 的定义扩充到全部拟特征的域上. 扩充后的函数单值而且正则, 除 $c(a)=1$ 与 $c(a)=\vert a\vert $ 两处之外; 在这两处它有单极点, 留数分别为 $-\kappa f(0)$ 与 $+\kappa\widehat f(0)$, 其中 $\kappa=2^{r\_1}(2\pi)^{r\_2}hR/(\sqrt{\vert d\vert }w)$ 是乘法基本域的体积. $\zeta(f,c)$ 满足函数方程 
+**主要定理 4.4.1.** (解析延拓与 $\zeta$ 函数的函数方程.)  通过解析延拓, 我们可以把任一 $\zeta$ 函数 $\zeta(f,c)$ 的定义扩充到全部拟特征的域上. 扩充后的函数单值而且正则, 除 $c(a)=1$ 与 $c(a)=\vert a\vert $ 两处之外; 在这两处它有单极点, 留数分别为 $-\kappa f(0)$ 与 $+\kappa\widehat f(0)$, 其中 $\kappa=2^{r\_1}(2\pi)^{r\_2}hR/(\sqrt{\vert d\vert }w)$ 是乘法基本域的体积. $\zeta(f,c)$ 满足函数方程 
 
 $$
 \zeta(f,c) = \zeta(\widehat f,\widehat c),
