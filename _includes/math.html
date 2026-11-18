@@ -23,11 +23,121 @@
         displayMath: [['$$', '$$'],['\\[','\\]']],
         processEscapes: true,
         packages: {'[+]': ['ams']}
+        },
+      // 长文章有上千个公式，一次性全排会长时间占住主线程，滚动就卡。
+      // 这里关掉自动排版，只排首屏和滚动到附近的公式。
+      startup: {
+        typeset: false,
+        ready: function () {
+          MathJax.startup.defaultReady();
+          MathJax.startup.promise.then(function () {
+            lazyTypeset();
+          });
         }
+      }
     };
 
+    function lazyTypeset() {
+      var CONTAINER = '.post-container';
+      var SKIP = 'mjx-container, script, style, noscript, pre, code';
+      var SAFE_MARGIN = Math.max(window.innerHeight, 600); // 视口上下各提前这么多像素开始排
+      var BATCH_SIZE = 6;                                  // 每批排几个节点
+      var BATCH_PAUSE = 24;                                // 每批之间让出主线程
+
+      var pending = [];
+      var running = false;
+      var listening = false;
+
+      // 收集"含有公式的最外层块级元素"，这是 MathJax 排一个单位所做的工作量。
+      function collect(root) {
+        var blocks = [];
+
+        function hasMath(el) {
+          var walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, {
+            acceptNode: function (text) {
+              var parent = text.parentNode;
+              if (!parent || parent.closest(SKIP)) return NodeFilter.FILTER_REJECT;
+              return /[$\\]/.test(text.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+            }
+          });
+          return walker.nextNode() !== null;
+        }
+
+        // 从正文的直接子元素往下找，找到"自己含公式、但父级不含"的那一层。
+        Array.prototype.forEach.call(root.children, function scan(el) {
+          if (el.closest(SKIP)) return;
+          if (!hasMath(el)) return;
+          var kids = Array.prototype.filter.call(el.children, function (kid) {
+            return !kid.closest(SKIP) && hasMath(kid);
+          });
+          if (kids.length) {
+            kids.forEach(scan);
+          } else {
+            blocks.push(el);
+          }
+        });
+
+        return blocks;
+      }
+
+      function docTop(el) {
+        return el.getBoundingClientRect().top + window.pageYOffset;
+      }
+
+      function takeVisible() {
+        var bottom = window.pageYOffset + window.innerHeight + SAFE_MARGIN;
+        var batch = [];
+        var rest = [];
+
+        pending.forEach(function (el) {
+          if (!el.isConnected) return;          // 页面被换掉了，直接丢弃
+          if (docTop(el) < bottom) {
+            if (batch.length < BATCH_SIZE) batch.push(el);
+            else rest.push(el);
+          } else {
+            rest.push(el);
+          }
+        });
+
+        pending = rest;
+        return batch;
+      }
+
+      function run() {
+        if (running) return;
+        running = true;
+
+        (function step() {
+          var batch = takeVisible();
+          if (!batch.length) {
+            running = false;
+            return;
+          }
+          // 一批一起排，MathJax 内部会做一次统一的排版计算，比逐个排省很多。
+          MathJax.typesetPromise(batch).catch(function () {}).then(function () {
+            setTimeout(step, BATCH_PAUSE);
+          });
+        })();
+      }
+
+      function listen() {
+        if (listening) return;
+        listening = true;
+        window.addEventListener('scroll', function () {
+          if (pending.length) run();
+        }, { passive: true });
+        window.addEventListener('resize', function () {
+          if (pending.length) run();
+        });
+      }
+
+      var root = document.querySelector(CONTAINER) || document.body;
+      pending = collect(root);
+      listen();
+      run();
+    }
   </script>
 
 <script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-chtml.js">
+  src="{{ "/js/mathjax/tex-chtml.js" | prepend: site.baseurl }}">
 </script>
