@@ -48,34 +48,82 @@
       var running = false;
       var listening = false;
 
-      // 收集"含有公式的最外层块级元素"，这是 MathJax 排一个单位所做的工作量。
-      function collect(root) {
-        var blocks = [];
-
-        function hasMath(el) {
-          var walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, {
-            acceptNode: function (text) {
-              var parent = text.parentNode;
-              if (!parent || parent.closest(SKIP)) return NodeFilter.FILTER_REJECT;
-              return /[$\\]/.test(text.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
-            }
-          });
-          return walker.nextNode() !== null;
-        }
-
-        // 从正文的直接子元素往下找，找到"自己含公式、但父级不含"的那一层。
-        Array.prototype.forEach.call(root.children, function scan(el) {
-          if (el.closest(SKIP)) return;
-          if (!hasMath(el)) return;
-          var kids = Array.prototype.filter.call(el.children, function (kid) {
-            return !kid.closest(SKIP) && hasMath(kid);
-          });
-          if (kids.length) {
-            kids.forEach(scan);
-          } else {
-            blocks.push(el);
+      // 行间公式 \[...\] 常常直接写在正文里，没有块级标签包着。
+      // 先给它们套一个 div，这样既能单独排版，也能按块懒加载。
+      function wrapBareDisplayMath(root) {
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+          acceptNode: function (text) {
+            var parent = text.parentNode;
+            if (!parent) return NodeFilter.FILTER_REJECT;
+            // 直接挂在正文下的文本节点也要处理，行间公式常常就是这种。
+            if (parent !== root && parent.closest(SKIP)) return NodeFilter.FILTER_REJECT;
+            return text.nodeValue.indexOf('\\[') !== -1 ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
           }
         });
+
+        var texts = [];
+        while (walker.nextNode()) texts.push(walker.currentNode);
+
+        texts.forEach(function (text) {
+          // 一个文本节点里可能有多处 \[...\]，逐个拆出来。
+          while (text.parentNode && text.nodeValue.indexOf('\\[') !== -1) {
+            var value = text.nodeValue;
+            var open = value.indexOf('\\[');
+            var close = value.indexOf('\\]', open + 2);
+            if (close === -1) break;
+
+            var before = value.slice(0, open);
+            var math = value.slice(open, close + 2);
+            var after = value.slice(close + 2);
+
+            var box = document.createElement('div');
+            box.className = 'qed-math-block';
+            box.textContent = math;
+
+            var parent = text.parentNode;
+            parent.insertBefore(box, text);
+            if (before) parent.insertBefore(document.createTextNode(before), text);
+
+            if (after) {
+              text.nodeValue = after;   // 继续处理剩下的部分
+            } else {
+              parent.removeChild(text);
+            }
+          }
+        });
+      }
+
+      // 收集"含有公式的块"，这是 MathJax 一次排版的工作单位。
+      function collect(root) {
+        var blocks = [];
+        var seen = [];
+
+        function add(el) {
+          if (seen.indexOf(el) !== -1) return;
+          seen.push(el);
+          blocks.push(el);
+        }
+
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+          acceptNode: function (text) {
+            var parent = text.parentNode;
+            if (!parent || parent.closest(SKIP)) return NodeFilter.FILTER_REJECT;
+            return /[$\\]/.test(text.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+          }
+        });
+
+        while (walker.nextNode()) {
+          var text = walker.currentNode;
+          var host = text.parentNode;
+          if (host === root) continue;
+
+          // 往上走，取紧挨正文的那一层祖先；这样同一段里多处公式只排一次。
+          var el = host;
+          while (el.parentNode && el.parentNode !== root) {
+            el = el.parentNode;
+          }
+          add(el);
+        }
 
         return blocks;
       }
@@ -84,19 +132,23 @@
         return el.getBoundingClientRect().top + window.pageYOffset;
       }
 
+      function inViewport(el) {
+        var top = docTop(el);
+        var bottom = top + el.getBoundingClientRect().height;
+        var viewTop = window.pageYOffset - SAFE_MARGIN;
+        var viewBottom = window.pageYOffset + window.innerHeight + SAFE_MARGIN;
+        return bottom >= viewTop && top <= viewBottom;
+      }
+
+      // 只排进入视口（含提前量）的块。读者跳到哪就排哪，不会预先排完整篇。
       function takeVisible() {
-        var bottom = window.pageYOffset + window.innerHeight + SAFE_MARGIN;
         var batch = [];
         var rest = [];
 
         pending.forEach(function (el) {
           if (!el.isConnected) return;          // 页面被换掉了，直接丢弃
-          if (docTop(el) < bottom) {
-            if (batch.length < BATCH_SIZE) batch.push(el);
-            else rest.push(el);
-          } else {
-            rest.push(el);
-          }
+          if (inViewport(el) && batch.length < BATCH_SIZE) batch.push(el);
+          else rest.push(el);
         });
 
         pending = rest;
@@ -120,18 +172,28 @@
         })();
       }
 
+      // 滚动、缩放时补排新进入视野的块。
+      // 排版会改变页面高度，所以用 requestAnimationFrame 合并连续事件。
       function listen() {
         if (listening) return;
         listening = true;
-        window.addEventListener('scroll', function () {
-          if (pending.length) run();
-        }, { passive: true });
-        window.addEventListener('resize', function () {
-          if (pending.length) run();
-        });
+
+        var scheduled = false;
+        function schedule() {
+          if (scheduled) return;
+          scheduled = true;
+          requestAnimationFrame(function () {
+            scheduled = false;
+            if (pending.length) run();
+          });
+        }
+
+        window.addEventListener('scroll', schedule, { passive: true });
+        window.addEventListener('resize', schedule);
       }
 
       var root = document.querySelector(CONTAINER) || document.body;
+      wrapBareDisplayMath(root);
       pending = collect(root);
       listen();
       run();
