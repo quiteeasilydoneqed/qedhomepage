@@ -68,13 +68,13 @@ Dear Professor Weil,
 要定义 $L$ 级数的局部因子, 我得先回顾 Hecke 代数的一些事实: 这里 $K$ 是 $p$ 进域 $k$ 的非分歧扩张, $G\_k^\delta$ 是相应的群. 若按适当方式取 $G\_k^\delta$ 的极大紧子群, 则按 Bruhat 与 Satake 的结果, Hecke 代数同构于 ${}^cL^\delta$ 的群代数中的一个子集, 这个子集由在 ${}^c\Omega^\delta$ 下不变、并且在 ${}^cG^\delta$ 的限制 Weyl 群 ${}^cW^\delta$ 下不变的 ${}^cL$ 中元素组成. (实际上, 我们得把他们的结果稍作引申.) 这样一来, Hecke 代数到复数的任一特征标 $\chi$ 都可以延拓成 ${}^cL$ 的群代数到复数的同态 $\chi'$. ${}^cT$ 中至少有一个元素 $g$, 使得若 $f = \sum\_{\lambda\in{}^cL} a\_\lambda \xi\_\lambda$ ($\xi\_\lambda$ 是把 $\lambda$ 写成乘法形式), 则 $\chi'(f) = \sum a\_\lambda \xi\_\lambda(g)$. 半直积 $\mathfrak{G} \times\_\delta {}^cG$ 是一个复群. 设 $\pi$ 是它的一个复表示. 若 $\sigma$ 是 Frobenius 元, 则 
 
 $$
-\frac{1}{\det\left(1 - x\pi(\sigma \times g)\right)} \qquad \text{（ } x \text{ 为不定元）}
+\frac{1}{\det\left(1 - x\pi(\sigma \times g)\right)} \qquad \text{（} x \text{ 为不定元）}
 $$
 
 就是对应于 $\chi$ 与 $\pi$ 的局部 zeta 函数, 其中 $x$ 为不定元. 我还得验证它只依赖 $\chi$, 不依赖 $g$. 设 $\lambda$ 为任一权, 令 $n\_\lambda$ 为使 $\sigma$ 固定 $\lambda$ 的最小幂次; $n\_\lambda \mid n$ 时, 若 $\pi$ 作用在 $V$ 上, 令 $t\_\lambda(n)$ 为 $\sigma^n$ 在特征空间 
 
 $$
-\left\{ v \in V \;\middle\vert \; \pi(h)v = \xi\_\lambda(h)v \quad \text{对于所有} h \in {}^cT \right\}
+\left\{ v \in V \;\middle\vert \; \pi(h)v = \xi\_\lambda(h)v \quad \text{对于所有 } h \in {}^cT \right\}
 $$
 
  上的迹. 于是 
@@ -134,7 +134,7 @@ $$
 我得检验这些级数不依赖 $\overline{\mathbb{Q}}$ 到 $\overline{\mathbb{Q}}\_p$ 的嵌入. 眼下先固定 $p$. 我们已经用原来的嵌入把 $\overline{\mathbb{Q}}$ 与 $\overline{\mathbb{Q}}\_p$ 的一个子域等同起来. 保持这个等同关系. 别的嵌入都是把 $x$ 送到 $x^\tau$, $\tau \in \mathfrak{G}(\overline{\mathbb{Q}}/\mathbb{Q})$. 若用原来的嵌入把 $\mathfrak{G}\_p$ 与 $\mathfrak{G}$ 的一个子群等同, 那么新嵌入给出 $\mathfrak{G}\_p$ 到 $\mathfrak{G}$ 的映射 $\sigma \mapsto \tau\sigma\tau^{-1}$ (这里把 $\tau$ 与其在 $\mathfrak{G}$ 中的像等同). $\delta$ 在 $\mathfrak{G}\_p$ 上的限制换成 $\delta'$, 其中 $\delta'(\sigma) = \delta(\tau\sigma\tau^{-1})$. 于是 $G^\delta\_{\mathbb{Q}\_p}$ 换成 $G^{\delta'}\_{\mathbb{Q}\_p}$. 映射 $g \mapsto g^{\delta(\tau)}$ 是 $G^{\delta'}\_{\mathbb{Q}\_p}$ 与 $G^\delta\_{\mathbb{Q}\_p}$ 之间的同构. 若 $g \in G^\delta\_{\mathbb{Q}} \subset G^\delta\_{\mathbb{Q}\_p}$, 则 $g$ 是 $g^\tau$ 的像, 所以这个映射与 $G^\delta\_{\mathbb{Q}}$ 在两个群中的嵌入相容. 新的上闭链 $\{a'\_\sigma\}$ 是 $a\_{\tau\sigma\tau^{-1}} = a\_\tau^{\tau^{-1}} a\_\sigma^{\tau^{-1}} a\_{\tau^{-1}} = a\_\sigma^{\tau^{-1}} a\_\tau^{-\tau^{-1}} a\_{\tau^{-1}}$ 的像, 其中用到所有 $\sigma$, $\tau$ 都有 $a\_{\sigma\tau} = a\_\sigma^\tau a\_\tau$. 像就是 $\delta(\tau) a\_\sigma^\tau a\_\sigma \tau\tau^{-1} \delta(\tau^{-1})$. 于是 
 
 $$
-\overline{G}\_{\mathbb{Q}\_p} = \left\{ g \in G\_{K\_p} \;\middle\vert \; g = g^{\delta(\tau)\sigma\delta(\sigma)a\_\sigma^\tau a\_\sigma a\_\tau^{-1}\delta(\tau^{-1})}  = g^{\delta(\tau)a\_\tau \sigma\delta(\sigma)a\_\sigma a\_\tau^{-1}\sigma(\tau^{-1})} \text{对于} \sigma \in \mathfrak{G}\_p \right\}.
+\overline{G}\_{\mathbb{Q}\_p} = \left\{ g \in G\_{K\_p} \;\middle\vert \; g = g^{\delta(\tau)\sigma\delta(\sigma)a\_\sigma^\tau a\_\sigma a\_\tau^{-1}\delta(\tau^{-1})}  = g^{\delta(\tau)a\_\tau \sigma\delta(\sigma)a\_\sigma a\_\tau^{-1}\sigma(\tau^{-1})} \text{ 对于} \sigma \in \mathfrak{G}\_p \right\}.
 $$
 
 而映射 $g \mapsto g^{\delta(\tau)a\_\tau}$ 是 $\overline{G}\_{\mathbb{Q}\_p}$ 到 $\overline{G}\_{\mathbb{Q}\_p}$ 的同构. 它与 $\overline{G}\_{\mathbb{Q}}$ 在两个群中的嵌入相容, 因为 $\overline{G}\_{\mathbb{Q}} = \{ g \in G\_K \mid g^{\rho\delta(\rho)a\_\rho} = g, \ \forall \rho \in \mathfrak{G} \}$. 此外, 对几乎所有的 $\rho$, 它把 $\overline{G}\_{\mathbb{Z}\_p}$ 送到 $\overline{G}\_{\mathbb{Q}\_p}$. 若再对每个 $\rho$ 选一个新嵌入, 就得到新的 adèle 群 $\overline{G}'\_{\mathbb{A}}$. 上述映射给出 $\overline{G}'\_{\mathbb{A}}$ 到 $\overline{G}\_{\mathbb{A}}$ 的同构, 并且把 $\overline{G}\_{\mathbb{Q}}$ 送到自身. 于是我们有从 $\overline{G}\_{\mathbb{Q}} \backslash \overline{G}'\_{\mathbb{A}}$ 到 $\overline{G}\_{\mathbb{Q}} \backslash \overline{G}\_{\mathbb{A}}$ 的映射, 前面引入的自守形式就给出 $\overline{G}\_{\mathbb{Q}} \vert  \overline{G}'\_{\mathbb{A}}$ 上一个具有同样性质的自守形式 $\phi'$. 我们得检验 
