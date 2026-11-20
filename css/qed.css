@@ -1238,6 +1238,38 @@ hr {
     margin: 1.05em 0 !important;
 }
 
+/* 论文式圆角框: 只用于原文的 tcolorbox, 不套定理和证明 */
+.post-container div.landau-box {
+    margin: 2em 0 !important;
+    padding: 22px 26px !important;
+    border: 2px solid #1f1b16 !important;
+    border-radius: 16px !important;
+    background: transparent;
+    color: var(--ink-soft);
+    line-height: 1.95;
+}
+
+.post-container div.landau-box > p:first-child {
+    margin-top: 0;
+}
+
+.post-container div.landau-box ul {
+    margin: 0.45em 0;
+    padding-left: 1.35em;
+}
+
+.post-container div.landau-box li {
+    margin: 0.18em 0;
+}
+
+.post-container div.landau-box li > p {
+    margin: 0;
+}
+
+.post-container div.landau-box mjx-container[display="true"] {
+    margin: 1em 0 !important;
+}
+
 /* 作者在两个框之间随手写的 <br>，会把间距再撑开一行 */
 .post-container div[style*="border"] + br {
     display: none;
