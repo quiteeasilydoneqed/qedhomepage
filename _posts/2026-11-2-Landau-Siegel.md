@@ -13,6 +13,7 @@ tags:
 
 ## 简介
 
+<div class="landau-box" markdown="1">
 
 **定理 1 (Landau定理).** 存在一个常数 $c>0$, 使得对任意正整数 $q\ge 3$, 在模$q$的所有 Dirichlet 特征中, 至多存在一个特征 $\chi$, 使$L(s,\chi)$ 有一个实零点 $\beta\in(0,1)$ 满足
 
@@ -20,6 +21,8 @@ $$
 (1-\beta)\log q\le c.
 $$
 
+
+</div>
 
 
 以上定理中的特征称为对应于常数$c$的例外特征, 零点称为对应于常数$c$的例外零点或Landau-Siegel零点, 这样的特征若存在, 则必然是非主实特征. Landau-Siegel零点被认为是广义Riemann猜想的潜在反例, 排除Landau-Siegel零点的存在性是解析数论中的一个长期重大问题.
@@ -80,10 +83,14 @@ OpenAI 关于 $L$ 函数在半平面 $\operatorname{Re}(s)>7/8$ 内无零点的�
 </div>
 
 
+<div class="landau-box" markdown="1">
 
 **引理 1.** 假设$x\ge\max\{e^3,\sqrt{q}\}$, 则矩阵$\mathcal{M}$的$\vert T\vert $行在$\mathbb{Q}$上线性无关.
 
+</div>
 
+
+<div class="landau-box" markdown="1">
 
 **证明.** 若不然, 假设$\{c\_{r,s}\}\_{(r,s)\in T}$是不全为$0$的有理数, 使得
 
@@ -209,7 +216,10 @@ $$
 
 而这与$W(z)$的次数小于$x\dim\_\mathbb{C}V$矛盾, 因此假设中的$\{c\_{r,s}\}\_{(r,s)\in T}$不存在, 即矩阵$\mathcal{M}$的$\vert T\vert $行在$\mathbb{Q}$上线性无关. ◻
 
+</div>
 
+
+<div class="landau-box" markdown="1">
 
 **引理 2.** 假设$x\ge\max\{e^3,\sqrt{q}\}$, 取$\mathcal{M}$的一个$\vert T\vert $阶子方阵, 其行列式非零, 设为$D\neq0$, 则对任意素数$p$, 若满足$k\le p\le x$且$\chi(p)=-1$, 就有
 
@@ -218,7 +228,10 @@ p^{\sum\_{(r,s)\in T}[r/p]}\mid D.
 $$
 
 
+</div>
 
+
+<div class="landau-box" markdown="1">
 
 **证明.** 首先由上一引理知这样的子方阵是存在的, 记为$\mathcal{N}$, 并且由于$\mathcal{M}$中的元素都是整数, 所以$D=\det\mathcal{N}\in\mathbb{Z}$.
 
@@ -282,7 +295,10 @@ $$
 
 引理得证. ◻
 
+</div>
 
+
+<div class="landau-box" markdown="1">
 
 **定理 2.** 设正整数$q\ge3$, $\chi$是模$q$的实原特征, 则对任意$x\ge3$, 有
 
@@ -291,7 +307,10 @@ $$
 $$
 
 
+</div>
 
+
+<div class="landau-box" markdown="1">
 
 **证明.** 当$x<e^3$时,
 
@@ -415,7 +434,10 @@ $$
 
 定理得证. ◻
 
+</div>
 
+
+<div class="landau-box" markdown="1">
 
 **定理 3.** 设正整数$q\ge3$, $\chi$是模$q$的实原特征, 若$\beta$是$L(s,\chi)$的非平凡实零点, 则
 
@@ -430,7 +452,10 @@ $$
 $$
 
 
+</div>
 
+
+<div class="landau-box" markdown="1">
 
 **证明.** 对任意实数$\eta\in(0,1)$, 由于
 
@@ -553,6 +578,8 @@ $$
 
 取$c=\min\{c\_1,1/2\}$即得定理结论. ◻
 
+</div>
+
 
 由于复特征对应的$L$函数一定不存在 Landau–Siegel 零点, 且$q=1$或$2$时也不存在 Landau–Siegel 零点, 而非原特征可以化为其对应的原特征, 它们的$L$函数在$\operatorname{Re}(s)>0$内的零点完全相同. 因此, 对任意正整数 $q$ 及任意模 $q$ 的 Dirichlet 特征 $\chi$, $L(s,\chi)$ 均不存在 Landau–Siegel 零点.
 
@@ -560,6 +587,7 @@ $$
 
 Tao在[8]中提出挑战, 要求由Landau-Siegel零点不存在这一事实给出如下定理的新证明.
 
+<div class="landau-box" markdown="1">
 
 **定理 4 (Gauss-Heegner).** 设正整数$d$无平方因子, 则虚二次域$\mathbb{Q}(\sqrt{-d})$的类数为$1$当且仅当$d$取以下$9$个值,
 
@@ -568,9 +596,12 @@ d=1,2,3,7,11,19,43,67,163.
 $$
 
 
+</div>
+
 
 该定理最初由 Gauss 猜想, 后来由 Heegner 给出了优雅的证明, 相比之下, 通过排除 Landau–Siegel 零点来证明这一定理可能更容易理解, 但论证不如 Heegner 的优雅.
 
+<div class="landau-box" markdown="1">
 
 **定理 5 (虚二次域的Dirichlet类数公式).** 设域$K=\mathbb{Q}(\sqrt{-d})$, $h\_K$是其类数, $w\_K$是$K$中包含的单位根个数, $D\_K$是$K$的判别式, 则
 
@@ -585,6 +616,8 @@ $$
 $$
 
 是Kronecker符号.
+
+</div>
 
 
 由于对于虚二次域 $$w\_K=\begin{cases}
@@ -605,10 +638,14 @@ $$
 
 L(1,\chi)=\frac{\pi}{\sqrt{\vert D\_K\vert }}.$$
 
+<div class="landau-box" markdown="1">
 
 **定理 6.** 符号如上, 若$h\_K=1$, 则$d<e^{100}$.
 
+</div>
 
+
+<div class="landau-box" markdown="1">
 
 **证明.** 设$q=\vert D\_K\vert $, 设
 
@@ -707,6 +744,8 @@ $$
 
 \log q-2\log\log q\le90,$$ 数值计算得到满足该不等式的$q$的一个上界为$e^{100}$, 而$q=\vert D\_K\vert $等于$d$或$d$的四倍, 所以$d<e^{100}$, 定理得证. ◻
 
+</div>
+
 
 $e^{100}$大约为$2.7\times10^{43}$量级, 该上界太大, 逐一检验超出目前计算能力. 通过更细致的分析[10]可以将上界降到$d<17000$, Tao在[8]的[评论区](https://terrytao.wordpress.com/2026/10/20/an-experimental-ai-math-challenge-using-tenth-discriminant-bounds-to-explore-arguments-ruling-out-siegel-zeroes/#comment-698471)指出, 如果假设$L$函数在实部大于$7/8$的半平面内无零点, 可以证明$d<655$, 这个上界已经足够小, 可以对小于它的$d$逐一验证.
 
@@ -714,6 +753,7 @@ $e^{100}$大约为$2.7\times10^{43}$量级, 该上界太大, 逐一检验超出�
 
 正文中需要用到以下经典定理.
 
+<div class="landau-box" markdown="1">
 
 **定理 7 (Mertens 定理).** 对实数 $x\ge 2$, 有
 
@@ -728,7 +768,10 @@ $$
 $$
 
 
+</div>
 
+
+<div class="landau-box" markdown="1">
 
 **定理 8 (Hadamard不等式).** 设方阵 $A=(a\_{ij})\_{ij}\in M\_{n\times n}(\mathbb{C})$, 则有
 
@@ -743,7 +786,10 @@ $$
 $$
 
 
+</div>
 
+
+<div class="landau-box" markdown="1">
 
 **定理 9 ($L$函数的Hadamard乘积).** 设$\chi$是模$q$的实原特征, 设 $$a=\frac{1-\chi(-1)}2=
 \begin{cases}
@@ -757,7 +803,10 @@ $$
 
 \frac{L'}{L}(s,\chi)=\sum\_\rho\operatorname{Re}\frac1{s-\rho}-\frac12\log\frac q\pi-\frac12\frac{\Gamma'}{\Gamma}\left(\frac{s+a}{2}\right),$$ 其中$\rho$取遍$L$函数的非平凡零点.
 
+</div>
 
+
+<div class="landau-box" markdown="1">
 
 **证明.** 对完备$L$函数
 
@@ -790,6 +839,8 @@ $$
 $$
 
 定理得证. ◻
+
+</div>
 
 
 接下来说明正文第三节中的$C<16$.
