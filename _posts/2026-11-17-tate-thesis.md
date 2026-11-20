@@ -494,24 +494,24 @@ $$
 
 **证明.**
 
-1.  $\displaystyle \zeta(f,c)=\rho(c)\zeta(\widehat f,\widehat c)
-    =\rho(c)\rho(\widehat c)\zeta(\widehat{\widehat f},\widehat{\widehat c})
-    =c(-1)\zeta(f,c)$,\
-    因为 $\widehat{\widehat f}(\alpha)=f(-\alpha)$ 且 $\widehat{\widehat c}(\alpha)=c(\alpha)$. 因此 $\rho(c)\rho(\widehat c)=c(-1)$.
+1.  由函数方程, $\zeta(f,c)=\rho(c)\zeta(\widehat f,\widehat c)=\rho(c)\rho(\widehat c)\zeta(\widehat{\widehat f},\widehat{\widehat c})=c(-1)\zeta(f,c)$, 因为 $\widehat{\widehat f}(\alpha)=f(-\alpha)$ 且 $\widehat{\widehat c}(\alpha)=c(\alpha)$. 因此 $\rho(c)\rho(\widehat c)=c(-1)$.
 
-2.  $\begin{aligned}[t]
-    \overline{\zeta(f,c)} &= \zeta(\bar f,\bar c)
-    =\rho(\bar c)\,\zeta(\widehat{\bar f},\widehat{\bar c})\\
-    &=\rho(\bar c)\,c(-1)\,\zeta(\widehat{\widehat{\bar f}},\widehat{\widehat{\bar c}})
-    =\rho(\bar c)\,c(-1)\,\overline{\zeta(\widehat f,\widehat c)},
-    \end{aligned}$\
-    因为 $\widehat{\bar f}(\alpha)=\overline{\widehat f(-\alpha)}$ 且 $\widehat{\bar c}(\alpha)=\overline{\widehat c(\alpha)}$. 另一方面, 
+2.  同理可得
 
-$$
-\overline{\zeta(f,c)}=\overline{\rho(c)}\ \zeta(\widehat f,\widehat c).
-$$
+    $$
+    \begin{aligned}
+    \overline{\zeta(f,c)} &= \zeta(\bar f,\bar c)=\rho(\bar c)\,\zeta(\widehat{\bar f},\widehat{\bar c})\\
+    &=\rho(\bar c)\,c(-1)\,\zeta(\widehat{\widehat{\bar f}},\widehat{\widehat{\bar c}})=\rho(\bar c)\,c(-1)\,\overline{\zeta(\widehat f,\widehat c)},
+    \end{aligned}
+    $$
 
- 因此 $\rho(\bar c)=c(-1)\overline{\rho(c)}$.
+    因为 $\widehat{\bar f}(\alpha)=\overline{\widehat f(-\alpha)}$ 且 $\widehat{\bar c}(\alpha)=\overline{\widehat c(\alpha)}$. 另一方面,
+
+    $$
+    \overline{\zeta(f,c)}=\overline{\rho(c)}\ \zeta(\widehat f,\widehat c).
+    $$
+
+    因此 $\rho(\bar c)=c(-1)\overline{\rho(c)}$.
 
 </div>
 
