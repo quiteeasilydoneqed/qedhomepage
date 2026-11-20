@@ -14,31 +14,29 @@ tags:
   - Langlands 纲领
 ---
 
-1967 年 1 月 16 日, Robert Langlands 给 André Weil 写了一封长信, 信中提出了一整套关于自守表示与 Galois 表示的猜想. 下面是这封信的中文译本.
+## 译注
 
-## 注
+> **1.** 本译本依据 <https://sunsite.ubc.ca/DigitalMathArchive/Langlands/functoriality.html>.
 
-1.  本译本依据 <https://sunsite.ubc.ca/DigitalMathArchive/Langlands/functoriality.html>.
+> **2.** 哥特体 $\mathfrak{G}$ 被排成了小写 $\mathfrak{g}$.
+>
+> 转录版第 6 页, 手写原稿第 9 页末尾: 转录作 $\mathfrak{g}' \times\_{\delta'} {}^cG'\_{\mathbb{C}}$, 应为 $\mathfrak{G}' \times\_{\delta'} {}^cG'\_{\mathbb{C}}$.
+>
+> 转录版第 6 页, 手写原稿第 10 页开头: 转录作 $\mathfrak{g} \times\_\delta {}^cG\_{\mathbb{C}}$, 应为 $\mathfrak{G} \times\_\delta {}^cG\_{\mathbb{C}}$.
+>
+> 转录版第 7 页, 手写原稿第 12 页: 转录作 $\mu\_i \in \mathfrak{g}\_1$, 应为 $\mu\_i \in \mathfrak{G}\_1$.
 
-2.  哥特体 $\mathfrak{G}$ 被排成了小写 $\mathfrak{g}$.
+> **3.** $z\_1$ 的下标应为 $i$.
+>
+> 转录版第 8 页, 手写原稿第 14 页第一个格: 转录作 $\sum\_{i=1}^{m} z\_1 = 0$, 应为 $\sum\_{i=1}^{m} z\_i = 0$.
+>
+> 转录版第 8 页, 手写原稿第 14 页第二个格: 转录作 $z\_1 + \dfrac{z}{m} \in \mathbb{Z}$, 应为 $z\_i + \dfrac{z}{m} \in \mathbb{Z}$.
+>
+> 转录版第 8 页, 手写原稿第 14 页第三个格: 转录作 $z, z\_1 \in \mathbb{Z}$, 应为 $z, z\_i \in \mathbb{Z}$.
 
-    转录版第 6 页, 手写原稿第 9 页末尾: 转录作 $\mathfrak{g}' \times\_{\delta'} {}^cG'\_{\mathbb{C}}$, 应为 $\mathfrak{G}' \times\_{\delta'} {}^cG'\_{\mathbb{C}}$.
+> **4.** 转录版第 5 页, 手写原稿第 8 页末尾: 转录作 $L(s, \phi, \pi)/L(s, \phi, \tilde\pi)$, 应为 $L(s, \phi, \pi)/L(s, \psi, \tilde\pi)$.
 
-    转录版第 6 页, 手写原稿第 10 页开头: 转录作 $\mathfrak{g} \times\_\delta {}^cG\_{\mathbb{C}}$, 应为 $\mathfrak{G} \times\_\delta {}^cG\_{\mathbb{C}}$.
-
-    转录版第 7 页, 手写原稿第 12 页: 转录作 $\mu\_i \in \mathfrak{g}\_1$, 应为 $\mu\_i \in \mathfrak{G}\_1$.
-
-3.  $z\_1$ 的下标应为 $i$.
-
-    转录版第 8 页, 手写原稿第 14 页第一个格: 转录作 $\sum\_{i=1}^{m} z\_1 = 0$, 应为 $\sum\_{i=1}^{m} z\_i = 0$.
-
-    转录版第 8 页, 手写原稿第 14 页第二个格: 转录作 $z\_1 + \dfrac{z}{m} \in \mathbb{Z}$, 应为 $z\_i + \dfrac{z}{m} \in \mathbb{Z}$.
-
-    转录版第 8 页, 手写原稿第 14 页第三个格: 转录作 $z, z\_1 \in \mathbb{Z}$, 应为 $z, z\_i \in \mathbb{Z}$.
-
-4.  转录版第 5 页, 手写原稿第 8 页末尾: 转录作 $L(s, \phi, \pi)/L(s, \phi, \tilde\pi)$, 应为 $L(s, \phi, \pi)/L(s, \psi, \tilde\pi)$.
-
-5.  转录版第 9 页, 手写原稿第 15 页: 转录作 $\overline{F}\_{S'}$, 应为 $\overline{G}\_{S'}$.
+> **5.** 转录版第 9 页, 手写原稿第 15 页: 转录作 $\overline{F}\_{S'}$, 应为 $\overline{G}\_{S'}$.
 
 ## 附函
 
@@ -102,13 +100,15 @@ $$
 
  由于 $\sum\_{\omega} \xi\_{\frac{n}{n\_\lambda}}\left(\sum\_{k=0}^{n\_\lambda - 1} \lambda^{\sigma^k}\right)\omega$ 属于 Hecke 代数的像, 断言得证.
 
-我不知道这样做是否站得住脚, 但且假定复表示的特征标能把 $\mathfrak{G} \times\_\delta {}^cG$ 里的半单共轭类分开. 那么由上述结果, Hecke 代数到复数的每个同态 $\chi$ 都联系到半单元素 $\sigma \times g$ 所在的共轭类. 反过来, 给定 $\mathfrak{G} \times\_\delta {}^cG$ 中的一个半单共轭类, 由 Borel-Mostow 定理, 它含有 ${}^cT$ 正规化子中的一个元素; 它甚至含有把正根映成正根的元素.[^1] 于是, 如果这个共轭类在 $\mathfrak{G}$(交换群)上的投影是 $\sigma$, 那么它含有形如 $\sigma \times g$ 的元素, $g \in {}^cT$. 如上, $g$ 确定 Hecke 代数到复数的同态. 若这个同态 $\chi$ 由附于它的局部 zeta 因子完全确定, 那么它也就由 $\sigma \times g$ 的共轭类完全确定; 于是 Hecke 代数到复数的同态与 $\mathfrak{G} \times\_\delta {}^cG$ 中投影为 $\sigma$ 的半单共轭类一一对应. 只需检验: $\chi$ 在形如 
+我不知道这样做是否站得住脚, 但且假定复表示的特征标能把 $\mathfrak{G} \times\_\delta {}^cG$ 里的半单共轭类分开. 那么由上述结果, Hecke 代数到复数的每个同态 $\chi$ 都联系到半单元素 $\sigma \times g$ 所在的共轭类. 反过来, 给定 $\mathfrak{G} \times\_\delta {}^cG$ 中的一个半单共轭类, 由 Borel-Mostow 定理, 它含有 ${}^cT$ 正规化子中的一个元素; 它甚至含有把正根映成正根的元素. 于是, 如果这个共轭类在 $\mathfrak{G}$(交换群)上的投影是 $\sigma$, 那么它含有形如 $\sigma \times g$ 的元素, $g \in {}^cT$. 如上, $g$ 确定 Hecke 代数到复数的同态. 若这个同态 $\chi$ 由附于它的局部 zeta 因子完全确定, 那么它也就由 $\sigma \times g$ 的共轭类完全确定; 于是 Hecke 代数到复数的同态与 $\mathfrak{G} \times\_\delta {}^cG$ 中投影为 $\sigma$ 的半单共轭类一一对应. 只需检验: $\chi$ 在形如 
 
 $$
 \sum\_{w \in {}^cW^\delta} \xi\left(\sum\_{n=1}^{n\_\lambda} \lambda^{\sigma^k}\right)\omega
 $$
 
  的元素上的值由局部 zeta 函数确定, 其中 $\sum\_{n=1}^{n\_\lambda} \lambda^{\sigma^k}$ 落在正 Weyl 腔中. 这用通常的归纳法就能做到, 因为 $\sum \lambda^{\sigma^k}$ 在 $\mathfrak{G}$ 下不变, 从而是 $\mathfrak{G} \times\_\delta {}^cG$ 某个表示的最高权, 该表示限制到 ${}^cG$ 时不可约.
+
+> 注：这大概是对的, 证明所需的材料大概在文献里都能找到. 不过, 写这封信时, 我觉得它远没有我当初想的那么显然.
 
 下面我设法定义 Artin-Hecke $L$ 级数. 为此, 对每个 $p$ 取定 $\overline{\mathbb{Q}}$(即 $\mathbb{Q}$ 的代数闭包)到 $\overline{\mathbb{Q}}\_p$ 的一个嵌入. 我们之后还要回过头来检验, 这些级数与所做的选择无关. 下一段的叙述会隐含这种选择.
 
@@ -130,9 +130,7 @@ $$
 L(s,\pi,\phi) = \prod\_{p} \frac{1}{\det\left(1 - \dfrac{\pi(\alpha\_p)}{p^s}\right)}.
 $$
 
-
-
-我得检验这些级数不依赖 $\overline{\mathbb{Q}}$ 到 $\overline{\mathbb{Q}}\_p$ 的嵌入.[^2] 眼下先固定 $p$. 我们已经用原来的嵌入把 $\overline{\mathbb{Q}}$ 与 $\overline{\mathbb{Q}}\_p$ 的一个子域等同起来. 保持这个等同关系. 别的嵌入都是把 $x$ 送到 $x^\tau$, $\tau \in \mathfrak{G}(\overline{\mathbb{Q}}/\mathbb{Q})$. 若用原来的嵌入把 $\mathfrak{G}\_p$ 与 $\mathfrak{G}$ 的一个子群等同, 那么新嵌入给出 $\mathfrak{G}\_p$ 到 $\mathfrak{G}$ 的映射 $\sigma \mapsto \tau\sigma\tau^{-1}$ (这里把 $\tau$ 与其在 $\mathfrak{G}$ 中的像等同). $\delta$ 在 $\mathfrak{G}\_p$ 上的限制换成 $\delta'$, 其中 $\delta'(\sigma) = \delta(\tau\sigma\tau^{-1})$. 于是 $G^\delta\_{\mathbb{Q}\_p}$ 换成 $G^{\delta'}\_{\mathbb{Q}\_p}$. 映射 $g \mapsto g^{\delta(\tau)}$ 是 $G^{\delta'}\_{\mathbb{Q}\_p}$ 与 $G^\delta\_{\mathbb{Q}\_p}$ 之间的同构. 若 $g \in G^\delta\_{\mathbb{Q}} \subset G^\delta\_{\mathbb{Q}\_p}$, 则 $g$ 是 $g^\tau$ 的像, 所以这个映射与 $G^\delta\_{\mathbb{Q}}$ 在两个群中的嵌入相容. 新的上闭链 $\{a'\_\sigma\}$ 是 $a\_{\tau\sigma\tau^{-1}} = a\_\tau^{\tau^{-1}} a\_\sigma^{\tau^{-1}} a\_{\tau^{-1}} = a\_\sigma^{\tau^{-1}} a\_\tau^{-\tau^{-1}} a\_{\tau^{-1}}$ 的像, 其中用到所有 $\sigma$, $\tau$ 都有 $a\_{\sigma\tau} = a\_\sigma^\tau a\_\tau$. 像就是 $\delta(\tau) a\_\sigma^\tau a\_\sigma \tau\tau^{-1} \delta(\tau^{-1})$. 于是 
+我得检验这些级数不依赖 $\overline{\mathbb{Q}}$ 到 $\overline{\mathbb{Q}}\_p$ 的嵌入. 眼下先固定 $p$. 我们已经用原来的嵌入把 $\overline{\mathbb{Q}}$ 与 $\overline{\mathbb{Q}}\_p$ 的一个子域等同起来. 保持这个等同关系. 别的嵌入都是把 $x$ 送到 $x^\tau$, $\tau \in \mathfrak{G}(\overline{\mathbb{Q}}/\mathbb{Q})$. 若用原来的嵌入把 $\mathfrak{G}\_p$ 与 $\mathfrak{G}$ 的一个子群等同, 那么新嵌入给出 $\mathfrak{G}\_p$ 到 $\mathfrak{G}$ 的映射 $\sigma \mapsto \tau\sigma\tau^{-1}$ (这里把 $\tau$ 与其在 $\mathfrak{G}$ 中的像等同). $\delta$ 在 $\mathfrak{G}\_p$ 上的限制换成 $\delta'$, 其中 $\delta'(\sigma) = \delta(\tau\sigma\tau^{-1})$. 于是 $G^\delta\_{\mathbb{Q}\_p}$ 换成 $G^{\delta'}\_{\mathbb{Q}\_p}$. 映射 $g \mapsto g^{\delta(\tau)}$ 是 $G^{\delta'}\_{\mathbb{Q}\_p}$ 与 $G^\delta\_{\mathbb{Q}\_p}$ 之间的同构. 若 $g \in G^\delta\_{\mathbb{Q}} \subset G^\delta\_{\mathbb{Q}\_p}$, 则 $g$ 是 $g^\tau$ 的像, 所以这个映射与 $G^\delta\_{\mathbb{Q}}$ 在两个群中的嵌入相容. 新的上闭链 $\{a'\_\sigma\}$ 是 $a\_{\tau\sigma\tau^{-1}} = a\_\tau^{\tau^{-1}} a\_\sigma^{\tau^{-1}} a\_{\tau^{-1}} = a\_\sigma^{\tau^{-1}} a\_\tau^{-\tau^{-1}} a\_{\tau^{-1}}$ 的像, 其中用到所有 $\sigma$, $\tau$ 都有 $a\_{\sigma\tau} = a\_\sigma^\tau a\_\tau$. 像就是 $\delta(\tau) a\_\sigma^\tau a\_\sigma \tau\tau^{-1} \delta(\tau^{-1})$. 于是 
 
 $$
 \overline{G}\_{\mathbb{Q}\_p} = \left\{ g \in G\_{K\_p} \;\middle\vert \; \begin{gathered} g = g^{\delta(\tau)\sigma\delta(\sigma)a\_\sigma^\tau a\_\sigma a\_\tau^{-1}\delta(\tau^{-1})} \\ = g^{\delta(\tau)a\_\tau \sigma\delta(\sigma)a\_\sigma a\_\tau^{-1}\sigma(\tau^{-1})} \end{gathered}\ (\sigma \in \mathfrak{G}\_p) \right\}.
@@ -142,9 +140,10 @@ $$
 
 $$
 L(s,\phi',\pi) = L(s,\phi,\pi).
+
 $$
 
-
+> 注：还应检验该级数在 $\mathrm{Re}(s)$ 充分大时收敛. 有办法做到这一点, 但我还没有验证它对所有群都行得通.
 
 再固定 $p$. 此时若 $a\_\sigma = b^\sigma b^{-1}$, 则 
 
@@ -159,20 +158,17 @@ $$
 
 <figure class="letter-diagram"><img src="{{ site.baseurl }}/img/langlands-weil/diagram-1.svg" alt="交换图：G′ 与 G 的两种内形式"></figure>
 
-
-
 这意味着, 若 $\alpha'\_p$ 是与 $\phi'$ 相联系的 $Z\mathfrak{g}\_p\tau^{-1} \times\_\delta {}^cG$ 中的共轭类, 则 $\alpha'\_p = \tau\alpha\_p\tau^{-1}$. 可见对几乎所有的 $p$, $\alpha'\_p$ 与 $\alpha\_p$ 共轭; 于是 $L(s,\phi',\pi)$ 与 $L(s,\phi,\pi)$ 只相差有限个因子.
 
-第一个问题是: 这些乘积是否给出在整个复平面上亚纯、极点具有通常类型的函数; 以及是否对每个 $\phi$ 都有自守形式 $\psi$, 使商 $L(s,\phi,\pi)/L(s,\psi,\tilde\pi)$ 对所有 $\pi$ 都等于初等函数.[^3] 这里 $\tilde\pi$ 是 $\pi$ 的逆步表示.
+第一个问题是: 这些乘积是否给出在整个复平面上亚纯、极点具有通常类型的函数; 以及是否对每个 $\phi$ 都有自守形式 $\psi$, 使商 $L(s,\phi,\pi)/L(s,\psi,\tilde\pi)$ 对所有 $\pi$ 都等于初等函数. 这里 $\tilde\pi$ 是 $\pi$ 的逆步表示.
+
+> 注：看来可以取 $\psi = \phi$.
 
 在进入第二个问题之前, 先说一句: Eisenstein 级数方面我做过一些试验, 工作虽远未完成, 但看起来我会得到上述类型的一些级数, 它们与 Eisenstein 级数相关, 因而在整个平面上亚纯. 在较少的某些情形下, 甚至可能借 Eisenstein 级数的函数方程得到函数方程. 眼下的定义, 是我试图找出这样一类 Euler 乘积的结果: 它包含来自 Eisenstein 级数的那些乘积, 又不作任何人为的限制.
 
 现在若 $G = \mathrm{GL}(n)$, $\mathfrak{G}$ 的作用是平凡的, $\pi$ 是表示 $g \mapsto g$, 那么或许可以用 Tamagawa 的想法来处理上述级数. 这就引出第二个问题. 设如上取定 $K$, $G$, $\delta$, 并另取 $K'$, $G'$, $\delta'$. 若 $K \subset K'$, 则有一个同态 $\mathfrak{G}' \to \mathfrak{G}$. 再设 $\omega$ 是从 $\mathfrak{G}' \times\_{\delta'} {}^cG'$ 到 $\mathfrak{G} \times\_\delta {}^cG$ 的同态, 使下面的图交换
 
 <figure class="letter-diagram"><img src="{{ site.baseurl }}/img/langlands-weil/diagram-2.svg" alt="交换图：两个半直积之间的同态"></figure>
-
-
-
 
 若 $\phi'$ 是 $G'^{\delta'}$ 的某个内形式上满足前述条件的自守形式, 则对几乎所有的 $p$, $\phi'$ 确定 $\mathfrak{G}' \times\_{\delta'} {}^cG'\_{\mathbb{C}}$ 中的一个共轭类 $\alpha'\_p$. 设 $\alpha\_p$ 是 $\alpha'\_p$ 在 $\mathfrak{G} \times\_\delta {}^cG\_{\mathbb{C}}$ 中的像. 第二个问题如下: 是否存在与 $G^\delta$ 的某个内形式相联系的自守形式 $\phi$, 使得对几乎所有的 $p$, 与它联系的共轭类正是 $\alpha\_p$?
 
@@ -185,9 +181,6 @@ $$
 **(iii)** 下面说几句这个问题与 Artin 互反律的关系. 对有理数域, 取 $\mathfrak{G}'$ 交换, $G = \{1\}$, 设 $\chi$ 是 $\mathfrak{G}'$ 的一个特征标. 令 $\mathfrak{G} = \mathfrak{G}'$, 并令 $G$ 是一维分裂环面, $\mathfrak{G}$ 平凡地作用于它. 令 $\omega$ 把 $\tau \times 1$ 送到 $\tau \times \chi(\tau)$. 那么肯定回答恰恰就是有理数域循环扩张的 Artin 互反律. 现在设有如下情形
 
 <figure class="letter-diagram"><img src="{{ site.baseurl }}/img/langlands-weil/diagram-3.svg" alt="交换图：域扩张的塔"></figure>
-
-
-
 
 $K/\mathbb{Q}$ 是 Galois 扩张, $K'\_1 \vert  K\_1$ 是 Abel 扩张. 令 $\mathfrak{G} = \mathfrak{G}(K/\mathbb{Q})$, $\mathfrak{G}\_1$ 为 $\mathfrak{G}$ 中固定 $K\_1$ 的元素, $\mathfrak{G}'\_1$ 为 $\mathfrak{G}$ 中固定 $K'\_1$ 的元素. 最后设 $\chi$ 是 $\mathfrak{G}(K'\_1/K\_1) = \mathfrak{G}\_1 \vert  \mathfrak{G}'\_1$ 的特征标, 从而也是 $\mathfrak{G}\_1$ 的特征标. 我取 $\mathfrak{G}' = \mathfrak{G}$, $G' = \{1\}$. 令 $\ell = [\mathfrak{G}\_1 : \mathfrak{G}]$, 并令 $\mathfrak{G} = \bigcup\_{i=1}^{\ell} \mathfrak{G}\_1\tau\_i$, 其中 $\tau\_1 \in \mathfrak{G}\_1$. $i\_\sigma$ 由 $\tau\_i\sigma \in \mathfrak{G}\_1\tau\_{i\_\sigma}$ 确定. 令 $G$ 为 $\ell$ 个一维分裂环面的直积 $T\_1 \times \dots \times T\_\ell$. 用 $(t\_1 \times \dots \times t\_\ell)^{\delta(\sigma)} = t\_{1\_{\sigma^{-1}}} \times \dots \times t\_{\ell\_{\sigma^{-1}}}$ 定义 $\delta$. 容易验证 $\delta(\sigma)\delta(\tau) = \delta(\sigma\tau)$. 而且 $G^\delta$ 就是 $K\_1$ 的乘法群. 又 ${}^cG = G$. 由 $\tau\_i\sigma^{-1} = \rho\_i^{-1}(\sigma)\tau\_{i\_{\sigma^{-1}}}$ 定义 $\rho\_i(\sigma)$. 则 
 
@@ -248,7 +241,9 @@ $$
 
  确定. 回看上面的讨论, 我们看到 $\omega(\alpha'\_p)$ 正是这样一个元素.
 
-**(iv)** 最后, 我想说说对第二个问题作肯定回答, 对于寻找非交换扩张的分裂律会有什么推论. 我本来打算讨论任意基域, 但现在意识到必须把基域取成 $\mathbb{Q}$.[^4]
+**(iv)** 最后, 我想说说对第二个问题作肯定回答, 对于寻找非交换扩张的分裂律会有什么推论. 我本来打算讨论任意基域, 但现在意识到必须把基域取成 $\mathbb{Q}$.
+
+> 注：不过大概可以回过头来, 把这两个问题放到数域上群的框架里重新表述. 第一个问题对基域的选取不敏感, 第二个问题则敏感.
 
 设 $K$ 是 $\mathbb{Q}$ 的 Galois 扩张, $\mathfrak{G} = \mathfrak{G}(K/\mathbb{Q})$. 我们想找一种方法, 对几乎所有的 $p$ 求 $\mathfrak{G}$ 中的 Frobenius 共轭类 $\{\sigma\_p\}$. 因此, 对所有表示 $\pi: \mathfrak{G} \to \mathrm{GL}(m,\mathbb{C})$, 我们得求出 $\mathrm{GL}(m,\mathbb{C})$ 中 $\pi(\sigma\_p)$ 的迹, 或者 $\pi(\sigma\_p)$ 的共轭类. 先固定 $\pi$. 如前, 我取 $\mathfrak{G}' = \mathfrak{G}$, $G' = \{1\}$, $\phi'$ 为常函数. 我取 $G = \mathrm{GL}(m)$. 先验证 ${}^cG$ 也是 $\mathrm{GL}(m)$.
 
@@ -299,7 +294,7 @@ $$
 
 <div class="letter-signature">Yours truly,<br>R. Langlands</div>
 
-再补充
+补充
 
 **(v)** 设 $K$ 是 $\mathbb{Q}$ 的二次扩张. 令 $\mathfrak{G}' = \mathfrak{G}(K/\mathbb{Q})$. 令 $G' = {}^cG' = A\_1 \times A\_2$, 其中 $A\_1$ 与 $A\_2$ 是一维分裂环面. 若 $\sigma$ 是 $\mathfrak{G}$ 的非平凡元, 令 $(t\_1 \times t\_2)^{\delta'(\sigma)} = t\_2 \times t\_1$. 令 $G = \mathrm{GL}(2)$, $\mathfrak{G}$ 平凡地作用于 $G$. 用 
 
@@ -312,12 +307,3 @@ $$
 $$
 
  定义 $\omega$. $G'^{\delta'}\_{\mathbb{A}}$ 就是 $K$ 的 adèle 群. 取 $\phi'$ 为 Grössencharakter. Hecke 与 Maass 关于二次域上带 Grössencharakter 的 $L$ 级数与自守形式之间关系的工作, 很可能正好给第二个问题的这一情形提供肯定回答.
-
-[^1]: 这大概是对的, 证明所需的材料大概在文献里都能找到. 不过, 写这封信时, 我觉得它远没有我当初想的那么显然.
-
-[^2]: 还应检验该级数在 $\mathrm{Re}(s)$ 充分大时收敛. 有办法做到这一点, 但我还没有验证它对所有群都行得通.
-
-[^3]: 看来可以取 $\psi = \phi$.
-
-[^4]: 不过大概可以回过头来, 把这两个问题放到数域上群的框架里重新表述. 第一个问题对基域的选取不敏感, 第二个问题则敏感.
-
