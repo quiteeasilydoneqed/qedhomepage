@@ -8,6 +8,7 @@ math: true
 no-em-replace: true
 tags:
   - 翻译
+  - 数学史
   - 数论
   - 自守表示
   - Langlands 纲领
