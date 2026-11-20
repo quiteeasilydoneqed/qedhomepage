@@ -6,6 +6,7 @@ header-img: "img/post-bg-infinity.jpg"
 header-mask: 0.3
 math: true
 tags:
+  - 数学史
   - 代数
 ---
 
