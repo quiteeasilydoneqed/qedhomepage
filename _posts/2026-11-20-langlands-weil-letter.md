@@ -69,13 +69,13 @@ Dear Professor Weil,
 要定义 $L$ 级数的局部因子, 我得先回顾 Hecke 代数的一些事实: 这里 $K$ 是 $p$ 进域 $k$ 的非分歧扩张, $G\_k^\delta$ 是相应的群. 若按适当方式取 $G\_k^\delta$ 的极大紧子群, 则按 Bruhat 与 Satake 的结果, Hecke 代数同构于 ${}^cL^\delta$ 的群代数中的一个子集, 这个子集由在 ${}^c\Omega^\delta$ 下不变、并且在 ${}^cG^\delta$ 的限制 Weyl 群 ${}^cW^\delta$ 下不变的 ${}^cL$ 中元素组成. (实际上, 我们得把他们的结果稍作引申.) 这样一来, Hecke 代数到复数的任一特征标 $\chi$ 都可以延拓成 ${}^cL$ 的群代数到复数的同态 $\chi'$. ${}^cT$ 中至少有一个元素 $g$, 使得若 $f = \sum\_{\lambda\in{}^cL} a\_\lambda \xi\_\lambda$ ($\xi\_\lambda$ 是把 $\lambda$ 写成乘法形式), 则 $\chi'(f) = \sum a\_\lambda \xi\_\lambda(g)$. 半直积 $\mathfrak{G} \times\_\delta {}^cG$ 是一个复群. 设 $\pi$ 是它的一个复表示. 若 $\sigma$ 是 Frobenius 元, 则 
 
 $$
-\frac{1}{\det\left(1 - x\pi(\sigma \times g)\right)} \qquad \text{（x 为不定元）}
+\frac{1}{\det\left(1 - x\pi(\sigma \times g)\right)} \qquad \text{（ } x \text{ 为不定元）}
 $$
 
 就是对应于 $\chi$ 与 $\pi$ 的局部 zeta 函数, 其中 $x$ 为不定元. 我还得验证它只依赖 $\chi$, 不依赖 $g$. 设 $\lambda$ 为任一权, 令 $n\_\lambda$ 为使 $\sigma$ 固定 $\lambda$ 的最小幂次; $n\_\lambda \mid n$ 时, 若 $\pi$ 作用在 $V$ 上, 令 $t\_\lambda(n)$ 为 $\sigma^n$ 在特征空间 
 
 $$
-\left\{ v \in V \;\middle\vert \; \pi(h)v = \xi\_\lambda(h)v, \ \forall h \in {}^cT \right\}
+\left\{ v \in V \;\middle\vert \; \pi(h)v = \xi\_\lambda(h)v \quad \text{对于所有} h \in {}^cT \right\}
 $$
 
  上的迹. 于是 
@@ -123,22 +123,22 @@ $$
 现在取满足 (i) 与 (ii)、且在 $K$ 中非分歧的 $p$. 因为 
 
 $$
-\overline{G}\_{\mathbb{Q}\_p} = \left\{ g \in G^\delta\_{K\_p} \;\middle\vert \; g^{\sigma a\_\sigma} = g \ (\sigma \in \mathfrak{G}\_p) \right\},
+\overline{G}\_{\mathbb{Q}\_p} = \left\{ g \in G^\delta\_{K\_p} \;\middle\vert \; g^{\sigma a\_\sigma}\_{G^\delta\_{\mathbb{Q}\_p}} = g \quad (\sigma \in \mathfrak{G}\_p) \right\},
 $$
 
  映射 $g \mapsto g^b$ 是 $\overline{G}\_{\mathbb{Q}\_p}$ 与 $G^\delta\_{\mathbb{Q}\_p}$ 之间的同构. 而且可以把 $\overline{G}\_{\mathbb{Z}\_p}$ 取成 $\overline{G}\_{\mathbb{Q}\_p}$ 与 $L \otimes\_{\mathbb{Z}} \overline{\mathbb{Z}}\_p$ 稳定化子之交, 于是这个映射把 $\overline{G}\_{\mathbb{Z}\_p}$ 送到 $G\_{\mathbb{Z}\_p}$. 由此诱导的 Hecke 代数同构与 $b$ 的选取无关. 现在 $\overline{G}\_{\mathbb{A}} = \prod \overline{G}\_{\mathbb{Q}\_p}$. 设有 $\overline{G}\_{\mathbb{Q}} \backslash \overline{G}\_{\mathbb{A}}$ 上的自守形式 $\phi$, 它是几乎所有 $p$ 的 Hecke 代数的特征函数. 那么对几乎所有的 $p$, 我们得到 Hecke 代数到复数的同态, 从而得到 $\mathfrak{G}\_p \times\_\delta {}^cG \subseteq \mathfrak{G} \times\_\delta {}^cG$ 中的一个半单共轭类 $\alpha\_p$. 若 $\pi$ 是 $\mathfrak{G} \times\_\delta {}^cG\_{\mathbb{Q}}$ 的复表示, 我把 Artin-Hecke $L$ 级数定义为下面的乘积 (取遍几乎所有的 $p$): 
 
 $$
-L(s,\pi,\phi) = \prod\_{p} \frac{1}{\det\left(1 - \dfrac{\pi(\alpha\_p)}{p^s}\right)}\qquad \text{(乘积取遍几乎所有}$p$\text{)}.
+L(s,\pi,\phi) = \prod\_{p} \frac{1}{\det\left(1 - \dfrac{\pi(\alpha\_p)}{p^s}\right)}\qquad \text{(乘积取遍几乎所有} p \text{)}.
 $$
 
 我得检验这些级数不依赖 $\overline{\mathbb{Q}}$ 到 $\overline{\mathbb{Q}}\_p$ 的嵌入. 眼下先固定 $p$. 我们已经用原来的嵌入把 $\overline{\mathbb{Q}}$ 与 $\overline{\mathbb{Q}}\_p$ 的一个子域等同起来. 保持这个等同关系. 别的嵌入都是把 $x$ 送到 $x^\tau$, $\tau \in \mathfrak{G}(\overline{\mathbb{Q}}/\mathbb{Q})$. 若用原来的嵌入把 $\mathfrak{G}\_p$ 与 $\mathfrak{G}$ 的一个子群等同, 那么新嵌入给出 $\mathfrak{G}\_p$ 到 $\mathfrak{G}$ 的映射 $\sigma \mapsto \tau\sigma\tau^{-1}$ (这里把 $\tau$ 与其在 $\mathfrak{G}$ 中的像等同). $\delta$ 在 $\mathfrak{G}\_p$ 上的限制换成 $\delta'$, 其中 $\delta'(\sigma) = \delta(\tau\sigma\tau^{-1})$. 于是 $G^\delta\_{\mathbb{Q}\_p}$ 换成 $G^{\delta'}\_{\mathbb{Q}\_p}$. 映射 $g \mapsto g^{\delta(\tau)}$ 是 $G^{\delta'}\_{\mathbb{Q}\_p}$ 与 $G^\delta\_{\mathbb{Q}\_p}$ 之间的同构. 若 $g \in G^\delta\_{\mathbb{Q}} \subset G^\delta\_{\mathbb{Q}\_p}$, 则 $g$ 是 $g^\tau$ 的像, 所以这个映射与 $G^\delta\_{\mathbb{Q}}$ 在两个群中的嵌入相容. 新的上闭链 $\{a'\_\sigma\}$ 是 $a\_{\tau\sigma\tau^{-1}} = a\_\tau^{\tau^{-1}} a\_\sigma^{\tau^{-1}} a\_{\tau^{-1}} = a\_\sigma^{\tau^{-1}} a\_\tau^{-\tau^{-1}} a\_{\tau^{-1}}$ 的像, 其中用到所有 $\sigma$, $\tau$ 都有 $a\_{\sigma\tau} = a\_\sigma^\tau a\_\tau$. 像就是 $\delta(\tau) a\_\sigma^\tau a\_\sigma \tau\tau^{-1} \delta(\tau^{-1})$. 于是 
 
 $$
-\overline{G}\_{\mathbb{Q}\_p} = \left\{ g \in G\_{K\_p} \;\middle\vert \; g = g^{\delta(\tau)\sigma\delta(\sigma)a\_\sigma^\tau a\_\sigma a\_\tau^{-1}\delta(\tau^{-1})}  = g^{\delta(\tau)a\_\tau \sigma\delta(\sigma)a\_\sigma a\_\tau^{-1}\sigma(\tau^{-1})} ,\text{对于} \sigma \in \mathfrak{G}\_p \right\}.
+\overline{G}\_{\mathbb{Q}\_p} = \left\{ g \in G\_{K\_p} \;\middle\vert \; g = g^{\delta(\tau)\sigma\delta(\sigma)a\_\sigma^\tau a\_\sigma a\_\tau^{-1}\delta(\tau^{-1})}  = g^{\delta(\tau)a\_\tau \sigma\delta(\sigma)a\_\sigma a\_\tau^{-1}\sigma(\tau^{-1})} \text{对于} \sigma \in \mathfrak{G}\_p \right\}.
 $$
 
- 而映射 $g \mapsto g^{\delta(\tau)a\_\tau}$ 是 $\overline{G}\_{\mathbb{Q}\_p}$ 到 $\overline{G}\_{\mathbb{Q}\_p}$ 的同构. 它与 $\overline{G}\_{\mathbb{Q}}$ 在两个群中的嵌入相容, 因为 $\overline{G}\_{\mathbb{Q}} = \{ g \in G\_K \mid g^{\rho\delta(\rho)a\_\rho} = g, \ \forall \rho \in \mathfrak{G} \}$. 此外, 对几乎所有的 $\rho$, 它把 $\overline{G}\_{\mathbb{Z}\_p}$ 送到 $\overline{G}\_{\mathbb{Q}\_p}$. 若再对每个 $\rho$ 选一个新嵌入, 就得到新的 adèle 群 $\overline{G}'\_{\mathbb{A}}$. 上述映射给出 $\overline{G}'\_{\mathbb{A}}$ 到 $\overline{G}\_{\mathbb{A}}$ 的同构, 并且把 $\overline{G}\_{\mathbb{Q}}$ 送到自身. 于是我们有从 $\overline{G}\_{\mathbb{Q}} \backslash \overline{G}'\_{\mathbb{A}}$ 到 $\overline{G}\_{\mathbb{Q}} \backslash \overline{G}\_{\mathbb{A}}$ 的映射, 前面引入的自守形式就给出 $\overline{G}\_{\mathbb{Q}} \vert  \overline{G}'\_{\mathbb{A}}$ 上一个具有同样性质的自守形式 $\phi'$. 我们得检验 
+而映射 $g \mapsto g^{\delta(\tau)a\_\tau}$ 是 $\overline{G}\_{\mathbb{Q}\_p}$ 到 $\overline{G}\_{\mathbb{Q}\_p}$ 的同构. 它与 $\overline{G}\_{\mathbb{Q}}$ 在两个群中的嵌入相容, 因为 $\overline{G}\_{\mathbb{Q}} = \{ g \in G\_K \mid g^{\rho\delta(\rho)a\_\rho} = g, \ \forall \rho \in \mathfrak{G} \}$. 此外, 对几乎所有的 $\rho$, 它把 $\overline{G}\_{\mathbb{Z}\_p}$ 送到 $\overline{G}\_{\mathbb{Q}\_p}$. 若再对每个 $\rho$ 选一个新嵌入, 就得到新的 adèle 群 $\overline{G}'\_{\mathbb{A}}$. 上述映射给出 $\overline{G}'\_{\mathbb{A}}$ 到 $\overline{G}\_{\mathbb{A}}$ 的同构, 并且把 $\overline{G}\_{\mathbb{Q}}$ 送到自身. 于是我们有从 $\overline{G}\_{\mathbb{Q}} \backslash \overline{G}'\_{\mathbb{A}}$ 到 $\overline{G}\_{\mathbb{Q}} \backslash \overline{G}\_{\mathbb{A}}$ 的映射, 前面引入的自守形式就给出 $\overline{G}\_{\mathbb{Q}} \vert  \overline{G}'\_{\mathbb{A}}$ 上一个具有同样性质的自守形式 $\phi'$. 我们得检验 
 
 $$
 L(s,\phi',\pi) = L(s,\phi,\pi).
@@ -199,13 +199,13 @@ $$
 \end{align*}
 $$
 
- 顺便说一下, 若把 $\tau\_i$ ($1 \le i \le \ell$)换成 $\tau'\_i = \mu\_1\tau\_i$, $\mu\_i \in \mathfrak{G}\_1$, 则 $\rho'\_i(\sigma) = \mu\_{i\_{\sigma^{-1}}}^{-1}\rho\_i(\sigma)\mu\_1$, 并且 
+顺便说一下, 若把 $\tau\_i$ ($1 \le i \le \ell$)换成 $\tau'\_i = \mu\_1\tau\_i$, $\mu\_i \in \mathfrak{G}\_1$, 则 $\rho'\_i(\sigma) = \mu\_{i\_{\sigma^{-1}}}^{-1}\rho\_i(\sigma)\mu\_1$, 并且 
 
 $$
 \omega'(\sigma \times 1) = (\chi(\mu\_1) \times \dots \times \chi(\mu\_\ell))^{-1}\,\omega(\sigma \times 1)\,(\chi(\mu\_1) \times \dots \times \chi(\mu\_\ell)).
 $$
 
- 可见这个映射在本质上不依赖陪集代表元的选取.
+可见这个映射在本质上不依赖陪集代表元的选取.
 
 我取 $\phi'$ 为常数. 由 Artin 互反律, $\chi$ 对应 $K\_1^\ast  \backslash I\_{K\_1}$ 的一个特征标, 亦即 $G^\delta\_{\mathbb{Q}} \backslash G^\delta\_{\mathbb{A}}$ 上的一个自守形式 $\phi$. 我断言 $\phi$ 就是给问题以肯定回答的那个自守形式.
 
@@ -215,7 +215,7 @@ $$
 \sigma\_p \times \prod\_{j=1}^{\ell} \left(\chi(\mu\_j\sigma\_p^{n\_j}\mu\_j^{-1}) \times 1 \times \dots \times 1\right)
 $$
 
- 所在的类. 而 $\mu\_j\sigma\_p^{n\_j}\mu\_j^{-1}$ 属于 $\mathfrak{G}\_1$ 中对应于 $\mathfrak{p}\_j$ 的 Frobenius 共轭类.
+所在的类. 而 $\mu\_j\sigma\_p^{n\_j}\mu\_j^{-1}$ 属于 $\mathfrak{G}\_1$ 中对应于 $\mathfrak{p}\_j$ 的 Frobenius 共轭类.
 
 另一方面, $G^\delta\_{\mathbb{Q}\_p} \subseteq G^\delta\_{\mathbb{A}}$ 由形如 $\prod\_{j=1}^{r}\prod\_{k=0}^{n\_j-1} x\_j^{\sigma\_p^k}$ 的元素组成, 其中 $x\_j$ 是 $L\_j$ 中的非零元. 按定义, $\phi$ 在这种元素上的限制为 
 
@@ -223,19 +223,19 @@ $$
 \prod\_{j=1}^{\ell} \chi(\mu\_j\sigma\_p^{n\_j}\mu\_j^{-1})^{o(x\_j)},
 $$
 
- 其中 $\vert x\_j\vert  = p^{-o(x\_j)}$. 由于 ${}^cG = G$, 相应的共轭类由满足 
+其中 $\vert x\_j\vert  = p^{-o(x\_j)}$. 由于 ${}^cG = G$, 相应的共轭类由满足 
 
 $$
 \prod\_{j=1}^{r}\prod\_{k=0}^{n\_j-1} \alpha\_{jk}^{o(x\_j)} = \prod\_{j=1}^{r} \chi(\mu\_j\sigma\_p^{n\_j}\mu\_j^{-1})^{o(x\_j)}
 $$
 
- 的任一元素 
+的任一元素 
 
 $$
 \sigma\_p \times \prod\_{j=1}^{r}\prod\_{k=0}^{n\_j-1} \alpha\_{jk}
 $$
 
- 确定. 回看上面的讨论, 我们看到 $\omega(\alpha'\_p)$ 正是这样一个元素.
+确定. 回看上面的讨论, 我们看到 $\omega(\alpha'\_p)$ 正是这样一个元素.
 
 **(iv)** 最后, 我想说说对第二个问题作肯定回答, 对于寻找非交换扩张的分裂律会有什么推论. 我本来打算讨论任意基域, 但现在意识到必须把基域取成 $\mathbb{Q}$.
 
@@ -253,19 +253,19 @@ $$
 \end{align*}
 $$
 
- 配对取为 
+配对取为 
 
 $$
 \left\langle (z,z\_1,\dots,z\_m),\, (y,y\_1,\dots,y\_m) \right\rangle = \frac{zy}{m} + \sum\_{i=1}^{m} z\_i y\_i.
 $$
 
- 不管怎样, 都有 $G = {}^cG = \mathrm{GL}(m)$. 用 
+不管怎样, 都有 $G = {}^cG = \mathrm{GL}(m)$. 用 
 
 $$
 \omega(\sigma \times 1) = \sigma \times \pi(\sigma)
 $$
 
- 定义 $\omega$. $\mathfrak{G}$ 对 $G$ 的作用取为平凡. $\omega(\alpha'\_p) = \alpha\_p$ 就是 $\sigma\_p \times \pi(\sigma\_p)$ 所在的共轭类, 它当然决定了 $\pi(\sigma\_p)$ 的共轭类. 我们需要一种求 $\pi(\sigma\_p)$ 所在类的方法.
+定义 $\omega$. $\mathfrak{G}$ 对 $G$ 的作用取为平凡. $\omega(\alpha'\_p) = \alpha\_p$ 就是 $\sigma\_p \times \pi(\sigma\_p)$ 所在的共轭类, 它当然决定了 $\pi(\sigma\_p)$ 的共轭类. 我们需要一种求 $\pi(\sigma\_p)$ 所在类的方法.
 
 设 $\mathrm{GL}(m)$ 的某个内形式上有自守形式 $\phi$, 给上述问题以肯定回答. 要求出 $\{\pi(\sigma\_p)\}$, 只需计算对应于特征函数 $\phi$ 的 Hecke 代数 $H\_p$ 的有限个元素的特征值. 取一个含无穷素数的有限素数集 $S$, 使得若 $\overline{G}\_S = \prod\_{q\in S}\overline{G}\_{\mathbb{Q}\_q}$, $\overline{G}\_{S'} = \prod\_{q\notin S}\overline{G}\_{\mathbb{Z}\_q}$, 则 $\overline{G}\_{\mathbb{A}} = \overline{G}\_{\mathbb{Q}}\overline{G}\_S\overline{G}\_{S'}$, 并且 $\phi$ 是 $\overline{G}\_{\mathbb{Q}} \backslash \overline{G}\_{\mathbb{A}} / \overline{G}\_{S'}$ 上的函数.
 
