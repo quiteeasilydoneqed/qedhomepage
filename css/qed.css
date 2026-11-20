@@ -1207,37 +1207,6 @@ hr {
     text-align: center;
 }
 
-/* 新版定理/定义模板: 纸色细框, 与站点纸面风格一致 */
-.post-container div.qed-box {
-    margin: 1em 0 !important;
-    padding: 22px 26px !important;
-    border: 1px solid #ddd5c4 !important;
-    border-radius: 2px;
-    background: var(--paper-raised);
-    color: var(--ink-soft);
-    line-height: 1.95;
-    box-shadow: none;
-}
-
-.post-container div.qed-box > b:first-child,
-.post-container div.qed-box > strong:first-child {
-    display: block;
-    margin-bottom: 0.5em;
-    color: var(--ink);
-    font-family: var(--serif);
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-}
-
-.post-container div.qed-box p {
-    margin: 0.55em 0;
-}
-
-.post-container div.qed-box mjx-container[display="true"] {
-    margin: 1.05em 0 !important;
-}
-
 /* 作者用内联黑框包起来的定义/定理：保留语义，改成纸色细框 */
 .post-container div[style*="border"] {
     margin: 1em 0 !important;

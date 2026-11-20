@@ -13,7 +13,7 @@ tags:
 
 ## 简介
 
-<div class="qed-box" markdown="1">
+<div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
 **定理 1 (Landau定理).** 存在一个常数 $c>0$, 使得对任意正整数 $q\ge 3$, 在模$q$的所有 Dirichlet 特征中, 至多存在一个特征 $\chi$, 使$L(s,\chi)$ 有一个实零点 $\beta\in(0,1)$ 满足 
 
@@ -36,7 +36,7 @@ OpenAI 关于 $L$ 函数在半平面 $\operatorname{Re}(s)>7/8$ 内无零点的�
 
 ## 定理的证明
 
-<div class="qed-box" markdown="1">
+<div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
 **符号说明:**
 
@@ -99,7 +99,7 @@ $$
 
 关于这些定义, 有以下几点简单的观察.
 
-<div class="qed-box" markdown="1">
+<div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
 - 
 
@@ -168,14 +168,14 @@ $$
 </div>
 
 
-<div class="qed-box" markdown="1">
+<div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
 **引理 1.** 假设$x\ge\max\{e^3,\sqrt{q}\}$, 则矩阵$\mathcal{M}$的$\vert T\vert $行在$\mathbb{Q}$上线性无关.
 
 </div>
 
 
-<div class="qed-box" markdown="1">
+<div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
 **证明.** 若不然, 假设$\{c\_{r,s}\}\_{(r,s)\in T}$是不全为$0$的有理数, 使得 
 
@@ -306,7 +306,7 @@ $$
 </div>
 
 
-<div class="qed-box" markdown="1">
+<div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
 **引理 2.** 假设$x\ge\max\{e^3,\sqrt{q}\}$, 取$\mathcal{M}$的一个$\vert T\vert $阶子方阵, 其行列式非零, 设为$D\neq0$, 则对任意素数$p$, 若满足$k\le p\le x$且$\chi(p)=-1$, 就有 
 
@@ -319,7 +319,7 @@ $$
 </div>
 
 
-<div class="qed-box" markdown="1">
+<div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
 **证明.** 首先由上一引理知这样的子方阵是存在的, 记为$\mathcal{N}$, 并且由于$\mathcal{M}$中的元素都是整数, 所以$D=\det\mathcal{N}\in\mathbb{Z}$.
 
@@ -386,7 +386,7 @@ $$
 </div>
 
 
-<div class="qed-box" markdown="1">
+<div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
 **定理 2.** 设正整数$q\ge3$, $\chi$是模$q$的实原特征, 则对任意$x\ge3$, 有 
 
@@ -399,7 +399,7 @@ $$
 </div>
 
 
-<div class="qed-box" markdown="1">
+<div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
 **证明.** 当$x<e^3$时, 
 
@@ -530,7 +530,7 @@ $$
 </div>
 
 
-<div class="qed-box" markdown="1">
+<div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
 **定理 3.** 设正整数$q\ge3$, $\chi$是模$q$的实原特征, 若$\beta$是$L(s,\chi)$的非平凡实零点, 则 
 
@@ -549,7 +549,7 @@ $$
 </div>
 
 
-<div class="qed-box" markdown="1">
+<div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
 **证明.** 对任意实数$\eta\in(0,1)$, 由于 
 
@@ -689,7 +689,7 @@ $$
 
 Tao在[8]中提出挑战, 要求由Landau-Siegel零点不存在这一事实给出如下定理的新证明.
 
-<div class="qed-box" markdown="1">
+<div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
 **定理 4 (Gauss-Heegner).** 设正整数$d$无平方因子, 则虚二次域$\mathbb{Q}(\sqrt{-d})$的类数为$1$当且仅当$d$取以下$9$个值, 
 
@@ -704,7 +704,7 @@ $$
 
 该定理最初由 Gauss 猜想, 后来由 Heegner 给出了优雅的证明, 相比之下, 通过排除 Landau–Siegel 零点来证明这一定理可能更容易理解, 但论证不如 Heegner 的优雅.
 
-<div class="qed-box" markdown="1">
+<div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
 **定理 5 (虚二次域的Dirichlet类数公式).** 设域$K=\mathbb{Q}(\sqrt{-d})$, $h\_K$是其类数, $w\_K$是$K$中包含的单位根个数, $D\_K$是$K$的判别式, 则 
 
@@ -747,14 +747,14 @@ $$
 
 
 
-<div class="qed-box" markdown="1">
+<div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
 **定理 6.** 符号如上, 若$h\_K=1$, 则$d<e^{100}$.
 
 </div>
 
 
-<div class="qed-box" markdown="1">
+<div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
 **证明.** 设$q=\vert D\_K\vert $, 设 
 
@@ -868,7 +868,7 @@ $e^{100}$大约为$2.7\times10^{43}$量级, 该上界太大, 逐一检验超出�
 
 正文中需要用到以下经典定理.
 
-<div class="qed-box" markdown="1">
+<div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
 **定理 7 (Mertens 定理).** 对实数 $x\ge 2$, 有 
 
@@ -887,7 +887,7 @@ $$
 </div>
 
 
-<div class="qed-box" markdown="1">
+<div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
 **定理 8 (Hadamard不等式).** 设方阵 $A=(a\_{ij})\_{ij}\in M\_{n\times n}(\mathbb{C})$, 则有 
 
@@ -906,7 +906,7 @@ $$
 </div>
 
 
-<div class="qed-box" markdown="1">
+<div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
 **定理 9 ($L$函数的Hadamard乘积).** 设$\chi$是模$q$的实原特征, 设 
 
@@ -929,7 +929,7 @@ $$
 </div>
 
 
-<div class="qed-box" markdown="1">
+<div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
 **证明.** 对完备$L$函数 
 
