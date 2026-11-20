@@ -14,10 +14,10 @@ tags:
   - Langlands 纲领
 ---
 
-## 译注
-
+> <p style="font-size: 24px; font-weight: bold;">译注</p>
+>
 > **1.** 本译本依据 <https://sunsite.ubc.ca/DigitalMathArchive/Langlands/functoriality.html>.
-
+>
 > **2.** 哥特体 $\mathfrak{G}$ 被排成了小写 $\mathfrak{g}$.
 >
 > 转录版第 6 页, 手写原稿第 9 页末尾: 转录作 $\mathfrak{g}' \times\_{\delta'} {}^cG'\_{\mathbb{C}}$, 应为 $\mathfrak{G}' \times\_{\delta'} {}^cG'\_{\mathbb{C}}$.
@@ -25,7 +25,7 @@ tags:
 > 转录版第 6 页, 手写原稿第 10 页开头: 转录作 $\mathfrak{g} \times\_\delta {}^cG\_{\mathbb{C}}$, 应为 $\mathfrak{G} \times\_\delta {}^cG\_{\mathbb{C}}$.
 >
 > 转录版第 7 页, 手写原稿第 12 页: 转录作 $\mu\_i \in \mathfrak{g}\_1$, 应为 $\mu\_i \in \mathfrak{G}\_1$.
-
+>
 > **3.** $z\_1$ 的下标应为 $i$.
 >
 > 转录版第 8 页, 手写原稿第 14 页第一个格: 转录作 $\sum\_{i=1}^{m} z\_1 = 0$, 应为 $\sum\_{i=1}^{m} z\_i = 0$.
@@ -33,9 +33,9 @@ tags:
 > 转录版第 8 页, 手写原稿第 14 页第二个格: 转录作 $z\_1 + \dfrac{z}{m} \in \mathbb{Z}$, 应为 $z\_i + \dfrac{z}{m} \in \mathbb{Z}$.
 >
 > 转录版第 8 页, 手写原稿第 14 页第三个格: 转录作 $z, z\_1 \in \mathbb{Z}$, 应为 $z, z\_i \in \mathbb{Z}$.
-
+>
 > **4.** 转录版第 5 页, 手写原稿第 8 页末尾: 转录作 $L(s, \phi, \pi)/L(s, \phi, \tilde\pi)$, 应为 $L(s, \phi, \pi)/L(s, \psi, \tilde\pi)$.
-
+>
 > **5.** 转录版第 9 页, 手写原稿第 15 页: 转录作 $\overline{F}\_{S'}$, 应为 $\overline{G}\_{S'}$.
 
 ## 附函
@@ -294,7 +294,7 @@ $$
 
 <div class="letter-signature">Yours truly,<br>R. Langlands</div>
 
-补充
+<p style="font-size: 24px; font-weight: bold;">补充</p>
 
 **(v)** 设 $K$ 是 $\mathbb{Q}$ 的二次扩张. 令 $\mathfrak{G}' = \mathfrak{G}(K/\mathbb{Q})$. 令 $G' = {}^cG' = A\_1 \times A\_2$, 其中 $A\_1$ 与 $A\_2$ 是一维分裂环面. 若 $\sigma$ 是 $\mathfrak{G}$ 的非平凡元, 令 $(t\_1 \times t\_2)^{\delta'(\sigma)} = t\_2 \times t\_1$. 令 $G = \mathrm{GL}(2)$, $\mathfrak{G}$ 平凡地作用于 $G$. 用 
 
