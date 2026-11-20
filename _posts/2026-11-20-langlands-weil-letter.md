@@ -37,6 +37,8 @@ tags:
 > **4.** 转录版第 5 页, 手写原稿第 8 页末尾: 转录作 $L(s, \phi, \pi)/L(s, \phi, \tilde\pi)$, 应为 $L(s, \phi, \pi)/L(s, \psi, \tilde\pi)$.
 >
 > **5.** 转录版第 9 页, 手写原稿第 15 页: 转录作 $\overline{F}\_{S'}$, 应为 $\overline{G}\_{S'}$.
+>
+> **6.** Weil 没有书面回信.
 
 ## 附函
 
@@ -64,19 +66,13 @@ Dear Professor Weil,
 
 若 $L$ 是介于 $\tilde{L}'$ 与 $\tilde{L}$ 之间的格, 就可以自然地把一个被 $\tilde{G}$ 覆盖的群 $G$ 联系到 $L$. $L$ 的对偶格 ${}^cL$ 介于 ${}^c\tilde{L}'$ 与 ${}^c\tilde{L}$ 之间, 它确定一个被 ${}^c\tilde{G}$ 覆盖的群 ${}^cG$, 我称 ${}^cG$ 为 $G$ 的共轭群. 设 $\mathfrak{h}$ 为 $\tilde{T}$ 的 Lie 代数, 对每个根 $\alpha$ 取根向量 $X\_\alpha$, 使 Chevalley 条件成立. 再设 $^c\mathfrak{h}$ 是 $^c\mathfrak{g}$ 的分裂 Cartan 子代数, 对每个根 $^c\alpha$ 取根向量 $^cX\_\alpha$, 使 Chevalley 条件成立. 设 $\Omega$ 是 $\mathfrak{g}$ 的自同构群, 这些自同构把 $\mathfrak{h}$ 映到自身, 置换单根所对应的 $X\_\alpha$, 并且把 $\tilde{L}$, $L$, $\tilde{L}'$ 都映到自身. 照同样方式定义 ${}^c\Omega$. ${}^c\Omega$ 是 $\Omega$ 的逆步对象, 所以 $\Omega$ 与 ${}^c\Omega$ 典范同构. 于是 $\Omega$ 作用为 $G$ 与 ${}^cG$ 的自同构群. 设 $K$ 是 $k$ 的有限 Galois 扩张, $\delta$ 是从 $\mathfrak{G} = \mathfrak{G}(K/k)$ 到 $\Omega$ 的同态, 像为 $\Omega^\delta$. 令 $G^\delta$ 与 ${}^cG^\delta$ 分别为 $G$ 与 ${}^cG$ 的相应形式.
 
-要定义 $L$ 级数的局部因子, 我得先回顾 Hecke 代数的一些事实: 这里 $K$ 是 $p$ 进域 $k$ 的非分歧扩张, $G\_k^\delta$ 是相应的群. 若按适当方式取 $G\_k^\delta$ 的极大紧子群, 则按 Bruhat 与 Satake 的结果, Hecke 代数同构于 ${}^cL^\delta$ 的群代数中的一个子集, 这个子集由在 ${}^c\Omega^\delta$ 下不变、并且在 ${}^cG^\delta$ 的限制 Weyl 群 ${}^cW^\delta$ 下不变的 ${}^cL$ 中元素组成. (实际上, 我们得把他们的结果稍作引申.) 这样一来, Hecke 代数到复数的任一特征标 $\chi$ 都可以延拓成 ${}^cL$ 的群代数到复数的同态 $\chi'$. ${}^cT$ 中至少有一个元素 $g$, 使得若 $f = \sum\_{\lambda\in{}^cL} a\_\lambda \xi\_\lambda$ ($\xi\_\lambda$ 是把 $\lambda$ 写成乘法形式), 则 
+要定义 $L$ 级数的局部因子, 我得先回顾 Hecke 代数的一些事实: 这里 $K$ 是 $p$ 进域 $k$ 的非分歧扩张, $G\_k^\delta$ 是相应的群. 若按适当方式取 $G\_k^\delta$ 的极大紧子群, 则按 Bruhat 与 Satake 的结果, Hecke 代数同构于 ${}^cL^\delta$ 的群代数中的一个子集, 这个子集由在 ${}^c\Omega^\delta$ 下不变、并且在 ${}^cG^\delta$ 的限制 Weyl 群 ${}^cW^\delta$ 下不变的 ${}^cL$ 中元素组成. (实际上, 我们得把他们的结果稍作引申.) 这样一来, Hecke 代数到复数的任一特征标 $\chi$ 都可以延拓成 ${}^cL$ 的群代数到复数的同态 $\chi'$. ${}^cT$ 中至少有一个元素 $g$, 使得若 $f = \sum\_{\lambda\in{}^cL} a\_\lambda \xi\_\lambda$ ($\xi\_\lambda$ 是把 $\lambda$ 写成乘法形式), 则 $\chi'(f) = \sum a\_\lambda \xi\_\lambda(g)$. 半直积 $\mathfrak{G} \times\_\delta {}^cG$ 是一个复群. 设 $\pi$ 是它的一个复表示. 若 $\sigma$ 是 Frobenius 元, 则 
 
 $$
-\chi'(f) = \sum a\_\lambda \xi\_\lambda(g).
+\frac{1}{\det\left(1 - x\pi(\sigma \times g)\right)} \qquad \text{（x 为不定元）}
 $$
 
- 半直积 $\mathfrak{G} \times\_\delta {}^cG$ 是一个复群. 设 $\pi$ 是它的一个复表示. 若 $\sigma$ 是 Frobenius 元, 则 
-
-$$
-\frac{1}{\det\left(1 - x\pi(\sigma \times g)\right)}
-$$
-
- 就是对应于 $\chi$ 与 $\pi$ 的局部 zeta 函数, 其中 $x$ 为不定元. 我还得验证它只依赖 $\chi$, 不依赖 $g$. 设 $\lambda$ 为任一权, 令 $n\_\lambda$ 为使 $\sigma$ 固定 $\lambda$ 的最小幂次; $n\_\lambda \mid n$ 时, 若 $\pi$ 作用在 $V$ 上, 令 $t\_\lambda(n)$ 为 $\sigma^n$ 在特征空间 
+就是对应于 $\chi$ 与 $\pi$ 的局部 zeta 函数, 其中 $x$ 为不定元. 我还得验证它只依赖 $\chi$, 不依赖 $g$. 设 $\lambda$ 为任一权, 令 $n\_\lambda$ 为使 $\sigma$ 固定 $\lambda$ 的最小幂次; $n\_\lambda \mid n$ 时, 若 $\pi$ 作用在 $V$ 上, 令 $t\_\lambda(n)$ 为 $\sigma^n$ 在特征空间 
 
 $$
 \left\{ v \in V \;\middle\vert \; \pi(h)v = \xi\_\lambda(h)v, \ \forall h \in {}^cT \right\}
@@ -88,22 +84,28 @@ $$
 \begin{align*}
 \log \frac{1}{\det\left(1 - x\pi(\sigma \times g)\right)}
 &= \sum\_{n=0}^{\infty} \frac{x^n}{n} \sum\_{\lambda \in L} \sum\_{n\_\lambda \mid n} t\_\lambda(n)\, \xi\_\lambda\left(g^{\sigma^{n-1}} g^{\sigma^{n-2}} \cdots g\right) \\
-&= \sum\_{n=0}^{\infty} \frac{x^n}{n} \sum\_{\lambda \in L} \sum\_{n\_\lambda \mid n} t\_\lambda(n)\, \xi\_{\frac{n}{n\_\lambda}}\left(\textstyle\sum\_{k=0}^{n\_\lambda - 1} \lambda^{\sigma^k}\right)(g).
+&= \sum\_{n=0}^{\infty} \frac{x^n}{n} \sum\_{\lambda \in L} \sum\_{n\_\lambda \mid n} t\_\lambda(n)\, \xi\_{\frac{n}{n\_\lambda}\left(\textstyle\sum\_{k=0}^{n\_\lambda - 1} \lambda^{\sigma^k}\right)}(g).
 \end{align*}
 $$
 
  再者, 若 $\omega$ 是 ${}^cW^\delta$ 的元素, 总可以挑一个与 $\sigma$ 交换的代表元 $w$. 于是把 $g$ 换成 $w^{-1}gw$ 时局部 zeta 函数不变, 所以它等于 
 
 $$
-\frac{1}{[{}^cW^\delta : 1]} \sum\_{n=0}^{\infty} \frac{x^n}{n} \sum\_{\lambda} \sum\_{n\_\lambda \mid n} t\_\lambda(n) \sum\_{\omega \in {}^cW^\delta} \xi\_{\frac{n}{n\_\lambda}}\left(\textstyle\sum\_{k=0}^{n\_\lambda - 1} \lambda^{\sigma^k}\right) \omega(g).
+\frac{1}{[{}^cW^\delta : 1]} \sum\_{n=0}^{\infty} \frac{x^n}{n} \sum\_{\lambda} \sum\_{n\_\lambda \mid n} t\_\lambda(n) \sum\_{\omega \in {}^cW^\delta} \xi\_{\frac{n}{n\_\lambda}\left(\textstyle\sum\_{k=0}^{n\_\lambda - 1} \lambda^{\sigma^k}\right)} \omega(g).
 $$
 
- 由于 $\sum\_{\omega} \xi\_{\frac{n}{n\_\lambda}}\left(\sum\_{k=0}^{n\_\lambda - 1} \lambda^{\sigma^k}\right)\omega$ 属于 Hecke 代数的像, 断言得证.
+由于
+
+$$
+\sum\_{\omega} \xi\_{\frac{n}{n\_\lambda}\left(\sum\_{k=0}^{n\_\lambda - 1} \lambda^{\sigma^k}\right)}\omega
+$$
+
+属于 Hecke 代数的像, 断言得证.
 
 我不知道这样做是否站得住脚, 但且假定复表示的特征标能把 $\mathfrak{G} \times\_\delta {}^cG$ 里的半单共轭类分开. 那么由上述结果, Hecke 代数到复数的每个同态 $\chi$ 都联系到半单元素 $\sigma \times g$ 所在的共轭类. 反过来, 给定 $\mathfrak{G} \times\_\delta {}^cG$ 中的一个半单共轭类, 由 Borel-Mostow 定理, 它含有 ${}^cT$ 正规化子中的一个元素; 它甚至含有把正根映成正根的元素. 于是, 如果这个共轭类在 $\mathfrak{G}$(交换群)上的投影是 $\sigma$, 那么它含有形如 $\sigma \times g$ 的元素, $g \in {}^cT$. 如上, $g$ 确定 Hecke 代数到复数的同态. 若这个同态 $\chi$ 由附于它的局部 zeta 因子完全确定, 那么它也就由 $\sigma \times g$ 的共轭类完全确定; 于是 Hecke 代数到复数的同态与 $\mathfrak{G} \times\_\delta {}^cG$ 中投影为 $\sigma$ 的半单共轭类一一对应. 只需检验: $\chi$ 在形如 
 
 $$
-\sum\_{w \in {}^cW^\delta} \xi\left(\sum\_{n=1}^{n\_\lambda} \lambda^{\sigma^k}\right)\omega
+\sum\_{w \in {}^cW^\delta} \xi_{\left(\sum\_{n=1}^{n\_\lambda} \lambda^{\sigma^k}\right)}\omega
 $$
 
  的元素上的值由局部 zeta 函数确定, 其中 $\sum\_{n=1}^{n\_\lambda} \lambda^{\sigma^k}$ 落在正 Weyl 腔中. 这用通常的归纳法就能做到, 因为 $\sum \lambda^{\sigma^k}$ 在 $\mathfrak{G}$ 下不变, 从而是 $\mathfrak{G} \times\_\delta {}^cG$ 某个表示的最高权, 该表示限制到 ${}^cG$ 时不可约.
@@ -127,13 +129,13 @@ $$
  映射 $g \mapsto g^b$ 是 $\overline{G}\_{\mathbb{Q}\_p}$ 与 $G^\delta\_{\mathbb{Q}\_p}$ 之间的同构. 而且可以把 $\overline{G}\_{\mathbb{Z}\_p}$ 取成 $\overline{G}\_{\mathbb{Q}\_p}$ 与 $L \otimes\_{\mathbb{Z}} \overline{\mathbb{Z}}\_p$ 稳定化子之交, 于是这个映射把 $\overline{G}\_{\mathbb{Z}\_p}$ 送到 $G\_{\mathbb{Z}\_p}$. 由此诱导的 Hecke 代数同构与 $b$ 的选取无关. 现在 $\overline{G}\_{\mathbb{A}} = \prod \overline{G}\_{\mathbb{Q}\_p}$. 设有 $\overline{G}\_{\mathbb{Q}} \backslash \overline{G}\_{\mathbb{A}}$ 上的自守形式 $\phi$, 它是几乎所有 $p$ 的 Hecke 代数的特征函数. 那么对几乎所有的 $p$, 我们得到 Hecke 代数到复数的同态, 从而得到 $\mathfrak{G}\_p \times\_\delta {}^cG \subseteq \mathfrak{G} \times\_\delta {}^cG$ 中的一个半单共轭类 $\alpha\_p$. 若 $\pi$ 是 $\mathfrak{G} \times\_\delta {}^cG\_{\mathbb{Q}}$ 的复表示, 我把 Artin-Hecke $L$ 级数定义为下面的乘积 (取遍几乎所有的 $p$): 
 
 $$
-L(s,\pi,\phi) = \prod\_{p} \frac{1}{\det\left(1 - \dfrac{\pi(\alpha\_p)}{p^s}\right)}.
+L(s,\pi,\phi) = \prod\_{p} \frac{1}{\det\left(1 - \dfrac{\pi(\alpha\_p)}{p^s}\right)}\qquad \text{(乘积取遍几乎所有}$p$\text{)}.
 $$
 
 我得检验这些级数不依赖 $\overline{\mathbb{Q}}$ 到 $\overline{\mathbb{Q}}\_p$ 的嵌入. 眼下先固定 $p$. 我们已经用原来的嵌入把 $\overline{\mathbb{Q}}$ 与 $\overline{\mathbb{Q}}\_p$ 的一个子域等同起来. 保持这个等同关系. 别的嵌入都是把 $x$ 送到 $x^\tau$, $\tau \in \mathfrak{G}(\overline{\mathbb{Q}}/\mathbb{Q})$. 若用原来的嵌入把 $\mathfrak{G}\_p$ 与 $\mathfrak{G}$ 的一个子群等同, 那么新嵌入给出 $\mathfrak{G}\_p$ 到 $\mathfrak{G}$ 的映射 $\sigma \mapsto \tau\sigma\tau^{-1}$ (这里把 $\tau$ 与其在 $\mathfrak{G}$ 中的像等同). $\delta$ 在 $\mathfrak{G}\_p$ 上的限制换成 $\delta'$, 其中 $\delta'(\sigma) = \delta(\tau\sigma\tau^{-1})$. 于是 $G^\delta\_{\mathbb{Q}\_p}$ 换成 $G^{\delta'}\_{\mathbb{Q}\_p}$. 映射 $g \mapsto g^{\delta(\tau)}$ 是 $G^{\delta'}\_{\mathbb{Q}\_p}$ 与 $G^\delta\_{\mathbb{Q}\_p}$ 之间的同构. 若 $g \in G^\delta\_{\mathbb{Q}} \subset G^\delta\_{\mathbb{Q}\_p}$, 则 $g$ 是 $g^\tau$ 的像, 所以这个映射与 $G^\delta\_{\mathbb{Q}}$ 在两个群中的嵌入相容. 新的上闭链 $\{a'\_\sigma\}$ 是 $a\_{\tau\sigma\tau^{-1}} = a\_\tau^{\tau^{-1}} a\_\sigma^{\tau^{-1}} a\_{\tau^{-1}} = a\_\sigma^{\tau^{-1}} a\_\tau^{-\tau^{-1}} a\_{\tau^{-1}}$ 的像, 其中用到所有 $\sigma$, $\tau$ 都有 $a\_{\sigma\tau} = a\_\sigma^\tau a\_\tau$. 像就是 $\delta(\tau) a\_\sigma^\tau a\_\sigma \tau\tau^{-1} \delta(\tau^{-1})$. 于是 
 
 $$
-\overline{G}\_{\mathbb{Q}\_p} = \left\{ g \in G\_{K\_p} \;\middle\vert \; \begin{gathered} g = g^{\delta(\tau)\sigma\delta(\sigma)a\_\sigma^\tau a\_\sigma a\_\tau^{-1}\delta(\tau^{-1})} \\ = g^{\delta(\tau)a\_\tau \sigma\delta(\sigma)a\_\sigma a\_\tau^{-1}\sigma(\tau^{-1})} \end{gathered}\ (\sigma \in \mathfrak{G}\_p) \right\}.
+\overline{G}\_{\mathbb{Q}\_p} = \left\{ g \in G\_{K\_p} \;\middle\vert \; g = g^{\delta(\tau)\sigma\delta(\sigma)a\_\sigma^\tau a\_\sigma a\_\tau^{-1}\delta(\tau^{-1})}  = g^{\delta(\tau)a\_\tau \sigma\delta(\sigma)a\_\sigma a\_\tau^{-1}\sigma(\tau^{-1})} ,\text{对于} \sigma \in \mathfrak{G}\_p \right\}.
 $$
 
  而映射 $g \mapsto g^{\delta(\tau)a\_\tau}$ 是 $\overline{G}\_{\mathbb{Q}\_p}$ 到 $\overline{G}\_{\mathbb{Q}\_p}$ 的同构. 它与 $\overline{G}\_{\mathbb{Q}}$ 在两个群中的嵌入相容, 因为 $\overline{G}\_{\mathbb{Q}} = \{ g \in G\_K \mid g^{\rho\delta(\rho)a\_\rho} = g, \ \forall \rho \in \mathfrak{G} \}$. 此外, 对几乎所有的 $\rho$, 它把 $\overline{G}\_{\mathbb{Z}\_p}$ 送到 $\overline{G}\_{\mathbb{Q}\_p}$. 若再对每个 $\rho$ 选一个新嵌入, 就得到新的 adèle 群 $\overline{G}'\_{\mathbb{A}}$. 上述映射给出 $\overline{G}'\_{\mathbb{A}}$ 到 $\overline{G}\_{\mathbb{A}}$ 的同构, 并且把 $\overline{G}\_{\mathbb{Q}}$ 送到自身. 于是我们有从 $\overline{G}\_{\mathbb{Q}} \backslash \overline{G}'\_{\mathbb{A}}$ 到 $\overline{G}\_{\mathbb{Q}} \backslash \overline{G}\_{\mathbb{A}}$ 的映射, 前面引入的自守形式就给出 $\overline{G}\_{\mathbb{Q}} \vert  \overline{G}'\_{\mathbb{A}}$ 上一个具有同样性质的自守形式 $\phi'$. 我们得检验 
@@ -154,7 +156,7 @@ a'\_\sigma &= \delta(\tau) a\_\tau^\sigma b^\sigma \delta(\tau^{-1}) \delta(\tau
 \end{align*}
 $$
 
- 所以 $a'\_\sigma$ 被 $b' = \delta(\tau) a\_\tau b \delta(\tau^{-1})$ 分出. 对几乎所有的 $p$, $b'$ 落在 $L \otimes\_{\mathbb{Z}} \overline{\mathbb{Z}}\_p$ 的稳定化子里. 于是有下面的交换图
+所以 $a'\_\sigma$ 被 $b' = \delta(\tau) a\_\tau b \delta(\tau^{-1})$ 分出. 对几乎所有的 $p$, $b'$ 落在 $L \otimes\_{\mathbb{Z}} \overline{\mathbb{Z}}\_p$ 的稳定化子里. 于是有下面的交换图
 
 <figure class="letter-diagram"><img src="{{ site.baseurl }}/img/langlands-weil/diagram-1.svg" alt="交换图：G′ 与 G 的两种内形式"></figure>
 
@@ -182,19 +184,13 @@ $$
 
 <figure class="letter-diagram"><img src="{{ site.baseurl }}/img/langlands-weil/diagram-3.svg" alt="交换图：域扩张的塔"></figure>
 
-$K/\mathbb{Q}$ 是 Galois 扩张, $K'\_1 \vert  K\_1$ 是 Abel 扩张. 令 $\mathfrak{G} = \mathfrak{G}(K/\mathbb{Q})$, $\mathfrak{G}\_1$ 为 $\mathfrak{G}$ 中固定 $K\_1$ 的元素, $\mathfrak{G}'\_1$ 为 $\mathfrak{G}$ 中固定 $K'\_1$ 的元素. 最后设 $\chi$ 是 $\mathfrak{G}(K'\_1/K\_1) = \mathfrak{G}\_1 \vert  \mathfrak{G}'\_1$ 的特征标, 从而也是 $\mathfrak{G}\_1$ 的特征标. 我取 $\mathfrak{G}' = \mathfrak{G}$, $G' = \{1\}$. 令 $\ell = [\mathfrak{G}\_1 : \mathfrak{G}]$, 并令 $\mathfrak{G} = \bigcup\_{i=1}^{\ell} \mathfrak{G}\_1\tau\_i$, 其中 $\tau\_1 \in \mathfrak{G}\_1$. $i\_\sigma$ 由 $\tau\_i\sigma \in \mathfrak{G}\_1\tau\_{i\_\sigma}$ 确定. 令 $G$ 为 $\ell$ 个一维分裂环面的直积 $T\_1 \times \dots \times T\_\ell$. 用 $(t\_1 \times \dots \times t\_\ell)^{\delta(\sigma)} = t\_{1\_{\sigma^{-1}}} \times \dots \times t\_{\ell\_{\sigma^{-1}}}$ 定义 $\delta$. 容易验证 $\delta(\sigma)\delta(\tau) = \delta(\sigma\tau)$. 而且 $G^\delta$ 就是 $K\_1$ 的乘法群. 又 ${}^cG = G$. 由 $\tau\_i\sigma^{-1} = \rho\_i^{-1}(\sigma)\tau\_{i\_{\sigma^{-1}}}$ 定义 $\rho\_i(\sigma)$. 则 
-
-$$
-\tau\_i\tau^{-1}\sigma^{-1} = \rho\_1^{-1}(\tau)\tau\_{i\_{\tau^{-1}}}\sigma^{-1} = \rho\_1^{-1}(\tau)\rho\_{i\_{\tau^{-1}}}(\sigma)\tau\_{i\_{\tau^{-1}}\sigma^{-1}},
-$$
-
- 所以 $\rho\_i(\sigma\tau) = \rho\_{i\_{\tau^{-1}}}(\sigma)\rho\_i(\tau)$. 再定义 $\omega$ 为 
+$K/\mathbb{Q}$ 是 Galois 扩张, $K'\_1 \vert  K\_1$ 是 Abel 扩张. 令 $\mathfrak{G} = \mathfrak{G}(K/\mathbb{Q})$, $\mathfrak{G}\_1$ 为 $\mathfrak{G}$ 中固定 $K\_1$ 的元素, $\mathfrak{G}'\_1$ 为 $\mathfrak{G}$ 中固定 $K'\_1$ 的元素. 最后设 $\chi$ 是 $\mathfrak{G}(K'\_1/K\_1) = \mathfrak{G}\_1 \vert  \mathfrak{G}'\_1$ 的特征标, 从而也是 $\mathfrak{G}\_1$ 的特征标. 我取 $\mathfrak{G}' = \mathfrak{G}$, $G' = \{1\}$. 令 $\ell = [\mathfrak{G}\_1 : \mathfrak{G}]$, 并令 $\mathfrak{G} = \bigcup\_{i=1}^{\ell} \mathfrak{G}\_1\tau\_i$, 其中 $\tau\_1 \in \mathfrak{G}\_1$. $i\_\sigma$ 由 $\tau\_i\sigma \in \mathfrak{G}\_1\tau\_{i\_\sigma}$ 确定. 令 $G$ 为 $\ell$ 个一维分裂环面的直积 $T\_1 \times \dots \times T\_\ell$. 用 $(t\_1 \times \dots \times t\_\ell)^{\delta(\sigma)} = t\_{1\_{\sigma^{-1}}} \times \dots \times t\_{\ell\_{\sigma^{-1}}}$ 定义 $\delta$. 容易验证 $\delta(\sigma)\delta(\tau) = \delta(\sigma\tau)$. 而且 $G^\delta$ 就是 $K\_1$ 的乘法群. 又 ${}^cG = G$. 由 $\tau\_i\sigma^{-1} = \rho\_i^{-1}(\sigma)\tau\_{i\_{\sigma^{-1}}}$ 定义 $\rho\_i(\sigma)$. 则 $\tau\_i\tau^{-1}\sigma^{-1} = \rho\_1^{-1}(\tau)\tau\_{i\_{\tau^{-1}}}\sigma^{-1} = \rho\_1^{-1}(\tau)\rho\_{i\_{\tau^{-1}}}(\sigma)\tau\_{i\_{\tau^{-1}}\sigma^{-1}}$, 所以 $\rho\_i(\sigma\tau) = \rho\_{i\_{\tau^{-1}}}(\sigma)\rho\_i(\tau)$. 再定义 $\omega$ 为 
 
 $$
 \omega(\sigma \times 1) = \sigma \times \left(\chi(\rho\_1(\sigma)) \times \dots \times \chi(\rho\_\ell(\sigma))\right).
 $$
 
- 于是 
+于是 
 
 $$
 \begin{align*}
