@@ -7,6 +7,7 @@ header-mask: 0.3
 math: true
 no-em-replace: true
 tags:
+  - 翻译
   - 数论
   - 代数数论
   - 调和分析
