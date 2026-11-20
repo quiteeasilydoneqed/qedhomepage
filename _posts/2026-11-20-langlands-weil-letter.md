@@ -15,7 +15,7 @@ tags:
 
 > <p style="font-size: 24px; font-weight: bold;">译注</p>
 >
-> **1.** 本译本依据 <https://sunsite.ubc.ca/DigitalMathArchive/Langlands/functoriality.html>.
+> **1.** 本译本依据 <https://sunsite.ubc.ca/DigitalMathArchive/Langlands/functoriality.html>, 使用 DeepSeek V4.1 flash 模型翻译, 并由人类校对, 但仍可能有部分错误.
 >
 > **2.** 哥特体 $\mathfrak{G}$ 被排成了小写 $\mathfrak{g}$.
 >
