@@ -301,7 +301,7 @@ $$
 x\left(\left\lceil\frac{2x}{k}\right\rceil-\dim\_\mathbb{C}V+1\right)\ge x\dim\_\mathbb{C}V,
 $$
 
- 而这与$W(z)$的次数小于$x\dim\_\mathbb{C}V$矛盾, 因此假设中的$\{c\_{r,s}\}\_{(r,s)\in T}$不存在, 即矩阵$\mathcal{M}$的$\vert T\vert $行在$\mathbb{Q}$上线性无关. ◻
+ 而这与$W(z)$的次数小于$x\dim\_\mathbb{C}V$矛盾, 因此假设中的$\{c\_{r,s}\}\_{(r,s)\in T}$不存在, 即矩阵$\mathcal{M}$的$\vert T\vert $行在$\mathbb{Q}$上线性无关. 
 
 </div>
 
@@ -381,7 +381,7 @@ $$
 p^{\sum\_{(r,s)\in T}[r/p]}\mid \det(\mathcal{LN})=D,
 $$
 
- 引理得证. ◻
+ 引理得证. 
 
 </div>
 
@@ -525,7 +525,7 @@ $$
 \sum\_{\substack{p\le x\\\chi(p)=-1}}\frac{\log p}{p}\le \frac{1}{2}\log x+\frac{1}{4}\log q+\log\log x+O(1),
 $$
 
- 定理得证. ◻
+ 定理得证. 
 
 </div>
 
@@ -678,7 +678,7 @@ $$
 c\_1=\min\{(1-\beta)\log q:3\le q\le Q\}>0,
 $$
 
- 取$c=\min\{c\_1,1/2\}$即得定理结论. ◻
+ 取$c=\min\{c\_1,1/2\}$即得定理结论. 
 
 </div>
 
@@ -857,7 +857,7 @@ $$
 \log q-2\log\log q\le90,
 $$
 
- 数值计算得到满足该不等式的$q$的一个上界为$e^{100}$, 而$q=\vert D\_K\vert $等于$d$或$d$的四倍, 所以$d<e^{100}$, 定理得证. ◻
+ 数值计算得到满足该不等式的$q$的一个上界为$e^{100}$, 而$q=\vert D\_K\vert $等于$d$或$d$的四倍, 所以$d<e^{100}$, 定理得证. 
 
 </div>
 
@@ -961,7 +961,7 @@ $$
 \frac{L'}{L}(s,\chi)=\sum\_\rho\operatorname{Re}\frac1{s-\rho}-\frac12\log\frac q\pi-\frac12\frac{\Gamma'}{\Gamma}\left(\frac{s+a}{2}\right),
 $$
 
- 定理得证. ◻
+ 定理得证. 
 
 </div>
 
