@@ -59,7 +59,7 @@ $$
 - $R$定义为平面格点上的矩形 
 
 $$
-R=\left\{(u,v)\in\mathbb{Z}^2:0\le u<\frac{B}{2},\ 0\le v<\frac{B}{2\sqrt{q}}\right\};
+R=\left\lbrace (u,v)\in\mathbb{Z}^2:0\le u<\frac{B}{2},\ 0\le v<\frac{B}{2\sqrt{q}}\right\rbrace ;
 $$
 
 
@@ -71,7 +71,7 @@ $$
 - $T$定义为 
 
 $$
-T=\left\{(r,s)\in\mathbb{Z}^2\_{\ge0}:r+ks<x\right\};
+T=\left\lbrace (r,s)\in\mathbb{Z}^2\_{\ge0}:r+ks<x\right\rbrace ;
 $$
 
 
@@ -170,14 +170,14 @@ $$
 
 <div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
-**引理 1.** 假设$x\ge\max\{e^3,\sqrt{q}\}$, 则矩阵$\mathcal{M}$的$\vert T\vert $行在$\mathbb{Q}$上线性无关.
+**引理 1.** 假设$x\ge\max\lbrace e^3,\sqrt{q}\rbrace $, 则矩阵$\mathcal{M}$的$\vert T\vert $行在$\mathbb{Q}$上线性无关.
 
 </div>
 
 
 <div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
-**证明.** 若不然, 假设$\{c\_{r,s}\}\_{(r,s)\in T}$是不全为$0$的有理数, 使得 
+**证明.** 若不然, 假设$\lbrace c\_{r,s}\rbrace \_{(r,s)\in T}$是不全为$0$的有理数, 使得 
 
 $$
 \sum\_{(r,s)\in T}c\_{r,s}\partial\_z^j f\_{r,s}(z,w)\vert \_{(z,w)=(\alpha\_i,\overline{\alpha\_i})}=0
@@ -208,7 +208,7 @@ $$
 令 
 
 $$
-V=\operatorname{span}\_\mathbb{C}\left\{F(z,\overline{\alpha\_i})\right\}\_{i=1}^{\vert R\vert },\qquad V'=\operatorname{span}\_\mathbb{C}\left\{\mathcal{F}\_s(z)\right\}\_{s=0}^{\deg\_wF},
+V=\operatorname{span}\_\mathbb{C}\left\lbrace F(z,\overline{\alpha\_i})\right\rbrace \_{i=1}^{\vert R\vert },\qquad V'=\operatorname{span}\_\mathbb{C}\left\lbrace \mathcal{F}\_s(z)\right\rbrace \_{s=0}^{\deg\_wF},
 $$
 
  它们均是$\mathbb{C}[z]$的子空间, 由 
@@ -225,7 +225,7 @@ $$
 
 
 
-现取$V$的一组基$\{g\_b\}\_{b=1}^{\dim\_\mathbb{C}V}$, 其中诸$g\_b$均为首一多项式, 并且次数两两不同, 显然这样的基总是存在的. 由$\deg\_zF<x$知$\deg\_zg\_b<x$对所有$b$成立. 定义Wronskian行列式 
+现取$V$的一组基$\lbrace g\_b\rbrace \_{b=1}^{\dim\_\mathbb{C}V}$, 其中诸$g\_b$均为首一多项式, 并且次数两两不同, 显然这样的基总是存在的. 由$\deg\_zF<x$知$\deg\_zg\_b<x$对所有$b$成立. 定义Wronskian行列式 
 
 $$
 W(z)=\det\left(\frac{\mathrm{d}^a}{\mathrm{d}z^a}g\_b(z)\right)\_{\substack{0\le a< \dim\_\mathbb{C}V\\1\le b\le\dim\_\mathbb{C}V}},
@@ -266,7 +266,7 @@ $$
 任取一个$i$使得$z=\alpha\_i$是$F(z,\overline{\alpha\_i})$的至少$\lceil2x/k\rceil$重零点, 将它扩充为$V$的一组基, 设为 
 
 $$
-\{F(z,\overline{\alpha\_i}),h\_2(z),\dots,h\_{\dim\_\mathbb{C}V}(z)\},
+\lbrace F(z,\overline{\alpha\_i}),h\_2(z),\dots,h\_{\dim\_\mathbb{C}V}(z)\rbrace ,
 $$
 
  设这组基的Wronskian行列式为$W'(z)$, 则它与$W(z)$只差一个非零复数. 在行列式$W'(z)$中, 第一列为 
@@ -301,14 +301,14 @@ $$
 x\left(\left\lceil\frac{2x}{k}\right\rceil-\dim\_\mathbb{C}V+1\right)\ge x\dim\_\mathbb{C}V,
 $$
 
- 而这与$W(z)$的次数小于$x\dim\_\mathbb{C}V$矛盾, 因此假设中的$\{c\_{r,s}\}\_{(r,s)\in T}$不存在, 即矩阵$\mathcal{M}$的$\vert T\vert $行在$\mathbb{Q}$上线性无关. 
+ 而这与$W(z)$的次数小于$x\dim\_\mathbb{C}V$矛盾, 因此假设中的$\lbrace c\_{r,s}\rbrace \_{(r,s)\in T}$不存在, 即矩阵$\mathcal{M}$的$\vert T\vert $行在$\mathbb{Q}$上线性无关. 
 
 </div>
 
 
 <div style="border: 3px solid #000; padding: 10px;" markdown="1">
 
-**引理 2.** 假设$x\ge\max\{e^3,\sqrt{q}\}$, 取$\mathcal{M}$的一个$\vert T\vert $阶子方阵, 其行列式非零, 设为$D\neq0$, 则对任意素数$p$, 若满足$k\le p\le x$且$\chi(p)=-1$, 就有 
+**引理 2.** 假设$x\ge\max\lbrace e^3,\sqrt{q}\rbrace $, 取$\mathcal{M}$的一个$\vert T\vert $阶子方阵, 其行列式非零, 设为$D\neq0$, 则对任意素数$p$, 若满足$k\le p\le x$且$\chi(p)=-1$, 就有 
 
 $$
 p^{\sum\_{(r,s)\in T}[r/p]}\mid D.
@@ -375,7 +375,7 @@ $$
 \partial\_z^j\left(z^{r-ph}(z^p-w)^hw^s\right)\vert \_{(z,w)=(\alpha\_i,\overline{\alpha\_i})}
 $$
 
- 在基$\{1,\sqrt{d}\}$下的第一分量或第二分量. 由 Leibniz 法则知$\partial\_z^j\left(z^{r-ph}(z^p-w)^hw^s\right)$展开后的每一项都至少含一些$z^p-w$或其导数, 总共$h$个, 而$z^p-w$及其导数在$(\alpha\_i,\overline{\alpha\_i})$处的值都在$p\mathbb{Z}[\sqrt{d}]$中, 所以$\partial\_z^j\left(z^{r-ph}(z^p-w)^hw^s\right)\vert \_{(z,w)=(\alpha\_i,\overline{\alpha\_i})}$在$p^h\mathbb{Z}[\sqrt{d}]$中, 即矩阵$\mathcal{LN}$中$(r,s)$对应的行中每个元素都被$p^h=p^{[r/p]}$整除, 从而 
+ 在基$\lbrace 1,\sqrt{d}\rbrace $下的第一分量或第二分量. 由 Leibniz 法则知$\partial\_z^j\left(z^{r-ph}(z^p-w)^hw^s\right)$展开后的每一项都至少含一些$z^p-w$或其导数, 总共$h$个, 而$z^p-w$及其导数在$(\alpha\_i,\overline{\alpha\_i})$处的值都在$p\mathbb{Z}[\sqrt{d}]$中, 所以$\partial\_z^j\left(z^{r-ph}(z^p-w)^hw^s\right)\vert \_{(z,w)=(\alpha\_i,\overline{\alpha\_i})}$在$p^h\mathbb{Z}[\sqrt{d}]$中, 即矩阵$\mathcal{LN}$中$(r,s)$对应的行中每个元素都被$p^h=p^{[r/p]}$整除, 从而 
 
 $$
 p^{\sum\_{(r,s)\in T}[r/p]}\mid \det(\mathcal{LN})=D,
@@ -413,7 +413,7 @@ $$
 \sum\_{\substack{p\le x\\\chi(p)=-1}}\frac{\log p}{p}\le\sum\_{p\le x}\frac{\log p}{p}=\log x+O(1)<\frac{1}{2}\log x+\frac{1}{4}\log q+O(1),
 $$
 
- 定理亦成立, 因此以下假设$x\ge\max\{e^3,\sqrt{q}\}$.
+ 定理亦成立, 因此以下假设$x\ge\max\lbrace e^3,\sqrt{q}\rbrace $.
 
 由$\vert \overline{\alpha\_i}\vert \le\vert \alpha\_i\vert \le B$知$\left\vert \partial\_z^j f\_{r,s}(z,w)\vert \_{(z,w)=(\alpha\_i,\overline{\alpha\_i})}\right\vert \le r(r-1)\cdots(r-j+1)B^{r+s}\le r^jB^{r+s}$, 由$r<x$, $s<x/k$ 和 $j<2x/k$知$\left\vert \partial\_z^j f\_{r,s}(z,w)\vert \_{(z,w)=(\alpha\_i,\overline{\alpha\_i})}\right\vert \le x^{2x/k}B^{r+x/k}=B^r(x^2B)^{x/k}$, 由于$k=\lceil\log \left(x^2B\right)\rceil$, 所以 
 
@@ -442,7 +442,7 @@ $$
  而显然矩形 
 
 $$
-\left\{(r,s)\in\mathbb{Z}^2:\frac{x}{3}<r<\frac{2x}{3},\, 0\le s<\frac{x}{3k}\right\}\subseteq T,
+\left\lbrace (r,s)\in\mathbb{Z}^2:\frac{x}{3}<r<\frac{2x}{3},\, 0\le s<\frac{x}{3k}\right\rbrace \subseteq T,
 $$
 
  故 
@@ -675,10 +675,10 @@ $$
  对于$q\le Q$, 只有有限多个实零点, 逐个检查即可, 设 
 
 $$
-c\_1=\min\{(1-\beta)\log q:3\le q\le Q\}>0,
+c\_1=\min\lbrace (1-\beta)\log q:3\le q\le Q\rbrace >0,
 $$
 
- 取$c=\min\{c\_1,1/2\}$即得定理结论. 
+ 取$c=\min\lbrace c\_1,1/2\rbrace $即得定理结论. 
 
 </div>
 
